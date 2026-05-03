@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="第13讲学习讲义：细胞通讯 对应课件：Lecture13 Cell Communication.pdf 这一讲的主线是： 细胞通过信号分子和受体交换信息，再把外界信息转化为胞内分子活动，最终改变蛋白功能、基因表达、细胞行为和命运。 如果前面几讲讲的是“细胞内部机器如何运转”，这一讲讲的就是这些机器如何被外界调度。 这讲的核心问题 细胞间信号有哪些传播方式？ 一条信号通路通常由哪些步骤组成？ 受体如何把胞外信号转化为胞内信号？ 第二信使、">
+  <title>第13讲学习讲义：细胞通讯 | ABS 复习讲义</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <button class="menu-button" id="menuButton" aria-label="打开目录">目录</button>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark">ABS</span>
+      <span>
+        <strong>生物学复习讲义</strong>
+        <em>Advanced Biological Sciences</em>
+      </span>
+    </a>
+    <label class="search">
+      <span>搜索讲义</span>
+      <input id="searchInput" type="search" placeholder="例如 Ras / 膜电位 / DNA 复制">
+    </label>
+    <div class="search-results" id="searchResults"></div>
+    <nav class="nav"><a class="nav-link " href="01_cells_and_genomes.html">
+      <span>01</span>
+      <strong>Cells and Genomes</strong>
+    </a><a class="nav-link " href="02_cell_chemistry.html">
+      <span>02</span>
+      <strong>Cell Chemistry</strong>
+    </a><a class="nav-link " href="03_protein_structure_and_function.html">
+      <span>03</span>
+      <strong>Protein Structure and Function</strong>
+    </a><a class="nav-link " href="04_dna_chromosomes_and_genome.html">
+      <span>04</span>
+      <strong>DNA, Chromosomes and Genome</strong>
+    </a><a class="nav-link " href="05_dna_replication_repair_and_recombination.html">
+      <span>05</span>
+      <strong>DNA Replication, Repair, and Recombination</strong>
+    </a><a class="nav-link " href="06_from_dna_to_protein.html">
+      <span>06</span>
+      <strong>From DNA to Protein</strong>
+    </a><a class="nav-link " href="07_control_of_gene_expression.html">
+      <span>07</span>
+      <strong>Control of Gene Expression</strong>
+    </a><a class="nav-link " href="08_manipulating_proteins_dna_rna.html">
+      <span>08</span>
+      <strong>Manipulating Proteins, DNA and RNA</strong>
+    </a><a class="nav-link " href="09_membrane_structure_and_functions.html">
+      <span>09</span>
+      <strong>细胞膜结构与功能</strong>
+    </a><a class="nav-link " href="10_cross_membrane_transport.html">
+      <span>10</span>
+      <strong>跨膜转运与膜电学性质</strong>
+    </a><a class="nav-link " href="11_intracellular_compartments_and_protein_sorting.html">
+      <span>11</span>
+      <strong>细胞内区室与蛋白质分选（详细版）</strong>
+    </a><a class="nav-link " href="12_intracellular_vesicular_traffic.html">
+      <span>12</span>
+      <strong>细胞内囊泡运输 (Intracellular Vesicular Traffic)</strong>
+    </a><a class="nav-link active" href="#">
+      <span>13</span>
+      <strong>细胞通讯</strong>
+    </a></nav>
+  </aside>
+  <main class="page">
+    <article class="article">
+      <div class="article-head">
+        <a class="back-home" href="../index.html">返回首页</a>
+        <p class="lecture-number">Lecture 13</p>
+      </div>
+      <div class="article-layout">
+        <div class="content"><h1 id="第13讲学习讲义细胞通讯">第13讲学习讲义：细胞通讯</h1>
+<p>对应课件：<code>Lecture13_Cell_Communication.pdf</code></p>
+<p>这一讲的主线是：<strong>细胞通过信号分子和受体交换信息，再把外界信息转化为胞内分子活动，最终改变蛋白功能、基因表达、细胞行为和命运。</strong></p>
+<p>如果前面几讲讲的是“细胞内部机器如何运转”，这一讲讲的就是这些机器如何被外界调度。</p>
+<h2 id="这讲的核心问题">这讲的核心问题</h2>
+<ul><li>细胞间信号有哪些传播方式？</li><li>一条信号通路通常由哪些步骤组成？</li><li>受体如何把胞外信号转化为胞内信号？</li><li>第二信使、蛋白磷酸化和小 GTPase 为什么适合做信号开关？</li><li>GPCR、RTK、JAK-STAT、TGF-beta、NF-kB、Notch、Hedgehog、Wnt、核受体各自的核心逻辑是什么？</li><li>正反馈、负反馈和信号整合如何改变细胞响应？</li></ul>
+<h2 id="一、什么是细胞通讯">一、什么是细胞通讯</h2>
+<p>细胞通讯 cell communication 指细胞通过物理或化学信号影响其他细胞或自身行为。</p>
+<p>人类可以用语言、表情和动作交流；昆虫可以用信息素、触碰和声音交流；细胞则主要使用信号分子、膜受体、细胞接触和胞内信号通路交流。</p>
+<p>细胞对信号的反应可以非常多样：</p>
+<ul><li>迁移 migration</li><li>分泌 secretion</li><li>增殖 proliferation</li><li>分化 differentiation</li><li>存活 survival</li><li>死亡 apoptosis</li><li>代谢改变 metabolism</li><li>基因表达改变 gene expression</li></ul>
+<p>同一个信号分子在不同细胞中可能产生完全不同结果，因为不同细胞表达不同受体、信号蛋白和转录程序。</p>
+<h2 id="二、动物细胞间信号的四种传播方式">二、动物细胞间信号的四种传播方式</h2>
+<h3 id="1-内分泌-endocrine-signaling">1. 内分泌 endocrine signaling</h3>
+<p>信号分子进入血液，作用于远距离靶细胞。</p>
+<p>典型例子：激素。</p>
+<p>特点：</p>
+<ul><li>作用距离远。</li><li>浓度通常较低。</li><li>反应可慢可快，常影响全身稳态。</li></ul>
+<h3 id="2-旁分泌-paracrine-signaling">2. 旁分泌 paracrine signaling</h3>
+<p>信号分子扩散到附近细胞。</p>
+<p>典型例子：局部生长因子、炎症因子、发育过程中的形态发生因子。</p>
+<p>特点：</p>
+<ul><li>作用距离短。</li><li>常用于局部组织协调。</li></ul>
+<h3 id="3-突触信号-synaptic-signaling">3. 突触信号 synaptic signaling</h3>
+<p>神经元沿轴突传递电信号，在突触释放神经递质作用于特定靶细胞。</p>
+<p>特点：</p>
+<ul><li>速度快。</li><li>靶向精确。</li><li>适合神经系统的信息处理。</li></ul>
+<h3 id="4-接触依赖信号-contact-dependent-signaling">4. 接触依赖信号 contact-dependent signaling</h3>
+<p>信号分子保留在发送细胞膜上，需要细胞直接接触。</p>
+<p>典型例子：Notch-Delta 信号。</p>
+<p>特点：</p>
+<ul><li>空间限制强。</li><li>常用于发育中相邻细胞命运决定。</li></ul>
+<h2 id="三、细胞信号传导的四步">三、细胞信号传导的四步</h2>
+<p>一条信号通路通常包括四个环节：</p>
+<p>1. <strong>受体激活 receptor activation</strong>：配体结合受体，受体构象或聚集状态改变。 2. <strong>信号转导 signal transduction</strong>：胞内蛋白、第二信使和修饰级联传递信息。 3. <strong>细胞响应 response</strong>：快速改变蛋白活性，或慢速改变基因表达。 4. <strong>信号终止 termination</strong>：配体降解、受体内吞、去磷酸化、GTP 水解等使通路关闭。</p>
+<p>信号终止不是附属步骤，而是信号系统可重复、可调节的前提。</p>
+<h2 id="四、受体在哪里">四、受体在哪里</h2>
+<p>受体位置取决于信号分子的性质。</p>
+<h3 id="1-水溶性信号分子">1. 水溶性信号分子</h3>
+<p>水溶性信号分子不能直接穿过脂双层，通常结合细胞表面受体。</p>
+<p>例如：</p>
+<ul><li>肽类激素</li><li>神经递质</li><li>生长因子</li><li>细胞因子</li></ul>
+<h3 id="2-脂溶性信号分子">2. 脂溶性信号分子</h3>
+<p>脂溶性信号分子可以穿过质膜，常结合胞质或细胞核内受体。</p>
+<p>例如：</p>
+<ul><li>甾体激素</li><li>甲状腺激素</li><li>维甲酸</li></ul>
+<p>核受体常同时是受体和转录因子。</p>
+<h2 id="五、胞内信号通路的常见模块">五、胞内信号通路的常见模块</h2>
+<h3 id="1-第二信使-second-messengers">1. 第二信使 second messengers</h3>
+<p>第二信使是小而可扩散的胞内信号分子，可以迅速放大和传播信号。</p>
+<p>常见第二信使：</p>
+<ul><li>cAMP</li><li>cGMP</li><li>Ca2+</li><li>IP3</li><li>DAG</li></ul>
+<h3 id="2-磷酸化开关">2. 磷酸化开关</h3>
+<p>蛋白激酶 kinase 添加磷酸基，蛋白磷酸酶 phosphatase 去除磷酸基。</p>
+<p>磷酸化可以：</p>
+<ul><li>改变蛋白活性。</li><li>改变蛋白定位。</li><li>改变蛋白相互作用。</li><li>创造 docking site 招募下游蛋白。</li></ul>
+<h3 id="3-gtpase-开关">3. GTPase 开关</h3>
+<p>GTP 结合蛋白在两种状态间切换：</p>
+<ul><li>GTP-bound：通常活化。</li><li>GDP-bound：通常失活。</li></ul>
+<p>GEF 促进 GDP 换成 GTP，GAP 促进 GTP 水解成 GDP。</p>
+<p>GPCR 下游的三聚体 G 蛋白和 Ras/Rab/Ran 等小 GTPase 都属于这类开关。</p>
+<h3 id="4-信号复合物组装">4. 信号复合物组装</h3>
+<p>信号不只是线性传递，很多时候依赖蛋白复合物在特定位置组装。</p>
+<p>常见平台包括：</p>
+<ul><li>被磷酸化的受体尾部。</li><li>磷酸肌醇脂质形成的膜 docking site。</li><li>支架蛋白 scaffold protein。</li></ul>
+<p>这样可以提高效率、增强特异性，并减少错误串线。</p>
+<h2 id="六、反馈调控与信号整合">六、反馈调控与信号整合</h2>
+<h3 id="1-正反馈-positive-feedback">1. 正反馈 positive feedback</h3>
+<p>正反馈会放大初始信号，常产生开关式或不可逆响应。</p>
+<p>用途：</p>
+<ul><li>细胞命运决定。</li><li>细胞周期推进。</li><li>强化局部信号。</li></ul>
+<h3 id="2-负反馈-negative-feedback">2. 负反馈 negative feedback</h3>
+<p>负反馈会抑制通路自身，常产生适应或脱敏。</p>
+<p>例如：</p>
+<ul><li>受体被磷酸化后招募抑制因子。</li><li>下游激酶反过来抑制上游组分。</li><li>诱导表达抑制蛋白。</li></ul>
+<p>负反馈让细胞可以在持续信号中恢复敏感度，也能避免过度反应。</p>
+<h3 id="3-多信号-coincidence-detection">3. 多信号 coincidence detection</h3>
+<p>细胞常需要同时检测多个信号，只有信号组合满足条件才响应。</p>
+<p>这解释了为什么同一个信号在不同细胞、不同环境和不同时间会产生不同结果。</p>
+<h2 id="七、研究细胞信号的常用思路">七、研究细胞信号的常用思路</h2>
+<p>研究信号通路通常会问：</p>
+<ul><li>配体是否结合受体？</li><li>受体是否激活？</li><li>哪些蛋白被磷酸化或去磷酸化？</li><li>哪些蛋白发生相互作用？</li><li>信号蛋白是否改变定位？</li><li>最终细胞功能是否改变？</li></ul>
+<p>常见方法包括：</p>
+<ul><li>配体结合实验。</li><li>蛋白活性检测。</li><li>Western blot 检测磷酸化。</li><li>免疫共沉淀检测蛋白互作。</li><li>荧光成像检测定位变化。</li><li>遗传学或药物抑制做功能验证。</li></ul>
+<p>方法学题要注意：检测到某个蛋白变化不等于证明它是因果核心，通常需要敲除、突变、抑制或救援实验。</p>
+<h2 id="八、gpcr七次跨膜受体与三聚体-g-蛋白">八、GPCR：七次跨膜受体与三聚体 G 蛋白</h2>
+<p>GPCR 是最大、最经典的细胞表面受体家族之一。</p>
+<p>核心组件：</p>
+<ul><li>GPCR：七次跨膜受体。</li><li>三聚体 G 蛋白：alpha、beta、gamma 三个亚基。</li><li>alpha 亚基结合 GDP/GTP，并具有 GTPase 活性。</li></ul>
+<h3 id="gpcr-激活循环">GPCR 激活循环</h3>
+<p>1. 配体结合 GPCR。 2. GPCR 构象改变。 3. GPCR 作为 GEF，促进 G alpha 释放 GDP、结合 GTP。 4. G alpha-GTP 与 G beta-gamma 分离。 5. G alpha-GTP 或 G beta-gamma 调控效应蛋白。 6. G alpha 水解 GTP 为 GDP，信号关闭并重新组装三聚体。</p>
+<h2 id="九、gpcr-camp-pka-通路">九、GPCR-cAMP-PKA 通路</h2>
+<p>在 Gs 型 GPCR 通路中：</p>
+<p>1. 配体激活 GPCR。 2. G alpha s 激活腺苷酸环化酶 adenylyl cyclase。 3. ATP 转化为 cAMP。 4. cAMP 激活 PKA。 5. PKA 磷酸化下游蛋白。</p>
+<p>PKA 可以产生快速响应，例如改变代谢酶活性；也可以进入细胞核，通过 CREB 等转录因子改变基因表达。</p>
+<p>这说明同一条通路既能快，也能慢，取决于下游靶标。</p>
+<h2 id="十、gpcr-调控离子通道">十、GPCR 调控离子通道</h2>
+<p>GPCR 可以通过 G beta-gamma 或第二信使调控离子通道。</p>
+<p>例子：</p>
+<ul><li>心肌细胞中，乙酰胆碱通过 Gi beta-gamma 打开 K+ 通道，使心率下降。</li><li>嗅觉中，气味分子激活 GPCR，引发 cAMP 升高，打开 cAMP 门控阳离子通道，使嗅觉神经元去极化。</li></ul>
+<h2 id="十一、视觉信号与信号放大">十一、视觉信号与信号放大</h2>
+<p>光转导 phototransduction 是 GPCR 级联放大的经典例子。</p>
+<p>一个光子激活 rhodopsin 后，可以通过 transducin 和 PDE 等酶级联影响大量下游分子，使微弱信号被放大。</p>
+<p>这里要记住一个核心原则：<strong>酶促级联可以强烈放大信号，因为一个活化酶可以作用于多个底物。</strong></p>
+<h2 id="十二、gpcr-gq-plc-ip3dagca2+-通路">十二、GPCR-Gq-PLC-IP3/DAG/Ca2+ 通路</h2>
+<p>Gq 型 GPCR 激活 PLC-beta。</p>
+<p>PLC-beta 切割质膜内叶的 PI(4,5)P2，产生两个信号分子：</p>
+<ul><li>IP3：扩散到胞质，结合 ER 膜上的 IP3 receptor，促进 Ca2+ 释放。</li><li>DAG：留在质膜上，与 Ca2+ 一起激活 PKC。</li></ul>
+<p>因此 Gq 通路把膜脂质信号、Ca2+ 信号和蛋白磷酸化连接起来。</p>
+<h2 id="十三、ca2+-与-calmodulin">十三、Ca2+ 与 calmodulin</h2>
+<p>胞质 Ca2+ 平时维持极低水平，因此 Ca2+ 短暂升高具有强信号意义。</p>
+<p>细胞保持低胞质 Ca2+ 的方式包括：</p>
+<ul><li>Ca2+ 泵把 Ca2+ 泵出细胞。</li><li>SERCA 把 Ca2+ 泵入 ER。</li><li>线粒体可摄取部分 Ca2+。</li><li>Ca2+ 结合蛋白缓冲胞质 Ca2+。</li><li>通道关闭后 Ca2+ 信号迅速消退。</li></ul>
+<p>Calmodulin 是重要 Ca2+ 传感器，含 4 个 Ca2+ 结合位点。结合 Ca2+ 后构象改变，进而调控多种靶蛋白。</p>
+<p>CaM-kinase II 是神经系统中特别重要的 Ca2+/calmodulin 依赖蛋白激酶，可对 Ca2+ 振荡频率产生不同响应，因此被称为频率解码器之一。</p>
+<h2 id="十四、no-cgmp-信号">十四、NO-cGMP 信号</h2>
+<p>NO 是一种气体信号分子，可以穿过膜扩散。</p>
+<p>血管舒张中的经典通路：</p>
+<p>1. 内皮细胞产生 NO。 2. NO 扩散到血管平滑肌细胞。 3. NO 激活可溶性鸟苷酸环化酶 guanylyl cyclase。 4. cGMP 升高。 5. 平滑肌松弛，血管扩张。</p>
+<p>硝酸甘油治疗心绞痛的机制与 NO/cGMP 促进血管舒张有关，从而减少心脏负荷。</p>
+<h2 id="十五、gpcr-的关闭grk-与-arrestin">十五、GPCR 的关闭：GRK 与 arrestin</h2>
+<p>GPCR 不能一直开着。</p>
+<p>常见关闭机制：</p>
+<p>1. G alpha 水解 GTP。 2. 第二信使被降解，如 cAMP 被 phosphodiesterase 降解。 3. 受体被 GRK 磷酸化。 4. 磷酸化受体招募 arrestin。 5. Arrestin 阻止 G 蛋白继续结合，也可促进受体内吞。</p>
+<p>这就是受体脱敏 desensitization 的重要机制。</p>
+<h2 id="十六、rtk受体酪氨酸激酶">十六、RTK：受体酪氨酸激酶</h2>
+<p>RTK receptor tyrosine kinase 是许多生长因子的受体。</p>
+<p>结构特点：</p>
+<ul><li>胞外配体结合结构域。</li><li>单次跨膜结构域。</li><li>胞内酪氨酸激酶结构域。</li></ul>
+<p>配体包括 EGF、PDGF、FGF、VEGF、NGF、insulin/IGF 等。</p>
+<h3 id="rtk-激活机制">RTK 激活机制</h3>
+<p>1. 配体结合促进受体二聚化或构象重排。 2. 胞内激酶结构域互相磷酸化。 3. 自磷酸化增强激酶活性。 4. 磷酸化酪氨酸作为 docking site 招募下游信号蛋白。</p>
+<p>RTK 的磷酸化有双重作用：既增强自身激酶活性，又创造下游蛋白结合位点。</p>
+<h2 id="十七、rtk-ras-mapk-通路">十七、RTK-Ras-MAPK 通路</h2>
+<p>RTK 常通过 Ras 传递信号。</p>
+<p>经典路线：</p>
+<p>1. RTK 被激活并自磷酸化。 2. Grb2 通过 SH2 结构域结合磷酸酪氨酸。 3. Grb2 招募 SOS。 4. SOS 是 Ras-GEF，促使 Ras-GDP 变为 Ras-GTP。 5. Ras-GTP 激活 Raf。 6. Raf 激活 MEK。 7. MEK 激活 ERK/MAPK。 8. ERK 调控胞质蛋白和细胞核转录因子。</p>
+<p>Ras 是小 GTPase，GTP 结合时活化，GDP 结合时失活。很多癌症与 Ras 或 RTK 通路异常激活有关。</p>
+<h2 id="十八、pi3k-akt-通路">十八、PI3K-AKT 通路</h2>
+<p>RTK 也可激活 PI3K。</p>
+<p>PI3K 把 PI(4,5)P2 转化为 PI(3,4,5)P3。PIP3 招募带 PH 结构域的蛋白，如 Akt 和 PDK1。</p>
+<p>AKT 通路常促进：</p>
+<ul><li>细胞生长。</li><li>细胞存活。</li><li>葡萄糖代谢。</li><li>蛋白合成。</li></ul>
+<p>胰岛素和 IGF 信号常通过 PI3K-AKT 通路调控代谢和生长。</p>
+<p>PTEN 可把 PIP3 去磷酸化，抑制该通路。PTEN 缺失会造成生长和存活信号过强。</p>
+<h2 id="十九、gpcr-与-rtk-通路会交叉">十九、GPCR 与 RTK 通路会交叉</h2>
+<p>信号通路不是孤立管道。GPCR 和 RTK 都可以影响：</p>
+<ul><li>MAPK 通路。</li><li>PI3K-AKT 通路。</li><li>PLC-Ca2+ 通路。</li><li>离子通道和细胞骨架。</li></ul>
+<p>因此细胞响应往往是网络行为，而不是单一路径结果。</p>
+<h2 id="二十、细胞因子受体与-jak-stat">二十、细胞因子受体与 JAK-STAT</h2>
+<p>许多细胞因子 receptor 本身没有酪氨酸激酶结构域，而是结合 JAK 激酶。</p>
+<p>JAK-STAT 通路逻辑非常直接：</p>
+<p>1. 细胞因子结合受体。 2. 受体二聚化或构象改变。 3. 受体相关 JAK 互相激活。 4. JAK 磷酸化受体尾部。 5. STAT 通过 SH2 结构域结合受体。 6. STAT 被 JAK 磷酸化。 7. STAT 二聚化。 8. STAT 进入细胞核调控基因表达。</p>
+<p>这条通路常见于免疫、炎症和造血调控。</p>
+<h2 id="二十一、tgf-beta-信号">二十一、TGF-beta 信号</h2>
+<p>TGF-beta 受体是丝氨酸/苏氨酸激酶受体。</p>
+<p>基本逻辑：</p>
+<p>1. TGF-beta 结合 II 型受体。 2. II 型受体招募并磷酸化 I 型受体。 3. I 型受体磷酸化 Smad 蛋白。 4. Smad 复合物进入细胞核。 5. 调控基因表达。</p>
+<p>TGF-beta 信号在发育、细胞外基质生成、免疫调控和肿瘤中都有重要作用。</p>
+<h2 id="二十二、受调控蛋白切割与转录活性">二十二、受调控蛋白切割与转录活性</h2>
+<p>课件把 NF-kB、Notch、Hedgehog、Wnt 放在一组，是因为这些通路都常通过调控转录因子的可用性或定位来改变基因表达。</p>
+<p>它们在胚胎发育、免疫炎症和组织稳态中非常重要。</p>
+<h2 id="二十三、nf-kb-信号">二十三、NF-kB 信号</h2>
+<p>NF-kB 是炎症和免疫反应中的关键转录因子。</p>
+<p>静息状态下：</p>
+<ul><li>NF-kB 被 IkB 结合并滞留在胞质。</li></ul>
+<p>激活后：</p>
+<p>1. 炎症信号激活 IKK。 2. IKK 磷酸化 IkB。 3. IkB 被泛素化并由蛋白酶体降解。 4. NF-kB 暴露核定位信号并进入细胞核。 5. 激活炎症和免疫相关基因。</p>
+<p>核心记忆：<strong>NF-kB 的关键是解除抑制蛋白 IkB 的束缚。</strong></p>
+<h2 id="二十四、notch-信号">二十四、Notch 信号</h2>
+<p>Notch 是接触依赖信号的典型代表。</p>
+<p>基本逻辑：</p>
+<p>1. 邻近细胞膜上的 Delta/Jagged 结合 Notch。 2. Notch 发生连续蛋白切割。 3. Notch intracellular domain, NICD 被释放。 4. NICD 进入细胞核，与转录调控复合物一起改变基因表达。</p>
+<p>Notch 常用于相邻细胞之间的命运分化，尤其在发育中很重要。</p>
+<h2 id="二十五、hedgehog-信号">二十五、Hedgehog 信号</h2>
+<p>Hedgehog 通路在发育模式形成中重要，并与 primary cilia 初级纤毛密切相关。</p>
+<p>简化逻辑：</p>
+<ul><li>没有 Hedgehog 时，Patched 抑制 Smoothened，Gli 转录因子被处理成抑制形式。</li><li>有 Hedgehog 时，Patched 抑制被解除，Smoothened 活化，Gli 以活化形式进入细胞核调控基因。</li></ul>
+<p>核心记忆：<strong>Hedgehog 通过解除 Patched 对 Smoothened 的抑制，改变 Gli 的状态。</strong></p>
+<h2 id="二十六、wntbeta-catenin-信号">二十六、Wnt/beta-catenin 信号</h2>
+<p>Canonical Wnt 通路的中心是 beta-catenin。</p>
+<p>没有 Wnt 时：</p>
+<ul><li>beta-catenin 被 destruction complex 磷酸化。</li><li>随后被泛素化降解。</li><li>Wnt 靶基因不被激活。</li></ul>
+<p>有 Wnt 时：</p>
+<p>1. Wnt 结合 Frizzled 和 LRP5/6。 2. destruction complex 被抑制。 3. beta-catenin 稳定积累。 4. beta-catenin 进入细胞核。 5. 与 TCF/LEF 等因子一起激活靶基因。</p>
+<p>核心记忆：<strong>Wnt 信号的关键结果是稳定 beta-catenin。</strong></p>
+<h2 id="二十七、核受体信号">二十七、核受体信号</h2>
+<p>核受体 nuclear receptors 的特殊之处是：它们既是配体受体，也是转录因子。</p>
+<p>共同结构域：</p>
+<ul><li>ligand-binding domain</li><li>DNA-binding domain</li><li>transactivation domain</li></ul>
+<p>核受体常作为同源二聚体或异源二聚体工作，结合特定 DNA response element。</p>
+<p>两类典型核受体：</p>
+<ul><li>甾体激素受体：常在配体结合后从胞质进入核内。</li><li>非甾体核受体：如甲状腺激素受体、维甲酸受体，常与 DNA 结合并受配体调控。</li></ul>
+<p>核受体响应通常较慢，因为它们主要通过改变转录来发挥作用。但影响可以很持久。</p>
+<h2 id="二十八、快速响应与慢速响应">二十八、快速响应与慢速响应</h2>
+<p>细胞信号响应大致分两类：</p>
+<h3 id="快速响应">快速响应</h3>
+<p>通过改变已有蛋白功能实现。</p>
+<p>例如：</p>
+<ul><li>打开离子通道。</li><li>磷酸化代谢酶。</li><li>改变细胞骨架。</li></ul>
+<p>时间尺度：秒到分钟。</p>
+<h3 id="慢速响应">慢速响应</h3>
+<p>通过改变基因表达和蛋白合成实现。</p>
+<p>例如：</p>
+<ul><li>诱导细胞分化。</li><li>促进增殖。</li><li>改变代谢程序。</li></ul>
+<p>时间尺度：分钟到小时甚至更久。</p>
+<h2 id="二十九、同一信号为什么有多效性">二十九、同一信号为什么有多效性</h2>
+<p>一个信号分子可以在不同细胞中产生不同效果，称为 pleiotropic action。</p>
+<p>原因包括：</p>
+<ul><li>不同细胞表达不同受体。</li><li>同一受体连接不同下游通路。</li><li>不同细胞有不同转录因子背景。</li><li>信号强度、持续时间和空间位置不同。</li><li>其他信号同时存在，改变最终响应。</li></ul>
+<p>所以不要把信号分子理解成固定命令。更准确地说，信号分子提供输入，细胞内部网络决定输出。</p>
+<h2 id="三十、常见误区">三十、常见误区</h2>
+<ul><li>误区一：信号通路是单线图。真实细胞中通路交叉、反馈和空间组织都很重要。</li><li>误区二：受体激活一定只改变基因表达。很多响应是快速改变已有蛋白活性。</li><li>误区三：第二信使越多越好。信号必须被及时清除，否则会造成失控。</li><li>误区四：正反馈一定好，负反馈一定是关闭。正反馈常做开关，负反馈常做适应和稳态。</li><li>误区五：检测到磷酸化就证明功能。仍需要因果验证。</li><li>误区六：GPCR、RTK、JAK-STAT 是互不相关的通路。它们下游常汇入 MAPK、PI3K、Ca2+ 等共同模块。</li></ul>
+<h2 id="三十一、你必须会的关键词">三十一、你必须会的关键词</h2>
+<ul><li>endocrine signaling</li><li>paracrine signaling</li><li>synaptic signaling</li><li>contact-dependent signaling</li><li>receptor activation</li><li>signal transduction</li><li>second messenger</li><li>cAMP</li><li>cGMP</li><li>IP3</li><li>DAG</li><li>Ca2+</li><li>protein kinase</li><li>protein phosphatase</li><li>GTPase switch</li><li>GPCR</li><li>trimeric G protein</li><li>PKA</li><li>PLC-beta</li><li>calmodulin</li><li>CaM kinase II</li><li>nitric oxide</li><li>GRK</li><li>arrestin</li><li>RTK</li><li>Ras</li><li>MAPK</li><li>PI3K-AKT</li><li>cytokine receptor</li><li>JAK-STAT</li><li>TGF-beta</li><li>Smad</li><li>NF-kB</li><li>Notch</li><li>Hedgehog</li><li>Wnt</li><li>beta-catenin</li><li>nuclear receptor</li></ul>
+<h2 id="三十二、自测题">三十二、自测题</h2>
+<p>1. 内分泌、旁分泌、突触信号和接触依赖信号如何区分？ 2. 一条完整信号通路为什么必须包含信号终止？ 3. 水溶性信号和脂溶性信号的受体位置有何不同？ 4. 为什么 cAMP、Ca2+、IP3 适合作为第二信使？ 5. GTPase 开关如何被 GEF 和 GAP 调控？ 6. GPCR 激活三聚体 G 蛋白的步骤是什么？ 7. Gs-cAMP-PKA 和 Gq-PLC-IP3/DAG 通路分别产生什么结果？ 8. Ca2+ 为什么能作为强信号？ 9. RTK 激活后，磷酸化酪氨酸有什么作用？ 10. Ras-MAPK 通路如何从受体传到细胞核？ 11. JAK-STAT 通路为什么比很多通路更“直接”？ 12. NF-kB、Notch、Wnt 信号各自最核心的调控点是什么？ 13. 核受体为什么既是受体又是转录因子？ 14. 为什么同一个信号分子在不同细胞中会产生不同反应？</p>
+<h2 id="三十三、考前速记版">三十三、考前速记版</h2>
+<p>细胞通讯包括内分泌、旁分泌、突触信号和接触依赖信号。信号通路一般经历受体激活、信号转导、细胞响应和信号终止。GPCR 通过三聚体 G 蛋白调控 cAMP、Ca2+、离子通道等；RTK 通过自磷酸化招募下游蛋白，常激活 Ras-MAPK 和 PI3K-AKT；细胞因子受体常用 JAK-STAT；TGF-beta 用 Smad；NF-kB、Notch、Hedgehog、Wnt 通过调控转录因子的可用性或定位改变基因表达；核受体直接把脂溶性配体信号转化为转录调控。反馈、通路交叉和细胞类型背景决定最终响应。</p><div class="pager">
+      <a href="12_intracellular_vesicular_traffic.html">上一讲：Lecture 12: 细胞内囊泡运输 (Intracellular Vesicular Traffic)</a>
+      <span></span>
+    </div></div>
+        <aside class="toc"><strong>本讲目录</strong><a class="toc-level-2" href="#这讲的核心问题">这讲的核心问题</a><a class="toc-level-2" href="#一、什么是细胞通讯">一、什么是细胞通讯</a><a class="toc-level-2" href="#二、动物细胞间信号的四种传播方式">二、动物细胞间信号的四种传播方式</a><a class="toc-level-3" href="#1-内分泌-endocrine-signaling">1. 内分泌 endocrine signaling</a><a class="toc-level-3" href="#2-旁分泌-paracrine-signaling">2. 旁分泌 paracrine signaling</a><a class="toc-level-3" href="#3-突触信号-synaptic-signaling">3. 突触信号 synaptic signaling</a><a class="toc-level-3" href="#4-接触依赖信号-contact-dependent-signaling">4. 接触依赖信号 contact-dependent signaling</a><a class="toc-level-2" href="#三、细胞信号传导的四步">三、细胞信号传导的四步</a><a class="toc-level-2" href="#四、受体在哪里">四、受体在哪里</a><a class="toc-level-3" href="#1-水溶性信号分子">1. 水溶性信号分子</a><a class="toc-level-3" href="#2-脂溶性信号分子">2. 脂溶性信号分子</a><a class="toc-level-2" href="#五、胞内信号通路的常见模块">五、胞内信号通路的常见模块</a><a class="toc-level-3" href="#1-第二信使-second-messengers">1. 第二信使 second messengers</a><a class="toc-level-3" href="#2-磷酸化开关">2. 磷酸化开关</a><a class="toc-level-3" href="#3-gtpase-开关">3. GTPase 开关</a><a class="toc-level-3" href="#4-信号复合物组装">4. 信号复合物组装</a><a class="toc-level-2" href="#六、反馈调控与信号整合">六、反馈调控与信号整合</a><a class="toc-level-3" href="#1-正反馈-positive-feedback">1. 正反馈 positive feedback</a><a class="toc-level-3" href="#2-负反馈-negative-feedback">2. 负反馈 negative feedback</a><a class="toc-level-3" href="#3-多信号-coincidence-detection">3. 多信号 coincidence detection</a><a class="toc-level-2" href="#七、研究细胞信号的常用思路">七、研究细胞信号的常用思路</a><a class="toc-level-2" href="#八、gpcr七次跨膜受体与三聚体-g-蛋白">八、GPCR：七次跨膜受体与三聚体 G 蛋白</a><a class="toc-level-3" href="#gpcr-激活循环">GPCR 激活循环</a><a class="toc-level-2" href="#九、gpcr-camp-pka-通路">九、GPCR-cAMP-PKA 通路</a><a class="toc-level-2" href="#十、gpcr-调控离子通道">十、GPCR 调控离子通道</a><a class="toc-level-2" href="#十一、视觉信号与信号放大">十一、视觉信号与信号放大</a><a class="toc-level-2" href="#十二、gpcr-gq-plc-ip3dagca2+-通路">十二、GPCR-Gq-PLC-IP3/DAG/Ca2+ 通路</a><a class="toc-level-2" href="#十三、ca2+-与-calmodulin">十三、Ca2+ 与 calmodulin</a><a class="toc-level-2" href="#十四、no-cgmp-信号">十四、NO-cGMP 信号</a><a class="toc-level-2" href="#十五、gpcr-的关闭grk-与-arrestin">十五、GPCR 的关闭：GRK 与 arrestin</a><a class="toc-level-2" href="#十六、rtk受体酪氨酸激酶">十六、RTK：受体酪氨酸激酶</a><a class="toc-level-3" href="#rtk-激活机制">RTK 激活机制</a><a class="toc-level-2" href="#十七、rtk-ras-mapk-通路">十七、RTK-Ras-MAPK 通路</a><a class="toc-level-2" href="#十八、pi3k-akt-通路">十八、PI3K-AKT 通路</a><a class="toc-level-2" href="#十九、gpcr-与-rtk-通路会交叉">十九、GPCR 与 RTK 通路会交叉</a><a class="toc-level-2" href="#二十、细胞因子受体与-jak-stat">二十、细胞因子受体与 JAK-STAT</a></aside>
+      </div>
+    </article>
+  </main>
+  <script src="../assets/app.js"></script>
+</body>
+</html>

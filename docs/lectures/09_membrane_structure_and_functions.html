@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="第9讲学习讲义：细胞膜结构与功能 对应课件：lecture09 Membrane Structure Functions.pdf 这一讲的主线是： 细胞膜不是一层被动的包裹膜，而是由脂质、蛋白质和糖链共同构成的动态功能平台。 它既定义细胞和细胞器的边界，也负责选择性通透、信号感知、能量转化、细胞识别和细胞骨架连接。 这讲的核心问题 为什么脂质能自发形成双分子层？ 真核细胞膜主要由哪些脂质组成？ 质膜两侧为什么脂质分布不对称？ 膜蛋白如何">
+  <title>第9讲学习讲义：细胞膜结构与功能 | ABS 复习讲义</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <button class="menu-button" id="menuButton" aria-label="打开目录">目录</button>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark">ABS</span>
+      <span>
+        <strong>生物学复习讲义</strong>
+        <em>Advanced Biological Sciences</em>
+      </span>
+    </a>
+    <label class="search">
+      <span>搜索讲义</span>
+      <input id="searchInput" type="search" placeholder="例如 Ras / 膜电位 / DNA 复制">
+    </label>
+    <div class="search-results" id="searchResults"></div>
+    <nav class="nav"><a class="nav-link " href="01_cells_and_genomes.html">
+      <span>01</span>
+      <strong>Cells and Genomes</strong>
+    </a><a class="nav-link " href="02_cell_chemistry.html">
+      <span>02</span>
+      <strong>Cell Chemistry</strong>
+    </a><a class="nav-link " href="03_protein_structure_and_function.html">
+      <span>03</span>
+      <strong>Protein Structure and Function</strong>
+    </a><a class="nav-link " href="04_dna_chromosomes_and_genome.html">
+      <span>04</span>
+      <strong>DNA, Chromosomes and Genome</strong>
+    </a><a class="nav-link " href="05_dna_replication_repair_and_recombination.html">
+      <span>05</span>
+      <strong>DNA Replication, Repair, and Recombination</strong>
+    </a><a class="nav-link " href="06_from_dna_to_protein.html">
+      <span>06</span>
+      <strong>From DNA to Protein</strong>
+    </a><a class="nav-link " href="07_control_of_gene_expression.html">
+      <span>07</span>
+      <strong>Control of Gene Expression</strong>
+    </a><a class="nav-link " href="08_manipulating_proteins_dna_rna.html">
+      <span>08</span>
+      <strong>Manipulating Proteins, DNA and RNA</strong>
+    </a><a class="nav-link active" href="#">
+      <span>09</span>
+      <strong>细胞膜结构与功能</strong>
+    </a><a class="nav-link " href="10_cross_membrane_transport.html">
+      <span>10</span>
+      <strong>跨膜转运与膜电学性质</strong>
+    </a><a class="nav-link " href="11_intracellular_compartments_and_protein_sorting.html">
+      <span>11</span>
+      <strong>细胞内区室与蛋白质分选（详细版）</strong>
+    </a><a class="nav-link " href="12_intracellular_vesicular_traffic.html">
+      <span>12</span>
+      <strong>细胞内囊泡运输 (Intracellular Vesicular Traffic)</strong>
+    </a><a class="nav-link " href="13_cell_communication.html">
+      <span>13</span>
+      <strong>细胞通讯</strong>
+    </a></nav>
+  </aside>
+  <main class="page">
+    <article class="article">
+      <div class="article-head">
+        <a class="back-home" href="../index.html">返回首页</a>
+        <p class="lecture-number">Lecture 09</p>
+      </div>
+      <div class="article-layout">
+        <div class="content"><h1 id="第9讲学习讲义细胞膜结构与功能">第9讲学习讲义：细胞膜结构与功能</h1>
+<p>对应课件：<code>lecture09_Membrane_Structure_Functions.pdf</code></p>
+<p>这一讲的主线是：<strong>细胞膜不是一层被动的包裹膜，而是由脂质、蛋白质和糖链共同构成的动态功能平台。</strong> 它既定义细胞和细胞器的边界，也负责选择性通透、信号感知、能量转化、细胞识别和细胞骨架连接。</p>
+<h2 id="这讲的核心问题">这讲的核心问题</h2>
+<ul><li>为什么脂质能自发形成双分子层？</li><li>真核细胞膜主要由哪些脂质组成？</li><li>质膜两侧为什么脂质分布不对称？</li><li>膜蛋白如何嵌入、锚定或附着在膜上？</li><li>膜为什么具有流动性，又为什么不是完全均一的液体？</li><li>如何研究和重组膜蛋白？</li></ul>
+<h2 id="一、细胞膜的五大功能">一、细胞膜的五大功能</h2>
+<p>细胞膜的第一功能是形成边界。脂质双分子层对离子、蛋白质和核酸等亲水分子高度不通透，因此细胞可以把内部环境和外界隔开。</p>
+<p>但膜远远不只是边界，它还承担五类功能：</p>
+<ul><li><strong>区室化</strong>：质膜包围细胞，内膜系统把真核细胞内部划分为不同功能区室。</li><li><strong>门卫作用</strong>：转运蛋白选择性地让特定分子进出细胞。</li><li><strong>信号感知</strong>：受体蛋白识别外界信号并启动胞内反应。</li><li><strong>支架连接</strong>：膜蛋白连接细胞外基质、相邻细胞和细胞骨架。</li><li><strong>能量转化</strong>：膜上的转运系统建立离子梯度，驱动 ATP 合成或产生电信号。</li></ul>
+<p>所以你理解细胞膜时，不要只记“磷脂双分子层”。更准确地说，膜是一个<strong>可流动、可分区、可调控的二维反应平台</strong>。</p>
+<h2 id="二、脂质为什么会自发形成膜">二、脂质为什么会自发形成膜</h2>
+<p>膜脂是两亲性分子：一端亲水，一端疏水。放入水中后，疏水尾部会尽量避开水，亲水头部朝向水相。</p>
+<p>脂质形成什么结构，取决于分子形状：</p>
+<div class="table-wrap"><table><thead><tr><th>分子形状</th><th>常见结构</th><th>直觉理解</th></tr></thead><tbody><tr><td>圆锥形，头大尾小</td><td>胶束 micelle</td><td>尾巴聚在内部，头部朝外</td></tr><tr><td>圆柱形，头尾截面积相近</td><td>脂质双分子层 lipid bilayer</td><td>两层尾部相对，头部朝水</td></tr></tbody></table></div>
+<p>双分子层还会自发封闭成囊泡，因为平面边缘会把疏水尾部暴露给水，这在能量上不利。封闭成球形结构后，疏水尾部被埋起来，体系更稳定。</p>
+<p>这个物理事实非常重要：<strong>细胞膜的形成不需要复杂模板，脂质本身的化学性质就足以驱动膜的自组装。</strong></p>
+<h2 id="三、真核细胞膜的三大脂质组分">三、真核细胞膜的三大脂质组分</h2>
+<p>真核细胞质膜主要由三类脂质组成：</p>
+<ul><li>磷脂 phospholipids</li><li>固醇 sterols，动物细胞中主要是胆固醇 cholesterol</li><li>糖脂 glycolipids</li></ul>
+<h3 id="1-磷脂膜的主体">1. 磷脂：膜的主体</h3>
+<p>磷脂大致分为两类：</p>
+<ul><li><strong>磷酸甘油酯 phosphoglycerides</strong>：以甘油为骨架，是膜中最丰富的磷脂。</li><li><strong>鞘磷脂 sphingomyelin</strong>：以鞘氨醇 sphingosine 为骨架，常富集在质膜外叶。</li></ul>
+<p>常见磷酸甘油酯包括：</p>
+<div class="table-wrap"><table><thead><tr><th>名称</th><th>缩写</th><th>头基电荷</th><th>常见分布</th></tr></thead><tbody><tr><td>磷脂酰胆碱</td><td>PC</td><td>中性</td><td>主要在外叶</td></tr><tr><td>磷脂酰乙醇胺</td><td>PE</td><td>中性</td><td>主要在内叶</td></tr><tr><td>磷脂酰丝氨酸</td><td>PS</td><td>负电</td><td>主要在内叶</td></tr><tr><td>磷脂酰肌醇</td><td>PI</td><td>负电</td><td>几乎全部在内叶</td></tr></tbody></table></div>
+<p>脂肪酸尾部也影响膜性质。饱和尾巴更直，容易紧密排列；不饱和尾巴含顺式双键，会形成弯折，使脂质难以紧密堆积，从而提高膜流动性。</p>
+<h3 id="2-胆固醇膜流动性的缓冲器">2. 胆固醇：膜流动性的缓冲器</h3>
+<p>胆固醇具有刚性的四环结构，插在磷脂尾部之间。它对膜流动性的影响具有双向性：</p>
+<ul><li>低温时，胆固醇阻止脂肪酸尾部紧密排列，防止膜凝固。</li><li>高温时，胆固醇限制尾部过度运动，降低膜过度流动。</li></ul>
+<p>所以胆固醇不是简单地“增加”或“降低”流动性，而是让膜维持在合适的物理状态。</p>
+<h3 id="3-糖脂细胞表面的识别层">3. 糖脂：细胞表面的识别层</h3>
+<p>糖脂含有糖基团，在动物细胞中多以鞘脂为基础。它们主要位于质膜外叶，尤其在神经细胞中丰富。</p>
+<p>常见类型：</p>
+<ul><li><strong>脑苷脂 cerebroside</strong>：含单个糖基，通常电荷中性。</li><li><strong>神经节苷脂 ganglioside</strong>：含多个糖基，常带有唾液酸，因此带负电。</li></ul>
+<p>糖脂的功能包括保护细胞表面、参与细胞识别，并可作为病原体或毒素的受体。例如 GM1 是霍乱毒素的受体。</p>
+<h2 id="四、不同膜的脂质组成不同">四、不同膜的脂质组成不同</h2>
+<p>不同细胞器膜并不是同一种“通用膜”。它们的脂质组成反映各自功能。</p>
+<p>例如：</p>
+<ul><li>细菌膜通常没有胆固醇，PE 含量高。</li><li>髓磷脂糖脂含量很高，适合神经轴突绝缘。</li><li>线粒体内膜具有特殊脂质组成，适合能量转化。</li><li>ER 膜是很多脂质合成的起点。</li></ul>
+<p>这说明膜脂不仅是结构材料，也参与决定细胞器身份和功能。</p>
+<h2 id="五、脂质合成与转运">五、脂质合成与转运</h2>
+<p>大多数膜脂在 ER 上合成，包括磷脂、胆固醇和神经酰胺等。</p>
+<p>脂质从 ER 到其他膜区室主要有三种路线：</p>
+<ul><li><strong>囊泡转运</strong>：脂质随囊泡出芽和融合移动。</li><li><strong>膜接触位点</strong>：两个细胞器膜靠得很近，脂质可在接触点直接转移。</li><li><strong>胞质脂质转运蛋白</strong>：蛋白从一个膜中提取脂质，再把它送到另一个膜。</li></ul>
+<p>注意，膜脂转运并不是随机平均分配。细胞需要把特定脂质富集在特定膜、特定叶层和特定微域中。</p>
+<h2 id="六、质膜脂质的不对称性">六、质膜脂质的不对称性</h2>
+<p>质膜外叶和内叶组成不同：</p>
+<ul><li>外叶：糖脂、PC、鞘磷脂较多。</li><li>内叶：PS、PE、PI 较多。</li><li>胆固醇：两侧大致都有。</li></ul>
+<p>脂质自发从一个叶层翻到另一个叶层非常慢，因为极性头基要穿过疏水核心，能量代价高。细胞依赖三类转位酶维持或改变不对称性：</p>
+<div class="table-wrap"><table><thead><tr><th>转位酶</th><th>方向</th><th>能量</th><th>功能</th></tr></thead><tbody><tr><td>Flippase 翻转酶</td><td>外叶到内叶</td><td>需要 ATP</td><td>将 PS/PE 维持在内叶</td></tr><tr><td>Floppase 外翻酶</td><td>内叶到外叶</td><td>需要 ATP</td><td>将特定脂质转到外叶</td></tr><tr><td>Scramblase 扰乱酶</td><td>双向随机</td><td>常受 Ca2+ 调控</td><td>破坏不对称性</td></tr></tbody></table></div>
+<p>一个常考例子是凋亡。正常细胞中 PS 位于内叶；凋亡时 scramblase 活化，PS 暴露在外叶，成为巨噬细胞识别的“吃我”信号。</p>
+<h2 id="七、磷脂酰肌醇与膜信号">七、磷脂酰肌醇与膜信号</h2>
+<p>PI 位于质膜内叶，它的肌醇环可以被不同激酶磷酸化，生成多种 PIP 脂质。</p>
+<p>重要例子：</p>
+<ul><li>PI(4,5)P2 可被 PLC 切割为 IP3 和 DAG。</li><li>IP3 促进 ER 释放 Ca2+。</li><li>DAG 留在膜上并激活 PKC。</li><li>PI(3,4,5)P3 可招募带 PH 结构域的信号蛋白，如 Akt。</li><li>PTEN 可去磷酸化 PI(3,4,5)P3，是重要肿瘤抑制因子。</li></ul>
+<p>所以 PI 类脂质虽然含量不高，却是膜上信号组织的关键坐标。</p>
+<h2 id="八、脂滴储存脂质的特殊细胞器">八、脂滴：储存脂质的特殊细胞器</h2>
+<p>脂滴 lipid droplet 由磷脂单分子层包裹中性脂质核心，核心主要含三酰甘油 TAG 和胆固醇酯 CE。</p>
+<p>它们从 ER 形成，功能包括：</p>
+<ul><li>储存能量。</li><li>缓冲脂质毒性。</li><li>维持脂质稳态。</li><li>为膜合成和代谢提供脂质来源。</li></ul>
+<p>脂滴不是“油滴垃圾堆”，而是可调控的代谢细胞器。</p>
+<h2 id="九、膜蛋白的功能">九、膜蛋白的功能</h2>
+<p>膜的很多关键功能由膜蛋白执行，包括：</p>
+<ul><li>转运：离子通道、转运体、泵。</li><li>受体：识别激素、生长因子、神经递质等。</li><li>酶：把反应限制在膜表面或特定细胞器上。</li><li>连接：把细胞外基质或相邻细胞连接到细胞骨架。</li><li>能量转换：如电子传递链和 ATP 合酶。</li><li>膜变形：参与囊泡形成、膜融合和细胞形态变化。</li></ul>
+<h2 id="十、膜蛋白的类型">十、膜蛋白的类型</h2>
+<h3 id="1-内在膜蛋白-integral-membrane-proteins">1. 内在膜蛋白 integral membrane proteins</h3>
+<p>内在膜蛋白与脂双层结合紧密，通常需要去污剂才能提取。</p>
+<p>常见形式：</p>
+<ul><li><strong>跨膜蛋白</strong>：一段或多段跨过整个脂双层。</li><li><strong>单层嵌入蛋白</strong>：只嵌入一个叶层。</li><li><strong>脂质锚定蛋白</strong>：通过共价连接的脂质锚定位于膜上。</li></ul>
+<p>脂质锚包括：</p>
+<ul><li>Myristoyl anchor，常连在 N 端甘氨酸。</li><li>Palmitoyl anchor，常连在半胱氨酸。</li><li>Prenyl anchor，常见于 Ras、Rab 等小 G 蛋白。</li><li>GPI anchor，位于膜外叶，常见于细胞表面蛋白。</li></ul>
+<h3 id="2-外周膜蛋白-peripheral-membrane-proteins">2. 外周膜蛋白 peripheral membrane proteins</h3>
+<p>外周膜蛋白不插入疏水核心，而是通过非共价相互作用结合在膜表面，常可用高盐或改变 pH 洗脱。</p>
+<h2 id="十一、跨膜蛋白的结构特征">十一、跨膜蛋白的结构特征</h2>
+<p>多数跨膜蛋白用 alpha 螺旋穿过脂双层。一个跨膜 alpha 螺旋通常约 20-30 个氨基酸，富含疏水残基。</p>
+<p>跨膜区可以用疏水性图 hydropathy plot 预测：连续疏水残基会形成明显峰值。</p>
+<p>另一类跨膜结构是 beta 桶，常见于：</p>
+<ul><li>革兰氏阴性菌外膜。</li><li>线粒体外膜。</li><li>叶绿体外膜。</li></ul>
+<p>beta 桶可以形成孔蛋白、受体或转运相关结构。</p>
+<h2 id="十二、糖被与细胞识别">十二、糖被与细胞识别</h2>
+<p>细胞表面常覆盖糖链，形成糖被 glycocalyx。糖链来自糖蛋白和糖脂，并且总是位于细胞外侧或细胞器腔面。</p>
+<p>糖被的功能：</p>
+<ul><li>保护细胞表面。</li><li>增加润滑性。</li><li>参与细胞识别。</li><li>介导细胞黏附和免疫识别。</li></ul>
+<p>Lectins 是糖结合蛋白，能特异识别糖链。比如血管内皮和免疫细胞之间的识别就常依赖糖链和 lectin。</p>
+<h2 id="十三、膜的流动性">十三、膜的流动性</h2>
+<p>膜不是刚性壳，而是流体。脂质可以：</p>
+<ul><li>侧向扩散 lateral diffusion。</li><li>旋转 rotation。</li><li>弯曲 flexion。</li><li>很慢地跨叶层翻转 flip-flop。</li></ul>
+<p>影响流动性的因素：</p>
+<ul><li>不饱和脂肪酸越多，流动性越高。</li><li>脂肪酸链越短，流动性越高。</li><li>温度升高，流动性升高。</li><li>胆固醇起缓冲作用。</li></ul>
+<p>低温时膜可进入凝胶相，高温时进入液晶相。细胞需要把膜维持在合适的流动范围内，太硬或太软都不利于功能。</p>
+<h2 id="十四、脂质筏与膜微域">十四、脂质筏与膜微域</h2>
+<p>质膜并不是完全均一的二维液体。某些区域富含胆固醇、鞘磷脂和糖脂，形成更厚、更有序的微域，常称为脂质筏 lipid rafts。</p>
+<p>脂质筏可富集：</p>
+<ul><li>GPI 锚定蛋白。</li><li>某些跨膜受体。</li><li>Src 家族激酶等信号蛋白。</li></ul>
+<p>其功能是把相关分子集中在同一区域，提高信号传递和膜组织效率。</p>
+<h2 id="十五、膜蛋白移动为什么会受限制">十五、膜蛋白移动为什么会受限制</h2>
+<p>膜蛋白可以侧向扩散，但很多蛋白并不完全自由。</p>
+<p>限制机制包括：</p>
+<ul><li>蛋白自组装成大复合物。</li><li>与细胞外基质结合。</li><li>与细胞骨架结合。</li><li>被紧密连接等细胞连接限制在特定膜域。</li><li>被皮层细胞骨架形成的“围栏”限制。</li></ul>
+<p>红细胞中的 spectrin 网络就是经典例子。Spectrin、ankyrin、actin、band 3 等形成膜骨架，维持红细胞形态并限制膜蛋白扩散。</p>
+<h2 id="十六、研究膜流动性和膜蛋白的方法">十六、研究膜流动性和膜蛋白的方法</h2>
+<h3 id="1-frap">1. FRAP</h3>
+<p>FRAP 是 fluorescence recovery after photobleaching。实验思路是用荧光标记膜分子，用强光漂白一小块区域，然后观察周围未漂白分子扩散进入该区域的速度。</p>
+<p>它可以反映：</p>
+<ul><li>分子在膜平面内的扩散速度。</li><li>可移动分子的比例。</li></ul>
+<h3 id="2-细胞融合实验">2. 细胞融合实验</h3>
+<p>把人细胞和小鼠细胞融合，并用不同颜色标记膜蛋白。融合后初期两类膜蛋白分开，随后逐渐混合，说明膜蛋白可以在膜平面内侧向扩散。</p>
+<h3 id="3-单粒子追踪">3. 单粒子追踪</h3>
+<p>高速单粒子追踪可以看到膜蛋白不是简单自由扩散，而常在小范围内受限扩散，偶尔跳到相邻区域。</p>
+<h2 id="十七、去污剂与膜蛋白重组">十七、去污剂与膜蛋白重组</h2>
+<p>去污剂 detergent 是研究膜蛋白的重要工具。它们也是两亲性分子，能把膜脂溶解成混合胶束。</p>
+<p>常见类型：</p>
+<div class="table-wrap"><table><thead><tr><th>类型</th><th>代表</th><th>特点</th></tr></thead><tbody><tr><td>离子型</td><td>SDS</td><td>溶解力强，但会使蛋白变性</td></tr><tr><td>非离子型</td><td>Triton X-100、NP-40、beta-octyl glucoside</td><td>较温和，可保留部分蛋白活性</td></tr></tbody></table></div>
+<p>研究膜蛋白常需要功能重组：</p>
+<p>1. 用去污剂溶解膜。 2. 纯化目标膜蛋白。 3. 加入磷脂。 4. 去除去污剂。 5. 形成含功能蛋白的蛋白脂质体 proteoliposome。</p>
+<h3 id="纳米盘-nanodisc">纳米盘 nanodisc</h3>
+<p>Nanodisc 是一小片脂质双分子层，边缘由蛋白“腰带”包围，使其可溶于水。膜蛋白插入 nanodisc 后可更接近天然状态，因此常用于结构生物学，尤其是冷冻电镜研究。</p>
+<h2 id="十八、常见误区">十八、常见误区</h2>
+<ul><li>误区一：膜只是“脂质袋子”。实际上膜蛋白和糖链决定了大量功能。</li><li>误区二：所有脂质都只是结构材料。PI、PIP、DAG、鞘脂代谢物都可作为信号分子。</li><li>误区三：膜两侧脂质一样。质膜叶层不对称是重要功能基础。</li><li>误区四：膜越流动越好。流动性必须维持在合适范围。</li><li>误区五：膜蛋白都能自由移动。细胞骨架、细胞连接和微域会限制扩散。</li></ul>
+<h2 id="十九、你必须会的关键词">十九、你必须会的关键词</h2>
+<ul><li>amphipathic molecule</li><li>lipid bilayer</li><li>phosphoglyceride</li><li>sphingomyelin</li><li>cholesterol</li><li>glycolipid</li><li>lipid asymmetry</li><li>flippase</li><li>floppase</li><li>scramblase</li><li>phosphoinositide</li><li>lipid droplet</li><li>integral membrane protein</li><li>peripheral membrane protein</li><li>GPI anchor</li><li>glycocalyx</li><li>membrane fluidity</li><li>lipid raft</li><li>FRAP</li><li>detergent</li><li>nanodisc</li></ul>
+<h2 id="二十、自测题">二十、自测题</h2>
+<p>1. 为什么双尾磷脂更容易形成双分子层，而不是胶束？ 2. 胆固醇如何在低温和高温下分别影响膜流动性？ 3. 为什么 PS 暴露到质膜外叶可以作为凋亡信号？ 4. PI(4,5)P2 和 PI(3,4,5)P3 各自参与哪些信号事件？ 5. 内在膜蛋白和外周膜蛋白如何区分？ 6. alpha 螺旋跨膜区为什么富含疏水氨基酸？ 7. FRAP 实验能告诉我们什么，不能告诉我们什么？ 8. 为什么研究膜蛋白需要去污剂或 nanodisc？</p>
+<h2 id="二十一、考前速记版">二十一、考前速记版</h2>
+<p>膜的本质是两亲性脂质自组装成的双分子层。真核质膜主要含磷脂、胆固醇和糖脂；两侧脂质分布不对称，靠 flippase、floppase 和 scramblase 调控。膜蛋白有跨膜、单层嵌入、脂质锚定和外周结合等形式，是膜功能的主要执行者。膜具有流动性，但流动性受脂肪酸组成、温度、胆固醇和细胞骨架限制。脂质筏可富集信号分子。研究膜蛋白常用去污剂、蛋白脂质体和 nanodisc。</p><div class="pager">
+      <a href="08_manipulating_proteins_dna_rna.html">上一讲：第8讲学习讲义：Manipulating Proteins, DNA and RNA</a>
+      <a href="10_cross_membrane_transport.html">下一讲：第10讲学习讲义：跨膜转运与膜电学性质</a>
+    </div></div>
+        <aside class="toc"><strong>本讲目录</strong><a class="toc-level-2" href="#这讲的核心问题">这讲的核心问题</a><a class="toc-level-2" href="#一、细胞膜的五大功能">一、细胞膜的五大功能</a><a class="toc-level-2" href="#二、脂质为什么会自发形成膜">二、脂质为什么会自发形成膜</a><a class="toc-level-2" href="#三、真核细胞膜的三大脂质组分">三、真核细胞膜的三大脂质组分</a><a class="toc-level-3" href="#1-磷脂膜的主体">1. 磷脂：膜的主体</a><a class="toc-level-3" href="#2-胆固醇膜流动性的缓冲器">2. 胆固醇：膜流动性的缓冲器</a><a class="toc-level-3" href="#3-糖脂细胞表面的识别层">3. 糖脂：细胞表面的识别层</a><a class="toc-level-2" href="#四、不同膜的脂质组成不同">四、不同膜的脂质组成不同</a><a class="toc-level-2" href="#五、脂质合成与转运">五、脂质合成与转运</a><a class="toc-level-2" href="#六、质膜脂质的不对称性">六、质膜脂质的不对称性</a><a class="toc-level-2" href="#七、磷脂酰肌醇与膜信号">七、磷脂酰肌醇与膜信号</a><a class="toc-level-2" href="#八、脂滴储存脂质的特殊细胞器">八、脂滴：储存脂质的特殊细胞器</a><a class="toc-level-2" href="#九、膜蛋白的功能">九、膜蛋白的功能</a><a class="toc-level-2" href="#十、膜蛋白的类型">十、膜蛋白的类型</a><a class="toc-level-3" href="#1-内在膜蛋白-integral-membrane-proteins">1. 内在膜蛋白 integral membrane proteins</a><a class="toc-level-3" href="#2-外周膜蛋白-peripheral-membrane-proteins">2. 外周膜蛋白 peripheral membrane proteins</a><a class="toc-level-2" href="#十一、跨膜蛋白的结构特征">十一、跨膜蛋白的结构特征</a><a class="toc-level-2" href="#十二、糖被与细胞识别">十二、糖被与细胞识别</a><a class="toc-level-2" href="#十三、膜的流动性">十三、膜的流动性</a><a class="toc-level-2" href="#十四、脂质筏与膜微域">十四、脂质筏与膜微域</a><a class="toc-level-2" href="#十五、膜蛋白移动为什么会受限制">十五、膜蛋白移动为什么会受限制</a><a class="toc-level-2" href="#十六、研究膜流动性和膜蛋白的方法">十六、研究膜流动性和膜蛋白的方法</a><a class="toc-level-3" href="#1-frap">1. FRAP</a><a class="toc-level-3" href="#2-细胞融合实验">2. 细胞融合实验</a><a class="toc-level-3" href="#3-单粒子追踪">3. 单粒子追踪</a><a class="toc-level-2" href="#十七、去污剂与膜蛋白重组">十七、去污剂与膜蛋白重组</a><a class="toc-level-3" href="#纳米盘-nanodisc">纳米盘 nanodisc</a><a class="toc-level-2" href="#十八、常见误区">十八、常见误区</a><a class="toc-level-2" href="#十九、你必须会的关键词">十九、你必须会的关键词</a><a class="toc-level-2" href="#二十、自测题">二十、自测题</a><a class="toc-level-2" href="#二十一、考前速记版">二十一、考前速记版</a></aside>
+      </div>
+    </article>
+  </main>
+  <script src="../assets/app.js"></script>
+</body>
+</html>

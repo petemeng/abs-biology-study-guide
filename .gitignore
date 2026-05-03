@@ -1,0 +1,17 @@
+# Original course materials are kept local and are not published.
+*.pdf
+*.pptx
+*.docx
+
+# Extracted intermediate text
+_extracted_text/
+
+# Earlier local note drafts copied into notes/
+study_guides/
+lecture11_notes_v2.md
+Lecture12_*.md
+
+# Local/dev clutter
+node_modules/
+.DS_Store
+Thumbs.db

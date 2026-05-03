@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lecture 11: 细胞内区室与蛋白质分选（详细版） 课程：高等生物科学 南方科技大学 邓怿教授 预备知识：理解本讲需要的基础 0.1 蛋白质的基本结构回顾 蛋白质由氨基酸通过肽键（peptide bond）连接而成。每个氨基酸有一个氨基（ NH₂）和一个羧基（ COOH），连接后形成多肽链。多肽链有方向性： N 端 （游离氨基端）是合成起始端， C 端 （游离羧基端）是合成终止端。核糖体翻译 mRNA 时，总是从 N 端开始，向 ">
+  <title>Lecture 11: 细胞内区室与蛋白质分选（详细版） | ABS 复习讲义</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <button class="menu-button" id="menuButton" aria-label="打开目录">目录</button>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark">ABS</span>
+      <span>
+        <strong>生物学复习讲义</strong>
+        <em>Advanced Biological Sciences</em>
+      </span>
+    </a>
+    <label class="search">
+      <span>搜索讲义</span>
+      <input id="searchInput" type="search" placeholder="例如 Ras / 膜电位 / DNA 复制">
+    </label>
+    <div class="search-results" id="searchResults"></div>
+    <nav class="nav"><a class="nav-link " href="01_cells_and_genomes.html">
+      <span>01</span>
+      <strong>Cells and Genomes</strong>
+    </a><a class="nav-link " href="02_cell_chemistry.html">
+      <span>02</span>
+      <strong>Cell Chemistry</strong>
+    </a><a class="nav-link " href="03_protein_structure_and_function.html">
+      <span>03</span>
+      <strong>Protein Structure and Function</strong>
+    </a><a class="nav-link " href="04_dna_chromosomes_and_genome.html">
+      <span>04</span>
+      <strong>DNA, Chromosomes and Genome</strong>
+    </a><a class="nav-link " href="05_dna_replication_repair_and_recombination.html">
+      <span>05</span>
+      <strong>DNA Replication, Repair, and Recombination</strong>
+    </a><a class="nav-link " href="06_from_dna_to_protein.html">
+      <span>06</span>
+      <strong>From DNA to Protein</strong>
+    </a><a class="nav-link " href="07_control_of_gene_expression.html">
+      <span>07</span>
+      <strong>Control of Gene Expression</strong>
+    </a><a class="nav-link " href="08_manipulating_proteins_dna_rna.html">
+      <span>08</span>
+      <strong>Manipulating Proteins, DNA and RNA</strong>
+    </a><a class="nav-link " href="09_membrane_structure_and_functions.html">
+      <span>09</span>
+      <strong>细胞膜结构与功能</strong>
+    </a><a class="nav-link " href="10_cross_membrane_transport.html">
+      <span>10</span>
+      <strong>跨膜转运与膜电学性质</strong>
+    </a><a class="nav-link active" href="#">
+      <span>11</span>
+      <strong>细胞内区室与蛋白质分选（详细版）</strong>
+    </a><a class="nav-link " href="12_intracellular_vesicular_traffic.html">
+      <span>12</span>
+      <strong>细胞内囊泡运输 (Intracellular Vesicular Traffic)</strong>
+    </a><a class="nav-link " href="13_cell_communication.html">
+      <span>13</span>
+      <strong>细胞通讯</strong>
+    </a></nav>
+  </aside>
+  <main class="page">
+    <article class="article">
+      <div class="article-head">
+        <a class="back-home" href="../index.html">返回首页</a>
+        <p class="lecture-number">Lecture 11</p>
+      </div>
+      <div class="article-layout">
+        <div class="content"><h1 id="lecture-11-细胞内区室与蛋白质分选（详细版）">Lecture 11: 细胞内区室与蛋白质分选（详细版）</h1>
+<p><strong>课程：高等生物科学 | 南方科技大学 | 邓怿教授</strong></p>
+<p>---</p>
+<h2 id="预备知识理解本讲需要的基础">预备知识：理解本讲需要的基础</h2>
+<h3 id="01-蛋白质的基本结构回顾">0.1 蛋白质的基本结构回顾</h3>
+<p>蛋白质由氨基酸通过肽键（peptide bond）连接而成。每个氨基酸有一个氨基（-NH₂）和一个羧基（-COOH），连接后形成多肽链。多肽链有方向性：<strong>N 端</strong>（游离氨基端）是合成起始端，<strong>C 端</strong>（游离羧基端）是合成终止端。核糖体翻译 mRNA 时，总是从 N 端开始，向 C 端延伸。</p>
+<p>蛋白质的四级结构：</p>
+<ul><li><strong>一级结构</strong>：氨基酸的线性序列</li><li><strong>二级结构</strong>：局部的规则折叠，主要有α螺旋（α-helix）和β折叠片（β-sheet）</li><li><strong>三级结构</strong>：整条多肽链的三维折叠</li><li><strong>四级结构</strong>：多个亚基的组装</li></ul>
+<p>蛋白质的功能高度依赖其三维结构。一个蛋白质如果没有正确折叠，通常会失去功能，甚至形成有毒的聚集体。</p>
+<h3 id="02-氨基酸的关键性质">0.2 氨基酸的关键性质</h3>
+<p>本讲中频繁提到的氨基酸性质：</p>
+<p><strong>疏水性氨基酸</strong>（倾向于远离水，埋在蛋白质内部或嵌入脂双层）：</p>
+<ul><li>亮氨酸（Leu, L）、异亮氨酸（Ile, I）、缬氨酸（Val, V）、丙氨酸（Ala, A）、苯丙氨酸（Phe, F）、甲硫氨酸（Met, M）</li></ul>
+<p><strong>带正电的氨基酸</strong>（在生理 pH 下带正电荷）：</p>
+<ul><li>赖氨酸（Lys, K）、精氨酸（Arg, R）</li></ul>
+<p><strong>半胱氨酸（Cys, C）</strong>：含 -SH 基团，两个 Cys 可以形成二硫键（-S-S-），对蛋白质折叠和稳定性很重要。</p>
+<h3 id="03-生物膜的基本性质">0.3 生物膜的基本性质</h3>
+<p>细胞膜（包括所有细胞器膜）由<strong>磷脂双分子层</strong>构成：两层磷脂分子，疏水尾部朝内，亲水头部朝外。这种结构对大多数亲水分子（离子、蛋白质、核酸等）构成了天然屏障。</p>
+<p>因此，蛋白质要从细胞质进入一个膜包被的细胞器，要么穿过膜（需要专门的转运通道），要么通过膜泡融合的方式进入。这就是本讲讨论的核心问题。</p>
+<h3 id="04-gtpase-开关">0.4 GTPase 开关</h3>
+<p>本讲中多次出现 GTPase（如 SRP/SR 的 GTPase、Ran GTPase）。它们是分子开关：</p>
+<ul><li><strong>GTP 结合态（活化态）</strong>：GTPase 与效应分子结合，执行功能</li><li><strong>GDP 结合态（失活态）</strong>：GTPase 释放效应分子</li><li><strong>GEF（鸟嘌呤核苷酸交换因子）</strong>：促进 GDP → GTP 交换，激活 GTPase</li><li><strong>GAP（GTPase 激活蛋白）</strong>：刺激 GTP 水解为 GDP + Pi，失活 GTPase</li></ul>
+<p>GTPase 循环的本质是利用 GTP 水解的自由能来驱动构象变化，从而控制分子间相互作用的开与关。</p>
+<h3 id="05-分子伴侣（molecular-chaperones）">0.5 分子伴侣（Molecular Chaperones）</h3>
+<p>分子伴侣是一类帮助其他蛋白质正确折叠、防止聚集的蛋白质。本讲涉及的分子伴侣：</p>
+<ul><li><strong>Hsp70 家族</strong>（如细胞质的 Hsc70、ER 腔内的 BiP、线粒体基质的 mtHsp70）：结合暴露的疏水区域，防止错误折叠和聚集。需要消耗 ATP 进行结合-释放循环。</li><li><strong>Hsp90</strong>：帮助维持某些蛋白质的折叠状态</li><li><strong>Hsp60/Hsp10（Chaperonin）</strong>：在线粒体基质中，提供一个封闭的&quot;折叠笼&quot;，让蛋白质在隔离环境中正确折叠</li></ul>
+<h3 id="06-sds-page-简介">0.6 SDS-PAGE 简介</h3>
+<p>SDS-PAGE（十二烷基硫酸钠-聚丙烯酰胺凝胶电泳）是分离蛋白质的常用方法。SDS 使所有蛋白质带上均一的负电荷，电泳时蛋白质仅按分子量大小分离——分子量越小，跑得越快。本讲中，它被用来区分含信号肽的前体蛋白（较大）和切除信号肽后的成熟蛋白（较小）。</p>
+<p>---</p>
+<h2 id="第一部分细胞内区室化（intracellular-compartmentalization）">第一部分：细胞内区室化（Intracellular Compartmentalization）</h2>
+<h3 id="11-为什么真核细胞需要区室化">1.1 为什么真核细胞需要区室化？</h3>
+<p>这是一个非常基础但重要的问题。原核细胞（如大肠杆菌）只有约 4000 个基因，所有生化反应都在同一个细胞质空间中进行。真核细胞（如人类细胞约有 20000 个基因）需要更精细的组织方式，区室化提供了以下关键优势：</p>
+<p><strong>（1）创造不同的生化环境</strong></p>
+<p>不同的反应需要不同的条件。例如：</p>
+<ul><li><strong>溶酶体</strong>内部 pH 约 4.5-5.0（酸性），用于水解酶的最适工作条件；而细胞质 pH 约 7.2。如果这些水解酶泄漏到细胞质中，由于 pH 不适合，活性会大幅降低，从而保护细胞。</li><li><strong>ER 腔</strong>是氧化环境（有利于二硫键形成），而细胞质是还原环境。分泌蛋白在 ER 中正确形成二硫键后才能获得功能。</li><li><strong>线粒体基质</strong>维持碱性 pH 和高浓度的辅酶，适合三羧酸循环和脂肪酸氧化。</li></ul>
+<p><strong>（2）增加反应效率</strong></p>
+<p>将相关的酶集中在一个小的区室内，大大提高了底物和酶的局部浓度。例如：</p>
+<ul><li>脂肪酸β-氧化的酶集中在过氧化物酶体和线粒体中</li><li>蛋白质糖基化的酶集中在 ER 和高尔基体中</li></ul>
+<p><strong>（3）隔离危险反应</strong></p>
+<ul><li>过氧化物酶体将产生 H₂O₂ 的氧化反应限制在膜内，防止 H₂O₂ 损伤细胞其他组分</li><li>溶酶体将降解酶封闭起来，防止不受控的细胞自身降解</li></ul>
+<p><strong>（4）提供信号调控平台</strong></p>
+<p>许多信号通路依赖于蛋白质在不同区室间的转运。例如，转录因子从细胞质转运到细胞核是基因激活的关键步骤（如后文的 NF-AT 实例）。</p>
+<h3 id="12-各细胞器详细介绍">1.2 各细胞器详细介绍</h3>
+<p>以肝细胞（hepatocyte）为例，这是一种功能非常活跃的细胞：</p>
+<div class="table-wrap"><table><thead><tr><th>区室</th><th>体积占比</th><th>详细功能</th></tr></thead><tbody><tr><td><strong>细胞质（Cytosol）</strong></td><td>54%</td><td>糖酵解、大部分氨基酸合成、脂肪酸合成、蛋白质翻译起始、信号转导、蛋白酶体降解</td></tr><tr><td><strong>线粒体（Mitochondria）</strong></td><td>22%</td><td>氧化磷酸化（ATP 合成）、三羧酸循环、脂肪酸β-氧化、氨基酸代谢、凋亡信号、钙储存</td></tr><tr><td><strong>粗面内质网（Rough ER）</strong></td><td>9%</td><td>分泌蛋白和膜蛋白的合成、信号肽切除、N-糖基化、二硫键形成、蛋白质质量控制</td></tr><tr><td><strong>滑面 ER + 高尔基体</strong></td><td>6%</td><td>脂质合成（滑面 ER）、糖基化修饰（高尔基体）、蛋白质分选与包装（高尔基体）</td></tr><tr><td><strong>细胞核（Nucleus）</strong></td><td>6%</td><td>DNA 复制、转录、RNA 加工与剪接、核糖体亚基组装</td></tr><tr><td><strong>过氧化物酶体</strong></td><td>1%</td><td>H₂O₂ 代谢、超长链脂肪酸氧化、缩醛磷脂合成、胆汁酸合成</td></tr><tr><td><strong>溶酶体（Lysosomes）</strong></td><td>1%</td><td>蛋白质、脂质、多糖、核酸的降解；自噬作用</td></tr><tr><td><strong>内体（Endosomes）</strong></td><td>1%</td><td>内吞物质的分选（回收到质膜 vs 送到溶酶体降解）</td></tr></tbody></table></div>
+<p>值得注意的是，<strong>不同类型的细胞，各细胞器的比例差异很大</strong>。例如：</p>
+<ul><li>分泌活跃的细胞（如胰腺腺泡细胞）：粗面 ER 和高尔基体非常发达</li><li>肌肉细胞：线粒体占比更高</li><li>解毒功能活跃的肝细胞：滑面 ER 和过氧化物酶体更丰富</li></ul>
+<h3 id="13-真核细胞内膜系统的演化假说（详述）">1.3 真核细胞内膜系统的演化假说（详述）</h3>
+<p>现代真核细胞的内膜系统是如何演化而来的？目前的主流假说如下：</p>
+<p><strong>第一阶段：膜灵活性的获得</strong></p>
+<ul><li>起始细胞是一个<strong>厌氧古菌</strong>（anaerobic archaeon）</li><li>这个古菌的细胞壁发生退化或丧失，使其质膜变得更加灵活</li><li>细胞壁的丧失使古菌可以更容易地变形和吞噬</li></ul>
+<p><strong>第二阶段：水平基因转移加速</strong></p>
+<ul><li>没有坚硬细胞壁的灵活细胞更容易摄取周围的 DNA</li><li>来自古菌和细菌的水平基因转移大大增加</li><li>这加速了演化过程</li></ul>
+<p><strong>第三阶段：内膜系统的形成</strong></p>
+<ul><li>质膜不断向内折叠（invagination），逐渐将基因组 DNA 包裹起来</li><li>这些内折的膜最终形成了<strong>核膜</strong>（nuclear envelope）</li><li>核膜与质膜之间的连续膜结构演化为<strong>内质网</strong>（ER）</li><li>这解释了为什么核膜是双层膜，而且外核膜与 ER 是连续的</li></ul>
+<p><strong>第四阶段：线粒体的内共生起源</strong></p>
+<ul><li>一个<strong>好氧细菌</strong>（aerobic bacterium，可能是α-变形菌的祖先）被吞入宿主细胞</li><li>但没有被消化，而是存活下来，形成了<strong>原始线粒体</strong>（promitochondrion）</li><li>这种共生关系对双方有利：宿主获得了高效的 ATP 产生能力，细菌获得了保护和营养</li></ul>
+<p><strong>支持内共生理论的证据</strong>：</p>
+<ul><li>线粒体有自己的环形 DNA（类似细菌基因组）</li><li>线粒体有自己的核糖体（70S，类似细菌，而非真核的 80S）</li><li>线粒体的双层膜：内膜来自原始细菌的质膜，外膜来自吞噬时的宿主质膜</li><li>线粒体的分裂方式类似细菌二分裂</li><li>线粒体 DNA 的序列与α-变形菌高度相似</li></ul>
+<p><strong>第五阶段：细胞复杂性的爆发</strong></p>
+<ul><li>线粒体提供的充裕 ATP 使细胞能够长得更大</li><li>更大的细胞需要更复杂的内膜系统来组织各种生化反应</li><li>高尔基体、溶酶体、内体等膜结构逐渐分化</li></ul>
+<p>&gt; <strong>注意</strong>：叶绿体的起源也是内共生——一个光合蓝细菌（cyanobacterium）被吞入，这发生在线粒体内共生之后。植物细胞因此同时拥有线粒体和叶绿体。</p>
+<h3 id="14-蛋白质在不同区室间的运输流程">1.4 蛋白质在不同区室间的运输流程</h3>
+<p>细胞中几乎所有蛋白质的合成都始于<strong>细胞质中的游离核糖体</strong>。那么，蛋白质如何到达正确的目的地？</p>
+<p>关键原则：<strong>分选信号决定目的地</strong>。</p>
+<p>蛋白质的运输路线（从细胞质出发）：</p>
+<pre><code>                    ┌─→ 细胞核（门控运输，NLS/NES）
+                    │
+                    ├─→ 线粒体（跨膜运输，前导序列）
+                    │
+     细胞质 ────────├─→ 过氧化物酶体（跨膜运输，PTS1/PTS2）
+   （翻译起始处）    │
+                    ├─→ 叶绿体（跨膜运输，转运肽）[仅植物]
+                    │
+                    └─→ 内质网（ER）──→ 高尔基体 ──┬→ 溶酶体
+                         （跨膜运输，     （囊泡运输）├→ 质膜
+                          信号肽）                  ├→ 分泌囊泡 → 细胞外
+                                                    └→ 内体</code></pre>
+<p><strong>例外情况</strong>：</p>
+<ul><li>线粒体和叶绿体自身基因组编码了一小部分蛋白质（线粒体基因组编码约 13 个蛋白质，其余约 1000-1500 个线粒体蛋白由核基因编码并从细胞质进口）</li><li>没有任何分选信号的蛋白质<strong>默认留在细胞质</strong></li></ul>
+<h3 id="15-三种运输方式的详细比较">1.5 三种运输方式的详细比较</h3>
+<p><strong>（1）门控运输（Gated transport）</strong></p>
+<ul><li><strong>路径</strong>：细胞质 ↔ 细胞核</li><li><strong>通道</strong>：核孔复合体（NPC）</li><li><strong>货物状态</strong>：蛋白质保持折叠态通过（NPC 孔径足够大，约 40 nm）</li><li><strong>选择性机制</strong>：FG 核孔蛋白形成的选择性屏障 + 核转运受体（importin/exportin）</li><li><strong>能量</strong>：Ran-GTP 梯度</li><li><strong>特点</strong>：<strong>双向运输</strong>（进口和出口同时发生）</li></ul>
+<p><strong>（2）跨膜运输（Transmembrane transport / Protein translocation）</strong></p>
+<ul><li><strong>路径</strong>：细胞质 → ER / 线粒体 / 过氧化物酶体 / 叶绿体</li><li><strong>通道</strong>：蛋白质转运通道（translocator/translocon）</li><li>ER：Sec61</li><li>线粒体外膜：TOM；内膜：TIM23/TIM22</li><li>叶绿体：TOC/TIC</li><li><strong>货物状态</strong>：蛋白质必须<strong>未折叠</strong>才能穿过窄小的通道（例外：过氧化物酶体可进口折叠蛋白）</li><li><strong>能量</strong>：ATP（分子伴侣）、GTP（SRP/SR）、膜电位（线粒体）</li><li><strong>特点</strong>：蛋白质像&quot;蛇&quot;一样穿过膜上的通道</li></ul>
+<p><strong>（3）囊泡运输（Vesicular transport）</strong></p>
+<ul><li><strong>路径</strong>：ER → 高尔基体 → 溶酶体/质膜/细胞外；以及内吞途径</li><li><strong>机制</strong>：供体膜出芽（budding）形成运输囊泡，囊泡移动到目标膜，与之融合（fusion）</li><li><strong>货物状态</strong>：蛋白质在囊泡内部（腔内蛋白）或嵌在囊泡膜中（膜蛋白），<strong>不直接穿过膜</strong></li><li><strong>关键分子</strong>：COPI/COPII/Clathrin 被膜蛋白（coat proteins）、SNARE（膜融合机器）、Rab GTPase（靶向调控）</li><li><strong>特点</strong>：膜的拓扑关系始终保持——ER 腔 = 高尔基体腔 = 囊泡内 = 细胞外</li></ul>
+<h3 id="16-分选信号（sorting-signal）的深入理解">1.6 分选信号（Sorting Signal）的深入理解</h3>
+<p>分选信号的本质是蛋白质中携带的&quot;地址标签&quot;，告诉细胞的运输机器该蛋白质的目的地。</p>
+<p><strong>信号序列（Signal Sequence）的特征</strong>：</p>
+<ul><li>通常是一段<strong>连续的</strong>氨基酸序列</li><li>长度通常为 3-60 个氨基酸</li><li><strong>不依赖精确的氨基酸序列</strong>，而是依赖<strong>物理化学性质</strong>（如疏水性、正电荷）</li><li>许多信号序列在蛋白质到达目的地后被<strong>蛋白酶切除</strong></li></ul>
+<p><strong>信号斑（Signal Patch）的特征</strong>：</p>
+<ul><li>由蛋白质三维折叠后，多个在一级序列中不相邻的氨基酸在空间上聚集形成</li><li>只有在蛋白质正确折叠后才存在</li><li><strong>不会被切除</strong>（切除会破坏蛋白质结构）</li><li>例子：甘露糖-6-磷酸标记（用于溶酶体酶的分选）</li></ul>
+<p>各细胞器信号序列的特征对比：</p>
+<div class="table-wrap"><table><thead><tr><th>目的地</th><th>信号名称</th><th>位置</th><th>关键特征</th><th>是否被切除</th></tr></thead><tbody><tr><td>ER</td><td>信号肽（Signal peptide）</td><td>N 端</td><td>疏水核心（6-15 个疏水 aa）</td><td>是（信号肽酶切除）</td></tr><tr><td>线粒体基质</td><td>前导序列（Pre-sequence）</td><td>N 端</td><td>两亲性α螺旋（正电荷+疏水交替）</td><td>是（MPP 切除）</td></tr><tr><td>过氧化物酶体</td><td>PTS1</td><td>C 端</td><td>-SKL 或类似三肽</td><td>否</td></tr><tr><td>过氧化物酶体</td><td>PTS2</td><td>N 端</td><td>~9 aa 共识序列</td><td>是/否（取决于物种）</td></tr><tr><td>细胞核进口</td><td>NLS</td><td>任意位置</td><td>富含 Lys/Arg</td><td>否</td></tr><tr><td>细胞核出口</td><td>NES</td><td>任意位置</td><td>富含 Leu</td><td>否</td></tr><tr><td>ER 滞留</td><td>KDEL/HDEL</td><td>C 端</td><td>四肽 KDEL（ER 可溶蛋白）</td><td>否</td></tr></tbody></table></div>
+<p>---</p>
+<h2 id="第二部分内质网（er）蛋白质进口">第二部分：内质网（ER）蛋白质进口</h2>
+<h3 id="21-历史背景（详述）">2.1 历史背景（详述）</h3>
+<p>ER 蛋白质进口的研究是细胞生物学的经典故事，跨越了半个世纪。</p>
+<p><strong>Albert Claude（1899-1983）</strong> 和 <strong>Keith Roberts Porter（1912-1997）</strong></p>
+<p>20 世纪 40 年代，Claude 在洛克菲勒大学率先将<strong>细胞匀浆</strong>和<strong>差速离心</strong>技术应用于细胞生物学。他将细胞打碎后，通过不同转速的离心，分离出不同大小的细胞组分：低速沉淀（细胞核和碎片）、中速沉淀（线粒体）、高速沉淀（微粒体=ER 碎片）。</p>
+<p>Porter 随后利用当时刚发展起来的<strong>电子显微镜</strong>，首次清晰地拍摄到了细胞内的膜结构网络，并将其命名为&quot;endoplasmic reticulum&quot;（内质网，意为&quot;细胞质内的网状结构&quot;）。</p>
+<p><strong>George Palade（1912-2008）</strong></p>
+<p>Palade 用电子显微镜进一步研究了 ER 的超微结构。他的关键发现：</p>
+<ul><li>ER 膜上附着着大量<strong>核糖体</strong>（ribosomes），呈&quot;小黑点&quot;状——这就是<strong>粗面 ER（rough ER）</strong></li><li>没有核糖体附着的 ER 是<strong>滑面 ER（smooth ER）</strong></li><li>通过放射性同位素追踪实验，他揭示了<strong>分泌途径</strong>（secretory pathway）：蛋白质在粗面 ER 合成 → 运输到高尔基体 → 包装到分泌囊泡 → 释放到细胞外</li></ul>
+<p>Claude、Palade 和 Christian de Duve（发现溶酶体和过氧化物酶体）共同获得了 <strong>1974 年诺贝尔生理学或医学奖</strong>。</p>
+<p>&gt; <strong>Palade 提出的关键问题</strong>：&quot;为什么核糖体附着在 ER 上，而不附着在线粒体上？&quot;这个问题的答案需要等到 Blobel 的工作才被揭示。</p>
+<p><strong>Günter Blobel（1936-2018）</strong></p>
+<p>Blobel 是信号肽假说（signal hypothesis）的提出者和证明者。他的核心发现：</p>
+<p>1. <strong>信号肽假说（1971 年提出）</strong>：蛋白质的 N 端含有一段特殊的信号序列，决定其是否进入 ER。带有信号肽的蛋白质被特异性地引导到 ER 膜上翻译。 2. 用<strong>体外翻译系统</strong>证明了信号肽的存在和功能 3. 概括性地提出：所有跨膜运输的蛋白质都携带&quot;拓扑发生信号&quot;（topogenic signals），决定其在膜中的位置和方向</p>
+<p>Blobel 因此获得 <strong>1999 年诺贝尔生理学或医学奖</strong>。</p>
+<h3 id="22-体外翻译实验的详细解析">2.2 体外翻译实验的详细解析</h3>
+<p>这个实验是理解信号肽假说的基础。让我们一步步拆解：</p>
+<p><strong>实验材料：</strong></p>
+<p>1. <strong>mRNA</strong>：编码一种分泌蛋白（例如免疫球蛋白轻链）的 mRNA。可以从分泌活跃的细胞中提取，也可以体外转录获得。 2. <strong>翻译系统</strong>：兔网织红细胞裂解液（rabbit reticulocyte lysate）。网织红细胞是即将成熟的红细胞，细胞质中充满了核糖体、tRNA、翻译因子和 ATP/GTP 等——是一个完美的无细胞翻译系统。 3. <strong>微粒体（microsomes）</strong>：通过差速离心从细胞匀浆中分离的 ER 碎片。匀浆时 ER 断裂，但由于膜的自密封性质，断裂的 ER 会自发形成封闭的小囊泡（微粒体）。微粒体保留了 Sec61 转运通道和信号肽酶。</p>
+<p><strong>微粒体的分离方法</strong>：</p>
+<ul><li>将细胞匀浆</li><li>低速离心去除细胞核和碎片</li><li>高速离心（100,000 × g）沉淀微粒体</li><li>蔗糖密度梯度离心进一步分离粗面微粒体（密度大，含核糖体）和滑面微粒体（密度小）</li></ul>
+<p><strong>实验设计（两组对照）：</strong></p>
+<div class="table-wrap"><table><thead><tr><th>组别</th><th>条件</th><th>预期结果</th></tr></thead><tbody><tr><td>实验组 A</td><td>mRNA + 核糖体 <strong>无微粒体</strong></td><td>翻译出含信号肽的前体蛋白（分子量较大）</td></tr><tr><td>实验组 B</td><td>mRNA + 核糖体 <strong>有微粒体</strong></td><td>翻译出信号肽被切除的成熟蛋白（分子量较小）</td></tr></tbody></table></div>
+<p><strong>结果分析（SDS-PAGE）：</strong></p>
+<ul><li>无微粒体组：凝胶上出现一条分子量较大的条带——这是<strong>前体蛋白</strong>（precursor），包含信号肽</li><li>有微粒体组：凝胶上出现一条分子量较小的条带——这是<strong>成熟蛋白</strong>（mature protein），信号肽已被切除</li><li>两者的分子量差异约 1.5-3 kDa，正好对应信号肽的大小</li></ul>
+<p><strong>进一步实验——蛋白酶保护实验</strong>：</p>
+<p>在有微粒体的条件下翻译后，加入蛋白酶（如蛋白酶 K）：</p>
+<ul><li>如果蛋白质已经被转运到微粒体内部，膜会保护它不被降解</li><li>如果蛋白质还在微粒体外面，会被蛋白酶降解</li></ul>
+<p>结果：成熟蛋白被微粒体膜保护（不被降解），证明它确实被转运到了微粒体腔内。</p>
+<p>如果先用去污剂（detergent）破坏微粒体膜再加蛋白酶，成熟蛋白也会被降解——进一步证明保护来自于膜。</p>
+<p><strong>Blobel 的&quot;读出实验&quot;（Readout experiment）：</strong></p>
+<p>这是一个更精巧的实验设计： 1. 先在无微粒体条件下开始翻译，使核糖体-mRNA-新生链复合物（RNC）积累 2. 用去污剂从微粒体膜上提取核糖体（这些核糖体正在翻译，被&quot;冻结&quot;在不同的翻译阶段） 3. 将这些 RNC 放入新的翻译系统中继续翻译（&quot;读出&quot;剩余序列） 4. 分析产物：有些是前体蛋白（信号肽还在），有些是成熟蛋白（信号肽已被切除）</p>
+<p>这个实验证明了<strong>信号肽的切除发生在翻译过程中</strong>，即共翻译切除。</p>
+<h3 id="23-n-端信号序列的深入分析">2.3 N-端信号序列的深入分析</h3>
+<p><strong>信号肽的三段式结构（详细版）：</strong></p>
+<pre><code>N ──[ n 区 ]──[ h 区（疏水核心） ]──[ c 区 ]──↓切割位点── 成熟蛋白 ── C
+     正电荷     6-15个疏水氨基酸       含SPase切割位点
+     1-5 aa     (Leu, Ile, Val,       小侧链aa在-1和-3位
+                 Ala, Phe等)           (Ala, Gly, Ser)</code></pre>
+<p><strong>各区域的功能：</strong></p>
+<p><strong>n 区（N-terminal region）</strong>：</p>
+<ul><li>长度：1-5 个氨基酸</li><li>含 1-2 个带正电的氨基酸（Lys 或 Arg）</li><li>功能：帮助信号肽正确插入 Sec61 通道。正电荷与 Sec61 通道入口处的负电荷相互作用，促进插入。同时，正电荷遵循&quot;正电荷内侧规则&quot;，确保 N 端留在细胞质侧。</li></ul>
+<p><strong>h 区（Hydrophobic core）</strong>：</p>
+<ul><li>长度：6-15 个氨基酸</li><li>全部或几乎全部为疏水氨基酸</li><li>这是信号肽最关键的区域——<strong>SRP54 的 M 域（methionine-rich domain）</strong>识别的就是这段疏水核心</li><li>功能机制：疏水核心可以形成α螺旋，与 SRP54 的疏水口袋结合。之后，疏水核心通过 Sec61 的侧向门插入脂双层。</li></ul>
+<p><strong>c 区（C-terminal region / Cleavage region）</strong>：</p>
+<ul><li>长度：3-7 个氨基酸</li><li>遵循 <strong>&quot;-3, -1 规则&quot;</strong>：切割位点上游第 -1 位和第 -3 位必须是小侧链氨基酸（通常是 Ala、Gly 或 Ser）。这是<strong>信号肽酶（SPase）</strong>识别切割位点的关键。</li><li>信号肽酶切除信号肽后，切割位点处成为新的 N 端</li></ul>
+<p><strong>为什么信号肽没有共识序列（consensus sequence）？</strong></p>
+<p>不同蛋白质的信号肽在氨基酸序列上几乎没有相似性。这是因为信号肽的功能不依赖于特定的氨基酸，而依赖于<strong>物理化学性质</strong>——特别是足够长的连续疏水区段。这也是为什么可以用人工设计的疏水肽段替代天然信号肽，仍然能功能性地引导蛋白质进入 ER。</p>
+<h3 id="24-srp-的结构与功能（详述）">2.4 SRP 的结构与功能（详述）</h3>
+<p><strong>SRP 的组成（真核生物，以哺乳动物为例）：</strong></p>
+<p>SRP 是一个核糖核蛋白复合物（ribonucleoprotein），由 6 个蛋白质亚基和 1 个 RNA 分子组成：</p>
+<div class="table-wrap"><table><thead><tr><th>组分</th><th>功能</th></tr></thead><tbody><tr><td><strong>7SL RNA</strong>（~300 nt）</td><td>SRP 的骨架，连接各蛋白亚基</td></tr><tr><td><strong>SRP9/SRP14 异二聚体</strong></td><td>结合核糖体，造成翻译暂停（elongation arrest）</td></tr><tr><td><strong>SRP19</strong></td><td>帮助 SRP54 结合到 7SL RNA 上</td></tr><tr><td><strong>SRP54</strong></td><td><strong>核心亚基</strong>：N 端 GTPase 域 + C 端 M 域（识别信号肽）</td></tr><tr><td><strong>SRP68/SRP72 异二聚体</strong></td><td>连接 SRP 的两个功能域；SRP68 与核糖体和 7SL RNA 都有相互作用</td></tr></tbody></table></div>
+<p>SRP 的形状像一个细长的&quot;热狗&quot;，中间有铰链（hinge），可以弯折。信号肽结合口袋在一端（SRP54），翻译暂停域在另一端（SRP9/14）。</p>
+<p><strong>SRP 识别信号肽的分子机制：</strong></p>
+<p>SRP54 的 M 域（methionine-rich domain）形成一个疏水口袋。甲硫氨酸的侧链（-CH₂-CH₂-S-CH₃）灵活且疏水，可以适应不同序列的信号肽——就像一只&quot;灵活的手套&quot;，可以包裹住各种形状的疏水肽段。这解释了为什么 SRP 能够识别序列差异很大的信号肽。</p>
+<p><strong>翻译暂停（Elongation arrest）的意义：</strong></p>
+<p>当 SRP 结合信号肽后，SRP9/14 与核糖体的因子结合位点相互作用，减慢或暂停翻译延伸。这一步骤至关重要，因为：</p>
+<p>1. <strong>防止过早折叠</strong>：如果翻译继续而蛋白质还在细胞质中，新生多肽可能开始折叠或与其他蛋白质相互作用，形成无法通过 Sec61 窄通道的结构。 2. <strong>提供时间窗口</strong>：给 SRP-RNC 复合物足够的时间找到 ER 膜上的 SRP 受体。 3. <strong>防止聚集</strong>：疏水信号肽如果暴露在细胞质的水性环境中太久，可能导致蛋白质聚集。</p>
+<p>&gt; <strong>原核生物的类似物</strong>：细菌也有 SRP 系统，但更简单——只有一个蛋白质 Ffh（SRP54 的同源物）和一个 4.5S RNA。细菌 SRP 不引起翻译暂停（细菌细胞很小，核糖体到质膜距离短）。</p>
+<h3 id="25-srp-sr-相互作用与-gtp-调控（详述）">2.5 SRP-SR 相互作用与 GTP 调控（详述）</h3>
+<p><strong>SRP 受体（SR）的结构：</strong></p>
+<p>SRP 受体是一个异二聚体，位于 ER 膜上：</p>
+<ul><li><strong>SRα</strong>：外周膜蛋白，含 GTPase 域，与 SRP54 的 GTPase 域相互作用</li><li><strong>SRβ</strong>：跨膜蛋白，含另一个 GTPase 域，将 SR 锚定在 ER 膜上</li></ul>
+<p><strong>GTPase 双开关机制：</strong></p>
+<p>SRP54 和 SRα 各自含有一个 GTPase 域。它们的工作方式与经典的 Ras 家族 GTPase 不同——SRP 和 SR 相互作为对方的 GAP：</p>
+<p>1. <strong>在细胞质中</strong>：SRP54 结合 GTP，SRα 也结合 GTP 2. <strong>SRP 与 SR 对接</strong>：两个 GTPase 域直接接触，形成一个共享的活性位点 3. <strong>信号肽转移</strong>：SRP 释放信号肽，信号肽被转交给 Sec61 通道 4. <strong>GTP 水解</strong>：两个 GTPase 相互刺激对方水解 GTP → GDP + Pi 5. <strong>解离</strong>：GTP 水解后，SRP 与 SR 解离。SRP 回到细胞质，SR 留在 ER 膜上</p>
+<p>这个双 GTPase 机制确保了<strong>高保真度</strong>——只有当 SRP 正确携带了含信号肽的核糖体，并与 SR 正确对接时，GTP 才会被水解。这避免了空载的 SRP 或不含信号肽的核糖体被错误地靶向到 ER。</p>
+<h3 id="26-sec61-转运通道的结构与功能（详述）">2.6 Sec61 转运通道的结构与功能（详述）</h3>
+<p><strong>Sec61 的三维结构（来自 X 射线晶体学和冷冻电镜）：</strong></p>
+<p>Sec61α 是核心亚基，有 <strong>10 个跨膜α螺旋</strong>（TM1-TM10）。这 10 个螺旋分为两半（TM1-5 和 TM6-10），像两扇&quot;蛤壳&quot;一样围成一个通道。</p>
+<p>关键结构元件：</p>
+<p><strong>堵头（Plug）</strong>：</p>
+<ul><li>位于通道腔侧（ER 腔侧）</li><li>是一个短的α螺旋（α2a，约 10 个氨基酸）</li><li>在静息状态下，堵头堵住通道出口</li><li>功能：<strong>防止小分子和离子泄漏</strong>。ER 腔中 Ca²⁺ 浓度比细胞质高约 5000 倍，如果通道不关闭，Ca²⁺ 会大量外流，破坏细胞信号</li><li>当信号肽插入通道后，堵头被推开（displaced），通道打开</li></ul>
+<p><strong>侧向门（Lateral gate / Seam）</strong>：</p>
+<ul><li>TM2b 和 TM7 之间有一条&quot;缝&quot;</li><li>在信号肽插入后，侧向门打开，让疏水的信号肽和跨膜区域从通道&quot;溜&quot;到脂双层中</li><li>对于分泌蛋白：信号肽通过侧向门离开通道后被信号肽酶切除</li><li>对于膜蛋白：跨膜区域通过侧向门永久嵌入脂双层</li></ul>
+<p><strong>环缢（Pore ring）</strong>：</p>
+<ul><li>通道最窄处有 6 个疏水氨基酸（多为异亮氨酸）的侧链朝向通道中心</li><li>形成一个疏水密封，在通道开启时包裹住穿过的多肽链</li><li>防止小分子从通道壁渗漏</li></ul>
+<p><strong>Sec61 如何工作——一个统一模型：</strong></p>
+<p>1. <strong>静息态</strong>：堵头关闭通道，侧向门关闭，通道密封 2. <strong>核糖体对接</strong>：翻译中的核糖体对接到 Sec61 的细胞质面。核糖体的出口隧道正好对准 Sec61 通道的入口。 3. <strong>信号肽插入</strong>：信号肽作为α螺旋插入通道，与通道壁的疏水残基相互作用 4. <strong>堵头打开</strong>：信号肽推开堵头，通道腔侧开放 5. <strong>侧向门打开</strong>：信号肽通过侧向门进入脂双层 6. <strong>肽链穿过</strong>：后续的多肽链通过通道进入 ER 腔 7. <strong>信号肽切除</strong>：信号肽酶切除信号肽 8. <strong>通道关闭</strong>：翻译完成后，核糖体脱离，堵头回位，通道重新密封</p>
+<h3 id="27-共翻译转运-vs-翻译后转运（详述）">2.7 共翻译转运 vs 翻译后转运（详述）</h3>
+<p><strong>共翻译转运（Co-translational translocation）——主要方式：</strong></p>
+<p>在哺乳动物细胞中，大多数进入 ER 的蛋白质使用共翻译转运。整个过程可以总结为 8 个步骤：</p>
+<p>1. mRNA 在细胞质中开始翻译 2. 信号肽从核糖体出口隧道中冒出（约翻译 70 个氨基酸后，信号肽刚好露出） 3. SRP 识别并结合信号肽 4. SRP 与核糖体结合，暂停翻译 5. SRP-RNC 复合物靶向 ER 膜上的 SRP 受体 6. GTP 水解驱动 SRP 释放信号肽，核糖体转移到 Sec61 上 7. 翻译恢复，新生肽链边翻译边穿过 Sec61 进入 ER 腔 8. 信号肽酶切除信号肽，蛋白质在 ER 腔中折叠，核糖体脱离</p>
+<p>优势：蛋白质边合成边转运，不需要在细胞质中维持未折叠状态。</p>
+<p><strong>翻译后转运（Post-translational translocation）——酵母中更常见：</strong></p>
+<p>某些小的分泌蛋白（特别是在酵母中），由于翻译速度快，SRP 来不及识别就翻译完成了。这些蛋白通过翻译后转运进入 ER。</p>
+<p>关键差异：</p>
+<ul><li>不需要 SRP 和 SRP 受体</li><li>蛋白质在细胞质中完全翻译完成</li><li>需要<strong>细胞质 Hsp70 分子伴侣</strong>维持蛋白质的未折叠状态</li><li>需要 <strong>Sec62-Sec63 复合物</strong>帮助蛋白质对接到 Sec61 上</li><li><strong>BiP（ER 腔内的 Hsp70 分子伴侣）</strong>通过&quot;棘轮机制&quot;拉动蛋白质进入 ER 腔</li></ul>
+<p><strong>BiP 的棘轮机制（Brownian ratchet）：</strong> 1. 多肽链通过热运动（布朗运动）在 Sec61 通道中双向随机移动 2. 当一段多肽露出通道的腔侧时，BiP-ATP 结合该段多肽 3. BiP 水解 ATP 变为 BiP-ADP，紧紧抱住多肽 4. 多肽不能再往回退（被 BiP &quot;锁住&quot;） 5. 下一段多肽继续随机运动露出...重复以上过程 6. 最终，蛋白质被逐步&quot;拉&quot;入 ER 腔</p>
+<p>这类似于一个棘轮：允许单方向运动，阻止反方向运动。每次 BiP 结合都消耗一个 ATP，因此翻译后转运是一个耗能过程。</p>
+<h3 id="28-膜蛋白拓扑结构的建立（全面详解）">2.8 膜蛋白拓扑结构的建立（全面详解）</h3>
+<p>膜蛋白的拓扑结构（topology）指的是蛋白质的哪些部分在细胞质侧、哪些在 ER 腔侧、以及有多少个跨膜区域。拓扑结构在蛋白质合成时就确定了，后续不再改变。</p>
+<p><strong>理解拓扑学的一个核心关系</strong>：</p>
+<ul><li>ER 腔 = 高尔基体腔 = 囊泡内部 = <strong>细胞外</strong></li><li>细胞质 = 细胞质</li></ul>
+<p>这是因为囊泡运输保持了膜的方向性。所以：</p>
+<ul><li>Type I 膜蛋白的 N 端在 ER 腔 = 成熟后 N 端在<strong>细胞外</strong></li><li>膜蛋白的细胞质面结构域参与细胞内信号传导</li></ul>
+<p><strong>Type I 膜蛋白的合成过程（以 LDL 受体为例）：</strong></p>
+<p>1. N 端信号肽出现 → SRP 识别 → 靶向 ER 膜 → 信号肽作为<strong>起始转移序列（start-transfer sequence）</strong>插入 Sec61 2. 翻译继续，蛋白质穿过通道进入 ER 腔 3. 信号肽通过侧向门进入脂双层，被信号肽酶切除 4. 翻译继续，直到遇到一段<strong>疏水的停止转移序列（stop-transfer sequence）</strong> 5. 停止转移序列是一个约 20-25 个氨基酸的疏水区段，它停留在 Sec61 通道中，不再继续穿过 6. 停止转移序列通过侧向门横向移动到脂双层中，成为<strong>跨膜锚定区（transmembrane anchor）</strong> 7. 之后翻译的部分留在细胞质侧 8. 最终拓扑：N 端（在 ER 腔/细胞外）—— 跨膜区 —— C 端（在细胞质）</p>
+<p><strong>Type II 膜蛋白的合成过程（以转铁蛋白受体为例）：</strong></p>
+<p>1. 蛋白质没有 N 端可切割信号肽 2. 翻译开始后，一段内部的疏水序列从核糖体出口隧道冒出 3. 这段序列称为<strong>信号锚定序列（signal-anchor sequence）</strong>，兼具信号肽和跨膜锚的功能 4. SRP 识别这段疏水序列，靶向 ER 膜 5. 关键：信号锚定序列的<strong>方向</strong>取决于其两侧的电荷分布 6. 对于 Type II：<strong>正电荷在信号锚序列的 N 端侧</strong> → N 端留在细胞质侧（正电荷内侧规则） 7. 信号锚序列两端的&quot;+&quot; 侧留细胞质，&quot;-&quot; 侧穿过去 8. C 端部分穿过通道进入 ER 腔 9. 最终拓扑：N 端（细胞质）—— 跨膜区 —— C 端（ER 腔/细胞外）</p>
+<p><strong>Type III 膜蛋白（以细胞色素 P450 为例）：</strong></p>
+<ul><li>与 Type II 的区别仅在于信号锚序列两侧的<strong>电荷分布相反</strong></li><li><strong>正电荷在信号锚序列的 C 端侧</strong> → C 端留在细胞质侧</li><li>最终拓扑：N 端（ER 腔）—— 跨膜区 —— C 端（细胞质）</li></ul>
+<p>&gt; <strong>正电荷内侧规则（Positive-inside rule）</strong> 是膜蛋白拓扑学的核心原则。信号锚定序列两侧，含更多正电荷（Arg, Lys）的一端留在细胞质侧。改变电荷分布可以翻转膜蛋白的方向。这条规则也适用于细菌膜蛋白。</p>
+<p><strong>Type IV 多次跨膜蛋白的合成（以 GPCR 为例）：</strong></p>
+<p>多次跨膜蛋白有多个跨膜区域，它们交替作为起始转移信号和停止转移信号：</p>
+<p>以一个 7 次跨膜的 GPCR 为例（Type IV-A，N 端在细胞质）：</p>
+<p>1. 第一个疏水区段作为<strong>信号锚定序列（SA）</strong>，插入 Sec61，N 端留在细胞质（正电荷内侧规则） 2. 翻译继续，多肽进入 ER 腔 3. 第二个疏水区段作为<strong>停止转移锚定序列（STA）</strong>，停留在通道中，C 端侧回到细胞质 4. 第三个疏水区段又作为 SA，开始新一轮转运 5. 如此交替，直到所有跨膜区域都插入膜中</p>
+<p>Type IV-B（N 端在 ER 腔）则是第一个 SA 的方向相反，使 N 端进入 ER 腔。</p>
+<p>Sec61 通道的<strong>侧向门</strong>在这个过程中不断开合，每个跨膜区域都通过侧向门释放到脂双层中。</p>
+<p><strong>尾锚定蛋白（Tail-anchored proteins）的特殊进口机制：</strong></p>
+<p>TA 蛋白的跨膜区位于 C 端最后 ~20 个氨基酸。当翻译完成时，这段跨膜区还埋在核糖体内部，SRP 无法在翻译过程中识别到它。因此 TA 蛋白使用一条完全不同的途径——<strong>GET 途径</strong>：</p>
+<p>GET 途径的步骤： 1. <strong>捕获</strong>：TA 蛋白从核糖体释放后，其疏水 C 端暴露。<strong>预靶向复合物</strong>（由 Sgt2 + Get4 + Get5 组成）识别并保护疏水的跨膜区。 2. <strong>转交</strong>：Sgt2 将 TA 蛋白转交给 <strong>Get3</strong>（一种 ATPase）。Get3 结合 ATP 后呈&quot;关闭&quot;构象，形成一个疏水凹槽，紧紧包裹 TA 蛋白的跨膜区。 3. <strong>靶向</strong>：Get3-TA 蛋白复合物靶向 ER 膜上的受体 <strong>Get1-Get2</strong>。 4. <strong>插入</strong>：Get3 水解 ATP，构象改变为&quot;打开&quot;态，释放 TA 蛋白，跨膜区插入 ER 膜。 5. <strong>循环</strong>：Get3 回到细胞质，准备下一轮循环。</p>
+<p>TA 蛋白的例子：</p>
+<ul><li><strong>SNARE 蛋白</strong>（如 VAMP/synaptobrevin、syntaxin）：囊泡融合的核心机器</li><li><strong>Bcl-2 家族蛋白</strong>：凋亡调控</li><li><strong>Sec61β</strong>：Sec61 转运通道的 β 亚基本身就是 TA 蛋白</li></ul>
+<p><strong>GPI 锚定蛋白的生成（详述）：</strong></p>
+<p>GPI 锚定蛋白经历了一个独特的两步过程：</p>
+<p>1. <strong>第一步——作为跨膜蛋白合成</strong>：蛋白质含有 N 端信号肽和 C 端跨膜区/GPI 信号序列。它先作为 Type I 样膜蛋白插入 ER 膜。 2. <strong>第二步——跨膜区替换为 GPI 锚</strong>：</p>
+<ul><li>ER 腔内有一个预先合成好的 <strong>GPI 锚前体</strong>（glycosylphosphatidylinositol anchor），插在 ER 膜内叶</li><li><strong>GPI 转氨酶（GPI transamidase）</strong> 切除蛋白质的 C 端跨膜区/GPI 信号序列</li><li>同时将蛋白质的新 C 端与 GPI 锚通过酰胺键连接</li></ul>
+<p>GPI 锚的完整结构（从蛋白质到膜）：</p>
+<pre><code>蛋白质-C端 —— 磷酸乙醇胺（phosphoethanolamine）
+              |
+              甘露糖 — 甘露糖 — 甘露糖（3 mannose）
+                                    |
+                                    葡糖胺（glucosamine）
+                                    |
+                                    肌醇（inositol）
+                                    |
+                                    磷脂（嵌入膜外叶）</code></pre>
+<p>GPI 锚定蛋白的特点：</p>
+<ul><li>只在细胞表面的<strong>外叶</strong></li><li>可以被 <strong>PI-PLC（磷脂酶 C）</strong> 切割释放</li><li>常存在于<strong>脂筏（lipid raft）</strong> 微域中</li><li>功能多样：酶、受体、粘附分子等</li></ul>
+<p>---</p>
+<h2 id="第三部分线粒体蛋白质进口">第三部分：线粒体蛋白质进口</h2>
+<h3 id="31-线粒体的结构详述">3.1 线粒体的结构详述</h3>
+<p>线粒体是&quot;细胞的发电站&quot;，有独特的双膜结构：</p>
+<p><strong>外膜（Outer Mitochondrial Membrane, OMM）</strong>：</p>
+<ul><li>含大量<strong>porin/VDAC</strong>（电压依赖性阴离子通道），使小分子（&lt; ~5 kDa）可以自由通过</li><li>因此，膜间隙的小分子组成与细胞质相似</li><li>外膜相对简单，蛋白质含量较低</li></ul>
+<p><strong>膜间隙（Intermembrane Space, IMS）</strong>：</p>
+<ul><li>小分子组成类似细胞质</li><li>含有多种功能蛋白：</li><li><strong>细胞色素 c</strong>：电子传递链组分，凋亡时释放到细胞质触发 caspase 级联</li><li><strong>Mia40/Erv1</strong>：氧化折叠系统</li><li>各种激酶</li></ul>
+<p><strong>内膜（Inner Mitochondrial Membrane, IMM）</strong>：</p>
+<ul><li><strong>高度不透性</strong>：即使是 H⁺ 也不能自由通过（除了通过特异性载体/通道）</li><li>向内折叠形成<strong>嵴（cristae）</strong>，极大地增加表面积</li><li>含有：</li><li>电子传递链复合物（Complex I-IV）</li><li>ATP 合酶（Complex V）</li><li>各种代谢物载体蛋白（ADP/ATP 载体、磷酸载体等）</li><li>蛋白质导入通道（TIM23、TIM22、OXA）</li><li>磷脂组成特殊：含大量<strong>心磷脂（cardiolipin）</strong>（类似细菌膜，支持内共生起源）</li><li>蛋白质:脂质比例高达 3:1（细胞质膜约 1:1）</li></ul>
+<p><strong>基质（Matrix）</strong>：</p>
+<ul><li>含：三羧酸循环酶、脂肪酸β-氧化酶、氨基酸代谢酶</li><li><strong>线粒体 DNA</strong>（~16.5 kb 环形分子，编码 13 个蛋白质、22 个 tRNA、2 个 rRNA）</li><li><strong>线粒体核糖体（mitoribosomes）</strong>：70S 类型（细菌样）</li><li>分子伴侣：mtHsp70、Hsp60/Hsp10</li><li>蛋白酶：MPP（加工前导序列）</li></ul>
+<h3 id="32-线粒体前导序列（pre-sequence）的详细特征">3.2 线粒体前导序列（Pre-sequence）的详细特征</h3>
+<p>线粒体基质蛋白的 N 端前导序列与 ER 信号肽有本质区别：</p>
+<div class="table-wrap"><table><thead><tr><th>特征</th><th>ER 信号肽</th><th>线粒体前导序列</th></tr></thead><tbody><tr><td>长度</td><td>16-30 aa</td><td>10-70 aa（通常 20-40 aa）</td></tr><tr><td>关键结构</td><td>连续疏水区（α螺旋）</td><td><strong>两亲性α螺旋</strong>（amphipathic helix）</td></tr><tr><td>电荷</td><td>N 端少量正电荷</td><td>丰富的正电荷（Arg &gt; Lys）</td></tr><tr><td>疏水性</td><td>高度疏水核心</td><td>一面疏水、一面亲水（带正电）</td></tr><tr><td>切除</td><td>信号肽酶切除</td><td>MPP（线粒体加工肽酶）切除</td></tr><tr><td>二级结构</td><td>疏水α螺旋</td><td>两亲性α螺旋</td></tr></tbody></table></div>
+<p><strong>两亲性α螺旋的示意：</strong></p>
+<p>如果将前导序列画成α螺旋，从端面看（helical wheel projection），你会看到：</p>
+<ul><li>一面全是疏水氨基酸（Leu, Ile, Val, Phe）</li><li>另一面全是带正电荷的氨基酸（Arg, Lys）和极性氨基酸</li></ul>
+<p>这种两亲性结构是被 TOM 受体（Tom20）识别的关键。Tom20 有一个疏水凹槽，可以结合前导序列的疏水面，而正电荷面暴露在外。</p>
+<p><strong>为什么线粒体前导序列富含精氨酸（Arg）而不是赖氨酸（Lys）？</strong></p>
+<p>这可能与识别特异性有关。Arg 的胍基有独特的氢键模式，可能有助于与 Tom20 受体的特异性识别，以及与内膜膜电位的相互作用。</p>
+<h3 id="33-线粒体蛋白转运机器（全面详解）">3.3 线粒体蛋白转运机器（全面详解）</h3>
+<p><strong>TOM 复合物（Translocase of the Outer Membrane）</strong></p>
+<p>TOM 是所有核编码线粒体蛋白进入线粒体的第一道关卡。</p>
+<p>组成：</p>
+<ul><li><strong>Tom20</strong>：初级受体，识别前导序列的疏水面。Tom20 是一种外周膜蛋白，N 端锚定在外膜，C 端的 TPR（tetratricopeptide repeat）结构域伸向细胞质，暴露一个疏水凹槽。</li><li><strong>Tom22</strong>：二级受体（cis 受体），将前导序列从 Tom20 传递到 Tom40 通道。Tom22 在膜间隙侧也有结构域（trans 受体），帮助蛋白质穿过通道后的释放。</li><li><strong>Tom70</strong>：识别含内部靶向信号的前体蛋白（如载体蛋白类），通常与 Hsp70/Hsp90 协作。</li><li><strong>Tom40</strong>：<strong>核心通道亚基</strong>，形成β-barrel 结构（由β折叠片围成的桶状通道），约 22 Å 内径。每个 TOM 复合物含 <strong>2 个 Tom40 拷贝</strong>（即双通道）。</li><li><strong>Tom5, Tom6, Tom7</strong>：小 Tom 蛋白，调节通道的组装和稳定性。</li></ul>
+<p><strong>SAM 复合物（Sorting and Assembly Machinery）</strong></p>
+<ul><li>也称为 TOB（Topogenesis of Outer membrane β-barrel proteins）</li><li>功能：将β-barrel 蛋白正确折叠并插入外膜</li><li>核心亚基：<strong>Sam50</strong>（本身是β-barrel 蛋白）</li><li>工作路径：前体蛋白穿过 TOM → 在膜间隙由小 Tim 伴侣护送 → SAM 将其从膜间隙侧插入外膜</li><li>例子：VDAC/Porin、Tom40 本身</li></ul>
+<p><strong>TIM23 复合物</strong></p>
+<p>TIM23 负责转运含有 N 端前导序列的蛋白质。</p>
+<p>组成：</p>
+<ul><li><strong>Tim23</strong>：核心通道亚基，与 Tim17 形成通道</li><li><strong>Tim17</strong>：与 Tim23 共同形成转运通道</li><li><strong>Tim50</strong>：识别从 TOM 穿过来的前导序列（膜间隙侧受体）</li><li><strong>Tim21</strong>：连接 TIM23 与呼吸链复合物 III/IV</li><li><strong>PAM（Presequence translocase-Associated Motor）复合物</strong>：</li><li><strong>Tim44</strong>：将 mtHsp70 锚定到 TIM23 的基质侧出口</li><li><strong>mtHsp70</strong>（Ssc1 in yeast）：ATP 驱动的分子伴侣，拉动多肽进入基质</li><li><strong>Mge1</strong>：mtHsp70 的核苷酸交换因子（NEF），促进 ADP → ATP 交换</li><li><strong>Tim14/Pam18</strong>：mtHsp70 的 J 蛋白（co-chaperone），刺激 ATP 水解</li><li><strong>Tim16/Pam16</strong>：调节 Tim14</li></ul>
+<p><strong>TIM22 复合物</strong></p>
+<p>TIM22 负责将多次跨膜的<strong>载体蛋白</strong>插入内膜。</p>
+<p>靶向的蛋白质：</p>
+<ul><li>ADP/ATP 载体（AAC/ANT）</li><li>磷酸载体</li><li>二羧酸载体</li><li>Tim22 和 Tim23 本身</li></ul>
+<p>这些蛋白的特征是含有<strong>内部靶向信号</strong>（不是 N 端前导序列），由 4-6 个跨膜结构域组成。</p>
+<p>进口路径： 1. 前体蛋白被细胞质 Hsp70/Hsp90 维持在可溶状态 2. Tom70 识别这些复合物 3. 穿过 TOM 通道 4. 在膜间隙，<strong>小 Tim 蛋白</strong>（Tim9-Tim10-Tim12 复合物）接力护送 5. 蛋白质被传递到 TIM22 6. <strong>膜电位（Δψ）</strong>驱动跨膜区段插入内膜 7. 不需要 ATP 水解（与 TIM23 不同）</p>
+<p><strong>OXA 复合物（Oxidase Assembly machinery）</strong></p>
+<ul><li>OXA1（酵母中称为 Oxa1p）是核心亚基</li><li>属于 YidC/Oxa1/Alb3 蛋白家族（存在于所有生命域）</li><li>功能：从基质侧将蛋白质插入内膜</li><li>主要用于：</li><li>线粒体自身基因组编码的蛋白质（在基质中翻译后插入内膜）</li><li>某些核编码蛋白：先进入基质，再通过 OXA 插入内膜（&quot;保守插入途径&quot;）</li><li>例子：细胞色素氧化酶（Complex IV）的某些亚基</li></ul>
+<h3 id="34-基质蛋白进口的驱动力（详述）">3.4 基质蛋白进口的驱动力（详述）</h3>
+<p>进口线粒体基质蛋白需要两种能量：</p>
+<p><strong>（1）内膜膜电位（Δψ，约 -180 mV，基质侧为负）</strong></p>
+<p>线粒体内膜维持着显著的质子电化学梯度（由呼吸链产生的质子泵维持）：</p>
+<ul><li>基质侧：H⁺ 浓度低（pH ~8）、负电位</li><li>膜间隙侧：H⁺ 浓度高（pH ~7）、正电位</li></ul>
+<p>前导序列富含<strong>正电荷</strong>（Arg, Lys），会被负电位<strong>电泳（electrophoresis）</strong>拉入基质。这类似于电场驱动带电粒子运动。</p>
+<p>实验证据：</p>
+<ul><li>用解偶联剂（如 CCCP、valinomycin）消除膜电位 → 蛋白质进口立即停止</li><li>恢复膜电位 → 进口恢复</li></ul>
+<p>膜电位主要驱动前导序列穿过内膜，是进口的<strong>早期</strong>步骤。</p>
+<p><strong>（2）ATP 水解（mtHsp70 驱动的棘轮机制）</strong></p>
+<p>基质中的 mtHsp70 消耗 ATP 拉动蛋白质的<strong>后续部分</strong>进入基质。</p>
+<p>详细机制： 1. 前导序列穿过 TIM23 后，被基质中的 <strong>Tim44</strong> 捕获 2. Tim44 将 <strong>mtHsp70-ATP</strong> 招募到通道出口 3. mtHsp70 结合露出基质的多肽段 4. <strong>Tim14（J 蛋白）</strong>刺激 mtHsp70 的 ATP 水解活性 5. mtHsp70-ADP 紧紧&quot;夹住&quot;多肽（类似&quot;老虎钳&quot;），蛋白质不能回退 6. <strong>Mge1（NEF）</strong>促进 ADP → ATP 交换，mtHsp70 释放多肽 7. 下一个 mtHsp70 分子结合更前方的多肽段 8. 重复步骤 3-7，蛋白质被逐步拉入基质</p>
+<p>最终，进入基质的蛋白质：</p>
+<ul><li>前导序列被 <strong>MPP（Mitochondrial Processing Peptidase）</strong> 切除</li><li>在 <strong>Hsp60/Hsp10 chaperonin</strong> 系统帮助下正确折叠</li></ul>
+<h3 id="35-线粒体内膜和膜间隙蛋白的进口（五种途径详解）">3.5 线粒体内膜和膜间隙蛋白的进口（五种途径详解）</h3>
+<p><strong>途径 1：TOM → TIM23 侧向释放到内膜</strong></p>
+<p>适用于：含 N 端前导序列 + 一个疏水停止转移序列的内膜蛋白</p>
+<p>过程： 1. 前导序列被膜电位驱动穿过 TOM 和 TIM23 2. 前导序列在基质被 MPP 切除 3. 后续的疏水停止转移序列到达 TIM23 通道时，不再继续穿过 4. TIM23 的<strong>侧向门</strong>打开，将疏水区域释放到内膜脂双层中 5. 蛋白质锚定在内膜上：N 端域在基质，C 端域在膜间隙</p>
+<p>TIM23 复合物存在两种形态：</p>
+<ul><li><strong>TIM23-PAM</strong>（含 mtHsp70 马达）：用于完全转运到基质</li><li><strong>TIM23-SORT</strong>（与 Tim21 和呼吸链结合）：用于侧向释放到内膜</li></ul>
+<p><strong>途径 2：TOM → TIM23 → 基质 → OXA 插入内膜（保守插入途径）</strong></p>
+<p>适用于：某些内膜蛋白，含前导序列 + 第二信号序列</p>
+<p>过程： 1. 蛋白质完全进入基质（通过 TOM + TIM23） 2. 前导序列被 MPP 切除 3. 第二信号序列（内部疏水区段）被 OXA 复合物识别 4. OXA 将蛋白质从基质侧&quot;推&quot;入内膜</p>
+<p>为什么叫&quot;保守&quot;插入途径？因为这与细菌中 YidC 将新合成蛋白插入质膜的途径同源——反映了线粒体的细菌起源。</p>
+<p><strong>途径 3：经过两次蛋白酶切割进入膜间隙</strong></p>
+<p>适用于：某些膜间隙蛋白</p>
+<p>过程： 1. 蛋白质含有前导序列 + 紧随其后的疏水序列 2. 前导序列穿过 TOM 和 TIM23 进入基质 3. 疏水序列作为停止转移信号，锚定在内膜中 4. <strong>第一次切割</strong>：基质中的 MPP 切除前导序列 5. <strong>第二次切割</strong>：膜间隙侧的蛋白酶切除锚定区 6. 切割后的蛋白质被释放到膜间隙中</p>
+<p><strong>途径 4：TOM → Mia40 氧化折叠捕获（MIA 途径）</strong></p>
+<p>适用于：小的膜间隙蛋白，含 CX₃C 或 CX₉C 基序</p>
+<p>这些蛋白通常是 ~10 kDa 的小蛋白，以还原（未折叠）状态穿过 TOM 通道。它们没有 N 端前导序列。</p>
+<p>过程： 1. 还原态蛋白（-SH 自由基）穿过 TOM 通道进入膜间隙 2. 膜间隙中的氧化还原酶 <strong>Mia40</strong>（Mitochondrial Intermembrane space Import and Assembly protein）识别蛋白质 3. Mia40 将自己的二硫键（-S-S-）转移给底物蛋白，使底物形成分子内二硫键 4. 折叠后的蛋白质太大，无法再穿回 TOM 通道 → 被&quot;锁&quot;在膜间隙中 5. Mia40 变为还原态后，被 <strong>Erv1</strong>（一种巯基氧化酶）再氧化 6. Erv1 将电子最终传递给呼吸链（通过细胞色素 c → 复合物 IV → O₂）</p>
+<p>这个机制非常精巧——<strong>利用蛋白质折叠本身作为&quot;单向阀&quot;</strong>，确保蛋白质只能进不能出。</p>
+<p><strong>途径 5：TOM → 小 Tim → TIM22 多次跨膜蛋白插入内膜</strong></p>
+<p>适用于：代谢物载体蛋白家族（MCF，Mitochondrial Carrier Family）</p>
+<p>过程： 1. 前体蛋白在细胞质中被 Hsp70/Hsp90 维持可溶 2. Tom70 受体识别 Hsp-前体复合物 3. 前体穿过 TOM 通道 4. 在膜间隙中，<strong>小 Tim 伴侣</strong>（Tim9-Tim10 六聚体环）包裹住前体的疏水跨膜区段 5. 小 Tim 将前体传递到 TIM22 复合物 6. <strong>膜电位（Δψ）驱动</strong>跨膜区段插入内膜（不需要 ATP） 7. 蛋白质在内膜中获得最终的折叠构象</p>
+<p>---</p>
+<h2 id="第四部分过氧化物酶体蛋白质进口">第四部分：过氧化物酶体蛋白质进口</h2>
+<h3 id="41-过氧化物酶体的形态和功能（扩展版）">4.1 过氧化物酶体的形态和功能（扩展版）</h3>
+<p><strong>形态</strong>：</p>
+<ul><li>单层膜包被的球形细胞器</li><li>直径 0.1-1 μm</li><li>每个细胞含数百到上千个（肝细胞和肾细胞中特别丰富）</li><li>在电子显微镜下，某些物种的过氧化物酶体含有<strong>结晶核心</strong>（paracrystalline core），由大量堆积的酶（如尿酸氧化酶 urate oxidase）构成</li></ul>
+<p><strong>核心代谢功能：</strong></p>
+<p><strong>（1）H₂O₂ 代谢</strong></p>
+<p>过氧化物酶体因其利用 H₂O₂ 的反应而得名：</p>
+<ul><li><strong>氧化酶</strong>（如氨基酸氧化酶、D-氨基酸氧化酶、脂酰-CoA 氧化酶）消耗 O₂，产生 H₂O₂：</li><li>RH₂ + O₂ → R + H₂O₂</li><li><strong>过氧化物酶反应</strong>（peroxidation）：利用 H₂O₂ 氧化有害底物：</li><li>H₂O₂ + R'H₂ → R' + 2H₂O</li><li>底物包括苯酚、甲醛、甲酸、<strong>乙醇</strong>（肝脏中！喝酒后，肝脏过氧化物酶体利用此反应氧化部分乙醇）</li><li><strong>过氧化氢酶（catalase）</strong> 分解过量 H₂O₂：</li><li>2H₂O₂ → O₂ + 2H₂O</li><li>Catalase 是过氧化物酶体含量最丰富的酶之一</li></ul>
+<p>&gt; 有趣的是，catalase 可以在分解 H₂O₂（catalatic activity）和利用 H₂O₂ 氧化底物（peroxidatic activity）之间切换，取决于 H₂O₂ 浓度。</p>
+<p><strong>（2）脂肪酸β-氧化</strong></p>
+<p>过氧化物酶体和线粒体都能进行脂肪酸β-氧化，但分工不同：</p>
+<ul><li><strong>过氧化物酶体</strong>：氧化<strong>超长链脂肪酸</strong>（&gt;C22）和支链脂肪酸。过氧化物酶体中的第一步氧化反应由酰基-CoA 氧化酶催化，电子直接传给 O₂ 产生 H₂O₂（不产生 ATP）。</li><li><strong>线粒体</strong>：氧化短链和中链脂肪酸，产生 FADH₂ 和 NADH → ATP。</li></ul>
+<p>过氧化物酶体将超长链脂肪酸缩短后（至 C8 左右），产物转运到线粒体继续完全氧化。</p>
+<p><strong>（3）缩醛磷脂（plasmalogen）合成</strong></p>
+<p>过氧化物酶体催化缩醛磷脂合成的前两步反应。缩醛磷脂是一类特殊的磷脂，在 sn-1 位通过<strong>乙烯基醚键</strong>（vinyl ether bond，而非酯键）与脂肪酸链连接。</p>
+<p>缩醛磷脂占大脑磷脂的约 20%，是<strong>髓鞘</strong>（myelin sheath）的重要组分。髓鞘是包裹神经轴突的绝缘层，对于神经信号的快速传导至关重要。</p>
+<p>&gt; <strong>临床意义</strong>：Zellweger 综合征患者由于 PEX 基因突变导致过氧化物酶体无法正确组装，缺乏缩醛磷脂合成和超长链脂肪酸氧化能力，表现为严重的神经发育障碍、肝脏和肾脏功能异常，通常在出生后数月内死亡。</p>
+<p><strong>（4）其他功能</strong></p>
+<ul><li>胆汁酸合成（侧链氧化）</li><li>乙醛酸循环（植物过氧化物酶体，又称乙醛酸体 glyoxysome）</li><li>嘌呤分解（某些物种）</li><li>光呼吸（植物）</li></ul>
+<h3 id="42-过氧化物酶体蛋白进口的特殊机制（详述）">4.2 过氧化物酶体蛋白进口的特殊机制（详述）</h3>
+<p>过氧化物酶体的蛋白质进口系统与 ER 和线粒体有根本不同：</p>
+<p><strong>独特特征：</strong> 1. <strong>蛋白质以折叠态进口</strong>：与 ER（需解折叠或边翻译边转运）和线粒体（需解折叠穿过窄通道）不同 2. 甚至可以进口<strong>寡聚体</strong>：已组装的多亚基复合物可以整体被进口 3. 进口通道是<strong>瞬时组装</strong>的：不像 Sec61 或 TOM/TIM 那样永久存在于膜上</p>
+<p><strong>两种过氧化物酶体靶向信号：</strong></p>
+<p><strong>PTS1（Peroxisomal Targeting Signal 1）</strong>：</p>
+<ul><li>位于蛋白质的 <strong>C 端最后 3 个氨基酸</strong></li><li>经典三肽：<strong>-SKL</strong>（Ser-Lys-Leu）</li><li>变体也可以：-SRL、-AKL、-SQL 等（共识是小/正电荷/疏水）</li><li>大约 95% 的过氧化物酶体基质蛋白使用 PTS1</li><li>被胞质受体 <strong>Pex5</strong> 识别</li></ul>
+<p><strong>PTS2</strong>：</p>
+<ul><li>位于蛋白质 <strong>N 端</strong>附近</li><li>共识序列：-R/K-L/V/I-X₅-H/Q-L/A-（约 9 个氨基酸）</li><li>只有少数蛋白使用</li><li>被胞质受体 <strong>Pex7</strong> 识别</li><li>在某些物种（哺乳动物）中，PTS2 在进口后被切除</li></ul>
+<p><strong>Pex5 的&quot;穿梭受体&quot;机制（Cycling receptor model）：</strong></p>
+<p>1. <strong>识别</strong>：胞质中的 Pex5 识别并结合含 PTS1 的货物蛋白 2. <strong>对接</strong>：Pex5-货物复合物与过氧化物酶体膜上的对接复合物（Pex14 + Pex13）结合 3. <strong>转位</strong>：Pex5 连同货物一起部分或完全插入膜中（甚至可能进入过氧化物酶体腔内）。这是一个争议话题——Pex5 本身可能作为临时转运通道的一部分。 4. <strong>释放</strong>：货物在过氧化物酶体腔内释放 5. <strong>回收</strong>：Pex5 被<strong>单泛素化</strong>（与 Pex4 泛素连接酶相关）后，被 <strong>Pex1-Pex6 AAA-ATPase</strong>从膜中拉出，回到胞质中去泛素化后重新使用</p>
+<p>&gt; 如果 Pex5 的回收失败（如 Pex1 或 Pex6 突变），Pex5 被多泛素化并送去蛋白酶体降解。这会导致过氧化物酶体进口功能丧失——这正是某些 Zellweger 综合征变体的分子基础。</p>
+<h3 id="43-过氧化物酶体的起源（详述）">4.3 过氧化物酶体的起源（详述）</h3>
+<p>过氧化物酶体的起源有两条途径，目前认为两者共存：</p>
+<p><strong>途径 1：从 ER 从头生成（de novo biogenesis）</strong></p>
+<p>1. 过氧化物酶体膜蛋白（如 <strong>Pex3</strong>、<strong>Pex16</strong>）首先在 ER 中合成 2. 它们从 ER 芽出到<strong>前过氧化物酶体囊泡（pre-peroxisomal vesicles）</strong> 3. <strong>Pex19</strong>（胞质伴侣/受体）识别并护送其他膜蛋白到这些前体囊泡 4. 多个前体囊泡<strong>融合</strong>形成新的过氧化物酶体 5. 新的过氧化物酶体通过从胞质进口基质蛋白来成熟</p>
+<p><strong>途径 2：生长和分裂</strong></p>
+<p>1. 已存在的过氧化物酶体持续从胞质进口蛋白质和脂质 2. 过氧化物酶体体积增大 3. 通过 <strong>Pex11</strong>（膜变形蛋白）和 <strong>DRP（dynamin-related protein，如 Dnm1/Drp1）</strong> 介导的<strong>分裂（fission）</strong>，产生子代过氧化物酶体</p>
+<p>正常情况下，途径 2 是维持过氧化物酶体数量的主要方式。途径 1 可能在过氧化物酶体完全缺失时（如 Zellweger 综合征的某些基因型被遗传互补后）启动从头合成。</p>
+<p>---</p>
+<h2 id="第五部分核蛋白的进口与出口">第五部分：核蛋白的进口与出口</h2>
+<h3 id="51-核质运输概述">5.1 核质运输概述</h3>
+<p>细胞核是真核细胞中唯一使用<strong>门控运输</strong>的细胞器。核膜将遗传物质与细胞质分隔，但基因表达需要持续的核-质交流：</p>
+<p><strong>进口核内的分子及其功能意义：</strong></p>
+<ul><li><strong>组蛋白</strong>（H2A, H2B, H3, H4, H1）：DNA 复制时大量需要，用于新染色质组装。组蛋白是碱性蛋白（富含 Lys 和 Arg），本身就含有类 NLS 序列。</li><li><strong>DNA 聚合酶、DNA 连接酶、拓扑异构酶</strong>：DNA 复制和修复</li><li><strong>RNA 聚合酶 I/II/III</strong>：转录</li><li><strong>转录因子</strong>：基因调控。许多转录因子的核进口是基因激活的关键调控步骤。</li><li><strong>RNA 剪接因子（snRNPs 等）</strong>：mRNA 前体加工</li><li><strong>核糖体蛋白</strong>：在核仁中与 rRNA 组装成核糖体亚基前体</li></ul>
+<p><strong>从核内出口的分子：</strong></p>
+<ul><li><strong>mRNA</strong>（以 mRNP 形式）：成熟 mRNA 与多种蛋白质结合后出核</li><li><strong>tRNA</strong>：在核内加工成熟后出口</li><li><strong>核糖体亚基前体</strong>（40S 和 60S pre-subunits）：在核仁组装后出核，在细胞质中完成最终成熟</li><li><strong>某些蛋白质</strong>：如用过的 snRNP 蛋白需要回到细胞质</li></ul>
+<p><strong>运输的规模和速度</strong>：</p>
+<p>一个典型的增殖中的哺乳动物细胞，每分钟需要：</p>
+<ul><li>进口约 <strong>100 万个组蛋白分子</strong></li><li>出口约 <strong>3 条新合成的核糖体亚基前体</strong>每秒</li><li>出口数千条 mRNA 分子</li></ul>
+<p>NPC 的运输速率可达 <strong>~1000 个大分子/秒/NPC</strong>，考虑到每个细胞有 3000-4000 个 NPC，总通量极其可观。</p>
+<h3 id="52-核孔复合体（npc）详解">5.2 核孔复合体（NPC）详解</h3>
+<p><strong>NPC 是已知最大的蛋白质复合物之一：</strong></p>
+<div class="table-wrap"><table><thead><tr><th>特征</th><th>数值</th></tr></thead><tbody><tr><td>总分子量</td><td>~125 MDa（脊椎动物）/ ~50 MDa（酵母）</td></tr><tr><td>直径</td><td>~120 nm（外径）</td></tr><tr><td>中心通道直径</td><td>~40 nm</td></tr><tr><td>高度（跨核膜厚度）</td><td>~200 nm（含胞质纤维和核篮）</td></tr><tr><td>核孔蛋白种类</td><td>~30 种</td></tr><tr><td>总蛋白质拷贝数</td><td>~500-1000 个（每种 8-48 拷贝，八重对称）</td></tr><tr><td>每个细胞 NPC 数量</td><td>~3000-4000</td></tr></tbody></table></div>
+<p><strong>NPC 的分层结构：</strong></p>
+<p>从细胞质到核内，NPC 可以分为以下几层：</p>
+<p><strong>（1）胞质纤维（Cytoplasmic filaments）</strong></p>
+<ul><li>约 8 条纤维从 NPC 的细胞质面向外伸出，长约 50 nm</li><li>由 Nup358/RanBP2 构成</li><li>功能：初步捕获从细胞质靠近的 Importin-货物复合物</li><li>Nup358 含有 FG 重复序列和 Ran 结合位点</li></ul>
+<p><strong>（2）细胞质环（Cytoplasmic ring）</strong></p>
+<ul><li>由 Y-复合物（Nup107-160 复合物）组成的外环</li><li>八重旋转对称</li></ul>
+<p><strong>（3）中心通道（Central channel）</strong></p>
+<ul><li>由 <strong>FG-核孔蛋白（FG-Nups）</strong> 的无序 FG 重复结构域填充</li><li>FG 重复序列呈<strong>本征无序蛋白</strong>（intrinsically disordered protein）状态</li><li>形成选择性通透屏障</li></ul>
+<p><strong>（4）核质环（Nuclear ring）</strong></p>
+<ul><li>另一组 Y-复合物</li></ul>
+<p><strong>（5）核篮（Nuclear basket）</strong></p>
+<ul><li>8 条纤维从核面伸出，在末端汇合形成篮状结构</li><li>由 Nup153（含大量 FG 重复）和 TPR 蛋白组成</li><li>功能：mRNA 出口质量控制的检查站</li></ul>
+<p><strong>FG 重复序列——选择性屏障的核心：</strong></p>
+<p>FG-Nups 含有数十到数百个苯丙氨酸-甘氨酸（FG）重复序列，以不同间距排列（如 FG、FXFG、GLFG）。</p>
+<p>这些 FG 重复形成了 NPC 的选择性通透屏障。目前有几种模型解释其工作原理：</p>
+<ul><li><strong>选择性相分离模型（Selective phase model）</strong>：FG 重复之间的疏水相互作用形成一种&quot;凝胶&quot;相，排斥没有核转运受体的大分子。核转运受体（importin/exportin）表面有多个疏水口袋，可以与 FG 重复相互作用，从而&quot;溶解&quot;到这个凝胶中，携带货物穿过。</li><li><strong>虚拟门控模型（Virtual gate model）</strong>：FG 重复快速运动产生&quot;熵屏障&quot;，大分子被排斥。核转运受体通过与 FG 重复的相互作用克服这个屏障。</li><li><strong>林状纤维模型（Forest model）</strong>：FG 重复形成不同高度和密度的&quot;树林&quot;，只有与 FG 重复亲和的受体才能穿越。</li></ul>
+<p>无论哪种模型，核心原则是一致的：<strong>核转运受体通过与 FG 重复的疏水相互作用穿越 NPC，而不携带受体的大分子被排斥。</strong></p>
+<h3 id="53-核定位信号（nls）的详细分析">5.3 核定位信号（NLS）的详细分析</h3>
+<p><strong>经典 NLS（cNLS）的两种类型：</strong></p>
+<p><strong>（1）单部分 NLS（Monopartite NLS）</strong></p>
+<p>由一段连续的碱性氨基酸组成：</p>
+<ul><li>经典例子：SV40 大 T 抗原的 NLS：<strong>-PKKKRKV-</strong></li><li>特征：4-8 个碱性氨基酸（Lys/Arg）的簇</li></ul>
+<p>SV40 T 抗原 NLS 的实验验证（详述）：</p>
+<p>实验 1——突变分析：</p>
+<ul><li>野生型 NLS：-Pro-Pro-<strong>Lys-Lys-Lys</strong>-Arg-<strong>Lys</strong>-Val-</li><li>突变型（K128T）：-Pro-Pro-<strong>Lys-Thr-Lys</strong>-Arg-<strong>Lys</strong>-Val-</li><li>结果：仅一个氨基酸的改变就完全阻断了核进口</li><li>意义：证明了序列的特异性，不是简单的正电荷效应</li></ul>
+<p>实验 2——融合蛋白实验（pyruvate kinase 实验）：</p>
+<ul><li>丙酮酸激酶（~60 kDa）正常在细胞质中</li><li>将 SV40 NLS 融合到丙酮酸激酶上</li><li>用荧光显微镜观察定位</li><li><strong>正常丙酮酸激酶</strong>：弥散分布在细胞质中（核内也有少量，因为 &lt;60 kDa 可以一定程度被动扩散入核）</li><li><strong>NLS-丙酮酸激酶</strong>：高度集中在细胞核中（远超被动扩散水平）</li><li>意义：NLS 是充分条件——将任何胞质蛋白融合 NLS 就能使其进入细胞核</li></ul>
+<p><strong>（2）双部分 NLS（Bipartite NLS）</strong></p>
+<p>由两簇碱性氨基酸组成，中间由约 10 个氨基酸的连接区隔开：</p>
+<ul><li>经典例子：nucleoplasmin 的 NLS：-<strong>KR</strong>-PAATKKAGQA-<strong>KKKK</strong>-</li><li>两个碱性簇分别与 Importin-α 的两个 NLS 结合位点相互作用</li></ul>
+<p><strong>非经典 NLS：</strong></p>
+<p>并非所有 NLS 都是碱性氨基酸簇。某些蛋白质使用非经典 NLS：</p>
+<ul><li><strong>PY-NLS</strong>：含有保守的 R/K/H-X(2-5)-PY 基序，被 Importin-β2/Transportin 直接识别</li><li><strong>信号斑（Signal patch）</strong>：在三维结构表面形成的 NLS，只有折叠后才存在</li></ul>
+<p>NLS 的关键特性总结：</p>
+<ul><li>富含 Lys 和/或 Arg</li><li>可以位于蛋白质的任何位置（N 端、C 端、中间）</li><li><strong>不被切除</strong>（与 ER 信号肽和线粒体前导序列不同）</li><li>一个蛋白质可以同时含有 NLS 和 NES（决定其稳态分布）</li></ul>
+<h3 id="54-核进口受体系统（详述）">5.4 核进口受体系统（详述）</h3>
+<p><strong>Importin 超家族（Karyopherin-β 家族）：</strong></p>
+<p>哺乳动物中有约 <strong>20 种 karyopherin-β 家族成员</strong>，包括进口受体和出口受体。它们的共同特征是：</p>
+<ul><li>含有约 20 个 <strong>HEAT 重复序列</strong>（Huntingtin, Elongation factor 3, PR65/A, TOR）</li><li>HEAT 重复形成超螺旋结构，呈&quot;弹簧&quot;状</li><li>可以与 FG-Nup 的 FG 重复相互作用</li><li>可以与 Ran-GTP 结合（Ran 结合改变其构象，控制货物的结合/释放）</li></ul>
+<p><strong>经典核进口途径（Importin-α/β 途径）：</strong></p>
+<p>这是最早被阐明、最经典的核进口途径：</p>
+<p>组分：</p>
+<ul><li><strong>Importin-α</strong>：适配蛋白（adaptor），N 端有自抑制的 IBB 域（Importin-β binding domain），中间有 ARM 重复（Armadillo repeat），形成凹槽识别经典 NLS</li><li><strong>Importin-β</strong>：转运受体，与 Importin-α 的 IBB 域结合，与 FG-Nup 相互作用</li></ul>
+<p>步骤： 1. <strong>货物识别</strong>（细胞质）：Importin-α 的 ARM 结构域识别货物蛋白的 NLS。同时，Importin-β 结合 Importin-α 的 IBB 域，形成<strong>三元复合物</strong>：Importin-β : Importin-α : 货物 2. <strong>穿越 NPC</strong>：Importin-β 与 FG-Nup 的 FG 重复反复结合-解离，携带整个复合物穿过中心通道 3. <strong>核内释放</strong>（核内）：核内高浓度的 <strong>Ran-GTP 与 Importin-β 结合</strong> → Importin-β 构象改变 → 释放 Importin-α → Importin-α 的 IBB 域自身折叠回来，竞争性地将 NLS 货物从 ARM 结构域挤出 → 货物被释放到核内 4. <strong>受体回收</strong>：</p>
+<ul><li>Importin-β-Ran-GTP 复合物回到细胞质。在细胞质，<strong>RanGAP + RanBP1</strong> 促进 Ran 水解 GTP → GDP。Ran-GDP 释放 Importin-β，Importin-β 回到可用状态。</li><li>Importin-α 由出口受体 <strong>CAS/CSE1L</strong> 携带 Ran-GTP 从核内运出细胞质。在细胞质，Ran-GTP 水解后，CAS 释放 Importin-α。</li><li><strong>Ran-GDP</strong> 通过 <strong>NTF2</strong>（Nuclear Transport Factor 2）被运回核内。在核内，<strong>RCC1（RanGEF）</strong>催化 GDP → GTP 交换，维持核内 Ran-GTP 高浓度。</li></ul>
+<p><strong>直接 Importin-β 途径：</strong></p>
+<p>某些货物蛋白不需要 Importin-α 适配蛋白，直接被 Importin-β 家族成员识别：</p>
+<ul><li><strong>Importin-β1</strong> 可以直接识别某些含 IBB-like 域的蛋白</li><li><strong>Importin-β2/Transportin</strong> 识别含 PY-NLS 的蛋白</li><li><strong>Importin-7</strong> 识别组蛋白 H1</li><li><strong>Importin-4</strong> 识别组蛋白 H3-H4</li></ul>
+<h3 id="55-核出口系统（详述）">5.5 核出口系统（详述）</h3>
+<p><strong>核出口信号（NES）：</strong></p>
+<ul><li>典型的 NES 是<strong>富含亮氨酸的序列</strong></li><li>共识模式：Φ-X(2-3)-Φ-X(2-3)-Φ-X-Φ（Φ = 疏水氨基酸，通常是 Leu, Ile, Val, Phe, Met）</li><li>例如：HIV Rev 蛋白的 NES：<strong>-LPPLERLTL-</strong></li><li>NES 比 NLS 更难预测，因为很多蛋白质内部都有疏水氨基酸簇</li></ul>
+<p><strong>CRM1/Exportin 1——主要的蛋白质出口受体：</strong></p>
+<p>CRM1 是最重要的蛋白质出口受体，识别富含 Leu 的 NES。</p>
+<p>出口三元复合物的形成（在核内）： 1. 核内 Ran-GTP 浓度高 2. <strong>Ran-GTP 首先与 CRM1 结合</strong> → CRM1 构象改变 3. 构象改变后的 CRM1 现在可以识别并结合 NES 货物 4. 形成三元复合物：CRM1 : Ran-GTP : NES-货物</p>
+<p>出口后（在细胞质）： 1. RanGAP + RanBP1 促进 Ran 水解 GTP 2. Ran-GDP 不再能稳定 CRM1 的&quot;货物结合&quot;构象 3. CRM1 释放货物到细胞质 4. CRM1 回到核内准备下一轮出口</p>
+<p>&gt; <strong>药物工具</strong>：<strong>Leptomycin B（LMB）</strong> 是 CRM1 的特异性抑制剂，通过共价修饰 CRM1 的 Cys528 来阻断 NES 识别。LMB 可以阻断几乎所有 CRM1 介导的核出口，是研究核出口的重要工具。</p>
+<p><strong>mRNA 出口——一条不同的途径：</strong></p>
+<p>值得注意的是，mRNA 的出口<strong>不使用 CRM1 途径</strong>，而是使用专门的 <strong>Mex67-Mtr2</strong>（酵母）/ <strong>NXF1-NXT1</strong>（哺乳动物）途径。mRNA 出口与 mRNA 加工（剪接、多聚腺苷酸化）紧密偶联，只有正确加工的 mRNA 才被允许出口——这是基因表达的重要质量控制步骤。</p>
+<h3 id="56-ran-gtpase-循环的全面解析">5.6 Ran GTPase 循环的全面解析</h3>
+<p>Ran 循环是理解核运输方向性的核心。让我们从最基本的原理出发：</p>
+<p><strong>Ran 的基本数据：</strong></p>
+<ul><li>Ran 是 Ras 超家族的小 GTPase（~25 kDa）</li><li>是细胞中<strong>最丰富的 GTP 结合蛋白之一</strong></li><li>大部分 Ran（~80%）位于核内</li></ul>
+<p><strong>Ran 梯度的建立：</strong></p>
+<div class="table-wrap"><table><thead><tr><th>调控因子</th><th>位置</th><th>功能</th><th>结果</th></tr></thead><tbody><tr><td><strong>RCC1（RanGEF）</strong></td><td>核内（结合染色质）</td><td>GDP → GTP 交换</td><td>核内 Ran-GTP 高</td></tr><tr><td><strong>RanGAP1</strong></td><td>细胞质（和 NPC 细胞质面）</td><td>刺激 GTP 水解</td><td>胞质 Ran-GDP 高</td></tr><tr><td><strong>RanBP1</strong></td><td>细胞质</td><td>辅助 RanGAP1</td><td>增强 GTP 水解效率</td></tr><tr><td><strong>NTF2</strong></td><td>双向</td><td>将 Ran-GDP 从细胞质运回核内</td><td>维持核内 Ran 总量</td></tr></tbody></table></div>
+<p><strong>为什么 RCC1 在核内？</strong></p>
+<p>RCC1 直接结合<strong>核小体</strong>（nucleosome），因此被锚定在染色质上。只要 DNA 在核内，RCC1 就在核内 → Ran-GTP 就在核内产生。这个简单的定位原则建立了整个 Ran 梯度。</p>
+<p><strong>Ran 梯度如何决定运输方向——统一原则：</strong></p>
+<div class="table-wrap"><table><thead><tr><th></th><th>核内（Ran-GTP 高）</th><th>细胞质（Ran-GDP 高）</th></tr></thead><tbody><tr><td><strong>Importin</strong></td><td>Ran-GTP 结合 → 释放货物</td><td>Ran-GDP 解离 → 可结合货物</td></tr><tr><td><strong>Exportin</strong></td><td>Ran-GTP 结合 → 可结合货物</td><td>Ran-GTP 水解 → 释放货物</td></tr></tbody></table></div>
+<p>本质上，Ran-GTP 对 Importin 和 Exportin 的作用<strong>完全相反</strong>：</p>
+<ul><li>对 Importin：Ran-GTP 引起<strong>释放</strong>货物</li><li>对 Exportin：Ran-GTP 促进<strong>结合</strong>货物</li></ul>
+<p>这保证了进口货物在核内被释放，出口货物在细胞质被释放——方向性由此建立。</p>
+<p><strong>每次运输循环消耗多少能量？</strong></p>
+<p>每次 Importin 或 Exportin 的一个往返循环：</p>
+<ul><li>消耗 <strong>1 个 GTP</strong>（Ran-GTP → Ran-GDP）</li><li>还需要 <strong>1 个 GTP</strong> 来将 Ran-GDP 重新激活为 Ran-GTP（通过 NTF2 运回核内 + RCC1 催化交换）</li><li>GTP 的再生需要 ATP（NDP kinase 催化：ATP + GDP → ADP + GTP）</li></ul>
+<p>所以，核运输本质上是消耗 ATP 驱动的过程。</p>
+<h3 id="57-nf-at-核质穿梭的调控（全面解析）">5.7 NF-AT 核质穿梭的调控（全面解析）</h3>
+<p>NF-AT（Nuclear Factor of Activated T cells）家族蛋白是研究核质穿梭调控的最佳模型之一。让我们详细分析每一步。</p>
+<p><strong>NF-AT 的结构域组成：</strong></p>
+<pre><code>N端 ─[ C1 ][ C2 ]─[ A ]─[ Z ]──────[ Rel Homology Domain (RHD) ]── C端
+     └─────┘              └──┘       └──────── NLS ────────────┘
+     Calcineurin     NLS masking     DNA 结合域
+     结合位点         domain (磷酸化位点)
+                    
+     另外：CKIα 结合位点位于 N 端区域</code></pre>
+<p><strong>关键结构域功能：</strong></p>
+<ul><li><strong>C1/C2 域</strong>：Calcineurin（钙调磷酸酶）的结合位点。Calcineurin 必须结合到这里才能去磷酸化 NF-AT。</li><li><strong>A 域 + Z 域</strong>：含有被磷酸化的丝氨酸残基。磷酸化时，这个区域的构象<strong>遮盖（mask）NLS</strong>，同时暴露 NES。去磷酸化时，NLS 暴露，NES 被遮盖。</li><li><strong>RHD（Rel Homology Domain）</strong>：DNA 结合域，与 NF-κB 家族有结构相似性。含有 NLS。</li><li><strong>CKIα 结合位点</strong>：CKI（Casein Kinase I）结合并在核内重新磷酸化 NF-AT。</li></ul>
+<p><strong>静息状态下的 T 细胞（低 Ca²⁺）：</strong></p>
+<p>1. NF-AT 被多种激酶磷酸化：</p>
+<p>2. 磷酸化导致：</p>
+<p>3. 稳态结果：NF-AT 主要位于<strong>细胞质</strong></p>
+<ul><li><strong>CKI（Casein Kinase I）</strong>：在核内和细胞质中都有活性</li><li><strong>GSK3（Glycogen Synthase Kinase 3）</strong>：在细胞质中磷酸化</li><li><strong>DYRK1/2</strong>：磷酸化引发（priming）位点</li><li>NLS masking domain 折叠回来覆盖 RHD 中的 NLS → Importin 无法识别</li><li>NES 暴露 → CRM1 可以识别</li></ul>
+<p><strong>T 细胞受体（TCR）激活后：</strong></p>
+<p>1. TCR 结合抗原-MHC 复合物 2. 激活 PLCγ → 产生 IP₃ 3. IP₃ → ER 释放 Ca²⁺ → 胞质 Ca²⁺ 升高 4. Ca²⁺ 与 <strong>钙调蛋白（calmodulin）</strong> 结合 5. Ca²⁺/calmodulin 激活 <strong>Calcineurin</strong>（钙调磷酸酶，丝氨酸/苏氨酸磷酸酶） 6. Calcineurin 结合 NF-AT 的 C1/C2 域 7. Calcineurin <strong>去磷酸化</strong> NF-AT 的多个磷酸化位点 8. 去磷酸化导致：</p>
+<p>9. NF-AT 快速进入细胞核</p>
+<ul><li>NLS masking domain 构象改变 → NLS 暴露 → Importin-α/β 识别</li><li>NES 被遮盖 → CRM1 无法识别</li></ul>
+<p><strong>NF-AT 在核内的命运：</strong></p>
+<p>进入核内后： 1. NF-AT 与 DNA 上的 NFAT 结合位点结合 2. 通常与 AP-1（Fos/Jun）形成复合物，共同激活靶基因 3. 靶基因包括：<strong>IL-2</strong>（T 细胞增殖的关键细胞因子）、IL-4、TNF-α、IFN-γ 等 4. <strong>同时</strong>，核内的激酶（<strong>CKIα</strong>、GSK3 等）持续磷酸化 NF-AT 5. 只要 Calcineurin 活性存在（Ca²⁺ 持续升高），去磷酸化速率 &gt; 磷酸化速率 → NF-AT 留在核内 6. 一旦 Ca²⁺ 信号消失 → Calcineurin 失活 → 磷酸化速率 &gt; 去磷酸化速率 → NLS 被遮盖、NES 暴露 → <strong>CRM1 介导快速出核</strong></p>
+<p>&gt; <strong>关键概念</strong>：NF-AT 的核出口是<strong>组成性的</strong>（constitutive）——CRM1 始终可以将暴露 NES 的 NF-AT 运出核。NF-AT 的核积累完全依赖于<strong>持续的 Ca²⁺/Calcineurin 信号</strong>来维持去磷酸化状态。这使得 NF-AT 成为 Ca²⁺ 信号的<strong>忠实传感器</strong>——信号在，NF-AT 在核内；信号消失，NF-AT 立即出核。</p>
+<p><strong>动态成像实验：</strong></p>
+<p>用 GFP-NF-AT4 融合蛋白的实时成像清楚展示了这种动态穿梭：</p>
+<ul><li>刺激 T 细胞（Ca²⁺ 升高）：GFP 荧光在 ~8 分钟内从细胞质转移到核内（Import）</li><li>去除刺激（Ca²⁺ 降低）：GFP 荧光在 ~20 分钟内回到细胞质（Export）</li><li>再次刺激：可以再次快速入核（Re-import）</li></ul>
+<p><strong>免疫抑制药物的作用机制：</strong></p>
+<p>两种最重要的移植免疫抑制剂都通过阻断 Calcineurin 来抑制 NF-AT 的核进口：</p>
+<p><strong>环孢素 A（Cyclosporin A, CsA）</strong>：</p>
+<ul><li>来源：真菌代谢产物</li><li>机制：CsA 与<strong>亲环蛋白（cyclophilin）</strong>结合 → CsA-cyclophilin 复合物抑制 Calcineurin → NF-AT 不能去磷酸化 → 不能入核 → T 细胞不能激活 → 免疫抑制</li></ul>
+<p><strong>FK506/他克莫司（Tacrolimus）</strong>：</p>
+<ul><li>来源：链霉菌代谢产物</li><li>机制：FK506 与 <strong>FKBP12</strong> 结合 → FK506-FKBP12 复合物抑制 Calcineurin → 同样的下游效应</li><li>药效比 CsA 更强（约 100 倍）</li></ul>
+<p>这两种药物是器官移植后防止排斥反应的基石药物，每年挽救成千上万的生命。它们的发现也反向验证了 NF-AT/Calcineurin 途径在 T 细胞激活中的核心地位。</p>
+<h3 id="58-digitonin-透化实验——鉴定核运输因子的经典方法（详述）">5.8 Digitonin 透化实验——鉴定核运输因子的经典方法（详述）</h3>
+<p>这个实验体系的建立是核运输领域的里程碑，值得详细理解。</p>
+<p><strong>Digitonin 的选择性透化原理：</strong></p>
+<p>Digitonin 是一种甾体皂苷（steroid saponin），从毛地黄植物中提取。它的关键化学特性是：</p>
+<ul><li><strong>与胆固醇（cholesterol）有高亲和力</strong></li><li>在低浓度下，digitonin 与质膜中的胆固醇相互作用，在膜上形成孔洞，使质膜变得可透性</li><li><strong>核膜的胆固醇含量远低于质膜</strong>，因此在同样浓度的 digitonin 下，核膜不受影响</li></ul>
+<p>不同膜的胆固醇含量：</p>
+<ul><li>质膜：~30-40%（占膜脂的比例）→ 容易被 digitonin 透化</li><li>ER 膜：~5%</li><li>线粒体内膜：&lt;5%</li><li>核膜：~10% → 在适当的 digitonin 浓度下不受影响</li></ul>
+<p><strong>实验流程：</strong></p>
+<p>1. 将培养的细胞（如 HeLa 细胞或 BHK 细胞）用低浓度（~40-50 μg/ml）digitonin 处理 ~5 分钟 2. 质膜被透化 → 细胞质内容物（包括可溶性蛋白、核糖体、小分子等）流出 3. 洗涤去除 digitonin 和溢出的细胞质 4. 现在的细胞：质膜有孔（可进入），核膜和 NPC 完好 5. 加入以下成分：</p>
+<p>6. 用荧光显微镜观察核内荧光积累</p>
+<ul><li><strong>荧光标记的 NLS-蛋白</strong>（如 fluorescein-BSA-NLS）作为报告分子</li><li>测试不同条件：</li><li>仅加报告分子（无胞质因子）</li><li>加报告分子 + 胞质提取物</li><li>加报告分子 + 纯化的 Importin-α + Importin-β + Ran-GTP + NTF2 + ATP</li></ul>
+<p><strong>结果：</strong></p>
+<div class="table-wrap"><table><thead><tr><th>条件</th><th>核内荧光</th><th>解释</th></tr></thead><tbody><tr><td>报告分子 alone</td><td>无/很少</td><td>缺乏运输因子</td></tr><tr><td>+ 完整胞质提取物</td><td>强</td><td>含所有必需因子</td></tr><tr><td>+ Importin-α/β + Ran-GDP + NTF2 + ATP 再生系统</td><td>强</td><td>确认最小必需因子</td></tr><tr><td>+ Importin-α/β（无 Ran）</td><td>结合 NPC 但不释放</td><td>Ran 是释放货物到核内所必需的</td></tr><tr><td>+ ATP 耗尽</td><td>无</td><td>核运输是耗能过程</td></tr></tbody></table></div>
+<p>这个实验体系还被用来进一步鉴定了：</p>
+<ul><li>Importin-α 和 Importin-β 的各自角色</li><li>Ran 的 GTP/GDP 循环</li><li>NTF2 的功能</li><li>CAS 作为 Importin-α 出口受体的角色</li></ul>
+<p>---</p>
+<h2 id="总结与综合对比">总结与综合对比</h2>
+<h3 id="各运输途径的全面对比">各运输途径的全面对比</h3>
+<div class="table-wrap"><table><thead><tr><th>特征</th><th>ER 进口</th><th>线粒体基质进口</th><th>过氧化物酶体进口</th><th>核进口</th><th>核出口</th></tr></thead><tbody><tr><td><strong>信号类型</strong></td><td>N 端信号肽（疏水）</td><td>N 端前导序列（两亲性α螺旋）</td><td>PTS1（C 端-SKL）或 PTS2</td><td>NLS（Lys/Arg 富集）</td><td>NES（Leu 富集）</td></tr><tr><td><strong>信号位置</strong></td><td>N 端</td><td>N 端</td><td>C 端或 N 端</td><td>任意</td><td>任意</td></tr><tr><td><strong>信号切除</strong></td><td>是（SPase）</td><td>是（MPP）</td><td>通常否</td><td>否</td><td>否</td></tr><tr><td><strong>受体</strong></td><td>SRP</td><td>Tom20/Tom22/Tom70</td><td>Pex5/Pex7</td><td>Importin-α/β</td><td>CRM1 (Exportin 1)</td></tr><tr><td><strong>通道</strong></td><td>Sec61</td><td>TOM + TIM23</td><td>Pex 复合物（瞬时）</td><td>NPC（FG-Nup）</td><td>NPC（FG-Nup）</td></tr><tr><td><strong>蛋白折叠状态</strong></td><td>未折叠（共翻译）</td><td>未折叠</td><td><strong>折叠态</strong></td><td><strong>折叠态</strong></td><td><strong>折叠态</strong></td></tr><tr><td><strong>运输时机</strong></td><td>共翻译（主要）</td><td>翻译后</td><td>翻译后</td><td>翻译后</td><td>翻译后</td></tr><tr><td><strong>能量来源</strong></td><td>GTP（SRP/SR）</td><td>Δψ + ATP（mtHsp70）</td><td>ATP（Pex1/Pex6）</td><td>GTP（Ran 循环）</td><td>GTP（Ran 循环）</td></tr><tr><td><strong>膜层数</strong></td><td>1 层</td><td>2 层（同时）</td><td>1 层</td><td>2 层（但通过孔）</td><td>2 层（但通过孔）</td></tr><tr><td><strong>分子伴侣</strong></td><td>BiP（翻译后转运）</td><td>Hsp70/90（胞质）+ mtHsp70（基质）</td><td>—</td><td>—</td><td>—</td></tr></tbody></table></div>
+<h3 id="三种运输机制的核心逻辑">三种运输机制的核心逻辑</h3>
+<p>1. <strong>门控运输</strong>（核运输）：蛋白质保持折叠态，通过巨大的 NPC（~40 nm 通道），由 Importin/Exportin 识别信号并穿越 FG 屏障。方向性由 Ran-GTP 梯度控制。</p>
+<p>2. <strong>跨膜运输</strong>（ER、线粒体等）：蛋白质必须解折叠（大多数情况），通过膜上的蛋白质通道（~1-2 nm 内径）穿过脂双层。方向性由信号序列被受体识别 + 膜另一侧的&quot;拉力&quot;（分子伴侣或膜电位）驱动。</p>
+<p>3. <strong>囊泡运输</strong>（分泌途径）：蛋白质始终在膜内（腔内或嵌在膜中），通过膜泡的出芽和融合在细胞器之间传递。方向性由被膜蛋白（coat proteins）、SNARE 和 Rab GTPase 控制。</p>
+<p>---</p>
+<p><em>本讲义基于 SUSTech 邓怿教授 Lecture 11 课件整理并大幅扩展，参考教材：Molecular Biology of the Cell (Alberts et al., 7th Ed)、Molecular Cell Biology (Lodish et al., 9th Ed)、Essential Cell Biology (Alberts et al.)。适合零基础到进阶学习使用。</em></p><div class="pager">
+      <a href="10_cross_membrane_transport.html">上一讲：第10讲学习讲义：跨膜转运与膜电学性质</a>
+      <a href="12_intracellular_vesicular_traffic.html">下一讲：Lecture 12: 细胞内囊泡运输 (Intracellular Vesicular Traffic)</a>
+    </div></div>
+        <aside class="toc"><strong>本讲目录</strong><a class="toc-level-2" href="#预备知识理解本讲需要的基础">预备知识：理解本讲需要的基础</a><a class="toc-level-3" href="#01-蛋白质的基本结构回顾">0.1 蛋白质的基本结构回顾</a><a class="toc-level-3" href="#02-氨基酸的关键性质">0.2 氨基酸的关键性质</a><a class="toc-level-3" href="#03-生物膜的基本性质">0.3 生物膜的基本性质</a><a class="toc-level-3" href="#04-gtpase-开关">0.4 GTPase 开关</a><a class="toc-level-3" href="#05-分子伴侣（molecular-chaperones）">0.5 分子伴侣（Molecular Chaperones）</a><a class="toc-level-3" href="#06-sds-page-简介">0.6 SDS-PAGE 简介</a><a class="toc-level-2" href="#第一部分细胞内区室化（intracellular-compartmentalization）">第一部分：细胞内区室化（Intracellular Compartmentalization）</a><a class="toc-level-3" href="#11-为什么真核细胞需要区室化">1.1 为什么真核细胞需要区室化？</a><a class="toc-level-3" href="#12-各细胞器详细介绍">1.2 各细胞器详细介绍</a><a class="toc-level-3" href="#13-真核细胞内膜系统的演化假说（详述）">1.3 真核细胞内膜系统的演化假说（详述）</a><a class="toc-level-3" href="#14-蛋白质在不同区室间的运输流程">1.4 蛋白质在不同区室间的运输流程</a><a class="toc-level-3" href="#15-三种运输方式的详细比较">1.5 三种运输方式的详细比较</a><a class="toc-level-3" href="#16-分选信号（sorting-signal）的深入理解">1.6 分选信号（Sorting Signal）的深入理解</a><a class="toc-level-2" href="#第二部分内质网（er）蛋白质进口">第二部分：内质网（ER）蛋白质进口</a><a class="toc-level-3" href="#21-历史背景（详述）">2.1 历史背景（详述）</a><a class="toc-level-3" href="#22-体外翻译实验的详细解析">2.2 体外翻译实验的详细解析</a><a class="toc-level-3" href="#23-n-端信号序列的深入分析">2.3 N-端信号序列的深入分析</a><a class="toc-level-3" href="#24-srp-的结构与功能（详述）">2.4 SRP 的结构与功能（详述）</a><a class="toc-level-3" href="#25-srp-sr-相互作用与-gtp-调控（详述）">2.5 SRP-SR 相互作用与 GTP 调控（详述）</a><a class="toc-level-3" href="#26-sec61-转运通道的结构与功能（详述）">2.6 Sec61 转运通道的结构与功能（详述）</a><a class="toc-level-3" href="#27-共翻译转运-vs-翻译后转运（详述）">2.7 共翻译转运 vs 翻译后转运（详述）</a><a class="toc-level-3" href="#28-膜蛋白拓扑结构的建立（全面详解）">2.8 膜蛋白拓扑结构的建立（全面详解）</a><a class="toc-level-2" href="#第三部分线粒体蛋白质进口">第三部分：线粒体蛋白质进口</a><a class="toc-level-3" href="#31-线粒体的结构详述">3.1 线粒体的结构详述</a><a class="toc-level-3" href="#32-线粒体前导序列（pre-sequence）的详细特征">3.2 线粒体前导序列（Pre-sequence）的详细特征</a><a class="toc-level-3" href="#33-线粒体蛋白转运机器（全面详解）">3.3 线粒体蛋白转运机器（全面详解）</a><a class="toc-level-3" href="#34-基质蛋白进口的驱动力（详述）">3.4 基质蛋白进口的驱动力（详述）</a><a class="toc-level-3" href="#35-线粒体内膜和膜间隙蛋白的进口（五种途径详解）">3.5 线粒体内膜和膜间隙蛋白的进口（五种途径详解）</a><a class="toc-level-2" href="#第四部分过氧化物酶体蛋白质进口">第四部分：过氧化物酶体蛋白质进口</a><a class="toc-level-3" href="#41-过氧化物酶体的形态和功能（扩展版）">4.1 过氧化物酶体的形态和功能（扩展版）</a><a class="toc-level-3" href="#42-过氧化物酶体蛋白进口的特殊机制（详述）">4.2 过氧化物酶体蛋白进口的特殊机制（详述）</a><a class="toc-level-3" href="#43-过氧化物酶体的起源（详述）">4.3 过氧化物酶体的起源（详述）</a><a class="toc-level-2" href="#第五部分核蛋白的进口与出口">第五部分：核蛋白的进口与出口</a><a class="toc-level-3" href="#51-核质运输概述">5.1 核质运输概述</a><a class="toc-level-3" href="#52-核孔复合体（npc）详解">5.2 核孔复合体（NPC）详解</a></aside>
+      </div>
+    </article>
+  </main>
+  <script src="../assets/app.js"></script>
+</body>
+</html>

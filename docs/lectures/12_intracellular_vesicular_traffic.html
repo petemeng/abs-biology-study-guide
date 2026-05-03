@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lecture 12: 细胞内囊泡运输 (Intracellular Vesicular Traffic) 学习笔记 — 基于邓怿教授 (SUSTech) 课件整理 写在前面：为什么要学囊泡运输？ 真核细胞内部有许多膜包裹的&quot;房间&quot;（细胞器），每个房间里住着不同的蛋白质和酶，各司其职。问题来了： 一个在内质网（ER）上合成的蛋白质，怎么准确地被送到高尔基体、溶酶体、或者细胞表面？ 答案就是—— 囊泡运输（vesicular traffi">
+  <title>Lecture 12: 细胞内囊泡运输 (Intracellular Vesicular Traffic) | ABS 复习讲义</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <button class="menu-button" id="menuButton" aria-label="打开目录">目录</button>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark">ABS</span>
+      <span>
+        <strong>生物学复习讲义</strong>
+        <em>Advanced Biological Sciences</em>
+      </span>
+    </a>
+    <label class="search">
+      <span>搜索讲义</span>
+      <input id="searchInput" type="search" placeholder="例如 Ras / 膜电位 / DNA 复制">
+    </label>
+    <div class="search-results" id="searchResults"></div>
+    <nav class="nav"><a class="nav-link " href="01_cells_and_genomes.html">
+      <span>01</span>
+      <strong>Cells and Genomes</strong>
+    </a><a class="nav-link " href="02_cell_chemistry.html">
+      <span>02</span>
+      <strong>Cell Chemistry</strong>
+    </a><a class="nav-link " href="03_protein_structure_and_function.html">
+      <span>03</span>
+      <strong>Protein Structure and Function</strong>
+    </a><a class="nav-link " href="04_dna_chromosomes_and_genome.html">
+      <span>04</span>
+      <strong>DNA, Chromosomes and Genome</strong>
+    </a><a class="nav-link " href="05_dna_replication_repair_and_recombination.html">
+      <span>05</span>
+      <strong>DNA Replication, Repair, and Recombination</strong>
+    </a><a class="nav-link " href="06_from_dna_to_protein.html">
+      <span>06</span>
+      <strong>From DNA to Protein</strong>
+    </a><a class="nav-link " href="07_control_of_gene_expression.html">
+      <span>07</span>
+      <strong>Control of Gene Expression</strong>
+    </a><a class="nav-link " href="08_manipulating_proteins_dna_rna.html">
+      <span>08</span>
+      <strong>Manipulating Proteins, DNA and RNA</strong>
+    </a><a class="nav-link " href="09_membrane_structure_and_functions.html">
+      <span>09</span>
+      <strong>细胞膜结构与功能</strong>
+    </a><a class="nav-link " href="10_cross_membrane_transport.html">
+      <span>10</span>
+      <strong>跨膜转运与膜电学性质</strong>
+    </a><a class="nav-link " href="11_intracellular_compartments_and_protein_sorting.html">
+      <span>11</span>
+      <strong>细胞内区室与蛋白质分选（详细版）</strong>
+    </a><a class="nav-link active" href="#">
+      <span>12</span>
+      <strong>细胞内囊泡运输 (Intracellular Vesicular Traffic)</strong>
+    </a><a class="nav-link " href="13_cell_communication.html">
+      <span>13</span>
+      <strong>细胞通讯</strong>
+    </a></nav>
+  </aside>
+  <main class="page">
+    <article class="article">
+      <div class="article-head">
+        <a class="back-home" href="../index.html">返回首页</a>
+        <p class="lecture-number">Lecture 12</p>
+      </div>
+      <div class="article-layout">
+        <div class="content"><h1 id="lecture-12-细胞内囊泡运输-intracellular-vesicular-traffic">Lecture 12: 细胞内囊泡运输 (Intracellular Vesicular Traffic)</h1>
+<h2 id="学习笔记-—-基于邓怿教授-sustech-课件整理">学习笔记 — 基于邓怿教授 (SUSTech) 课件整理</h2>
+<p>---</p>
+<h2 id="写在前面为什么要学囊泡运输">写在前面：为什么要学囊泡运输？</h2>
+<p>真核细胞内部有许多膜包裹的&quot;房间&quot;（细胞器），每个房间里住着不同的蛋白质和酶，各司其职。问题来了：<strong>一个在内质网（ER）上合成的蛋白质，怎么准确地被送到高尔基体、溶酶体、或者细胞表面？</strong> 答案就是——<strong>囊泡运输（vesicular traffic）</strong>。细胞用小小的膜泡（vesicle）像&quot;快递包裹&quot;一样，把货物从一个细胞器精确运送到另一个细胞器。</p>
+<p>---</p>
+<h2 id="第一部分囊泡运输概述-overview-of-vesicular-traffic">第一部分：囊泡运输概述 (Overview of Vesicular Traffic)</h2>
+<h3 id="11-历史背景george-palade-的开创性工作">1.1 历史背景：George Palade 的开创性工作</h3>
+<p><strong>George Palade（1912–2008）</strong>，耶鲁大学，1974年诺贝尔生理学或医学奖得主。他被誉为&quot;现代细胞生物学之父&quot;，第一个用电子显微镜系统描绘了细胞内的分泌通路。</p>
+<p>他在1975年发表于 <em>Science</em> 的经典论文中，绘制了细胞内运输的路线图：蛋白质从<strong>粗面内质网 → 高尔基体 → 分泌囊泡 → 细胞外</strong>。</p>
+<h3 id="12-jamieson-&amp;-palade-的脉冲追踪实验-pulse-chase-experiment">1.2 Jamieson &amp; Palade 的脉冲追踪实验 (Pulse-Chase Experiment)</h3>
+<p>这是理解分泌途径的经典实验，步骤如下：</p>
+<p><strong>实验材料</strong>：豚鼠胰腺切片（pancreas，是分泌蛋白质的&quot;专业选手&quot;）</p>
+<p><strong>实验步骤</strong>：</p>
+<p>1. <strong>脉冲（Pulse）阶段</strong>：将胰腺薄切片放入含<strong>放射性亮氨酸</strong>的培养基中短暂培养。放射性亮氨酸会被掺入到正在合成的蛋白质中，相当于给蛋白质&quot;贴了标签&quot;。</p>
+<p>2. <strong>追踪（Chase）阶段</strong>：把切片转移到含<strong>非放射性亮氨酸</strong>的培养基中继续培养。此时新合成的蛋白质不再被标记，我们就可以追踪那些已经标记了的蛋白质去了哪里。</p>
+<p><strong>实验结果</strong>（通过放射自显影观察银颗粒的位置）：</p>
+<div class="table-wrap"><table><thead><tr><th>时间点</th><th>放射性标记的位置</th><th>含义</th></tr></thead><tbody><tr><td>3 分钟</td><td>内质网 (ER)</td><td>蛋白质刚刚合成，还在ER中</td></tr><tr><td>10 分钟</td><td>高尔基体 (Golgi)</td><td>蛋白质已经从ER转运到Golgi</td></tr><tr><td>40 分钟</td><td>分泌囊泡 (secretory vesicles)</td><td>蛋白质已经被包装到分泌囊泡中，准备分泌</td></tr></tbody></table></div>
+<p><strong>核心结论</strong>：蛋白质沿着 <strong>ER → Golgi → 分泌囊泡</strong> 的路线依次运输，这个过程是<strong>有序的、定向的</strong>。</p>
+<h3 id="13-用荧光显微镜实时观察蛋白质运输">1.3 用荧光显微镜实时观察蛋白质运输</h3>
+<p><strong>工具</strong>：VSVG-GFP（水泡性口炎病毒 G 蛋白与绿色荧光蛋白的融合体）</p>
+<p><strong>巧妙之处</strong>：这个蛋白有一个温度敏感突变（ts045）——</p>
+<ul><li><strong>40°C</strong>：蛋白质发生错误折叠，被<strong>滞留在 ER</strong> 中</li><li><strong>32°C</strong>：蛋白质正确折叠，作为一个<strong>同步群体</strong>从 ER → Golgi → 质膜 依次移动</li></ul>
+<p>这让科学家可以像看电影一样，实时追踪一波蛋白质从 ER 出发、经过 Golgi、最终到达质膜的全过程。荧光定量分析显示：ER 的荧光先下降，Golgi 的荧光先升后降，质膜的荧光持续上升——完美符合&quot;接力运输&quot;模型。</p>
+<h3 id="14-囊泡运输的核心问题">1.4 囊泡运输的核心问题</h3>
+<p>关于囊泡运输，细胞需要解决四个关键问题：</p>
+<p>1. <strong>囊泡如何形成？</strong>（Vesicle formation / budding） 2. <strong>囊泡如何从原始膜上剪切下来？</strong>（Vesicle fission） 3. <strong>囊泡如何与靶膜融合？</strong>（Vesicle fusion） 4. <strong>整个过程如何被精确调控？</strong>（Regulation）</p>
+<h3 id="15-2013年诺贝尔生理学或医学奖">1.5 2013年诺贝尔生理学或医学奖</h3>
+<p>James Rothman、Randy Schekman 和 Thomas Südhof 因发现<strong>调控囊泡运输的分子机器</strong>而共同获奖。他们分别用不同的方法揭示了这个系统的核心组件。</p>
+<h3 id="16-schekman-的酵母遗传学方法">1.6 Schekman 的酵母遗传学方法</h3>
+<p><strong>Randy Schekman</strong> 使用出芽酵母（<em>Saccharomyces cerevisiae</em>）进行遗传筛选。</p>
+<p><strong>策略</strong>：寻找<strong>温度敏感（Ts）突变体</strong>——</p>
+<ul><li>在<strong>允许温度 24°C</strong> 正常生长和分泌</li><li>在<strong>限制温度 37°C</strong> 分泌受阻</li></ul>
+<p><strong>筛选方法</strong>：</p>
+<p>1. 在主平板上培养酵母菌落 2. 复制到两块平板：一块 24°C，一块 37°C 3. 对分泌酶活性进行染色检测 4. 在 37°C 下分泌减少的菌落就是候选突变体</p>
+<p><strong>关键发现</strong>：鉴定了一系列 <strong>sec 突变体</strong>（secretion-defective），这些突变体在限制温度下出现不同的表型。通过电子显微镜观察，可以看到 sec1 突变体在限制温度下积累了大量囊泡（vesicles, Ve），而在允许温度下形态正常。</p>
+<h3 id="17-五类-sec-突变体揭示分泌通路的顺序">1.7 五类 sec 突变体揭示分泌通路的顺序</h3>
+<p>根据突变体在限制温度下蛋白质积累的位置，可以分为五类：</p>
+<div class="table-wrap"><table><thead><tr><th>类别</th><th>蛋白积累位置</th><th>受损功能</th></tr></thead><tbody><tr><td><strong>Class A</strong></td><td>细胞质中</td><td>进入 ER 的转运</td></tr><tr><td><strong>Class B</strong></td><td>粗面 ER 中</td><td>从粗面 ER 出芽形成囊泡</td></tr><tr><td><strong>Class C</strong></td><td>ER-Golgi 转运囊泡中</td><td>转运囊泡与 Golgi 的融合</td></tr><tr><td><strong>Class D</strong></td><td>Golgi 中</td><td>从 Golgi 到分泌囊泡的转运</td></tr><tr><td><strong>Class E</strong></td><td>分泌囊泡中</td><td>分泌囊泡到细胞表面的转运</td></tr></tbody></table></div>
+<p><strong>意义</strong>：通过<strong>双突变体分析</strong>（将两类突变组合），可以确定各步骤的先后顺序。这就像交通堵塞——如果在路上的两个不同点同时设置路障，车辆只会堵在前面那个路障处。</p>
+<h3 id="18-rothman-的体外生化方法">1.8 Rothman 的体外生化方法</h3>
+<p><strong>James Rothman</strong> 使用<strong>体外囊泡出芽实验（in vitro vesicle budding assay）</strong>：</p>
+<p><strong>基本原理</strong>：</p>
+<p>1. 从细胞中分离<strong>供体膜</strong>（microsomes 或半完整细胞） 2. 加入待测蛋白质 + GTP 3. 孵育后离心（13,000g）分离囊泡 4. 用电子显微镜观察是否产生囊泡</p>
+<p>通过这种方法，可以逐一添加或去除蛋白质，确定哪些是囊泡形成必需的。用TEM（透射电镜）观察，可以看到约 100 nm 大小的囊泡，表面覆盖着蛋白质外壳。</p>
+<h3 id="19-囊泡有蛋白质外套-coat-proteins">1.9 囊泡有蛋白质外套 (Coat Proteins)</h3>
+<p>运输囊泡的表面覆盖着特定的<strong>外套蛋白（coat proteins）</strong>。</p>
+<p><strong>外套蛋白的功能</strong>：</p>
+<p>1. <strong>驱动膜的弯曲和囊泡形成</strong>：外套蛋白组装成笼状结构，把平坦的膜&quot;拱&quot;成球形 2. <strong>选择货物</strong>：通过与货物蛋白质上的分选信号结合，确保正确的蛋白质被装入囊泡 3. <strong>决定运输方向</strong>：不同类型的外套蛋白介导不同方向的运输</p>
+<h3 id="110-三种主要的被膜囊泡">1.10 三种主要的被膜囊泡</h3>
+<div class="table-wrap"><table><thead><tr><th>囊泡类型</th><th>外套蛋白</th><th>运输方向</th></tr></thead><tbody><tr><td><strong>COPII</strong></td><td>Sec23/24, Sec13/31, Sar1</td><td>ER → Golgi（顺行运输）</td></tr><tr><td><strong>COPI</strong></td><td>coatomer (α-ζ七个亚基)</td><td>Golgi → ER（逆行运输），Golgi 内转运</td></tr><tr><td><strong>Clathrin</strong></td><td>clathrin + 接头蛋白 (AP)</td><td>TGN → 内体/溶酶体，质膜 → 内体（内吞）</td></tr></tbody></table></div>
+<p><strong>记忆技巧</strong>：COPII = &quot;<strong>二</strong>号往<strong>前</strong>走&quot;（ER→Golgi），COPI = &quot;<strong>一</strong>号往<strong>回</strong>走&quot;（Golgi→ER）。</p>
+<h3 id="111-gtp酶控制外套蛋白的组装与解聚">1.11 GTP酶控制外套蛋白的组装与解聚</h3>
+<p><strong>核心发现</strong>：在体外出芽实验中加入<strong>不可水解的 GTP 类似物</strong>（如 GTPγS），会导致<strong>被膜囊泡大量积累</strong>。</p>
+<p><strong>为什么？</strong> 因为外套蛋白的组装和解聚受到小GTP酶（small GTPase）的调控：</p>
+<ul><li><strong>GTP 结合态</strong>（活性态）→ 招募外套蛋白，促进囊泡出芽</li><li><strong>GTP 水解为 GDP</strong>（非活性态）→ 外套蛋白脱落（uncoating）</li></ul>
+<p>如果 GTP 不能被水解，外套蛋白就无法脱落，囊泡就一直穿着&quot;外套&quot;——无法与靶膜融合。</p>
+<p><strong>两种关键的外套招募 GTP 酶</strong>：</p>
+<div class="table-wrap"><table><thead><tr><th>GTP酶</th><th>控制的囊泡类型</th></tr></thead><tbody><tr><td><strong>Sar1</strong> (Secretion-Associated Ras-superfamily-related protein 1)</td><td>COPII 囊泡</td></tr><tr><td><strong>ARF</strong> (ADP-Ribosylation Factor)</td><td>COPI 和 clathrin 囊泡</td></tr></tbody></table></div>
+<h3 id="112-sar1-如何招募-copii-外套蛋白">1.12 Sar1 如何招募 COPII 外套蛋白</h3>
+<p>COPII 囊泡形成的详细步骤：</p>
+<p>1. <strong>Sec12</strong>（是 Sar1 的 <strong>GEF</strong>，即鸟苷酸交换因子）位于 ER 膜上 2. Sec12 将 Sar1 上的 GDP 换成 GTP → Sar1 被激活 3. 活化的 Sar1-GTP 暴露出<strong>疏水性 N 端</strong>，像&quot;锚&quot;一样<strong>插入 ER 膜</strong> 4. Sar1-GTP 招募 <strong>Sec23/Sec24</strong> 内层外套复合物</p>
+<p>5. 最后招募 <strong>Sec13/Sec31</strong> 外层外套，形成完整的 COPII 笼状结构</p>
+<ul><li><strong>Sec24</strong>：负责识别和结合<strong>货物蛋白</strong>（cargo sorting）</li><li><strong>Sec23</strong>：是 Sar1 的 <strong>GAP</strong>（GTP酶活化蛋白），能促进 GTP 水解</li></ul>
+<p><strong>重要概念</strong>：GEF 和 GAP</p>
+<div class="table-wrap"><table><thead><tr><th>蛋白</th><th>全名</th><th>功能</th></tr></thead><tbody><tr><td><strong>GEF</strong></td><td>Guanine nucleotide Exchange Factor</td><td>催化 GDP → GTP，<strong>激活</strong> GTPase</td></tr><tr><td><strong>GAP</strong></td><td>GTPase-Activating Protein</td><td>促进 GTP 水解为 GDP，<strong>失活</strong> GTPase</td></tr></tbody></table></div>
+<h3 id="113-囊泡的剪切-fission">1.13 囊泡的剪切 (Fission)</h3>
+<p>当外套蛋白将膜弯曲到一定程度后，囊泡颈部的膜需要被&quot;剪断&quot;才能完全脱离供体膜。这个过程涉及膜的重组——两层脂双层（细胞质面小叶和腔面小叶）在颈部融合并断裂，形成独立的囊泡。</p>
+<h3 id="114-rothman-发现膜融合所需的蛋白质">1.14 Rothman 发现膜融合所需的蛋白质</h3>
+<p><strong>Rothman 的巧妙实验——体外囊泡运输重建</strong>：</p>
+<p><strong>实验设计</strong>：</p>
+<ul><li><strong>供体 Golgi</strong>（&quot;Donor&quot;）：含有 VSV-G 蛋白（在 cis-Golgi 中），但缺少糖基转移酶</li><li><strong>受体 Golgi</strong>（&quot;Acceptor&quot;）：含有糖基转移酶（在 medial-Golgi 中），但没有 VSV-G</li></ul>
+<p><strong>检测方法</strong>：如果 VSV-G 蛋白被转运到受体 Golgi，糖基转移酶就会在 VSV-G 上添加放射性糖基，可以通过测量放射性来定量转运效率。</p>
+<p><strong>结果</strong>：放射性标记随时间增加，说明 VSV-G 确实通过囊泡从供体转运到了受体。</p>
+<h3 id="115-nem-的发现——通往-nsf-和-snare-的线索">1.15 NEM 的发现——通往 NSF 和 SNARE 的线索</h3>
+<p><strong>NEM（N-ethylmaleimide，N-乙基马来酰亚胺）</strong> 是一种化学试剂，能修饰蛋白质上的巯基（-SH）。</p>
+<p><strong>关键发现</strong>：加入 NEM 后，囊泡运输被阻断。但阻断发生在<strong>融合步骤</strong>，而非出芽步骤——细胞中积累了大量约 70 nm 的<strong>未被膜囊泡</strong>（uncoated vesicles），它们携带着 VSV-G 蛋白，但无法与靶膜融合。</p>
+<p>这说明：存在某种对 NEM 敏感的细胞质蛋白，对膜融合至关重要。</p>
+<h3 id="116-snare-蛋白介导膜融合的特异性">1.16 SNARE 蛋白介导膜融合的特异性</h3>
+<p><strong>NSF</strong>：N-ethylmaleimide-<strong>S</strong>ensitive <strong>F</strong>actor（NEM 敏感因子）——正是上面实验中被 NEM 抑制的那个蛋白。NSF 是一种 <strong>ATPase</strong>。</p>
+<p><strong>SNARE</strong>：<strong>S</strong>oluble <strong>N</strong>SF <strong>A</strong>ttachment protein <strong>Re</strong>ceptor（可溶性 NSF 附着蛋白受体）</p>
+<p>SNARE 蛋白介导膜融合的机制：</p>
+<p>1. <strong>v-SNARE</strong>（vesicle-SNARE）：位于囊泡膜上 2. <strong>t-SNARE</strong>（target-SNARE）：位于靶膜上 3. v-SNARE 和 t-SNARE 相互识别并缠绕，形成<strong>trans-SNARE 复合物</strong>（跨膜 SNARE 束），将两层膜拉近 4. 膜被拉得足够近后发生<strong>融合</strong> 5. 融合后，NSF 利用 <strong>ATP 水解</strong>的能量，将 SNARE 复合物拆开（dissociation），回收利用</p>
+<p><strong>特异性</strong>：不同的细胞器有不同的 SNARE 蛋白组合，只有匹配的 v-SNARE / t-SNARE 才能形成稳定的复合物，从而确保囊泡只与正确的靶膜融合。</p>
+<h3 id="117-rab-蛋白引导囊泡到达靶膜">1.17 Rab 蛋白引导囊泡到达靶膜</h3>
+<p><strong>Rab 蛋白</strong> 是另一个大家族的小 GTP 酶（人类有超过 60 种），每种 Rab 蛋白定位在不同的细胞器膜上。</p>
+<p><strong>Rab 蛋白介导的三步曲</strong>：</p>
+<p>1. <strong>系留（Tethering）</strong>：Rab-GTP（活性态）招募<strong>系留因子（tethering factors）</strong>，在远距离&quot;抓住&quot;运输囊泡 2. <strong>对接（Docking）</strong>：囊泡被拉近靶膜 3. <strong>融合（Fusion）</strong>：v-SNARE 和 t-SNARE 形成 trans-SNARE 复合物，驱动膜融合</p>
+<p>融合后，Rab 蛋白上的 GTP 被水解为 GDP，Rab-GDP 被 <strong>GDI</strong>（GDP Dissociation Inhibitor，GDP 解离抑制因子）从膜上取下，送回细胞质中循环利用。</p>
+<h3 id="118-囊泡运输的完整流程总结">1.18 囊泡运输的完整流程总结</h3>
+<p><strong>一个运输囊泡的&quot;生命周期&quot;</strong>：</p>
+<p>1. <strong>出芽（Budding）</strong>：GTP 酶激活 → 招募外套蛋白 → 选择货物 → 膜弯曲 → 囊泡形成 2. <strong>运动（Movement）</strong>：囊泡沿<strong>细胞骨架</strong>（微管）运动，由马达蛋白驱动 3. <strong>系留（Tethering）</strong>：Rab 蛋白和系留因子将囊泡&quot;捕获&quot;到靶膜附近 4. <strong>融合（Fusion）</strong>：SNARE 蛋白介导膜融合，货物被释放</p>
+<p><strong>参与的分子角色</strong>：</p>
+<div class="table-wrap"><table><thead><tr><th>分子</th><th>功能</th></tr></thead><tbody><tr><td>外套蛋白（coat protein）</td><td>驱动囊泡形成，选择货物</td></tr><tr><td>货物受体（cargo receptor）</td><td>识别并结合要运输的蛋白质</td></tr><tr><td>马达蛋白（motor protein）</td><td>沿细胞骨架运动</td></tr><tr><td>系留因子（vesicle tether）</td><td>远距离捕获囊泡</td></tr><tr><td>v-SNARE / t-SNARE</td><td>介导膜融合</td></tr><tr><td>Rab GTPase</td><td>调控系留和融合</td></tr></tbody></table></div>
+<p>---</p>
+<h2 id="第二部分从-er-到-golgi-的运输">第二部分：从 ER 到 Golgi 的运输</h2>
+<h3 id="21-蛋白质通过-copii-囊泡离开-er">2.1 蛋白质通过 COPII 囊泡离开 ER</h3>
+<p><strong>COPII 外套的组成</strong>（前面已经介绍）：</p>
+<ul><li><strong>Sar1-GTP</strong>：插入膜中，启动过程</li><li><strong>Sec23/Sec24</strong>（内层外套）：Sec24 识别货物上的<strong>ER 出口信号（exit signal）</strong></li><li><strong>Sec13/Sec31</strong>（外层外套）：形成笼状结构</li></ul>
+<p><strong>货物的选择</strong>：</p>
+<ul><li><strong>膜蛋白</strong>（membrane-bound cargo）：在其<strong>细胞质面结构域</strong>上携带分选信号，直接被 Sec24 识别</li><li><strong>可溶性分泌蛋白</strong>（soluble cargo）：不直接与外套蛋白接触，而是通过<strong>膜蛋白受体</strong>间接被选入囊泡（受体的细胞质面与 Sec24 结合，腔面与可溶性货物结合）</li><li><strong>未折叠/错误折叠的蛋白</strong>：被 ER 中的<strong>分子伴侣（如 BiP）</strong> 结合并滞留，<strong>不能离开 ER</strong></li></ul>
+<h3 id="22-er-出口需要正确的蛋白折叠">2.2 ER 出口需要正确的蛋白折叠</h3>
+<p><strong>核心原则</strong>：只有<strong>正确折叠和组装</strong>的蛋白质才能离开 ER。</p>
+<p><strong>以 IgG（免疫球蛋白 G）的组装为例</strong>：</p>
+<p>1. 抗体重链被合成后，立即被分子伴侣 <strong>BiP</strong> 结合并滞留在 ER 中 2. 轻链合成后与重链组装 3. 组装过程中 BiP 逐渐释放 4. 只有当 2 条重链 + 2 条轻链完全组装成 Y 形四聚体后，BiP 完全释放，抗体才能被装入 COPII 囊泡<strong>分泌出去</strong></p>
+<p>如果亚基缺失或折叠错误，BiP 不释放，蛋白质就<strong>永远留在 ER</strong> 中。这是 ER 的<strong>质量控制（quality control）</strong> 机制。</p>
+<h3 id="23-copii-囊泡不都是圆球形">2.3 COPII 囊泡不都是圆球形</h3>
+<p><strong>有趣的发现</strong>：COPII 外套是一个<strong>灵活的系统</strong>，可以形成不同形状的囊泡：</p>
+<ul><li>小的球形囊泡（~60-80 nm）：运输常规大小的蛋白质</li><li><strong>大的管状囊泡</strong>：运输超大货物，如<strong>原胶原（procollagen）</strong>——长约 300 nm 的三螺旋纤维，根本装不进小囊泡！</li></ul>
+<p>要形成管状囊泡，需要额外的<strong>包装蛋白（packaging proteins）</strong> 与 Sec13/Sec31 外套配合。</p>
+<h3 id="24-囊泡管状簇-vtcs-和-er-出口位点">2.4 囊泡管状簇 (VTCs) 和 ER 出口位点</h3>
+<p><strong>ER 出口位点（ERES, ER Exit Site）</strong>：ER 膜上的特定区域，<strong>没有核糖体</strong>（称为过渡性 ER，transitional ER），是 COPII 囊泡出芽的地方。</p>
+<p><strong>VTC（Vesicular-Tubular Cluster）</strong>：</p>
+<ul><li>COPII 囊泡从 ERES 出芽后，不是直接飞到 Golgi，而是先在附近聚集形成 VTC</li><li>VTC 也叫 <strong>ERGIC</strong>（ER-Golgi 中间区室）</li><li>VTC 沿着<strong>微管</strong>向 Golgi 方向运动</li><li>在 VTC 阶段，<strong>COPI 囊泡</strong>已经开始形成，执行逆行运输（将 ER 驻留蛋白送回 ER）</li></ul>
+<h3 id="25-高尔基体的形态和结构">2.5 高尔基体的形态和结构</h3>
+<p><strong>高尔基体不是简单的&quot;一摞煎饼&quot;！</strong></p>
+<p>高尔基体由一系列功能不同的扁平囊状结构（cisternae）堆叠而成，不同层具有不同的酶：</p>
+<div class="table-wrap"><table><thead><tr><th>区域</th><th>主要功能</th></tr></thead><tbody><tr><td><strong>cis-Golgi 网络 (CGN)</strong></td><td>分选站；溶酶体蛋白的寡糖磷酸化</td></tr><tr><td><strong>cis 面</strong></td><td>去除甘露糖残基</td></tr><tr><td><strong>medial 面</strong></td><td>去除甘露糖；添加 GlcNAc</td></tr><tr><td><strong>trans 面</strong></td><td>添加半乳糖 (Gal)；添加唾液酸 (NANA)</td></tr><tr><td><strong>trans-Golgi 网络 (TGN)</strong></td><td>酪氨酸和碳水化合物的硫酸化；<strong>最终分选站</strong>——蛋白质被分拣到溶酶体、质膜或分泌囊泡</td></tr></tbody></table></div>
+<p><strong>方向性</strong>：cis 面朝向细胞核/ER，trans 面朝向质膜。</p>
+<p>高尔基体的cisternae之间有<strong>管状连接</strong>，整体结构比教科书上画的复杂得多。</p>
+<h3 id="26-高尔基体内部运输的两种模型">2.6 高尔基体内部运输的两种模型</h3>
+<p>关于蛋白质如何穿过高尔基体的多层结构，有两种模型之争：</p>
+<p><strong>模型 A：囊池成熟模型（Cisternal Maturation Model）</strong></p>
+<ul><li>新的 cisterna 在 cis 面不断形成，旧的在 trans 面不断消解</li><li>整个 cisterna 带着货物一起&quot;向前走&quot;</li><li><strong>酶通过 COPI 囊泡逆行运输</strong>，从成熟的 cisterna 被送回到较年轻的 cisterna</li><li>这个模型能解释<strong>大型货物</strong>（如原胶原纤维）如何穿过 Golgi——它们太大了，装不进小囊泡</li></ul>
+<p><strong>模型 B：囊泡运输模型（Vesicle Transport Model）</strong></p>
+<ul><li>Cisternae 是固定不动的</li><li>货物通过囊泡从一层 cisterna 转运到下一层</li></ul>
+<p><strong>目前的共识</strong>：两种机制可能<strong>同时存在</strong>，不同类型的货物可能使用不同的机制。</p>
+<h3 id="27-copi-介导的逆行运输">2.7 COPI 介导的逆行运输</h3>
+<p><strong>为什么需要逆行运输？</strong></p>
+<p>ER 中有很多<strong>驻留蛋白</strong>（如分子伴侣 BiP），它们本不应该离开 ER，但有时会意外地被&quot;裹挟&quot;进 COPII 囊泡中。COPI 囊泡的一个重要功能就是<strong>把这些&quot;泄漏&quot;出去的 ER 蛋白送回来</strong>。</p>
+<h3 id="28-er-检索信号-er-retrieval-signals">2.8 ER 检索信号 (ER Retrieval Signals)</h3>
+<p>ER 驻留蛋白之所以能被&quot;找回来&quot;，是因为它们携带特定的<strong>检索信号</strong>：</p>
+<div class="table-wrap"><table><thead><tr><th>蛋白类型</th><th>检索信号</th><th>识别机制</th></tr></thead><tbody><tr><td><strong>ER 驻留膜蛋白</strong></td><td>C 端 <strong>KKXX</strong> 基序</td><td>直接被 COPI 外套识别</td></tr><tr><td><strong>ER 驻留可溶性蛋白</strong></td><td>C 端 <strong>H/KDEL</strong> 序列</td><td>被 <strong>KDEL 受体</strong>识别</td></tr></tbody></table></div>
+<p><strong>KDEL 受体的工作机制</strong>（非常巧妙）：</p>
+<ul><li>KDEL 受体是一个跨膜蛋白，在 ER 和 Golgi 之间穿梭</li><li>在 <strong>Golgi</strong> 中（<strong>pH 较低</strong>，H⁺浓度较高）：KDEL 受体与带有 KDEL 信号的蛋白<strong>高亲和力结合</strong></li><li>结合后，KDEL 受体-货物复合物被装入 <strong>COPI 囊泡</strong>，送回 ER</li><li>在 <strong>ER</strong> 中（<strong>pH 较高</strong>）：KDEL 受体释放货物</li><li>空的 KDEL 受体再通过 COPII 囊泡回到 Golgi，准备下一轮运输</li></ul>
+<p><strong>利用 pH 差异来调控结合/释放</strong>——这是细胞中反复出现的精妙设计！</p>
+<h3 id="29-er-→-golgi-运输总结">2.9 ER → Golgi 运输总结</h3>
+<p>要点回顾：</p>
+<ul><li>COPII 囊泡从 ER 出口位点（ERES）出芽，介导 ER → Golgi 的顺行运输</li><li>膜蛋白通过细胞质面的出口信号被选入 COPII 囊泡</li><li>可溶性分泌蛋白通过&quot;批量流动（bulk-flow）&quot;或受体介导进入 COPII 囊泡</li><li>只有正确折叠的蛋白才能离开 ER（质量控制）</li><li>COPI 囊泡介导逆行运输，将 ER 驻留蛋白送回</li><li>ER 驻留蛋白靠 KKXX（膜蛋白）或 H/KDEL（可溶性蛋白）信号被检索回来</li></ul>
+<p>---</p>
+<h2 id="第三部分蛋白质糖基化-protein-glycosylation">第三部分：蛋白质糖基化 (Protein Glycosylation)</h2>
+<h3 id="31-两种糖基化类型">3.1 两种糖基化类型</h3>
+<p>糖基化是在蛋白质上添加糖链的<strong>翻译后修饰</strong>，对蛋白质的折叠、稳定性、识别和功能都很重要。</p>
+<div class="table-wrap"><table><thead><tr><th>类型</th><th>连接位点</th><th>连接方式</th><th>起始位置</th></tr></thead><tbody><tr><td><strong>N-糖基化</strong></td><td><strong>天冬酰胺 (Asn)</strong> 的酰胺氮</td><td>N-乙酰葡糖胺 (GlcNAc) 连接到 Asn</td><td><strong>ER</strong>（开始），Golgi（修饰）</td></tr><tr><td><strong>O-糖基化</strong></td><td><strong>丝氨酸 (Ser) 或苏氨酸 (Thr)</strong> 的羟基氧</td><td>N-乙酰半乳糖胺 (GalNAc) 连接到 Ser/Thr</td><td><strong>Golgi</strong></td></tr></tbody></table></div>
+<h3 id="32-n-糖基化的详细过程">3.2 N-糖基化的详细过程</h3>
+<p><strong>第一步：在 ER 中的 en bloc 转移</strong></p>
+<p>N-糖基化有一个识别序列：<strong>Asn-X-Ser/Thr</strong>（X 可以是除 Pro 以外的任何氨基酸）。</p>
+<p>过程：</p>
+<p>1. 一个<strong>预制的 14 糖寡聚糖</strong>（3 葡萄糖 + 9 甘露糖 + 2 GlcNAc）被连接在 ER 膜中的<strong>多萜醇磷酸（dolichol-P）</strong>上 2. 当新生肽链从核糖体中伸出、进入 ER 腔时，<strong>寡糖基转移酶（oligosaccharyl transferase, OST）</strong> 将整个 14 糖<strong>一次性（en bloc）</strong> 转移到 Asn 上 3. 然后在 ER 腔中，<strong>3 个葡萄糖和 1 个甘露糖</strong>被酶移除（糖修剪）</p>
+<p><strong>第二步：两种最终产物</strong></p>
+<div class="table-wrap"><table><thead><tr><th>类型</th><th>特征</th><th>产生位置</th></tr></thead><tbody><tr><td><strong>高甘露糖型（High-mannose）</strong></td><td>主要含甘露糖残基</td><td>只在 ER 中修剪</td></tr><tr><td><strong>复杂型（Complex）</strong></td><td>含多种糖（GlcNAc, Gal, NANA/唾液酸）</td><td>在 Golgi 中进一步修饰</td></tr></tbody></table></div>
+<h3 id="33-golgi-中的-n-糖基化修饰">3.3 Golgi 中的 N-糖基化修饰</h3>
+<p>在蛋白质通过 Golgi 的不同层时，糖链被不同的酶依次修饰：</p>
+<div class="table-wrap"><table><thead><tr><th>Golgi 层</th><th>酶</th><th>反应</th></tr></thead><tbody><tr><td><strong>Cis</strong></td><td>甘露糖苷酶 I (Mannosidase I)</td><td>移除甘露糖残基</td></tr><tr><td><strong>Medial</strong></td><td>GlcNAc 转移酶</td><td>添加 GlcNAc</td></tr><tr><td><strong>Medial</strong></td><td>甘露糖苷酶 II (Mannosidase II)</td><td>进一步移除甘露糖</td></tr><tr><td><strong>Trans</strong></td><td>多种转移酶</td><td>添加半乳糖 (Gal)、唾液酸 (NANA/Sialic acid)</td></tr></tbody></table></div>
+<p>这个过程就像<strong>流水线</strong>——蛋白质通过不同的&quot;车间&quot;，在每个车间接受不同的加工。</p>
+<h3 id="34-o-糖基化">3.4 O-糖基化</h3>
+<p>O-糖基化<strong>完全发生在 Golgi</strong> 中（不同于 N-糖基化从 ER 开始）。</p>
+<p>两种最重要的 O-糖基化：</p>
+<p>1. <strong>黏蛋白型 O-聚糖（Mucin-type O-glycans）</strong>：GalNAc 连接到 Ser/Thr → 常见于黏蛋白，保护上皮表面 2. <strong>糖胺聚糖（GAG）链</strong>：木糖 (Xylose) 连接到 Ser → 形成蛋白聚糖（proteoglycans）的长糖链</p>
+<p>---</p>
+<h2 id="第四部分从-tgn-到溶酶体的运输">第四部分：从 TGN 到溶酶体的运输</h2>
+<h3 id="41-溶酶体的基本特征">4.1 溶酶体的基本特征</h3>
+<p><strong>溶酶体（Lysosome）</strong> 是细胞的&quot;消化工厂&quot;：</p>
+<ul><li><strong>大小</strong>：0.2–0.5 μm</li><li><strong>内部 pH</strong>：~5.0（酸性环境，由 <strong>V-ATPase（H⁺泵）</strong> 维持）</li><li><strong>细胞质 pH</strong>：~7.2</li><li><strong>含有约 40 种酸性水解酶</strong>：包括核酸酶、蛋白酶、糖苷酶、脂酶、磷酸酶、硫酸酶、磷脂酶等</li><li><strong>膜特征</strong>：限制膜（limiting membrane）上有高度糖基化的膜蛋白（如 LAMP1, LAMP2, LAMP3）保护膜免受自身酶的消化；含有<strong>腔内囊泡（intraluminal vesicles, ILVs）</strong>和特殊脂质<strong>溶血双磷脂酸（lyso-bisphosphatidic acid）</strong></li></ul>
+<h3 id="42-m6p-是溶酶体酶的分选信号">4.2 M6P 是溶酶体酶的分选信号</h3>
+<p><strong>问题</strong>：溶酶体的酸性水解酶是在 ER 中合成的，它们怎么知道要去溶酶体而不是被分泌出去？</p>
+<p><strong>答案</strong>：<strong>甘露糖-6-磷酸（Mannose-6-Phosphate, M6P）</strong> 信号！</p>
+<p><strong>M6P 信号的产生过程</strong>（在 Golgi 中）：</p>
+<p>1. 溶酶体水解酶前体的三维结构上有一个<strong>信号补丁（signal patch）</strong>——不是线性序列，而是蛋白质折叠后在表面形成的三维构象 2. <strong>GlcNAc 磷酸转移酶</strong>识别这个信号补丁，将 GlcNAc-磷酸添加到酶上 N-聚糖的甘露糖残基上 3. 然后另一个酶将 GlcNAc 移除，暴露出<strong>磷酸基团</strong>，形成 <strong>M6P</strong> 标签</p>
+<h3 id="43-m6p-如何将蛋白质靶向溶酶体">4.3 M6P 如何将蛋白质靶向溶酶体</h3>
+<p>1. 在 <strong>TGN</strong> 中，带有 M6P 标签的溶酶体水解酶前体与 <strong>M6P 受体（MPR, Mannose-6-Phosphate Receptor）</strong> 结合 2. MPR 的细胞质面被 <strong>clathrin 外套</strong> 识别（通过接头蛋白），形成 <strong>clathrin 包被囊泡</strong> 3. 囊泡被运输到<strong>早期内体 (early endosome)</strong> 4. 在内体的<strong>酸性 pH</strong> 中，M6P-水解酶与 MPR <strong>解离</strong> 5. 水解酶前体继续前往晚期内体/溶酶体，在那里被<strong>激活</strong>（酸性 pH 下前肽被切除） 6. <strong>空的 MPR</strong> 通过 <strong>retromer（逆转录复合体）</strong> 介导的囊泡被<strong>回收到 TGN</strong>，重复使用 7. 水解酶上的<strong>磷酸基团也被移除</strong></p>
+<p><strong>retromer</strong> 是一个非常重要的蛋白复合物，负责将 MPR 从内体回收到 TGN。retromer 功能障碍与神经退行性疾病有关。</p>
+<p>---</p>
+<h2 id="第五部分分泌和胞吐-secretion-and-exocytosis">第五部分：分泌和胞吐 (Secretion and Exocytosis)</h2>
+<h3 id="51-两种分泌途径">5.1 两种分泌途径</h3>
+<div class="table-wrap"><table><thead><tr><th>类型</th><th>存在细胞</th><th>特点</th><th>货物举例</th></tr></thead><tbody><tr><td><strong>组成型分泌（Constitutive）</strong></td><td><strong>所有</strong>真核细胞</td><td>持续进行，不需要外部信号</td><td>质膜蛋白、脂质、ECM 蛋白</td></tr><tr><td><strong>调控型分泌（Regulated）</strong></td><td>专职分泌细胞</td><td>需要<strong>外部信号</strong>触发</td><td>激素、组胺、神经递质、消化酶</td></tr></tbody></table></div>
+<h3 id="52-分泌囊泡的形成过程">5.2 分泌囊泡的形成过程</h3>
+<p>以胰腺 β 细胞为例：</p>
+<p>1. 在 <strong>TGN</strong> 中，分泌蛋白（如胰岛素原）开始<strong>聚集浓缩</strong> 2. 形成<strong>未成熟分泌囊泡（immature secretory vesicle）</strong> 3. <strong>Clathrin 包被囊泡（CCVs）</strong> 从未成熟囊泡上出芽，将<strong>多余的膜和非分泌蛋白送回 TGN</strong>（逆行运输） 4. 通过不断移除膜，囊泡体积缩小，货物进一步浓缩 5. 形成<strong>成熟分泌囊泡（mature secretory vesicle）</strong>——货物高度浓缩的&quot;弹药库&quot;</p>
+<h3 id="53-ca²⁺-调控的神经递质释放">5.3 Ca²⁺ 调控的神经递质释放</h3>
+<p><strong>Thomas Südhof</strong> 的贡献——揭示 Ca²⁺ 如何触发突触囊泡释放。</p>
+<p><strong>突触囊泡的融合机制（5 步）</strong>：</p>
+<p>1. <strong>对接（Docking）</strong>：突触囊泡靠近突触前膜，v-SNARE（<strong>synaptobrevin/突触小泡蛋白</strong>）与 t-SNARE（<strong>syntaxin</strong> 和 <strong>SNAP-25</strong>）开始组装 2. <strong>启动 I（Priming I）</strong>：SNARE 束部分组装 3. <strong>启动 II（Priming II）</strong>：<strong>Complexin（复合蛋白）</strong> 结合到 SNARE 束上，<strong>&quot;锁住&quot;</strong> 融合机器——囊泡处于&quot;待发射&quot;状态 4. <strong>融合孔开放（Fusion pore opening）</strong>：<strong>Ca²⁺</strong> 流入 → 结合到 <strong>synaptotagmin（突触结合蛋白）</strong> 上 → synaptotagmin 与磷脂和 SNARE 蛋白相互作用 → 解除 complexin 的锁定 → 膜融合发生 5. <strong>融合完成（Fusion complete）</strong>：神经递质释放到突触间隙</p>
+<p><strong>关键蛋白</strong>：</p>
+<div class="table-wrap"><table><thead><tr><th>蛋白</th><th>位置</th><th>功能</th></tr></thead><tbody><tr><td><strong>Synaptobrevin</strong></td><td>囊泡膜（v-SNARE）</td><td>与 t-SNARE 配对</td></tr><tr><td><strong>Syntaxin</strong></td><td>突触前膜（t-SNARE）</td><td>与 v-SNARE 配对</td></tr><tr><td><strong>SNAP-25</strong></td><td>突触前膜（t-SNARE）</td><td>与上述两者组成四螺旋束</td></tr><tr><td><strong>Complexin</strong></td><td>细胞质</td><td>锁定 SNARE 束，防止自发融合</td></tr><tr><td><strong>Synaptotagmin</strong></td><td>囊泡膜</td><td>Ca²⁺ 感受器，触发融合</td></tr></tbody></table></div>
+<h3 id="54-胞吐后的膜平衡">5.4 胞吐后的膜平衡</h3>
+<p>胞吐（exocytosis）时，囊泡膜与质膜融合，增加了质膜面积。</p>
+<p><strong>三种需要快速增加质膜的场景</strong>：</p>
+<p>1. <strong>细胞分裂</strong>（卵裂沟形成） 2. <strong>吞噬作用</strong>（巨噬细胞吞噬病菌时需要大量膜） 3. <strong>伤口修复</strong></p>
+<p><strong>膜的流量平衡</strong>：</p>
+<div class="table-wrap"><table><thead><tr><th>前向流（Forward flow）</th><th>逆向流（Retrograde flow）</th><th>结果</th></tr></thead><tbody><tr><td>= 逆向流</td><td>= 前向流</td><td>细胞大小不变</td></tr><tr><td>&gt; 逆向流</td><td>&lt; 前向流</td><td>细胞快速生长</td></tr><tr><td>&lt; 逆向流</td><td>&gt; 前向流</td><td>细胞缩小</td></tr></tbody></table></div>
+<p>---</p>
+<h2 id="第六部分内吞和内体-溶酶体系统">第六部分：内吞和内体-溶酶体系统</h2>
+<h3 id="61-两种主要的内吞方式">6.1 两种主要的内吞方式</h3>
+<div class="table-wrap"><table><thead><tr><th>类型</th><th>特点</th><th>吞噬物大小</th></tr></thead><tbody><tr><td><strong>吞噬作用（Phagocytosis）</strong></td><td>&quot;细胞吃&quot;，主要是免疫细胞（巨噬细胞）</td><td>大颗粒（细菌、细胞碎片等）</td></tr><tr><td><strong>胞饮作用（Pinocytosis）</strong></td><td>&quot;细胞喝&quot;，所有细胞都有</td><td>液体和溶质</td></tr></tbody></table></div>
+<p><strong>Clathrin 介导的内吞（CME）</strong> 是最经典的胞饮机制。</p>
+<h3 id="62-clathrin-的结构">6.2 Clathrin 的结构</h3>
+<p><strong>Clathrin</strong>（网格蛋白）由 Barbara Pearse 于 1975 年命名（来自拉丁语 clathrates，意为&quot;格子状的&quot;）。</p>
+<p><strong>结构层次</strong>：</p>
+<p>1. <strong>三脚架（Triskelion）</strong>：由 3 条重链 + 3 条轻链组成的三条&quot;腿&quot;结构，是 clathrin 的基本单元 2. <strong>笼状结构（Basket）</strong>：多个三脚架进一步组装成由<strong>六边形和五边形</strong>组成的多面体笼子（类似足球的结构，通过五边形产生弯曲）</p>
+<h3 id="63-接头蛋白-adaptor-proteins-aps">6.3 接头蛋白 (Adaptor Proteins, APs)</h3>
+<p>Clathrin 本身<strong>不直接结合货物</strong>，需要<strong>接头蛋白（AP）</strong>来连接。</p>
+<p><strong>AP 复合物是核心连接者</strong>，同时桥接三个组分：</p>
+<p>1. <strong>膜</strong>（通过结合特定的磷酸肌醇脂质） 2. <strong>货物蛋白</strong>（识别货物的内吞信号） 3. <strong>Clathrin</strong>（招募 clathrin 三脚架）</p>
+<p><strong>AP 复合物家族</strong>（四亚基异四聚体）：</p>
+<div class="table-wrap"><table><thead><tr><th>AP 复合物</th><th>定位</th><th>功能</th></tr></thead><tbody><tr><td><strong>AP1</strong></td><td>TGN, 内体</td><td>Clathrin 介导的运输</td></tr><tr><td><strong>AP2</strong></td><td><strong>质膜</strong></td><td>Clathrin 介导的内吞（最经典）</td></tr><tr><td><strong>AP3</strong></td><td>TGN, 内体</td><td>溶酶体相关细胞器</td></tr><tr><td><strong>AP4</strong></td><td>TGN, 内体</td><td>Clathrin 非依赖性运输</td></tr><tr><td><strong>GGA</strong></td><td>TGN</td><td>单体接头蛋白</td></tr></tbody></table></div>
+<h3 id="64-ap2-的激活机制">6.4 AP2 的激活机制</h3>
+<p>AP2 有两种构象：</p>
+<ul><li><strong>锁定态（Locked）</strong>：AP2 呈紧凑构象，隐藏了货物结合位点和磷脂结合位点</li><li><strong>开放态（Open）</strong>：AP2 打开构象，暴露结合位点</li></ul>
+<p><strong>激活需要双重信号</strong>：</p>
+<p>1. <strong>PI(4,5)P₂</strong>（质膜上特有的磷酸肌醇）与 AP2 的 α 亚基结合 2. <strong>货物蛋白的内吞信号</strong>与 AP2 的 μ2 亚基结合</p>
+<p>两者<strong>协同作用</strong>使 AP2 从锁定态转变为开放态。这确保了 clathrin 包被囊泡<strong>主要</strong>在有货物的地方形成（虽然没有货物也可以形成空囊泡，但效率低很多）。</p>
+<h3 id="65-clathrin-包被囊泡的组装与解聚">6.5 Clathrin 包被囊泡的组装与解聚</h3>
+<p>完整过程：</p>
+<p>1. <strong>外套组装和货物选择</strong>：AP2 结合 PI(4,5)P₂ 和货物 → 招募 clathrin 三脚架 2. <strong>芽体形成</strong>：clathrin 笼子逐渐组装，膜弯曲 3. <strong>囊泡形成</strong>：需要<strong>膜弯曲蛋白</strong>和<strong>剪切蛋白（dynamin）</strong> 4. <strong>去被膜（Uncoating）</strong>：囊泡从膜上剪切后，<strong>PI(5)P 磷酸酶</strong>水解 PI(4,5)P₂ → 失去了 AP2 与膜的结合力 → 外套蛋白脱落 → 形成<strong>裸露的运输囊泡</strong></p>
+<h3 id="66-磷酸肌醇-pips-是膜身份的标签">6.6 磷酸肌醇 (PIPs) 是膜身份的标签</h3>
+<p><strong>核心概念</strong>：不同的细胞器膜含有不同种类的磷酸肌醇（PIPs），这些 PIPs 就像&quot;邮编&quot;一样标记了每个细胞器。</p>
+<div class="table-wrap"><table><thead><tr><th>磷酸肌醇</th><th>主要分布</th></tr></thead><tbody><tr><td><strong>PI(4,5)P₂</strong></td><td>质膜</td></tr><tr><td><strong>PI(3)P</strong></td><td>早期内体</td></tr><tr><td><strong>PI(4)P</strong></td><td>Golgi</td></tr><tr><td><strong>PI(3,5)P₂</strong></td><td>晚期内体</td></tr><tr><td><strong>PI(3,4,5)P₃</strong></td><td>质膜（受信号调控）</td></tr></tbody></table></div>
+<p>PIPs 通过招募含有特定<strong>PI 结合结构域</strong>（如 PH domain, FYVE domain, PX domain）的蛋白质，来实现膜身份识别和信号传导。</p>
+<h3 id="67-dynamin——囊泡剪切的&quot;剪刀&quot;">6.7 Dynamin——囊泡剪切的&quot;剪刀&quot;</h3>
+<p><strong>发现</strong>：来自果蝇 <em>Shibire</em> 突变体（&quot;颤抖&quot;突变体）的研究。这种突变体在高温下瘫痪，因为<strong>突触囊泡无法从质膜上剪切下来</strong>。电镜下可以看到，囊泡通过长长的&quot;脖子&quot;连在质膜上，无法释放。</p>
+<p><strong>Dynamin 的作用机制</strong>：</p>
+<p>1. Dynamin 含有 <strong>PI(4,5)P₂ 结合域</strong>，被招募到囊泡颈部 2. Dynamin 还与 <strong>Amphiphysin</strong>（含 BAR 结构域的蛋白）结合——BAR 结构域像&quot;香蕉形的夹子&quot;一样感知和诱导膜弯曲 3. 多个 Dynamin 分子在囊泡颈部组装成<strong>螺旋环</strong> 4. Dynamin 的 <strong>GTPase 结构域</strong>水解 GTP → 构象改变 → 收缩 → 将囊泡颈部<strong>拧断</strong></p>
+<h3 id="68-受体介导的-ldl-内吞——经典案例">6.8 受体介导的 LDL 内吞——经典案例</h3>
+<p><strong>LDL（低密度脂蛋白）</strong> 是血液中运输胆固醇的&quot;快递包裹&quot;（~22 nm 的颗粒，外面是磷脂和载脂蛋白，里面装满胆固醇和胆固醇酯）。</p>
+<p><strong>LDL 内吞的完整过程</strong>：</p>
+<p>1. LDL 颗粒结合质膜上的 <strong>LDL 受体</strong> 2. LDL 受体-LDL 复合物被集中到 <strong>clathrin 包被的坑（coated pit）</strong> 中 3. 坑内陷形成 <strong>clathrin 包被囊泡</strong> → <strong>dynamin 剪切</strong> → 囊泡释放 4. 囊泡<strong>去被膜</strong> → 与<strong>早期内体（early endosome）</strong>融合 5. 在内体的酸性环境（pH ~6）中，<strong>LDL 与 LDL 受体分离</strong> 6. <strong>LDL 受体被回收</strong>到质膜，重复使用 7. <strong>LDL 颗粒继续前往晚期内体和溶酶体</strong> 8. 在溶酶体中，LDL 被水解酶降解，释放出<strong>游离胆固醇</strong>供细胞使用</p>
+<p><strong>临床意义</strong>：LDL 受体基因突变导致<strong>家族性高胆固醇血症</strong>——LDL 无法被有效清除，血液中 LDL 水平升高，动脉粥样硬化和心血管疾病风险大增。</p>
+<h3 id="69-其他内吞方式">6.9 其他内吞方式</h3>
+<p>除了 clathrin 介导的内吞，还有：</p>
+<p>1. <strong>Caveolae 介导的胞饮</strong>：Caveolae（小凹）是质膜上富含胆固醇和鞘磷脂的小型内陷，由 <strong>caveolin</strong> 蛋白形成 2. <strong>FEME（Fast Endophilin-Mediated Endocytosis，快速内吞蛋白介导的内吞）</strong>：由 endophilin（含 BAR 结构域）和 dynamin 驱动，不依赖 clathrin 3. <strong>巨胞饮（Macropinocytosis）</strong>：细胞膜形成大的<strong>褶皱（ruffle）</strong>，包裹大量细胞外液体，形成大的<strong>巨胞饮体（macropinosome）</strong>。由<strong>肌动蛋白（actin）</strong>重排驱动</p>
+<h3 id="610-内体-溶酶体系统">6.10 内体-溶酶体系统</h3>
+<p>这是一个由多个动态互相转化的膜室组成的系统：</p>
+<p><strong>各组成部分</strong>：</p>
+<div class="table-wrap"><table><thead><tr><th>膜室</th><th>标志蛋白</th><th>pH</th><th>形态特征</th><th>功能</th></tr></thead><tbody><tr><td><strong>早期内体 (EE)</strong></td><td><strong>Rab5</strong>, PI(3)P</td><td>~6.5</td><td>含管状和空泡状结构域</td><td><strong>分选站</strong>（sorting endosome）</td></tr><tr><td><strong>回收内体 (RE)</strong></td><td><strong>Rab11</strong></td><td>~6.8</td><td>管状结构</td><td>将膜蛋白回收到质膜</td></tr><tr><td><strong>多泡体/晚期内体 (MVB/LE)</strong></td><td><strong>Rab7</strong></td><td>~5.5</td><td>含大量<strong>腔内囊泡 (ILVs)</strong></td><td>蛋白质降解的准备</td></tr><tr><td><strong>内体溶酶体 (endolysosome)</strong></td><td>—</td><td>—</td><td>部分电子致密</td><td>LE 与溶酶体融合的中间体</td></tr><tr><td><strong>溶酶体 (LY)</strong></td><td>LAMP 蛋白</td><td>~4.5-5.0</td><td>电子致密腔</td><td>最终降解站</td></tr></tbody></table></div>
+<h3 id="611-早期内体-ee-是分选站">6.11 早期内体 (EE) 是分选站</h3>
+<p>早期内体接收来自质膜的内吞货物后，可以有三种去向：</p>
+<p>1. <strong>回收（Recycling）</strong>：受体被送回质膜重新使用（如 LDL 受体、转铁蛋白受体）→ 通过回收内体 2. <strong>逆行运输</strong>：某些蛋白质被送回 TGN（如 M6P 受体）→ 通过 retromer 3. <strong>降解（Degradation）</strong>：信号分子/受体被送入 MVB/溶酶体降解 → 下调信号</p>
+<h3 id="612-晚期内体-le-多泡体-mvb">6.12 晚期内体 (LE) / 多泡体 (MVB)</h3>
+<p><strong>MVB 的形成</strong>：早期内体膜<strong>向内出芽</strong>（invagination），形成<strong>腔内囊泡（ILVs）</strong>。这样，原本在限制膜（外膜）上的膜蛋白就被包裹进了 ILV 内部。</p>
+<p><strong>为什么要形成 ILV？</strong> 为了<strong>真正降解膜蛋白</strong>！如果膜蛋白还在限制膜上，溶酶体的酶无法完全降解它。把它包进 ILV 后，整个 ILV（连同上面的蛋白）都在溶酶体腔内，可以被完全水解。</p>
+<h3 id="613-信号受体的下调——泛素化和-escrt">6.13 信号受体的下调——泛素化和 ESCRT</h3>
+<p>当一个信号受体（如 EGFR）需要被<strong>下调</strong>时：</p>
+<p>1. 受体被<strong>泛素化（ubiquitination）</strong>标记 2. 泛素化的受体被内吞到早期内体 3. <strong>ESCRT 复合物</strong>识别泛素化的受体，将其分选到 ILV 中</p>
+<p><strong>ESCRT</strong>（<strong>E</strong>ndosomal <strong>S</strong>orting <strong>C</strong>omplex <strong>R</strong>equired for <strong>T</strong>ransport）：</p>
+<div class="table-wrap"><table><thead><tr><th>复合物</th><th>功能</th></tr></thead><tbody><tr><td><strong>ESCRT-0</strong></td><td>识别泛素化的货物 + 结合 <strong>PI(3)P</strong>（内体的标志脂质）</td></tr><tr><td><strong>ESCRT-I</strong></td><td>与 ESCRT-0 结合，招募 ESCRT-II</td></tr><tr><td><strong>ESCRT-II</strong></td><td>启动膜弯曲</td></tr><tr><td><strong>ESCRT-III</strong></td><td>驱动膜剪切，完成 ILV 形成</td></tr></tbody></table></div>
+<p>注意：ILV 的形成是向<strong>腔内出芽</strong>，这与普通的囊泡出芽（向细胞质出芽）方向<strong>相反</strong>——这是一种&quot;反向拓扑学&quot;的膜出芽，不需要外套蛋白。</p>
+<h3 id="614-内体成熟rab-蛋白的&quot;身份转换&quot;">6.14 内体成熟：Rab 蛋白的&quot;身份转换&quot;</h3>
+<p><strong>关键问题</strong>：早期内体（Rab5+）如何变成晚期内体（Rab7+）？</p>
+<p><strong>Rab 转换（Rab conversion）机制</strong>：</p>
+<p>1. 早期内体膜上有 <strong>Rab5-GTP</strong> → 招募 Rab5 的<strong>效应蛋白</strong>（包括 PI3-kinase 产生 PI(3)P、系留因子等） 2. Rab5 的效应蛋白之一是 <strong>Rab7 的 GEF</strong>（RabB-GEF）→ 激活 Rab7 3. 同时，Rab7 的效应蛋白包含 <strong>Rab5 的 GAP</strong>（RabA-GAP）→ <strong>失活 Rab5</strong> 4. 结果：Rab5 被换成 Rab7 → <strong>膜的身份改变</strong> → 早期内体变成晚期内体</p>
+<p><strong>核心概念</strong>：这是一个<strong>正反馈+负反馈</strong>的切换系统。RabA（Rab5）招募了 RabB（Rab7）的激活因子，而 RabB 又招募了 RabA 的抑制因子。这确保了切换是<strong>快速且彻底的</strong>——不会出现&quot;半早期半晚期&quot;的混合状态。</p>
+<h3 id="615-rab5-膜结构域的形成">6.15 Rab5 膜结构域的形成</h3>
+<p>Rab5 域的建立是一个<strong>正反馈环路</strong>：</p>
+<p>1. <strong>Rab5-GEF</strong> 将 Rab5 激活（GDP → GTP）→ Rab5-GTP 插入内体膜 2. Rab5-GTP 招募 <strong>PI3-激酶</strong> → 在膜上生成 <strong>PI(3)P</strong> 3. PI(3)P 招募更多含 PI(3)P 结合域的蛋白（包括更多的 Rab5-GEF 和系留因子） 4. 更多 Rab5-GEF → 更多 Rab5 被激活 → 正反馈放大</p>
+<p><strong>域的大小</strong>由 GTP 水解速率控制——GAP 的活性设定了域的边界。</p>
+<h3 id="616-回收内体-re-和葡萄糖转运体的调控运输">6.16 回收内体 (RE) 和葡萄糖转运体的调控运输</h3>
+<p><strong>回收内体（RE）</strong>（Rab11 阳性）的功能：将内吞的质膜蛋白和脂质<strong>回收到细胞表面</strong>重新使用。</p>
+<p><strong>经典案例：胰岛素调控的葡萄糖摄取</strong></p>
+<div class="table-wrap"><table><thead><tr><th>状态</th><th>GLUT4（葡萄糖转运体4）的位置</th><th>葡萄糖摄取</th></tr></thead><tbody><tr><td><strong>无胰岛素刺激</strong></td><td>储存在专门的回收内体中</td><td>低</td></tr><tr><td><strong>胰岛素刺激</strong></td><td>信号触发 → RE 与质膜融合 → GLUT4 大量出现在细胞表面</td><td>高</td></tr></tbody></table></div>
+<p>这就是为什么<strong>胰岛素抵抗</strong>（GLUT4 无法被有效转运到质膜）会导致血糖升高的分子机制。</p>
+<h3 id="617-极性细胞中的定向分泌">6.17 极性细胞中的定向分泌</h3>
+<p><strong>极性细胞</strong>（如上皮细胞和神经细胞）面临一个额外挑战：蛋白质不仅要到达正确的细胞器，还要到达细胞的<strong>正确一面</strong>。</p>
+<p><strong>上皮细胞</strong>：</p>
+<p>1. <strong>直接分选</strong>：在 TGN 中就分别装入去往顶端或基底外侧的不同囊泡 2. <strong>间接分选</strong>：先全部送到基底外侧面，再通过内吞-回收，将部分蛋白质转运到顶端面</p>
+<ul><li>有<strong>顶端面（apical domain）</strong>和<strong>基底外侧面（basolateral domain）</strong>，由<strong>紧密连接（tight junction）</strong>分隔</li><li>两种分选方式：</li></ul>
+<p><strong>神经细胞</strong>：</p>
+<ul><li>从<strong>树突和胞体</strong>接收信号</li><li>通过<strong>轴突和突触末端</strong>传出信号</li><li>不同的蛋白质需要被靶向到不同的区域</li></ul>
+<h3 id="618-转胞吞-transcytosis">6.18 转胞吞 (Transcytosis)</h3>
+<p><strong>转胞吞</strong>是一种特殊的运输方式：囊泡从细胞的<strong>一面</strong>内吞，穿过细胞，从<strong>另一面</strong>胞吐。</p>
+<p><strong>经典案例：新生儿肠道中 IgG 抗体的转运</strong></p>
+<p>1. 母乳中的 <strong>IgG 抗体</strong>在肠道的<strong>顶端面（apical, 面向肠腔）</strong>被 <strong>Fc 受体</strong>识别并内吞 2. IgG-Fc 受体复合物经过早期内体 → 回收内体 3. 从<strong>基底外侧面（basolateral）</strong>胞吐，释放到体液中 4. 这样，母亲的抗体就被传递给了婴儿，提供被动免疫保护</p>
+<p>---</p>
+<h2 id="核心概念对照表">核心概念对照表</h2>
+<div class="table-wrap"><table><thead><tr><th>中文术语</th><th>英文术语</th><th>功能简述</th></tr></thead><tbody><tr><td>囊泡</td><td>Vesicle</td><td>膜包裹的小泡，运输货物</td></tr><tr><td>外套蛋白</td><td>Coat protein</td><td>驱动囊泡形成，选择货物</td></tr><tr><td>顺行运输</td><td>Anterograde transport</td><td>ER → Golgi → 质膜方向</td></tr><tr><td>逆行运输</td><td>Retrograde transport</td><td>Golgi → ER 方向</td></tr><tr><td>系留</td><td>Tethering</td><td>远距离捕获囊泡</td></tr><tr><td>对接</td><td>Docking</td><td>囊泡与靶膜近距离接触</td></tr><tr><td>融合</td><td>Fusion</td><td>囊泡膜与靶膜合二为一</td></tr><tr><td>剪切</td><td>Fission</td><td>囊泡从供体膜上切下</td></tr><tr><td>去被膜</td><td>Uncoating</td><td>外套蛋白从囊泡上脱落</td></tr><tr><td>分选信号</td><td>Sorting signal</td><td>决定蛋白去向的短序列/结构</td></tr><tr><td>质量控制</td><td>Quality control</td><td>ER中确保只有正确折叠的蛋白可以离开</td></tr><tr><td>多泡体</td><td>Multivesicular body (MVB)</td><td>含有腔内囊泡的晚期内体</td></tr><tr><td>腔内囊泡</td><td>Intraluminal vesicle (ILV)</td><td>MVB 内部的小囊泡</td></tr><tr><td>转胞吞</td><td>Transcytosis</td><td>从细胞一面到另一面的运输</td></tr></tbody></table></div>
+<p>---</p>
+<h2 id="关键分子速查表">关键分子速查表</h2>
+<div class="table-wrap"><table><thead><tr><th>分子</th><th>类型</th><th>功能</th></tr></thead><tbody><tr><td>Sar1</td><td>小 GTPase</td><td>控制 COPII 外套组装</td></tr><tr><td>ARF</td><td>小 GTPase</td><td>控制 COPI 和 clathrin 外套组装</td></tr><tr><td>Rab (1-11+)</td><td>小 GTPase 家族</td><td>囊泡靶向、系留、膜室身份</td></tr><tr><td>Sec12</td><td>GEF</td><td>激活 Sar1</td></tr><tr><td>Sec23/24</td><td>COPII 内层外套</td><td>货物识别 + Sar1 GAP</td></tr><tr><td>Sec13/31</td><td>COPII 外层外套</td><td>形成笼状结构</td></tr><tr><td>NSF</td><td>ATPase</td><td>拆解 SNARE 复合物</td></tr><tr><td>v-SNARE</td><td>膜蛋白</td><td>囊泡上的融合机器</td></tr><tr><td>t-SNARE</td><td>膜蛋白</td><td>靶膜上的融合机器</td></tr><tr><td>Clathrin</td><td>外套蛋白</td><td>形成笼状结构（三脚架）</td></tr><tr><td>AP1-4, GGA</td><td>接头蛋白</td><td>桥接 clathrin、膜和货物</td></tr><tr><td>Dynamin</td><td>GTPase</td><td>囊泡颈部剪切</td></tr><tr><td>KDEL 受体</td><td>膜蛋白受体</td><td>识别并回收 ER 驻留蛋白</td></tr><tr><td>MPR</td><td>膜蛋白受体</td><td>识别 M6P 标签，运输溶酶体酶</td></tr><tr><td>Retromer</td><td>蛋白复合物</td><td>回收 MPR 到 TGN</td></tr><tr><td>ESCRT-0/I/II/III</td><td>蛋白复合物</td><td>识别泛素化货物，形成 ILV</td></tr><tr><td>Synaptotagmin</td><td>Ca²⁺ 感受器</td><td>触发突触囊泡融合</td></tr><tr><td>Complexin</td><td>调节蛋白</td><td>&quot;锁定&quot; SNARE 束</td></tr></tbody></table></div><div class="pager">
+      <a href="11_intracellular_compartments_and_protein_sorting.html">上一讲：Lecture 11: 细胞内区室与蛋白质分选（详细版）</a>
+      <a href="13_cell_communication.html">下一讲：第13讲学习讲义：细胞通讯</a>
+    </div></div>
+        <aside class="toc"><strong>本讲目录</strong><a class="toc-level-2" href="#学习笔记-—-基于邓怿教授-sustech-课件整理">学习笔记 — 基于邓怿教授 (SUSTech) 课件整理</a><a class="toc-level-2" href="#写在前面为什么要学囊泡运输">写在前面：为什么要学囊泡运输？</a><a class="toc-level-2" href="#第一部分囊泡运输概述-overview-of-vesicular-traffic">第一部分：囊泡运输概述 (Overview of Vesicular Traffic)</a><a class="toc-level-3" href="#11-历史背景george-palade-的开创性工作">1.1 历史背景：George Palade 的开创性工作</a><a class="toc-level-3" href="#12-jamieson-&amp;-palade-的脉冲追踪实验-pulse-chase-experiment">1.2 Jamieson &amp; Palade 的脉冲追踪实验 (Pulse-Chase Experiment)</a><a class="toc-level-3" href="#13-用荧光显微镜实时观察蛋白质运输">1.3 用荧光显微镜实时观察蛋白质运输</a><a class="toc-level-3" href="#14-囊泡运输的核心问题">1.4 囊泡运输的核心问题</a><a class="toc-level-3" href="#15-2013年诺贝尔生理学或医学奖">1.5 2013年诺贝尔生理学或医学奖</a><a class="toc-level-3" href="#16-schekman-的酵母遗传学方法">1.6 Schekman 的酵母遗传学方法</a><a class="toc-level-3" href="#17-五类-sec-突变体揭示分泌通路的顺序">1.7 五类 sec 突变体揭示分泌通路的顺序</a><a class="toc-level-3" href="#18-rothman-的体外生化方法">1.8 Rothman 的体外生化方法</a><a class="toc-level-3" href="#19-囊泡有蛋白质外套-coat-proteins">1.9 囊泡有蛋白质外套 (Coat Proteins)</a><a class="toc-level-3" href="#110-三种主要的被膜囊泡">1.10 三种主要的被膜囊泡</a><a class="toc-level-3" href="#111-gtp酶控制外套蛋白的组装与解聚">1.11 GTP酶控制外套蛋白的组装与解聚</a><a class="toc-level-3" href="#112-sar1-如何招募-copii-外套蛋白">1.12 Sar1 如何招募 COPII 外套蛋白</a><a class="toc-level-3" href="#113-囊泡的剪切-fission">1.13 囊泡的剪切 (Fission)</a><a class="toc-level-3" href="#114-rothman-发现膜融合所需的蛋白质">1.14 Rothman 发现膜融合所需的蛋白质</a><a class="toc-level-3" href="#115-nem-的发现——通往-nsf-和-snare-的线索">1.15 NEM 的发现——通往 NSF 和 SNARE 的线索</a><a class="toc-level-3" href="#116-snare-蛋白介导膜融合的特异性">1.16 SNARE 蛋白介导膜融合的特异性</a><a class="toc-level-3" href="#117-rab-蛋白引导囊泡到达靶膜">1.17 Rab 蛋白引导囊泡到达靶膜</a><a class="toc-level-3" href="#118-囊泡运输的完整流程总结">1.18 囊泡运输的完整流程总结</a><a class="toc-level-2" href="#第二部分从-er-到-golgi-的运输">第二部分：从 ER 到 Golgi 的运输</a><a class="toc-level-3" href="#21-蛋白质通过-copii-囊泡离开-er">2.1 蛋白质通过 COPII 囊泡离开 ER</a><a class="toc-level-3" href="#22-er-出口需要正确的蛋白折叠">2.2 ER 出口需要正确的蛋白折叠</a><a class="toc-level-3" href="#23-copii-囊泡不都是圆球形">2.3 COPII 囊泡不都是圆球形</a><a class="toc-level-3" href="#24-囊泡管状簇-vtcs-和-er-出口位点">2.4 囊泡管状簇 (VTCs) 和 ER 出口位点</a><a class="toc-level-3" href="#25-高尔基体的形态和结构">2.5 高尔基体的形态和结构</a><a class="toc-level-3" href="#26-高尔基体内部运输的两种模型">2.6 高尔基体内部运输的两种模型</a><a class="toc-level-3" href="#27-copi-介导的逆行运输">2.7 COPI 介导的逆行运输</a><a class="toc-level-3" href="#28-er-检索信号-er-retrieval-signals">2.8 ER 检索信号 (ER Retrieval Signals)</a><a class="toc-level-3" href="#29-er-→-golgi-运输总结">2.9 ER → Golgi 运输总结</a><a class="toc-level-2" href="#第三部分蛋白质糖基化-protein-glycosylation">第三部分：蛋白质糖基化 (Protein Glycosylation)</a><a class="toc-level-3" href="#31-两种糖基化类型">3.1 两种糖基化类型</a><a class="toc-level-3" href="#32-n-糖基化的详细过程">3.2 N-糖基化的详细过程</a><a class="toc-level-3" href="#33-golgi-中的-n-糖基化修饰">3.3 Golgi 中的 N-糖基化修饰</a><a class="toc-level-3" href="#34-o-糖基化">3.4 O-糖基化</a></aside>
+      </div>
+    </article>
+  </main>
+  <script src="../assets/app.js"></script>
+</body>
+</html>

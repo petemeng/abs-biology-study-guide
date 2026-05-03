@@ -1,0 +1,11 @@
+{
+  "name": "abs-biology-study-guide",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "serve": "node scripts/serve.js"
+  }
+}
+
