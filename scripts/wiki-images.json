@@ -1,0 +1,132 @@
+[
+  {
+    "slug": "01_cells_and_genomes",
+    "file": "tree_of_life.png",
+    "source": "https://commons.wikimedia.org/wiki/File:Tree_of_life.svg",
+    "title": "Tree of life",
+    "license": "CC BY-SA 3.0",
+    "credit": "Wikimedia Commons contributors",
+    "caption": "三域生命树：帮助你把“所有细胞共同性”和“生命多样性来自进化”放在同一张图里理解。",
+    "local": "assets/wiki/tree_of_life.png"
+  },
+  {
+    "slug": "02_cell_chemistry",
+    "file": "hydrogen_bonds_water.png",
+    "source": "https://commons.wikimedia.org/wiki/File:3D_model_hydrogen_bonds_in_water.svg",
+    "title": "Hydrogen bonds in water",
+    "license": "Public domain",
+    "credit": "Wikimedia Commons contributors",
+    "caption": "水分子之间的氢键网络：理解水的极性、溶剂作用和非共价相互作用的基础。",
+    "local": "assets/wiki/hydrogen_bonds_water.png"
+  },
+  {
+    "slug": "03_protein_structure_and_function",
+    "file": "protein_structure_levels.png",
+    "source": "https://commons.wikimedia.org/wiki/File:Main_protein_structure_levels_zh.svg",
+    "title": "Main protein structure levels",
+    "license": "Public domain",
+    "credit": "Wikimedia Commons contributors",
+    "caption": "蛋白质四级结构层级：把一级序列、二级结构、三级折叠和四级组装连成一条复习线。",
+    "local": "assets/wiki/protein_structure_levels.png"
+  },
+  {
+    "slug": "04_dna_chromosomes_and_genome",
+    "file": "nucleosome.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Nucleosome.jpg",
+    "title": "Nucleosome",
+    "license": "Public domain",
+    "credit": "Wikimedia Commons contributors",
+    "caption": "核小体三维示意：DNA 绕组蛋白八聚体包装，是染色质结构与表观调控的共同起点。",
+    "local": "assets/wiki/nucleosome.jpg"
+  },
+  {
+    "slug": "05_dna_replication_repair_and_recombination",
+    "file": "dna_replication.png",
+    "source": "https://commons.wikimedia.org/wiki/File:DNA_replication_en.svg",
+    "title": "DNA replication",
+    "license": "Public domain",
+    "credit": "Wikimedia Commons contributors",
+    "caption": "DNA 复制叉：重点看 leading strand 连续合成、lagging strand 以冈崎片段合成，以及引物位置。",
+    "local": "assets/wiki/dna_replication.png"
+  },
+  {
+    "slug": "06_from_dna_to_protein",
+    "file": "ribosome_translation.png",
+    "source": "https://commons.wikimedia.org/wiki/File:Ribosome_mRNA_translation_zh.svg",
+    "title": "Ribosome mRNA translation",
+    "license": "Public domain",
+    "credit": "Wikimedia Commons contributors",
+    "caption": "核糖体翻译示意：把 mRNA、tRNA、密码子、氨基酸和多肽链延长放在一个空间图景里。",
+    "local": "assets/wiki/ribosome_translation.png"
+  },
+  {
+    "slug": "07_control_of_gene_expression",
+    "file": "lac_operon.png",
+    "source": "https://commons.wikimedia.org/wiki/File:Lac_Operon.svg",
+    "title": "Lac operon",
+    "license": "CC BY-SA 3.0",
+    "credit": "Wikimedia Commons contributors",
+    "caption": "乳糖操纵子：经典遗传开关，适合理解 promoter、operator、repressor 和诱导表达。",
+    "local": "assets/wiki/lac_operon.png"
+  },
+  {
+    "slug": "08_manipulating_proteins_dna_rna",
+    "file": "gel_electrophoresis.png",
+    "source": "https://commons.wikimedia.org/wiki/File:Gel_Electrophoresis_in_DNA_Fingerprinting.svg",
+    "title": "Gel electrophoresis",
+    "license": "CC BY-SA 4.0",
+    "credit": "Wikimedia Commons contributors",
+    "caption": "凝胶电泳流程：帮助区分“按大小分离”和“检测/鉴定目标分子”这两个层级。",
+    "local": "assets/wiki/gel_electrophoresis.png"
+  },
+  {
+    "slug": "09_membrane_structure_and_functions",
+    "file": "cell_membrane.png",
+    "source": "https://commons.wikimedia.org/wiki/File:Cell_membrane_detailed_diagram_en.svg",
+    "title": "Cell membrane detailed diagram",
+    "license": "Public domain",
+    "credit": "Wikimedia Commons contributors",
+    "caption": "细胞膜详细结构：把磷脂、胆固醇、膜蛋白、糖链和细胞骨架放在同一个膜模型中看。",
+    "local": "assets/wiki/cell_membrane.png"
+  },
+  {
+    "slug": "10_cross_membrane_transport",
+    "file": "sodium_potassium_pump.png",
+    "source": "https://commons.wikimedia.org/wiki/File:Scheme_sodium-potassium_pump-zh.svg",
+    "title": "Sodium-potassium pump",
+    "license": "Public domain",
+    "credit": "Wikimedia Commons contributors",
+    "caption": "Na+-K+ 泵：每消耗 1 个 ATP，泵出 3 个 Na+、泵入 2 个 K+，是离子梯度和膜电位的基础。",
+    "local": "assets/wiki/sodium_potassium_pump.png"
+  },
+  {
+    "slug": "11_intracellular_compartments_and_protein_sorting",
+    "file": "endomembrane_system.png",
+    "source": "https://commons.wikimedia.org/wiki/File:Endomembrane_system_diagram_en.svg",
+    "title": "Endomembrane system",
+    "license": "Public domain",
+    "credit": "Wikimedia Commons contributors",
+    "caption": "内膜系统：帮助你把核膜、ER、Golgi、囊泡、溶酶体和质膜之间的关系放进空间图景。",
+    "local": "assets/wiki/endomembrane_system.png"
+  },
+  {
+    "slug": "12_intracellular_vesicular_traffic",
+    "file": "snare_fusion.png",
+    "source": "https://commons.wikimedia.org/wiki/File:Ca2%2B_dependent_fusion_of_vesicles.png",
+    "title": "Ca2+ dependent fusion of vesicles",
+    "license": "CC BY-SA 4.0",
+    "credit": "Wikimedia Commons contributors",
+    "caption": "囊泡融合机制：重点看 vesicle SNARE 与 target SNARE 配对，以及 Ca2+ 触发融合的逻辑。",
+    "local": "assets/wiki/snare_fusion.png"
+  },
+  {
+    "slug": "13_cell_communication",
+    "file": "jak_stat.png",
+    "source": "https://commons.wikimedia.org/wiki/File:Jakstat_pathway_(zh-cn).svg",
+    "title": "JAK-STAT pathway",
+    "license": "Public domain",
+    "credit": "Wikimedia Commons contributors",
+    "caption": "JAK-STAT 通路：从细胞因子受体到 STAT 入核的路线很直接，是细胞通讯中“受体到转录”的代表路径。",
+    "local": "assets/wiki/jak_stat.png"
+  }
+]

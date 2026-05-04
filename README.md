@@ -10,6 +10,8 @@
 
 网站支持按讲次阅读、侧边目录跳转、关键词搜索，并在每讲开头加入了机制图/概念图，方便复习时先抓主线。
 
+每讲页面还加入了 Wikimedia Commons 辅助理解图，图注中标明了来源和许可，适合配合文字讲义建立直观图像记忆。
+
 ## 内容范围
 
 - 第 1 讲：Cells and Genomes
@@ -31,6 +33,7 @@
 - `notes/`：每讲的 Markdown 讲义源文件。
 - `docs/`：GitHub Pages 发布用静态网页。
 - `scripts/build.js`：把 Markdown 讲义构建为网页。
+- `scripts/wiki-images.json`：Wikimedia Commons 辅助配图的来源与许可信息。
 - `scripts/serve.js`：本地预览网页。
 
 ## 本地使用

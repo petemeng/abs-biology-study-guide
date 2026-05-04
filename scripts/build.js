@@ -7,6 +7,7 @@ const docsDir = path.join(root, "docs");
 const lecturesDir = path.join(docsDir, "lectures");
 const assetsDir = path.join(docsDir, "assets");
 const figuresDir = path.join(assetsDir, "figures");
+const wikiImageMetaPath = path.join(root, "scripts", "wiki-images.json");
 
 function ensureDir(dir) {
   fs.mkdirSync(dir, { recursive: true });
@@ -245,6 +246,11 @@ const figureDefinitions = {
   }
 };
 
+const wikiImages = fs.existsSync(wikiImageMetaPath)
+  ? JSON.parse(fs.readFileSync(wikiImageMetaPath, "utf8"))
+  : [];
+const wikiImageBySlug = new Map(wikiImages.map((image) => [image.slug, image]));
+
 function buildFigures() {
   ensureDir(figuresDir);
   for (const [slug, figure] of Object.entries(figureDefinitions)) {
@@ -258,6 +264,19 @@ function figureHtml(lecture) {
   return `<figure class="visual-figure">
     <img src="../assets/figures/${lecture.slug}.svg" alt="${escapeHtml(lecture.title)}图解">
     <figcaption>${escapeHtml(figure.caption)}</figcaption>
+  </figure>`;
+}
+
+function wikiImageHtml(lecture) {
+  const image = wikiImageBySlug.get(lecture.slug);
+  if (!image) return "";
+  const src = `../${image.local}`;
+  return `<figure class="wiki-figure">
+    <div class="wiki-image-frame"><img src="${escapeHtml(src)}" alt="${escapeHtml(image.title)}"></div>
+    <figcaption>
+      <strong>辅助理解图：</strong>${escapeHtml(image.caption)}
+      <span>来源：<a href="${escapeHtml(image.source)}" target="_blank" rel="noreferrer">${escapeHtml(image.title)}</a>，${escapeHtml(image.credit)}，${escapeHtml(image.license)}。</span>
+    </figcaption>
   </figure>`;
 }
 
@@ -523,7 +542,7 @@ function buildLecturePages(lectures) {
       .join("");
     const prev = lectures[index - 1];
     const next = lectures[index + 1];
-    const contentHtml = injectFigureAfterTitle(rendered.html, figureHtml(lecture));
+    const contentHtml = injectFigureAfterTitle(rendered.html, `${figureHtml(lecture)}${wikiImageHtml(lecture)}`);
     const pager = `<div class="pager">
       ${prev ? `<a href="${prev.slug}.html">上一讲：${escapeHtml(prev.title)}</a>` : "<span></span>"}
       ${next ? `<a href="${next.slug}.html">下一讲：${escapeHtml(next.title)}</a>` : "<span></span>"}
