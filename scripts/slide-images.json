@@ -1,0 +1,313 @@
+[
+  {
+    "slug": "01_cells_and_genomes",
+    "slides": [
+      {
+        "file": "assets/slides/01_cells_and_genomes/course_constancy.jpg",
+        "page": 9,
+        "caption": "Course overview: cell constancy and genome diversity",
+        "source": "1_Cells_and_Genomes.pdf"
+      },
+      {
+        "file": "assets/slides/01_cells_and_genomes/tree_domains.jpg",
+        "page": 17,
+        "caption": "Tree/domain comparison and evolutionary relationships",
+        "source": "1_Cells_and_Genomes.pdf"
+      },
+      {
+        "file": "assets/slides/01_cells_and_genomes/eukaryote_origin.jpg",
+        "page": 25,
+        "caption": "Eukaryotic cell origin and endosymbiosis",
+        "source": "1_Cells_and_Genomes.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "02_cell_chemistry",
+    "slides": [
+      {
+        "file": "assets/slides/02_cell_chemistry/water_hbond.jpg",
+        "page": 6,
+        "caption": "Water and hydrogen bonding",
+        "source": "Lecture_2_Cell_Chemistry.pdf"
+      },
+      {
+        "file": "assets/slides/02_cell_chemistry/noncovalent_summary.jpg",
+        "page": 13,
+        "caption": "Covalent vs non-covalent interaction summary",
+        "source": "Lecture_2_Cell_Chemistry.pdf"
+      },
+      {
+        "file": "assets/slides/02_cell_chemistry/biochemical_energy.jpg",
+        "page": 33,
+        "caption": "Biochemical energetics and ATP coupling",
+        "source": "Lecture_2_Cell_Chemistry.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "03_protein_structure_and_function",
+    "slides": [
+      {
+        "file": "assets/slides/03_protein_structure_and_function/four_levels.jpg",
+        "page": 4,
+        "caption": "Four levels of protein structure",
+        "source": "Lecture_3_Protein_Structure_and_Function.pdf"
+      },
+      {
+        "file": "assets/slides/03_protein_structure_and_function/alpha_beta.jpg",
+        "page": 13,
+        "caption": "Alpha helix and beta sheet",
+        "source": "Lecture_3_Protein_Structure_and_Function.pdf"
+      },
+      {
+        "file": "assets/slides/03_protein_structure_and_function/allostery_switch.jpg",
+        "page": 47,
+        "caption": "Protein regulation and molecular switches",
+        "source": "Lecture_3_Protein_Structure_and_Function.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "04_dna_chromosomes_and_genome",
+    "slides": [
+      {
+        "file": "assets/slides/04_dna_chromosomes_and_genome/dna_double_helix.jpg",
+        "page": 2,
+        "caption": "DNA double helix structure",
+        "source": "Lecture_4_DNA_Chromosome_and_Genome.pdf"
+      },
+      {
+        "file": "assets/slides/04_dna_chromosomes_and_genome/chromatin_terms.jpg",
+        "page": 3,
+        "caption": "Chromatin, chromosome, genome and karyotype",
+        "source": "Lecture_4_DNA_Chromosome_and_Genome.pdf"
+      },
+      {
+        "file": "assets/slides/04_dna_chromosomes_and_genome/nucleosome.jpg",
+        "page": 14,
+        "caption": "Nucleosome and chromatin packing",
+        "source": "Lecture_4_DNA_Chromosome_and_Genome.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "05_dna_replication_repair_and_recombination",
+    "slides": [
+      {
+        "file": "assets/slides/05_dna_replication_repair_and_recombination/replication_fork.jpg",
+        "page": 4,
+        "caption": "Replication fork and core proteins",
+        "source": "Lecture_5_DNA_Replication_Repair_and_Recombination.pdf"
+      },
+      {
+        "file": "assets/slides/05_dna_replication_repair_and_recombination/leading_lagging.jpg",
+        "page": 8,
+        "caption": "Leading strand vs lagging strand",
+        "source": "Lecture_5_DNA_Replication_Repair_and_Recombination.pdf"
+      },
+      {
+        "file": "assets/slides/05_dna_replication_repair_and_recombination/repair_pathways.jpg",
+        "page": 38,
+        "caption": "DNA repair pathway comparison",
+        "source": "Lecture_5_DNA_Replication_Repair_and_Recombination.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "06_from_dna_to_protein",
+    "slides": [
+      {
+        "file": "assets/slides/06_from_dna_to_protein/central_dogma.jpg",
+        "page": 2,
+        "caption": "Central dogma overview",
+        "source": "Lecture_6_From_DNA_to_Protein.pdf"
+      },
+      {
+        "file": "assets/slides/06_from_dna_to_protein/euk_transcription.jpg",
+        "page": 12,
+        "caption": "Eukaryotic transcription initiation",
+        "source": "Lecture_6_From_DNA_to_Protein.pdf"
+      },
+      {
+        "file": "assets/slides/06_from_dna_to_protein/translation_cycle.jpg",
+        "page": 48,
+        "caption": "Translation cycle and ribosome sites",
+        "source": "Lecture_6_From_DNA_to_Protein.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "07_control_of_gene_expression",
+    "slides": [
+      {
+        "file": "assets/slides/07_control_of_gene_expression/expression_steps.jpg",
+        "page": 5,
+        "caption": "Levels of gene expression control",
+        "source": "Lecture_7_Control_of_Gene_Expression.pdf"
+      },
+      {
+        "file": "assets/slides/07_control_of_gene_expression/dna_binding_motifs.jpg",
+        "page": 9,
+        "caption": "DNA-binding motifs in regulatory proteins",
+        "source": "Lecture_7_Control_of_Gene_Expression.pdf"
+      },
+      {
+        "file": "assets/slides/07_control_of_gene_expression/combinatorial_control.jpg",
+        "page": 40,
+        "caption": "Combinatorial control of gene expression",
+        "source": "Lecture_7_Control_of_Gene_Expression.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "08_manipulating_proteins_dna_rna",
+    "slides": [
+      {
+        "file": "assets/slides/08_manipulating_proteins_dna_rna/cell_isolation.jpg",
+        "page": 2,
+        "caption": "Cell isolation workflow",
+        "source": "Lecture_8_Manipulating_Proteins_DNA_RNA.pdf"
+      },
+      {
+        "file": "assets/slides/08_manipulating_proteins_dna_rna/facs.jpg",
+        "page": 5,
+        "caption": "FACS principle",
+        "source": "Lecture_8_Manipulating_Proteins_DNA_RNA.pdf"
+      },
+      {
+        "file": "assets/slides/08_manipulating_proteins_dna_rna/protein_purification.jpg",
+        "page": 12,
+        "caption": "Protein purification and analysis methods",
+        "source": "Lecture_8_Manipulating_Proteins_DNA_RNA.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "09_membrane_structure_and_functions",
+    "slides": [
+      {
+        "file": "assets/slides/09_membrane_structure_and_functions/lipid_bilayer.jpg",
+        "page": 6,
+        "caption": "Micelle vs lipid bilayer",
+        "source": "lecture09_Membrane_Structure_Functions.pdf"
+      },
+      {
+        "file": "assets/slides/09_membrane_structure_and_functions/membrane_asymmetry.jpg",
+        "page": 29,
+        "caption": "Membrane leaflet asymmetry",
+        "source": "lecture09_Membrane_Structure_Functions.pdf"
+      },
+      {
+        "file": "assets/slides/09_membrane_structure_and_functions/membrane_fluidity.jpg",
+        "page": 51,
+        "caption": "Membrane fluidity and cholesterol",
+        "source": "lecture09_Membrane_Structure_Functions.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "10_cross_membrane_transport",
+    "slides": [
+      {
+        "file": "assets/slides/10_cross_membrane_transport/permeability.jpg",
+        "page": 3,
+        "caption": "Selective permeability of membranes",
+        "source": "lecture10_Cross_Membrane_Transport.pdf"
+      },
+      {
+        "file": "assets/slides/10_cross_membrane_transport/channels_transporters.jpg",
+        "page": 6,
+        "caption": "Channel vs transporter",
+        "source": "lecture10_Cross_Membrane_Transport.pdf"
+      },
+      {
+        "file": "assets/slides/10_cross_membrane_transport/action_potential.jpg",
+        "page": 54,
+        "caption": "Action potential phases",
+        "source": "lecture10_Cross_Membrane_Transport.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "11_intracellular_compartments_and_protein_sorting",
+    "slides": [
+      {
+        "file": "assets/slides/11_intracellular_compartments_and_protein_sorting/sorting_routes.jpg",
+        "page": 5,
+        "caption": "Protein sorting routes",
+        "source": "Lecture11_Intracellular_Compartments_and_Protein_Sorting.pdf"
+      },
+      {
+        "file": "assets/slides/11_intracellular_compartments_and_protein_sorting/er_import.jpg",
+        "page": 17,
+        "caption": "SRP and ER import",
+        "source": "Lecture11_Intracellular_Compartments_and_Protein_Sorting.pdf"
+      },
+      {
+        "file": "assets/slides/11_intracellular_compartments_and_protein_sorting/nuclear_import.jpg",
+        "page": 49,
+        "caption": "Nuclear pore and nuclear transport",
+        "source": "Lecture11_Intracellular_Compartments_and_Protein_Sorting.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "12_intracellular_vesicular_traffic",
+    "slides": [
+      {
+        "file": "assets/slides/12_intracellular_vesicular_traffic/palade_pulse_chase.jpg",
+        "page": 4,
+        "caption": "Palade pulse-chase experiment",
+        "source": "Lecture12_Intracellular_Vesicular_Traffic.pdf"
+      },
+      {
+        "file": "assets/slides/12_intracellular_vesicular_traffic/vesicle_budding.jpg",
+        "page": 21,
+        "caption": "Vesicle budding and coat control",
+        "source": "Lecture12_Intracellular_Vesicular_Traffic.pdf"
+      },
+      {
+        "file": "assets/slides/12_intracellular_vesicular_traffic/snare_fusion.jpg",
+        "page": 34,
+        "caption": "SNARE-mediated membrane fusion",
+        "source": "Lecture12_Intracellular_Vesicular_Traffic.pdf"
+      },
+      {
+        "file": "assets/slides/12_intracellular_vesicular_traffic/golgi_traffic.jpg",
+        "page": 45,
+        "caption": "ER-Golgi traffic and Golgi morphology",
+        "source": "Lecture12_Intracellular_Vesicular_Traffic.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "13_cell_communication",
+    "slides": [
+      {
+        "file": "assets/slides/13_cell_communication/signaling_steps.jpg",
+        "page": 6,
+        "caption": "Four steps in cell signaling",
+        "source": "Lecture13_Cell_Communication.pdf"
+      },
+      {
+        "file": "assets/slides/13_cell_communication/gpcr_cycle.jpg",
+        "page": 24,
+        "caption": "GPCR and trimeric G protein cycle",
+        "source": "Lecture13_Cell_Communication.pdf"
+      },
+      {
+        "file": "assets/slides/13_cell_communication/rtk_ras.jpg",
+        "page": 49,
+        "caption": "RTK-Ras signaling",
+        "source": "Lecture13_Cell_Communication.pdf"
+      },
+      {
+        "file": "assets/slides/13_cell_communication/jak_stat.jpg",
+        "page": 58,
+        "caption": "JAK-STAT signaling",
+        "source": "Lecture13_Cell_Communication.pdf"
+      }
+    ]
+  }
+]

@@ -8,6 +8,7 @@ const lecturesDir = path.join(docsDir, "lectures");
 const assetsDir = path.join(docsDir, "assets");
 const figuresDir = path.join(assetsDir, "figures");
 const wikiImageMetaPath = path.join(root, "scripts", "wiki-images.json");
+const slideImageMetaPath = path.join(root, "scripts", "slide-images.json");
 
 function ensureDir(dir) {
   fs.mkdirSync(dir, { recursive: true });
@@ -250,6 +251,10 @@ const wikiImages = fs.existsSync(wikiImageMetaPath)
   ? JSON.parse(fs.readFileSync(wikiImageMetaPath, "utf8"))
   : [];
 const wikiImageBySlug = new Map(wikiImages.map((image) => [image.slug, image]));
+const slideImageGroups = fs.existsSync(slideImageMetaPath)
+  ? JSON.parse(fs.readFileSync(slideImageMetaPath, "utf8"))
+  : [];
+const slideImagesBySlug = new Map(slideImageGroups.map((group) => [group.slug, group.slides || []]));
 
 function buildFigures() {
   ensureDir(figuresDir);
@@ -278,6 +283,26 @@ function wikiImageHtml(lecture) {
       <span>来源：<a href="${escapeHtml(image.source)}" target="_blank" rel="noreferrer">${escapeHtml(image.title)}</a>，${escapeHtml(image.credit)}，${escapeHtml(image.license)}。</span>
     </figcaption>
   </figure>`;
+}
+
+function slideGalleryHtml(lecture) {
+  const slides = slideImagesBySlug.get(lecture.slug) || [];
+  if (!slides.length) return "";
+  return `<section class="slide-gallery" aria-label="课件截图">
+    <div class="slide-gallery-head">
+      <h2>课件截图辅助理解</h2>
+      <p>以下图片来自本地课程课件，仅随私有仓库复习使用。重点看图中机制关系，不需要逐字背图。</p>
+    </div>
+    <div class="slide-grid">
+      ${slides.map((slide) => `<figure class="slide-card">
+        <img src="../${escapeHtml(slide.file)}" alt="${escapeHtml(slide.caption)}">
+        <figcaption>
+          <strong>${escapeHtml(slide.caption)}</strong>
+          <span>${escapeHtml(slide.source)} · page ${escapeHtml(slide.page)}</span>
+        </figcaption>
+      </figure>`).join("")}
+    </div>
+  </section>`;
 }
 
 function injectFigureAfterTitle(html, figure) {
@@ -542,7 +567,7 @@ function buildLecturePages(lectures) {
       .join("");
     const prev = lectures[index - 1];
     const next = lectures[index + 1];
-    const contentHtml = injectFigureAfterTitle(rendered.html, `${figureHtml(lecture)}${wikiImageHtml(lecture)}`);
+    const contentHtml = injectFigureAfterTitle(rendered.html, `${figureHtml(lecture)}${wikiImageHtml(lecture)}${slideGalleryHtml(lecture)}`);
     const pager = `<div class="pager">
       ${prev ? `<a href="${prev.slug}.html">上一讲：${escapeHtml(prev.title)}</a>` : "<span></span>"}
       ${next ? `<a href="${next.slug}.html">下一讲：${escapeHtml(next.title)}</a>` : "<span></span>"}
