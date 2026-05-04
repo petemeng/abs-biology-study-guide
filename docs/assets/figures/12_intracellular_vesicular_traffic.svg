@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520" role="img" aria-labelledby="title desc">
+  <title id="title">囊泡运输的方向性</title>
+  <desc id="desc">每一步都要解决出芽、剪切、识别、停靠和融合</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#0f766e"/>
+    </marker>
+    <linearGradient id="soft" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#eef7f4"/>
+      <stop offset="1" stop-color="#fff8ef"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#soft)"/>
+  <rect x="24" y="24" width="1152" height="472" rx="28" fill="rgba(255,255,255,0.72)" stroke="#d8ded2" stroke-width="2"/>
+  <text x="60" y="78" text-anchor="start" font-size="34" font-weight="800" fill="#20231f" font-family="Inter, Segoe UI, Microsoft YaHei, sans-serif"><tspan x="60" dy="0">囊泡运输的方向性</tspan></text>
+  <text x="60" y="122" text-anchor="start" font-size="19" font-weight="500" fill="#687067" font-family="Inter, Segoe UI, Microsoft YaHei, sans-serif"><tspan x="60" dy="0">每一步都要解决出芽、剪切、识别、停靠和融合</tspan></text>
+  <rect x="72" y="195" width="156" height="100" rx="18" fill="#e7f4ef" stroke="#0f766e" stroke-width="3"/>
+<text x="150" y="253" text-anchor="middle" font-size="24" font-weight="700" fill="#20231f" font-family="Inter, Segoe UI, Microsoft YaHei, sans-serif"><tspan x="150" dy="0">ER</tspan></text><line x1="236" y1="245" x2="260" y2="245" stroke="#0f766e" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)"/><rect x="272" y="195" width="156" height="100" rx="18" fill="#fff3df" stroke="#9a3412" stroke-width="3"/>
+<text x="350" y="253" text-anchor="middle" font-size="24" font-weight="700" fill="#20231f" font-family="Inter, Segoe UI, Microsoft YaHei, sans-serif"><tspan x="350" dy="0">COPII囊泡</tspan></text><line x1="436" y1="245" x2="460" y2="245" stroke="#0f766e" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)"/><rect x="472" y="195" width="156" height="100" rx="18" fill="#e9eef8" stroke="#0f766e" stroke-width="3"/>
+<text x="550" y="253" text-anchor="middle" font-size="24" font-weight="700" fill="#20231f" font-family="Inter, Segoe UI, Microsoft YaHei, sans-serif"><tspan x="550" dy="0">Golgi</tspan></text><line x1="636" y1="245" x2="660" y2="245" stroke="#0f766e" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)"/><rect x="672" y="195" width="156" height="100" rx="18" fill="#f3ebe5" stroke="#9a3412" stroke-width="3"/>
+<text x="750" y="253" text-anchor="middle" font-size="24" font-weight="700" fill="#20231f" font-family="Inter, Segoe UI, Microsoft YaHei, sans-serif"><tspan x="750" dy="0">TGN分选</tspan></text><line x1="836" y1="245" x2="865" y2="245" stroke="#0f766e" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)"/><rect x="877" y="195" width="156" height="100" rx="18" fill="#eaf2dc" stroke="#0f766e" stroke-width="3"/>
+<text x="955" y="253" text-anchor="middle" font-size="24" font-weight="700" fill="#20231f" font-family="Inter, Segoe UI, Microsoft YaHei, sans-serif"><tspan x="955" dy="0">质膜/溶酶体</tspan></text><text x="600" y="392" text-anchor="middle" font-size="24" font-weight="700" fill="#475047" font-family="Inter, Segoe UI, Microsoft YaHei, sans-serif"><tspan x="600" dy="0"> coat 选择货物 → Rab 指定身份 → SNARE 促融合</tspan></text>
+</svg>

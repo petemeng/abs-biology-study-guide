@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 470" width="1200" height="470" role="img" aria-labelledby="title desc">
+  <title id="title">细胞化学的三层逻辑</title>
+  <desc id="desc">先看键，再看水环境，最后看能量如何驱动反应</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#0f766e"/>
+    </marker>
+    <linearGradient id="soft" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#eef7f4"/>
+      <stop offset="1" stop-color="#fff8ef"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#soft)"/>
+  <rect x="24" y="24" width="1152" height="422" rx="28" fill="rgba(255,255,255,0.72)" stroke="#d8ded2" stroke-width="2"/>
+  <text x="60" y="78" text-anchor="start" font-size="34" font-weight="800" fill="#20231f" font-family="Inter, Segoe UI, Microsoft YaHei, sans-serif"><tspan x="60" dy="0">细胞化学的三层逻辑</tspan></text>
+  <text x="60" y="122" text-anchor="start" font-size="19" font-weight="500" fill="#687067" font-family="Inter, Segoe UI, Microsoft YaHei, sans-serif"><tspan x="60" dy="0">先看键，再看水环境，最后看能量如何驱动反应</tspan></text>
+  <rect x="96" y="190" width="138" height="98" rx="18" fill="#e7f4ef" stroke="#0f766e" stroke-width="3"/>
+<text x="165" y="247" text-anchor="middle" font-size="23" font-weight="700" fill="#20231f" font-family="Inter, Segoe UI, Microsoft YaHei, sans-serif"><tspan x="165" dy="0">原子成键</tspan></text><line x1="240" y1="239" x2="264" y2="239" stroke="#0f766e" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)"/><rect x="270" y="190" width="138" height="98" rx="18" fill="#fff3df" stroke="#9a3412" stroke-width="3"/>
+<text x="339" y="247" text-anchor="middle" font-size="23" font-weight="700" fill="#20231f" font-family="Inter, Segoe UI, Microsoft YaHei, sans-serif"><tspan x="339" dy="0">水环境</tspan></text><line x1="414" y1="239" x2="438" y2="239" stroke="#0f766e" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)"/><rect x="444" y="190" width="138" height="98" rx="18" fill="#e9eef8" stroke="#0f766e" stroke-width="3"/>
+<text x="513" y="247" text-anchor="middle" font-size="23" font-weight="700" fill="#20231f" font-family="Inter, Segoe UI, Microsoft YaHei, sans-serif"><tspan x="513" dy="0">非共价作用</tspan></text><line x1="588" y1="239" x2="612" y2="239" stroke="#0f766e" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)"/><rect x="618" y="190" width="138" height="98" rx="18" fill="#f3ebe5" stroke="#9a3412" stroke-width="3"/>
+<text x="687" y="247" text-anchor="middle" font-size="23" font-weight="700" fill="#20231f" font-family="Inter, Segoe UI, Microsoft YaHei, sans-serif"><tspan x="687" dy="0">大分子组装</tspan></text><line x1="762" y1="239" x2="786" y2="239" stroke="#0f766e" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)"/><rect x="792" y="190" width="138" height="98" rx="18" fill="#eaf2dc" stroke="#0f766e" stroke-width="3"/>
+<text x="861" y="247" text-anchor="middle" font-size="23" font-weight="700" fill="#20231f" font-family="Inter, Segoe UI, Microsoft YaHei, sans-serif"><tspan x="861" dy="0">ATP/载体</tspan></text><line x1="936" y1="239" x2="960" y2="239" stroke="#0f766e" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)"/><rect x="966" y="190" width="138" height="98" rx="18" fill="#f6e9ee" stroke="#9a3412" stroke-width="3"/>
+<text x="1035" y="247" text-anchor="middle" font-size="23" font-weight="700" fill="#20231f" font-family="Inter, Segoe UI, Microsoft YaHei, sans-serif"><tspan x="1035" dy="0">酶催化</tspan></text><text x="600" y="408" text-anchor="middle" font-size="22" font-weight="600" fill="#475047" font-family="Inter, Segoe UI, Microsoft YaHei, sans-serif"><tspan x="600" dy="0">生命体系偏爱许多弱相互作用叠加，因为既稳定又可调</tspan></text>
+</svg>

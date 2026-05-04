@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520" role="img" aria-labelledby="title desc">
+  <title id="title">跨膜转运三种核心机器</title>
+  <desc id="desc">先判断方向和能量来源，再判断是孔道、交替暴露还是泵循环</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#0f766e"/>
+    </marker>
+    <linearGradient id="soft" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#eef7f4"/>
+      <stop offset="1" stop-color="#fff8ef"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#soft)"/>
+  <rect x="24" y="24" width="1152" height="472" rx="28" fill="rgba(255,255,255,0.72)" stroke="#d8ded2" stroke-width="2"/>
+  <text x="60" y="78" text-anchor="start" font-size="34" font-weight="800" fill="#20231f" font-family="Inter, Segoe UI, Microsoft YaHei, sans-serif"><tspan x="60" dy="0">跨膜转运三种核心机器</tspan></text>
+  <text x="60" y="122" text-anchor="start" font-size="19" font-weight="500" fill="#687067" font-family="Inter, Segoe UI, Microsoft YaHei, sans-serif"><tspan x="60" dy="0">先判断方向和能量来源，再判断是孔道、交替暴露还是泵循环</tspan></text>
+  <rect x="95" y="248" width="1010" height="72" rx="34" fill="#dbe7df" stroke="#b9c7bd" stroke-width="2"/><rect x="150" y="188" width="160" height="190" rx="18" fill="#e7f4ef" stroke="#0f766e" stroke-width="3"/>
+<text x="230" y="274" text-anchor="middle" font-size="24" font-weight="700" fill="#20231f" font-family="Inter, Segoe UI, Microsoft YaHei, sans-serif"><tspan x="230" dy="0">通道</tspan><tspan x="230" dy="34">顺梯度快</tspan></text><rect x="430" y="188" width="170" height="190" rx="18" fill="#fff3df" stroke="#9a3412" stroke-width="3"/>
+<text x="515" y="274" text-anchor="middle" font-size="24" font-weight="700" fill="#20231f" font-family="Inter, Segoe UI, Microsoft YaHei, sans-serif"><tspan x="515" dy="0">转运体</tspan><tspan x="515" dy="34">构象变化</tspan></text><rect x="728" y="188" width="185" height="190" rx="18" fill="#e9eef8" stroke="#395b87" stroke-width="3"/>
+<text x="820.5" y="274" text-anchor="middle" font-size="24" font-weight="700" fill="#20231f" font-family="Inter, Segoe UI, Microsoft YaHei, sans-serif"><tspan x="820.5" dy="0">ATP泵</tspan><tspan x="820.5" dy="34">逆梯度</tspan></text><line x1="230" y1="150" x2="230" y2="222" stroke="#0f766e" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)"/><line x1="515" y1="380" x2="515" y2="322" stroke="#0f766e" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)"/><line x1="820" y1="382" x2="820" y2="324" stroke="#395b87" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)"/><text x="160" y="142" text-anchor="middle" font-size="22" font-weight="700" fill="#687067" font-family="Inter, Segoe UI, Microsoft YaHei, sans-serif"><tspan x="160" dy="0">高浓度</tspan></text><text x="160" y="414" text-anchor="middle" font-size="22" font-weight="700" fill="#687067" font-family="Inter, Segoe UI, Microsoft YaHei, sans-serif"><tspan x="160" dy="0">低浓度</tspan></text><text x="930" y="266" text-anchor="middle" font-size="28" font-weight="700" fill="#395b87" font-family="Inter, Segoe UI, Microsoft YaHei, sans-serif"><tspan x="930" dy="0">ATP</tspan></text>
+</svg>
