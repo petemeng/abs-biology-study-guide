@@ -2,6 +2,14 @@
 
 这是基于本地 ABS 课程课件和已有学习笔记整理的中文复习讲义网站，覆盖 Advanced Biological Sciences 课程第 1-13 讲。
 
+## 在线阅读
+
+网页版地址：
+
+[https://petemeng.github.io/abs-biology-study-guide/](https://petemeng.github.io/abs-biology-study-guide/)
+
+网站支持按讲次阅读、侧边目录跳转、关键词搜索，并在每讲开头加入了机制图/概念图，方便复习时先抓主线。
+
 ## 内容范围
 
 - 第 1 讲：Cells and Genomes
@@ -37,4 +45,3 @@ npm run serve
 ## 说明
 
 本仓库只发布整理后的复习讲义和网页源码，不包含原始 PDF、PPTX、DOCX 课件文件。
-
