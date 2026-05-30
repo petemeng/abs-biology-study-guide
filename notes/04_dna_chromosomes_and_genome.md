@@ -2,6 +2,15 @@
 
 对应课件：`Lecture_4_DNA_Chromosome_and_Genome.pdf`
 
+## PDF 标黄重点（考试优先看）
+
+这些点来自原始 PDF 中检测到的高亮注释，属于染色体结构的基础必背项：
+
+- Centromere：姐妹染色单体连接和 kinetochore 形成相关区域，参与染色体分离。
+- Telomere：染色体末端保护结构，防止末端被误认为 DNA breaks。
+- Replication origin：DNA replication 起始位置。
+- Each chromosome has a centromere, two telomeres and replication origins：能把三者在染色体上的位置和功能区分清楚。
+
 这一讲的关键词是：**包装、组织、可读性、遗传性。**
 
 很多初学者会觉得 DNA 只是一条双螺旋，但真正的细胞里，DNA 从来不是裸露存在的。它必须被压缩、组织、标记，还要在需要时重新打开。这就是染色体和染色质研究的核心。

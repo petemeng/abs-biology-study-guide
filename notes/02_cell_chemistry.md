@@ -2,6 +2,28 @@
 
 对应课件：`Lecture_2_Cell_Chemistry.pdf`
 
+## PDF 标黄重点（考试优先看）
+
+这些点来自原始 PDF 中检测到的高亮和批注，复习时优先背熟并会判断：
+
+- Hydrogen bond 三要素：donor、acceptor、direction。
+- Amphipathic、hydrophilic、hydrophobic 的含义和例子。
+- 四类非共价作用：
+  - ionic bond / salt bridge。
+  - hydrogen bond。
+  - van der Waals attraction。
+  - hydrophobic force。
+- 20 种 amino acids：
+  - 细胞中蛋白质氨基酸主要为 L-stereoisomeric form。
+  - 氨基酸差异主要来自 side group R。
+  - 需要掌握常见三字母/单字母缩写和侧链性质。
+- 氨基酸分类：
+  - charged：Glu、Asp、His、Lys、Arg。
+  - hydrophobic：Ala、Val、Ile、Leu、Met、Phe、Tyr、Trp。
+  - uncharged polar：Ser、Thr、Asn、Gln。
+  - special：Cys、Gly、Pro。
+- Peptide bond：能判断肽链方向和 N 端/C 端。
+
 这一讲是后面所有内容的化学地基。你如果觉得 DNA、RNA、蛋白质很抽象，通常不是生物学没学懂，而是化学基础没串起来。
 
 这讲最核心的目标只有一句话：**理解生物分子为什么能形成特定结构、彼此识别，并驱动生命反应。**

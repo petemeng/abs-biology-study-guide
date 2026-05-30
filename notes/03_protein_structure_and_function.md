@@ -2,6 +2,27 @@
 
 对应课件：`Lecture_3_Protein_Structure_and_Function.pdf`
 
+## PDF 标黄重点（考试优先看）
+
+这些点来自原始 PDF 中检测到的高亮和批注，是本讲最容易出概念题的位置：
+
+- 蛋白质四级结构：
+  - primary structure：amino acid 的线性排列。
+  - secondary structure：由主链 hydrogen bonds 稳定的局部结构，如 alpha helix、beta sheet。
+  - tertiary structure：一条多肽链的整体三维折叠。
+  - quaternary structure：多个 polypeptides 组装成复合体。
+- Protein conformation is determined by amino acid sequence：理解序列如何决定折叠倾向和功能。
+- 氨基酸性质判断：注意带氧基团常与酸性/负电相关，带氮基团常与碱性/正电相关。
+- Phosphorylation 常见位点：
+  - tyrosine。
+  - serine。
+  - threonine。
+- Kinases 和 phosphatases 是调节蛋白活性的常见方式。
+- GTP-binding proteins 的 GAP / GEF cycle：
+  - GEF 促进 GDP -> GTP，激活 GTPase。
+  - GAP 促进 GTP hydrolysis，关闭 GTPase。
+  - 需要能画出或解释这个循环。
+
 如果说 DNA 更像“信息仓库”，那蛋白质就是细胞里真正的大型执行系统。这一讲是整门课里最核心的部分之一，因为后面几乎所有机制最后都会落到“某种蛋白在做什么”。
 
 你需要先抓住一句话：**蛋白质的功能来自结构，结构又主要由氨基酸序列决定。**

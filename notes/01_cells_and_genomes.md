@@ -2,6 +2,17 @@
 
 对应课件：`1_Cells_and_Genomes.pdf`
 
+## PDF 标黄重点（考试优先看）
+
+这些点来自原始 PDF 中检测到的高亮注释，复习时优先确认自己能解释清楚：
+
+- 生命系统的共同特征：regulation、growth and development、energy processing、response to the environment、reproduction、evolution。
+- Cell theory：
+  - all living organisms are composed of one or more cells。
+  - the cell is the basic unit of structure and function for all organisms。
+  - all cells arise only from preexisting cells by division。
+- Homologous genes：理解同源基因如何反映共同祖先和进化关系。
+
 这份讲义是给零基础同学用的。你不需要一开始就记住所有名词，先抓住一条主线：**所有生命虽然长得很不一样，但底层运行逻辑高度统一；这种统一性来自细胞、基因组和进化。**
 
 ## 这讲到底在讲什么
