@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lecture 15: Cell Cycle（细胞周期） 覆盖范围：cell cycle overview、cell cycle control system、S phase、mitosis、cytokinesis、cell division and cell growth control。 复习目标：能把“细胞如何只复制一次 DNA、如何准确分离染色体、如何决定是否继续分裂”串成一条机制链。 本讲主线 细胞周期的核心任务很简单： 先把">
+  <title>Lecture 15: Cell Cycle（细胞周期） | ABS 复习讲义</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <button class="menu-button" id="menuButton" aria-label="打开目录">目录</button>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark">ABS</span>
+      <span>
+        <strong>生物学复习讲义</strong>
+        <em>Advanced Biological Sciences</em>
+      </span>
+    </a>
+    <label class="search">
+      <span>搜索讲义</span>
+      <input id="searchInput" type="search" placeholder="例如 Ras / 膜电位 / DNA 复制">
+    </label>
+    <div class="search-results" id="searchResults"></div>
+    <nav class="nav"><a class="nav-link " href="01_cells_and_genomes.html">
+      <span>01</span>
+      <strong>Cells and Genomes</strong>
+    </a><a class="nav-link " href="02_cell_chemistry.html">
+      <span>02</span>
+      <strong>Cell Chemistry</strong>
+    </a><a class="nav-link " href="03_protein_structure_and_function.html">
+      <span>03</span>
+      <strong>Protein Structure and Function</strong>
+    </a><a class="nav-link " href="04_dna_chromosomes_and_genome.html">
+      <span>04</span>
+      <strong>DNA, Chromosomes and Genome</strong>
+    </a><a class="nav-link " href="05_dna_replication_repair_and_recombination.html">
+      <span>05</span>
+      <strong>DNA Replication, Repair, and Recombination</strong>
+    </a><a class="nav-link " href="06_from_dna_to_protein.html">
+      <span>06</span>
+      <strong>From DNA to Protein</strong>
+    </a><a class="nav-link " href="07_control_of_gene_expression.html">
+      <span>07</span>
+      <strong>Control of Gene Expression</strong>
+    </a><a class="nav-link " href="08_manipulating_proteins_dna_rna.html">
+      <span>08</span>
+      <strong>Manipulating Proteins, DNA and RNA</strong>
+    </a><a class="nav-link " href="09_membrane_structure_and_functions.html">
+      <span>09</span>
+      <strong>细胞膜结构与功能</strong>
+    </a><a class="nav-link " href="10_cross_membrane_transport.html">
+      <span>10</span>
+      <strong>跨膜转运与膜电学性质</strong>
+    </a><a class="nav-link " href="11_intracellular_compartments_and_protein_sorting.html">
+      <span>11</span>
+      <strong>细胞内区室与蛋白质分选（详细版）</strong>
+    </a><a class="nav-link " href="12_intracellular_vesicular_traffic.html">
+      <span>12</span>
+      <strong>细胞内囊泡运输 (Intracellular Vesicular Traffic)</strong>
+    </a><a class="nav-link " href="13_cell_communication.html">
+      <span>13</span>
+      <strong>细胞通讯</strong>
+    </a><a class="nav-link " href="14_cytoskeleton.html">
+      <span>14</span>
+      <strong>Cytoskeleton（细胞骨架）</strong>
+    </a><a class="nav-link active" href="#">
+      <span>15</span>
+      <strong>Cell Cycle（细胞周期）</strong>
+    </a><a class="nav-link " href="16_apoptosis.html">
+      <span>16</span>
+      <strong>Apoptosis（细胞凋亡）</strong>
+    </a><a class="nav-link " href="17_cell_junctions_i.html">
+      <span>17</span>
+      <strong>Cell Junctions, Cell Adhesion and Extracellular Matrix (I)</strong>
+    </a><a class="nav-link " href="18_cell_junctions_ii_ecm.html">
+      <span>18</span>
+      <strong>Cell Junctions, Cell Adhesion and Extracellular Matrix (II)</strong>
+    </a><a class="nav-link " href="19_ecm_and_cancer_biology.html">
+      <span>19</span>
+      <strong>Extracellular Matrix and Cancer Biology</strong>
+    </a></nav>
+  </aside>
+  <main class="page">
+    <article class="article">
+      <div class="article-head">
+        <a class="back-home" href="../index.html">返回首页</a>
+        <p class="lecture-number">Lecture 15</p>
+      </div>
+      <div class="article-layout">
+        <div class="content"><h1 id="lecture-15-cell-cycle（细胞周期）">Lecture 15: Cell Cycle（细胞周期）</h1>
+<figure class="visual-figure">
+    <img src="../assets/figures/15_cell_cycle.svg" alt="Lecture 15: Cell Cycle（细胞周期）图解">
+    <figcaption>细胞周期由 Cyclin-Cdk 推进、checkpoint 把关、SCF/APC/C 通过蛋白降解保证方向性。</figcaption>
+  </figure>
+<p>&gt; 覆盖范围：cell cycle overview、cell cycle control system、S phase、mitosis、cytokinesis、cell division and cell growth control。 &gt; 复习目标：能把“细胞如何只复制一次 DNA、如何准确分离染色体、如何决定是否继续分裂”串成一条机制链。</p>
+<p>---</p>
+<h2 id="本讲主线">本讲主线</h2>
+<p>细胞周期的核心任务很简单：<strong>先把细胞内容物和遗传信息复制一份，再把它们准确分给两个子细胞</strong>。难点在于这件事必须按顺序发生，而且一旦出错会造成突变、染色体非整倍体、发育异常或癌症。</p>
+<p>一句话框架：</p>
+<pre><code>G1 判断环境和细胞状态
+  -&gt; S phase 复制 DNA 且每个 origin 只启动一次
+  -&gt; G2 检查复制是否完成和 DNA 是否受损
+  -&gt; M phase 凝缩染色体、组装纺锤体、分离姐妹染色单体
+  -&gt; Cytokinesis 把一个细胞分成两个</code></pre>
+<p>细胞周期控制系统的本质是：<strong>Cyclin-Cdk 活性按时间顺序升降，checkpoint 负责在错误未修复前踩刹车，蛋白降解系统负责让过程不可逆地向前推进。</strong></p>
+<p>---</p>
+<h2 id="考前速记版">考前速记版</h2>
+<div class="table-wrap"><table><thead><tr><th>阶段</th><th>核心事件</th><th>关键问题</th></tr></thead><tbody><tr><td>G1</td><td>生长、感受营养和 mitogens、决定是否进入周期</td><td>该不该分裂？</td></tr><tr><td>S phase</td><td>DNA replication、histone synthesis、centrosome duplication</td><td>DNA 是否只复制一次？</td></tr><tr><td>G2</td><td>检查 DNA replication 和 DNA damage</td><td>能不能进 M phase？</td></tr><tr><td>M phase</td><td>染色体凝缩、核膜破裂、纺锤体组装、染色体分离</td><td>染色体能否平均分配？</td></tr><tr><td>Cytokinesis</td><td>contractile ring 收缩，细胞质分裂</td><td>两个子细胞如何真正分开？</td></tr><tr><td>G0</td><td>暂时或长期退出细胞周期</td><td>是否保持静息或分化状态？</td></tr></tbody></table></div>
+<p>最常考的三个控制点：</p>
+<p>1. <strong>G1/S transition / restriction point</strong>：外界 mitogen、营养、细胞大小、DNA damage 决定是否进入 S phase。 2. <strong>G2/M transition</strong>：DNA 是否复制完成、是否有损伤，决定能否进入 mitosis。 3. <strong>Metaphase-to-anaphase transition</strong>：所有染色体是否正确连接 spindle，决定能否分离姐妹染色单体。</p>
+<p>---</p>
+<h2 id="i-cell-cycle-overview">I. Cell cycle overview</h2>
+<h3 id="11-细胞周期解决的两个任务">1.1 细胞周期解决的两个任务</h3>
+<p>细胞分裂不是只把细胞“一切两半”。它必须完成两个高度协调的任务：</p>
+<ul><li><strong>duplication of cell contents</strong>：DNA、蛋白质、膜、细胞器等要增加。</li><li><strong>division into two daughter cells</strong>：遗传物质和细胞内容物要被分配给两个子细胞。</li></ul>
+<p>如果复制和分裂不同步，就会出问题：</p>
+<ul><li>DNA 没复制完就分裂，子细胞缺失遗传信息。</li><li>DNA 重复复制，产生基因组不稳定。</li><li>染色体未正确连接纺锤体就分离，产生 aneuploidy。</li><li>细胞生长不足就分裂，子细胞过小。</li></ul>
+<h3 id="12-四个经典阶段">1.2 四个经典阶段</h3>
+<div class="table-wrap"><table><thead><tr><th>阶段</th><th>中文理解</th><th>主要事件</th></tr></thead><tbody><tr><td>G1</td><td>第一间期</td><td>生长、外界信号判断、准备 DNA 合成</td></tr><tr><td>S</td><td>合成期</td><td>DNA replication 和 histone synthesis</td></tr><tr><td>G2</td><td>第二间期</td><td>检查 DNA 复制完成度和损伤，准备有丝分裂</td></tr><tr><td>M</td><td>分裂期</td><td>mitosis + cytokinesis</td></tr></tbody></table></div>
+<p>有些细胞会进入 <strong>G0</strong>：</p>
+<ul><li>暂时退出周期，之后可被信号重新激活，例如淋巴细胞。</li><li>长期退出并分化，例如多数神经元和骨骼肌细胞。</li><li>进入 senescence，不再分裂但仍有代谢活动。</li></ul>
+<h3 id="13-研究细胞周期的常用方法">1.3 研究细胞周期的常用方法</h3>
+<p>课件提到几类常用方法：</p>
+<div class="table-wrap"><table><thead><tr><th>方法</th><th>能回答的问题</th></tr></thead><tbody><tr><td>显微镜观察</td><td>细胞形态、染色体凝缩、纺锤体、胞质分裂</td></tr><tr><td>BrdU / EdU incorporation</td><td>哪些细胞正在进行 DNA synthesis</td></tr><tr><td>Flow cytometry DNA content</td><td>根据 DNA 含量区分 G1、S、G2/M</td></tr><tr><td>Cell cycle synchronization</td><td>让细胞群体处在相近阶段，方便分析</td></tr><tr><td>Yeast genetics</td><td>用 cdc mutants 找细胞周期控制基因</td></tr></tbody></table></div>
+<p>DNA content 的基本判断：</p>
+<ul><li>G1：2N DNA content。</li><li>S phase：介于 2N 和 4N 之间。</li><li>G2/M：4N DNA content。</li></ul>
+<h3 id="14-yeast-mutants-为什么重要">1.4 Yeast mutants 为什么重要</h3>
+<p>酵母遗传学帮助科学家找到许多 cell division cycle genes，也就是 <strong>cdc genes</strong>。典型贡献包括：</p>
+<ul><li><strong>Lee Hartwell</strong>：用 budding yeast 找到多种 cdc mutants 和 checkpoint 概念。</li><li><strong>Paul Nurse</strong>：用 fission yeast 研究 cdc2 等关键细胞周期基因。</li><li><strong>Tim Hunt</strong>：发现 cyclins 的周期性积累和降解。</li></ul>
+<p>这些工作说明：细胞周期不是简单计时器，而是由高度保守的分子开关控制。</p>
+<p>---</p>
+<h2 id="ii-the-cell-cycle-control-system">II. The cell cycle control system</h2>
+<h3 id="21-控制系统的基本逻辑">2.1 控制系统的基本逻辑</h3>
+<p>细胞周期控制系统像一组顺序开关。每一步都要满足两个条件：</p>
+<p>1. 上一步已经完成。 2. 当前环境允许继续前进。</p>
+<p>核心分子是 <strong>Cyclin-Cdk complexes</strong>：</p>
+<ul><li>Cdk 是 kinase，蛋白水平相对稳定。</li><li>Cyclin 周期性合成和降解。</li><li>Cyclin 结合 Cdk 后改变 Cdk 构象，使其具备底物特异性和活性。</li></ul>
+<p>所以“周期性”主要来自 cyclin，而“磷酸化执行能力”来自 Cdk。</p>
+<h3 id="22-cyclin-cdk-的主要类型">2.2 Cyclin-Cdk 的主要类型</h3>
+<div class="table-wrap"><table><thead><tr><th>复合体</th><th>活跃阶段</th><th>主要功能</th></tr></thead><tbody><tr><td>G1-Cdk</td><td>G1</td><td>响应 mitogens，帮助细胞通过 restriction point</td></tr><tr><td>G1/S-Cdk</td><td>late G1</td><td>推动进入 S phase</td></tr><tr><td>S-Cdk</td><td>S phase</td><td>启动 DNA replication，防止 origin 重新许可</td></tr><tr><td>M-Cdk</td><td>G2/M 和 M phase</td><td>触发 mitosis，促进染色体凝缩、核膜破裂、纺锤体形成</td></tr></tbody></table></div>
+<p>记忆方式：</p>
+<pre><code>G1-Cdk 问“要不要分裂”
+G1/S-Cdk 推门进入 S phase
+S-Cdk 启动复制并防止重复复制
+M-Cdk 触发 mitosis</code></pre>
+<h3 id="23-cyclin-cdk-如何被调控">2.3 Cyclin-Cdk 如何被调控</h3>
+<p>Cyclin-Cdk 活性不是只由 cyclin 决定。主要调控层包括：</p>
+<p>1. <strong>Cyclin synthesis</strong>：特定阶段合成特定 cyclin。 2. <strong>Cyclin degradation</strong>：ubiquitin ligase 介导降解，让阶段转换不可逆。 3. <strong>Activating phosphorylation</strong>：CAK 在 Cdk 上加激活性磷酸。 4. <strong>Inhibitory phosphorylation</strong>：Wee1 给 Cdk 加抑制性磷酸。 5. <strong>Dephosphorylation</strong>：Cdc25 去掉抑制性磷酸，激活 Cdk。 6. <strong>CKI binding</strong>：Cdk inhibitor proteins 直接抑制 Cyclin-Cdk。</p>
+<h3 id="24-ckicdk-inhibitor-proteins">2.4 CKI：Cdk inhibitor proteins</h3>
+<p>CKI 是细胞周期刹车。典型例子：</p>
+<ul><li><strong>p27</strong>：抑制 G1/S-Cdk 和 S-Cdk。</li><li><strong>p21</strong>：常由 p53 上调，用于 DNA damage 后阻止细胞继续周期。</li></ul>
+<p>如果 DNA 受损，p53 上调 p21，p21 抑制 Cyclin-Cdk，细胞停在 G1/S 或 G2/M 附近，给修复争取时间。</p>
+<h3 id="25-scf-和-apcc让细胞周期单向前进">2.5 SCF 和 APC/C：让细胞周期单向前进</h3>
+<p>两个重要 ubiquitin ligases：</p>
+<div class="table-wrap"><table><thead><tr><th>复合体</th><th>主要作用</th></tr></thead><tbody><tr><td>SCF</td><td>降解 CKI 等蛋白，推动 G1/S transition</td></tr><tr><td>APC/C</td><td>降解 securin 和 M-cyclin，推动 metaphase-to-anaphase transition 和退出 mitosis</td></tr></tbody></table></div>
+<p>APC/C 的关键作用：</p>
+<ul><li>降解 <strong>securin</strong>，释放 <strong>separase</strong>。</li><li>separase 切割 cohesin，让姐妹染色单体分离。</li><li>降解 M-cyclin，让 Cdk 活性下降，细胞退出 mitosis。</li></ul>
+<p>---</p>
+<h2 id="iii-s-phase">III. S phase</h2>
+<h3 id="31-s-phase-的核心挑战">3.1 S phase 的核心挑战</h3>
+<p>DNA replication 有两个硬要求：</p>
+<p>1. 每一段 DNA 都必须被复制。 2. 每个 origin 在一个细胞周期中只能启动一次。</p>
+<p>如果 origin 没启动，会出现缺失复制；如果 origin 重复启动，会造成基因组不稳定。</p>
+<h3 id="32-origin-licensing只复制一次的关键">3.2 Origin licensing：只复制一次的关键</h3>
+<p>在 G1，复制起点被“许可”：</p>
+<pre><code>ORC 结合 origin
+  -&gt; Cdc6 / Cdt1 招募
+  -&gt; MCM helicase 装载
+  -&gt; pre-replicative complex 形成</code></pre>
+<p>进入 S phase 后：</p>
+<pre><code>S-Cdk 和 DDK 激活 licensed origins
+  -&gt; MCM helicase 启动
+  -&gt; DNA replication begins</code></pre>
+<p>同时，S-Cdk 会阻止新的 licensing 发生。这样同一个 origin 在 S phase 不能重新装载 MCM，因此不会重复复制。</p>
+<h3 id="33-防止-rereplication-的几层机制">3.3 防止 rereplication 的几层机制</h3>
+<div class="table-wrap"><table><thead><tr><th>机制</th><th>作用</th></tr></thead><tbody><tr><td>S-Cdk 磷酸化 licensing factors</td><td>阻止 ORC/Cdc6/Cdt1 重新装载 MCM</td></tr><tr><td>Cdc6 降解或核输出</td><td>防止新 pre-RC 形成</td></tr><tr><td>Geminin 抑制 Cdt1</td><td>抑制 licensing</td></tr><tr><td>M phase 结束后 Cdk 活性下降</td><td>下一轮 G1 才能重新 licensing</td></tr></tbody></table></div>
+<p>记忆点：<strong>licensing 只能在低 Cdk 活性的 G1 发生；firing 发生在高 S-Cdk 活性的 S phase。</strong></p>
+<h3 id="34-s-phase-还发生什么">3.4 S phase 还发生什么</h3>
+<p>除了 DNA replication，S phase 还包括：</p>
+<ul><li>histone synthesis，用来包装新复制的 DNA。</li><li>chromatin reassembly，包括复制后的组蛋白修饰恢复。</li><li>sister chromatid cohesion，姐妹染色单体被 cohesin 连接。</li><li>centrosome duplication，为后续 spindle assembly 做准备。</li></ul>
+<p>---</p>
+<h2 id="iv-mitosis">IV. Mitosis</h2>
+<h3 id="41-mitosis-的阶段">4.1 Mitosis 的阶段</h3>
+<div class="table-wrap"><table><thead><tr><th>阶段</th><th>主要事件</th></tr></thead><tbody><tr><td>Prophase</td><td>染色体凝缩，centrosomes 分离，spindle 开始形成</td></tr><tr><td>Prometaphase</td><td>核膜破裂，microtubules 捕获 kinetochores</td></tr><tr><td>Metaphase</td><td>染色体排列在 metaphase plate</td></tr><tr><td>Anaphase</td><td>sister chromatids 分离并移向两极</td></tr><tr><td>Telophase</td><td>核膜重建，染色体去凝缩</td></tr></tbody></table></div>
+<p>Mitosis 的目标是把复制后的姐妹染色单体准确分到两个细胞核中。</p>
+<h3 id="42-m-cdk-触发-mitosis">4.2 M-Cdk 触发 mitosis</h3>
+<p>M-Cdk 活化后会推动多种 mitotic events：</p>
+<ul><li>磷酸化 condensins，促进 chromosome condensation。</li><li>磷酸化 nuclear lamins，导致 nuclear envelope breakdown。</li><li>调控 microtubule-associated proteins，促进 spindle assembly。</li><li>改变 Golgi、ER 等膜系统组织。</li></ul>
+<p>M-Cdk 的激活具有正反馈：</p>
+<pre><code>M-Cdk 激活 Cdc25
+M-Cdk 抑制 Wee1
+  -&gt; 更多 M-Cdk 被激活</code></pre>
+<p>这让细胞能迅速、同步地进入 mitosis。</p>
+<h3 id="43-spindle-和-kinetochore">4.3 Spindle 和 kinetochore</h3>
+<p>Spindle 由 microtubules 组成，主要有三类：</p>
+<div class="table-wrap"><table><thead><tr><th>Microtubule</th><th>功能</th></tr></thead><tbody><tr><td>Kinetochore microtubules</td><td>连接染色体 kinetochore，牵引染色体</td></tr><tr><td>Interpolar microtubules</td><td>两极之间互相重叠，帮助 spindle elongation</td></tr><tr><td>Astral microtubules</td><td>连接细胞皮层，帮助定位 spindle</td></tr></tbody></table></div>
+<p>Kinetochore 是染色体 centromere 区域形成的蛋白复合体，负责连接 spindle microtubules。</p>
+<h3 id="44-metaphase-to-anaphase-transition">4.4 Metaphase-to-anaphase transition</h3>
+<p>姐妹染色单体由 cohesin 连接。只有当所有染色体都正确双向连接 spindle 后，细胞才允许进入 anaphase。</p>
+<p>关键步骤：</p>
+<pre><code>所有 kinetochore 正确连接并产生张力
+  -&gt; spindle assembly checkpoint 关闭
+  -&gt; APC/C-Cdc20 激活
+  -&gt; securin 被降解
+  -&gt; separase 被释放
+  -&gt; cohesin 被切割
+  -&gt; sister chromatids 分离</code></pre>
+<p>APC/C 同时降解 M-cyclin，使 M-Cdk 活性下降，帮助退出 mitosis。</p>
+<h3 id="45-spindle-assembly-checkpoint">4.5 Spindle assembly checkpoint</h3>
+<p>Spindle assembly checkpoint 监控 kinetochore 是否都正确连接 microtubules。</p>
+<p>如果还有未连接或错误连接的 kinetochore：</p>
+<ul><li>Mad/Bub 等 checkpoint proteins 抑制 APC/C-Cdc20。</li><li>securin 不被降解。</li><li>separase 不能激活。</li><li>anaphase 被阻止。</li></ul>
+<p>这个 checkpoint 对防止 aneuploidy 非常重要。</p>
+<p>---</p>
+<h2 id="v-cytokinesis">V. Cytokinesis</h2>
+<h3 id="51-动物细胞的-contractile-ring">5.1 动物细胞的 contractile ring</h3>
+<p>动物细胞 cytokinesis 依赖 actin 和 myosin II 形成 contractile ring。</p>
+<p>过程：</p>
+<p>1. Anaphase 后期，细胞赤道处指定 cleavage plane。 2. RhoA 在赤道皮层被激活。 3. actin filaments 和 myosin II 组装成 contractile ring。 4. myosin II 收缩 actin ring，形成 cleavage furrow。 5. 细胞膜不断内陷，最终通过 abscission 分开两个子细胞。</p>
+<h3 id="52-cleavage-furrow-的位置如何确定">5.2 Cleavage furrow 的位置如何确定</h3>
+<p>Cleavage furrow 通常形成在 spindle 中央。spindle 给细胞皮层提供空间信息：</p>
+<ul><li>astral microtubules 影响皮层张力。</li><li>central spindle 促进 RhoA 在赤道激活。</li><li>RhoA 激活后促进 actin-myosin ring 组装。</li></ul>
+<p>所以 cytokinesis 不是随机切，而是由 mitotic spindle 指定切割位置。</p>
+<h3 id="53-植物细胞的-cell-plate">5.3 植物细胞的 cell plate</h3>
+<p>植物细胞有坚硬细胞壁，不能像动物细胞一样用 cleavage furrow 向内收缩。植物细胞通过 Golgi-derived vesicles 在中央形成 <strong>cell plate</strong>，再逐渐扩展并与原有细胞壁融合。</p>
+<p>---</p>
+<h2 id="vi-control-of-cell-division-and-cell-growth">VI. Control of cell division and cell growth</h2>
+<h3 id="61-细胞为什么需要外界信号">6.1 细胞为什么需要外界信号</h3>
+<p>多细胞生物中的细胞不能只根据自己内部状态分裂。它们还要听组织层面的指令：</p>
+<ul><li>是否有足够 mitogens。</li><li>是否有营养和能量。</li><li>是否有生存信号。</li><li>是否贴附在正确 ECM 上。</li><li>周围细胞密度是否允许继续增殖。</li></ul>
+<p>如果细胞脱离这些控制仍持续分裂，就接近癌变逻辑。</p>
+<h3 id="62-mitogens">6.2 Mitogens</h3>
+<p>Mitogens 是促进细胞进入 cell cycle 的外界信号。课件提到许多例子，例如 EGF、FGF、NGF、erythropoietin 等。</p>
+<p>典型通路：</p>
+<pre><code>Mitogen
+  -&gt; receptor tyrosine kinase
+  -&gt; Ras-MAPK pathway
+  -&gt; Myc 等转录因子
+  -&gt; G1 cyclins 表达
+  -&gt; G1-Cdk / G1/S-Cdk 活化
+  -&gt; Rb 被磷酸化
+  -&gt; E2F 被释放
+  -&gt; S phase genes 表达</code></pre>
+<h3 id="63-rb-e2f-restriction-point">6.3 Rb-E2F restriction point</h3>
+<p>Rb 是 G1/S transition 的重要抑制器。</p>
+<p>无 mitogen 时：</p>
+<pre><code>Rb 结合 E2F
+  -&gt; E2F 不能激活 S phase genes
+  -&gt; 细胞停在 G1</code></pre>
+<p>有 mitogen 时：</p>
+<pre><code>G1-Cdk / G1/S-Cdk 磷酸化 Rb
+  -&gt; Rb 释放 E2F
+  -&gt; E2F 激活 DNA replication genes 和 S-cyclin genes
+  -&gt; 细胞通过 restriction point</code></pre>
+<p>通过 restriction point 后，细胞对外界 mitogen 的依赖降低，会更自主地完成这一轮周期。</p>
+<h3 id="64-dna-damage-checkpoint">6.4 DNA damage checkpoint</h3>
+<p>DNA damage 后，细胞会停下来修复。</p>
+<p>经典路径：</p>
+<pre><code>DNA damage
+  -&gt; ATM / ATR
+  -&gt; Chk1 / Chk2
+  -&gt; p53 stabilization
+  -&gt; p21 transcription
+  -&gt; Cyclin-Cdk inhibition
+  -&gt; cell cycle arrest</code></pre>
+<p>如果损伤修复不了，p53 还可以激活 apoptosis 相关基因，让细胞死亡，避免把突变传给子细胞。</p>
+<h3 id="65-细胞大小和营养">6.5 细胞大小和营养</h3>
+<p>细胞分裂前需要有足够质量和能量。细胞生长主要受营养、mTOR、PI3K-Akt、Myc 等调控。</p>
+<p>关键逻辑：</p>
+<ul><li>cell growth 指细胞质量增加。</li><li>cell division 指细胞数量增加。</li><li>两者必须协调，否则会产生异常大小的细胞。</li></ul>
+<h3 id="66-contact-inhibition-和-anchorage-dependence">6.6 Contact inhibition 和 anchorage dependence</h3>
+<p>正常细胞常受到两类组织环境限制：</p>
+<ul><li><strong>Contact inhibition</strong>：细胞密度过高时停止增殖。</li><li><strong>Anchorage dependence</strong>：许多细胞必须贴附 ECM 才能存活和分裂。</li></ul>
+<p>癌细胞常丧失这些限制，因此可以在高密度、低贴附甚至软琼脂中继续生长。</p>
+<p>---</p>
+<h2 id="常考比较">常考比较</h2>
+<h3 id="g1s-checkpoint-vs-g2m-checkpoint-vs-spindle-checkpoint">G1/S checkpoint vs G2/M checkpoint vs spindle checkpoint</h3>
+<div class="table-wrap"><table><thead><tr><th>Checkpoint</th><th>检查什么</th><th>失败后风险</th></tr></thead><tbody><tr><td>G1/S</td><td>DNA damage、细胞大小、营养、mitogens</td><td>带损伤进入复制，突变累积</td></tr><tr><td>G2/M</td><td>DNA 是否复制完成、是否有损伤</td><td>未复制完或受损 DNA 进入 mitosis</td></tr><tr><td>Spindle checkpoint</td><td>kinetochore 是否正确连接 spindle</td><td>染色体错误分离，aneuploidy</td></tr></tbody></table></div>
+<h3 id="cyclin-cdk-调控答题套路">Cyclin-Cdk 调控答题套路</h3>
+<p>遇到 cell cycle control 题，可以按这六层写：</p>
+<p>1. cyclin 合成。 2. cyclin 降解。 3. Cdk 激活性磷酸化。 4. Cdk 抑制性磷酸化。 5. Cdc25 / Wee1 调节。 6. CKI 抑制。</p>
+<h3 id="dna-replication-once-per-cycle">DNA replication once per cycle</h3>
+<pre><code>G1: low Cdk activity allows origin licensing
+S phase: S-Cdk fires origins
+S/G2/M: high Cdk activity prevents re-licensing
+M exit: Cdk activity drops, next G1 can license again</code></pre>
+<p>---</p>
+<h2 id="自测题">自测题</h2>
+<p>1. 为什么细胞必须把 DNA replication 和 mitosis 严格排序？ 2. Flow cytometry 中 2N、2N-4N、4N DNA content 分别对应哪些阶段？ 3. Cyclin 和 Cdk 在细胞周期控制中分别提供什么？ 4. 为什么 origin licensing 只能发生在 G1？ 5. APC/C 降解 securin 和 M-cyclin 分别产生什么后果？ 6. Spindle assembly checkpoint 如何防止 aneuploidy？ 7. Rb-E2F 通路如何把 mitogen 信号转化为 S phase gene expression？ 8. DNA damage 后 p53-p21 如何阻止细胞继续分裂？</p>
+<p>---</p>
+<h2 id="一页总结">一页总结</h2>
+<p>Cell cycle 的复习主线是：<strong>Cyclin-Cdk 提供阶段性推进力，checkpoint 提供质量控制，SCF/APC-C 提供不可逆转换，Rb/E2F 和 p53/p21 把外界增殖信号与内部 DNA 状态接入周期决策。</strong> 能把这几条线串起来，就能解释大多数细胞周期题。</p><div class="pager">
+      <a href="14_cytoskeleton.html">上一讲：Lecture 14: Cytoskeleton（细胞骨架）</a>
+      <a href="16_apoptosis.html">下一讲：Lecture 16: Apoptosis（细胞凋亡）</a>
+    </div></div>
+        <aside class="toc"><strong>本讲目录</strong><a class="toc-level-2" href="#本讲主线">本讲主线</a><a class="toc-level-2" href="#考前速记版">考前速记版</a><a class="toc-level-2" href="#i-cell-cycle-overview">I. Cell cycle overview</a><a class="toc-level-3" href="#11-细胞周期解决的两个任务">1.1 细胞周期解决的两个任务</a><a class="toc-level-3" href="#12-四个经典阶段">1.2 四个经典阶段</a><a class="toc-level-3" href="#13-研究细胞周期的常用方法">1.3 研究细胞周期的常用方法</a><a class="toc-level-3" href="#14-yeast-mutants-为什么重要">1.4 Yeast mutants 为什么重要</a><a class="toc-level-2" href="#ii-the-cell-cycle-control-system">II. The cell cycle control system</a><a class="toc-level-3" href="#21-控制系统的基本逻辑">2.1 控制系统的基本逻辑</a><a class="toc-level-3" href="#22-cyclin-cdk-的主要类型">2.2 Cyclin-Cdk 的主要类型</a><a class="toc-level-3" href="#23-cyclin-cdk-如何被调控">2.3 Cyclin-Cdk 如何被调控</a><a class="toc-level-3" href="#24-ckicdk-inhibitor-proteins">2.4 CKI：Cdk inhibitor proteins</a><a class="toc-level-3" href="#25-scf-和-apcc让细胞周期单向前进">2.5 SCF 和 APC/C：让细胞周期单向前进</a><a class="toc-level-2" href="#iii-s-phase">III. S phase</a><a class="toc-level-3" href="#31-s-phase-的核心挑战">3.1 S phase 的核心挑战</a><a class="toc-level-3" href="#32-origin-licensing只复制一次的关键">3.2 Origin licensing：只复制一次的关键</a><a class="toc-level-3" href="#33-防止-rereplication-的几层机制">3.3 防止 rereplication 的几层机制</a><a class="toc-level-3" href="#34-s-phase-还发生什么">3.4 S phase 还发生什么</a><a class="toc-level-2" href="#iv-mitosis">IV. Mitosis</a><a class="toc-level-3" href="#41-mitosis-的阶段">4.1 Mitosis 的阶段</a><a class="toc-level-3" href="#42-m-cdk-触发-mitosis">4.2 M-Cdk 触发 mitosis</a><a class="toc-level-3" href="#43-spindle-和-kinetochore">4.3 Spindle 和 kinetochore</a><a class="toc-level-3" href="#44-metaphase-to-anaphase-transition">4.4 Metaphase-to-anaphase transition</a><a class="toc-level-3" href="#45-spindle-assembly-checkpoint">4.5 Spindle assembly checkpoint</a><a class="toc-level-2" href="#v-cytokinesis">V. Cytokinesis</a><a class="toc-level-3" href="#51-动物细胞的-contractile-ring">5.1 动物细胞的 contractile ring</a><a class="toc-level-3" href="#52-cleavage-furrow-的位置如何确定">5.2 Cleavage furrow 的位置如何确定</a><a class="toc-level-3" href="#53-植物细胞的-cell-plate">5.3 植物细胞的 cell plate</a><a class="toc-level-2" href="#vi-control-of-cell-division-and-cell-growth">VI. Control of cell division and cell growth</a><a class="toc-level-3" href="#61-细胞为什么需要外界信号">6.1 细胞为什么需要外界信号</a><a class="toc-level-3" href="#62-mitogens">6.2 Mitogens</a><a class="toc-level-3" href="#63-rb-e2f-restriction-point">6.3 Rb-E2F restriction point</a><a class="toc-level-3" href="#64-dna-damage-checkpoint">6.4 DNA damage checkpoint</a><a class="toc-level-3" href="#65-细胞大小和营养">6.5 细胞大小和营养</a><a class="toc-level-3" href="#66-contact-inhibition-和-anchorage-dependence">6.6 Contact inhibition 和 anchorage dependence</a><a class="toc-level-2" href="#常考比较">常考比较</a></aside>
+      </div>
+    </article>
+  </main>
+  <script src="../assets/app.js"></script>
+</body>
+</html>

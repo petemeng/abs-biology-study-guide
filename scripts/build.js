@@ -249,6 +249,10 @@ const figureDefinitions = {
     caption: "细胞骨架的核心是可调控的动态聚合物：结构、极性、调控蛋白和马达共同产生形态与运动。",
     svg: flowFigure("细胞骨架从装配到运动", "先分清三类骨架，再追踪动态调控和马达蛋白", ["Actin", "Microtubule", "IF", "动态调控", "马达蛋白", "迁移/运输"], { footer: "actin 负责皮层和收缩，microtubule 负责长距离运输，IF 负责抗机械拉伸" })
   },
+  "15_cell_cycle": {
+    caption: "细胞周期由 Cyclin-Cdk 推进、checkpoint 把关、SCF/APC/C 通过蛋白降解保证方向性。",
+    svg: flowFigure("细胞周期控制系统", "复习时抓住阶段顺序、Cyclin-Cdk 活性和三个关键 checkpoint", ["G1判断", "S期复制", "G2检查", "M期分离", "胞质分裂", "生长控制"], { footer: "DNA 只复制一次、染色体准确分离、异常细胞被阻断，是本讲的三条主线" })
+  },
   "16_apoptosis": {
     caption: "凋亡是由死亡信号触发、caspase 级联执行、吞噬清除收尾的低炎症细胞死亡程序。",
     svg: flowFigure("Apoptosis 通路主线", "把刺激来源、线粒体或死亡受体平台、caspase 级联和检测指标串起来", ["死亡刺激", "Bcl-2/受体", "initiator caspase", "effector caspase", "形态变化", "吞噬清除"], { footer: "内源性通路看 mitochondria，外源性通路看 death receptor / DISC" })
@@ -551,7 +555,7 @@ function buildHome(lectures) {
   const body = `<section class="hero">
     <p class="eyebrow">Advanced Biological Sciences</p>
     <h1>一套可以认真复习的生物学课程讲义</h1>
-    <p class="hero-copy">基于 ABS 目录下课件和已有笔记整理，覆盖细胞与基因组、细胞化学、蛋白质、DNA、基因表达、实验方法、膜系统、细胞通讯、细胞骨架、细胞死亡、细胞连接、ECM 与肿瘤生物学。</p>
+    <p class="hero-copy">基于 ABS 目录下课件和已有笔记整理，覆盖细胞与基因组、细胞化学、蛋白质、DNA、基因表达、实验方法、膜系统、细胞通讯、细胞骨架、细胞周期、细胞死亡、细胞连接、ECM 与肿瘤生物学。</p>
     <div class="hero-actions">
       <a class="primary" href="lectures/${lectures[0].slug}.html">从第 1 讲开始</a>
       <a class="secondary" href="lectures/${lectures[lectures.length - 1].slug}.html">查看最后一讲</a>
@@ -560,7 +564,7 @@ function buildHome(lectures) {
   <section class="overview">
      <div>
        <h2>复习路径</h2>
-      <p>先抓“信息流”和“膜系统”两条主线，再用细胞通讯、细胞骨架、细胞连接和 ECM 把细胞如何组织、运动、死亡与癌变串起来。复习时优先理解机制顺序，再补分子名称。</p>
+      <p>先抓“信息流”和“膜系统”两条主线，再用细胞通讯、细胞骨架、细胞周期、细胞连接和 ECM 把细胞如何组织、运动、分裂、死亡与癌变串起来。复习时优先理解机制顺序，再补分子名称。</p>
     </div>
     <div>
       <h2>使用建议</h2>
