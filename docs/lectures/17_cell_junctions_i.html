@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lecture 17: Cell Junctions, Cell Adhesion and Extracellular Matrix (I) 覆盖范围：Outline I–IV（70 张幻灯片中前 4 个章节） 重点：cell–cell junctions 体系，cadherin / Ig / selectin 三大类黏附分子，tight junction 与 gap junction 的功能逻辑 课程脉络（一句话框架） 多细胞生物要把">
+  <title>Lecture 17: Cell Junctions, Cell Adhesion and Extracellular Matrix (I) | ABS 复习讲义</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <button class="menu-button" id="menuButton" aria-label="打开目录">目录</button>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark">ABS</span>
+      <span>
+        <strong>生物学复习讲义</strong>
+        <em>Advanced Biological Sciences</em>
+      </span>
+    </a>
+    <label class="search">
+      <span>搜索讲义</span>
+      <input id="searchInput" type="search" placeholder="例如 Ras / 膜电位 / DNA 复制">
+    </label>
+    <div class="search-results" id="searchResults"></div>
+    <nav class="nav"><a class="nav-link " href="01_cells_and_genomes.html">
+      <span>01</span>
+      <strong>Cells and Genomes</strong>
+    </a><a class="nav-link " href="02_cell_chemistry.html">
+      <span>02</span>
+      <strong>Cell Chemistry</strong>
+    </a><a class="nav-link " href="03_protein_structure_and_function.html">
+      <span>03</span>
+      <strong>Protein Structure and Function</strong>
+    </a><a class="nav-link " href="04_dna_chromosomes_and_genome.html">
+      <span>04</span>
+      <strong>DNA, Chromosomes and Genome</strong>
+    </a><a class="nav-link " href="05_dna_replication_repair_and_recombination.html">
+      <span>05</span>
+      <strong>DNA Replication, Repair, and Recombination</strong>
+    </a><a class="nav-link " href="06_from_dna_to_protein.html">
+      <span>06</span>
+      <strong>From DNA to Protein</strong>
+    </a><a class="nav-link " href="07_control_of_gene_expression.html">
+      <span>07</span>
+      <strong>Control of Gene Expression</strong>
+    </a><a class="nav-link " href="08_manipulating_proteins_dna_rna.html">
+      <span>08</span>
+      <strong>Manipulating Proteins, DNA and RNA</strong>
+    </a><a class="nav-link " href="09_membrane_structure_and_functions.html">
+      <span>09</span>
+      <strong>细胞膜结构与功能</strong>
+    </a><a class="nav-link " href="10_cross_membrane_transport.html">
+      <span>10</span>
+      <strong>跨膜转运与膜电学性质</strong>
+    </a><a class="nav-link " href="11_intracellular_compartments_and_protein_sorting.html">
+      <span>11</span>
+      <strong>细胞内区室与蛋白质分选（详细版）</strong>
+    </a><a class="nav-link " href="12_intracellular_vesicular_traffic.html">
+      <span>12</span>
+      <strong>细胞内囊泡运输 (Intracellular Vesicular Traffic)</strong>
+    </a><a class="nav-link " href="13_cell_communication.html">
+      <span>13</span>
+      <strong>细胞通讯</strong>
+    </a><a class="nav-link " href="14_cytoskeleton.html">
+      <span>14</span>
+      <strong>Cytoskeleton（细胞骨架）</strong>
+    </a><a class="nav-link " href="16_apoptosis.html">
+      <span>16</span>
+      <strong>Apoptosis（细胞凋亡）</strong>
+    </a><a class="nav-link active" href="#">
+      <span>17</span>
+      <strong>Cell Junctions, Cell Adhesion and Extracellular Matrix (I)</strong>
+    </a><a class="nav-link " href="18_cell_junctions_ii_ecm.html">
+      <span>18</span>
+      <strong>Cell Junctions, Cell Adhesion and Extracellular Matrix (II)</strong>
+    </a><a class="nav-link " href="19_ecm_and_cancer_biology.html">
+      <span>19</span>
+      <strong>Extracellular Matrix and Cancer Biology</strong>
+    </a></nav>
+  </aside>
+  <main class="page">
+    <article class="article">
+      <div class="article-head">
+        <a class="back-home" href="../index.html">返回首页</a>
+        <p class="lecture-number">Lecture 17</p>
+      </div>
+      <div class="article-layout">
+        <div class="content"><h1 id="lecture-17-cell-junctions-cell-adhesion-and-extracellular-matrix-i">Lecture 17: Cell Junctions, Cell Adhesion and Extracellular Matrix (I)</h1>
+<figure class="visual-figure">
+    <img src="../assets/figures/17_cell_junctions_i.svg" alt="Lecture 17: Cell Junctions, Cell Adhesion and Extracellular Matrix (I)图解">
+    <figcaption>细胞连接把细胞组织成组织结构：cadherin 负责细胞-细胞黏附，连接类型决定力和信号如何传递。</figcaption>
+  </figure>
+<p>&gt; 覆盖范围：Outline I–IV（70 张幻灯片中前 4 个章节） &gt; 重点：cell–cell junctions 体系，cadherin / Ig / selectin 三大类黏附分子，tight junction 与 gap junction 的功能逻辑</p>
+<p>---</p>
+<h2 id="课程脉络（一句话框架）">课程脉络（一句话框架）</h2>
+<p>多细胞生物要把不同的细胞组装成有功能的组织，本质上要解决两件事：<strong>(1) 把细胞固定在正确位置；(2) 让细胞之间能传递机械力、化学信号和电信号</strong>。这就引出了三大功能模块——<strong>锚定连接（anchoring）、封闭连接（occluding）、通道连接（channel-forming）</strong>——以及它们各自的分子机器。</p>
+<p>---</p>
+<h2 id="i-细胞连接与细胞黏附的总体框架">I. 细胞连接与细胞黏附的总体框架</h2>
+<h3 id="11-为什么多细胞生物离不开它">1.1 为什么多细胞生物离不开它</h3>
+<ul><li><strong>聚合成组织</strong>：让细胞聚集为有边界、有形态的组织（Allow cells to aggregate into distinct tissues）</li><li><strong>双向通讯</strong>：在细胞内外之间传递信号（Bidirectional communication）</li><li><strong>控制四大基本命运</strong>：cell survival / proliferation / differentiation / migration</li></ul>
+<p>经典例证：斑马鱼神经管发育、接触抑制（contact inhibition，密度依赖性增殖停滞）。</p>
+<h3 id="12-上皮组织-vs-结缔组织的&quot;力学逻辑&quot;">1.2 上皮组织 vs 结缔组织的&quot;力学逻辑&quot;</h3>
+<div class="table-wrap"><table><thead><tr><th>组织类型</th><th>主要承力方式</th><th>主要连接模式</th></tr></thead><tbody><tr><td>上皮组织（epithelial）</td><td>由细胞骨架经 cell–cell / cell–matrix 黏附位点跨细胞传递力</td><td>以 <strong>cell–cell junctions</strong> 为主</td></tr><tr><td>结缔组织（connective）</td><td>主要由 <strong>ECM 本身</strong>（胶原等）承受拉伸和压缩</td><td>以 <strong>cell–ECM adhesions</strong> 为主</td></tr></tbody></table></div>
+<p>理解记忆点：<strong>上皮像砖墙——细胞之间的&quot;水泥&quot;是 junctions；结缔组织像钢筋混凝土——基质（ECM）才是骨架，细胞像点缀其中的工人。</strong></p>
+<h3 id="13-四大类细胞–细胞连接（必背骨架）">1.3 四大类细胞–细胞连接（必背骨架）</h3>
+<p>按&quot;用途&quot;分四类：</p>
+<p>1. <strong>Adherens junction（黏着连接）</strong> — 锚定 actin filaments 2. <strong>Desmosome（桥粒）</strong> — 锚定 intermediate filaments 3. <strong>Occluding junction / Tight junction（紧密连接）</strong> — 封闭细胞间隙 4. <strong>Channel-forming junction / Gap junction（间隙连接）</strong> — 允许小分子通过</p>
+<p>其中 <strong>1 + 2 合称 Anchoring junctions（锚定连接）</strong>。</p>
+<p>平行的，<strong>cell–matrix anchoring junctions</strong>：</p>
+<ul><li><strong>Actin-linked cell–matrix junction（focal adhesion）</strong> — Integrin 介导，连 actin</li><li><strong>Hemidesmosome（半桥粒）</strong> — α6β4 integrin + type XVII collagen，连 intermediate filaments</li></ul>
+<h3 id="14-跨膜黏附蛋白的两大类（核心二元结构）">1.4 跨膜黏附蛋白的两大类（核心二元结构）</h3>
+<div class="table-wrap"><table><thead><tr><th>分子</th><th>介导</th><th>典型连接</th></tr></thead><tbody><tr><td><strong>Cadherins</strong></td><td>cell–cell</td><td>adherens junction, desmosome</td></tr><tr><td><strong>Integrins</strong></td><td>cell–matrix</td><td>focal adhesion, hemidesmosome</td></tr></tbody></table></div>
+<p>📌 <strong>记忆口诀</strong>：Cadherin 管&quot;细胞对细胞&quot;，Integrin 管&quot;细胞对基质&quot;。两者都可以连 actin 或 intermediate filaments，区别仅在&quot;对面&quot;是另一个细胞还是 ECM。</p>
+<h3 id="15-table-19-1-整合记忆">1.5 Table 19-1 整合记忆</h3>
+<div class="table-wrap"><table><thead><tr><th>Junction</th><th>Transmembrane</th><th>Extracellular ligand</th><th>Cytoskeleton</th><th>Adaptor</th></tr></thead><tbody><tr><td>Adherens</td><td>Classical cadherin</td><td>对侧 classical cadherin</td><td><strong>Actin</strong></td><td>α/β/p120-catenin, vinculin</td></tr><tr><td>Desmosome</td><td>Desmoglein / Desmocollin (非经典 cadherin)</td><td>对侧 desmoglein/desmocollin</td><td><strong>Intermediate filaments</strong></td><td>Plakoglobin, plakophilin, desmoplakin</td></tr><tr><td>Focal adhesion</td><td>Integrin</td><td>ECM 蛋白</td><td><strong>Actin</strong></td><td>Talin, kindlin, vinculin, paxillin, FAK</td></tr><tr><td>Hemidesmosome</td><td>α6β4 integrin + type XVII collagen</td><td>ECM 蛋白</td><td><strong>Intermediate filaments</strong></td><td>Plectin, BP230</td></tr></tbody></table></div>
+<p>&gt; 🔑 一个&quot;工程美学&quot;问题（slide 20）：<strong>为什么两侧锚定的总是同一种细胞骨架？</strong> 因为机械力要在细胞群中&quot;连续地&quot;传导，actin 网络要连 actin 网络，IF 网络要连 IF 网络，否则在界面处会出现&quot;力学短路&quot;。</p>
+<p>---</p>
+<h2 id="ii-钙黏蛋白（cadherins）与细胞–细胞黏附">II. 钙黏蛋白（Cadherins）与细胞–细胞黏附</h2>
+<h3 id="1-cadherin-家族">1. Cadherin 家族</h3>
+<ul><li><strong>名字由来</strong>：Ca²⁺ + adherin → &quot;钙依赖的黏附蛋白&quot;</li><li><strong>关键实验技巧</strong>：组织解离需要 <strong>EDTA（螯合 Ca²⁺，使 cadherin 失活）+ trypsin（切割表面蛋白）</strong></li><li><strong>进化分布</strong>：⚠️ <strong>植物、真菌、细菌、古菌都没有 cadherin</strong>——cadherin 是动物多细胞性的标志之一</li><li><strong>数量</strong>：人类基因组编码 <strong>&gt;180 个家族成员</strong>，分 classical / non-classical 两大类</li></ul>
+<h4 id="经典-cadherins（必记-4-个）">经典 cadherins（必记 4 个）</h4>
+<div class="table-wrap"><table><thead><tr><th>名称</th><th>主要分布</th><th>敲除表型</th></tr></thead><tbody><tr><td><strong>E-cadherin</strong></td><td>多种上皮</td><td>囊胚期致死，胚胎不能压实（compaction）</td></tr><tr><td><strong>N-cadherin</strong></td><td>神经元、心、骨骼肌、晶状体、成纤维细胞</td><td>心脏发育缺陷致死</td></tr><tr><td><strong>P-cadherin</strong></td><td>胎盘、表皮、乳腺上皮</td><td>乳腺发育异常</td></tr><tr><td><strong>VE-cadherin</strong></td><td>血管内皮细胞</td><td>血管发育异常（内皮细胞凋亡）</td></tr></tbody></table></div>
+<h4 id="非经典-cadherins（认得即可）">非经典 cadherins（认得即可）</h4>
+<ul><li><strong>Desmoglein / Desmocollin</strong> —— 皮肤桥粒；缺失导致皮肤水疱病</li><li><strong>T-cadherin</strong> —— GPI 锚定，无胞内域</li><li><strong>Cadherin 23</strong> —— 内耳毛细胞静纤毛连接，缺失导致耳聋</li><li><strong>Fat / Fat1</strong> —— 平面细胞极性（PCP）；缺失致果蝇成虫盘肿瘤、哺乳动物肾小球裂隙隔膜异常</li><li><strong>Protocadherins (α/β/γ)</strong> —— 神经元识别；几百种亚型组合产生神经元身份码</li><li><strong>Flamingo</strong> —— PCP 信号传递</li></ul>
+<h3 id="2-cadherin-的同亲性结合（homophilic-binding）">2. Cadherin 的同亲性结合（homophilic binding）</h3>
+<ul><li><strong>Homophilic</strong>：同种 cadherin 互相识别（E ↔ E, N ↔ N）</li><li><strong>Heterophilic</strong>：不同分子配对（cadherin 也可与部分蛋白异亲性结合，但 cadherin 的典型模式是 homophilic）</li></ul>
+<h4 id="结构基础">结构基础</h4>
+<ul><li>胞外区有 <strong>5 个 cadherin repeats（EC domains）</strong></li><li>重复结构之间的&quot;hinge region&quot;由 <strong>Ca²⁺ 桥联</strong>：</li><li>&gt;1 mM Ca²⁺：cadherin 伸展（rigid extended），可与对侧分子结合</li><li>&lt;0.05 mM Ca²⁺：cadherin 塌陷成柔软状态，无功能（解释 EDTA 解离机制）</li></ul>
+<h4 id="集体效应单分子弱、多分子强">集体效应：单分子弱、多分子强</h4>
+<p>单个 cadherin–cadherin 结合是低亲和力的，但通过<strong>侧向聚集成阵列</strong>（organized array），形成类似 <strong>&quot;魔术贴（Velcro）&quot;</strong> 的高强度黏附——这是为什么 adherens junction 在电镜下表现为 &quot;belt&quot;。</p>
+<h3 id="3-cadherin-控制细胞分选（selective-assortment）">3. Cadherin 控制细胞分选（selective assortment）</h3>
+<h4 id="经典实验nose-a-et-al-cell-1988">经典实验：Nose A et al., Cell, 1988</h4>
+<ul><li>把表达 E-cadherin 和 N-cadherin 的细胞混合 → 它们会自发&quot;sorting out&quot; 分离成两群</li><li>表达高水平 E-cadherin 的细胞会聚集到内层，低水平的到外层（differential adhesion hypothesis, Steinberg）</li></ul>
+<h4 id="体内对应神经管发育">体内对应：神经管发育</h4>
+<ul><li>神经板（ectoderm，E-cadherin） → 折叠时局部切换为 <strong>N-cadherin / cadherin-6B / cadherin-7</strong> → 神经嵴细胞迁移 → 神经管闭合</li><li>&quot;<strong>Cadherin code</strong>&quot; 决定哪些细胞聚在一起、哪些分离</li></ul>
+<h3 id="35-adherens-junction（黏着连接）">3.5 Adherens junction（黏着连接）</h3>
+<h4 id="结构核心">结构核心</h4>
+<pre><code>Cadherin（跨膜）
+   │
+   p120-catenin（稳定 cadherin）
+   β-catenin（连接）
+   α-catenin（连 actin，并招募 vinculin）
+   │
+   F-actin 束</code></pre>
+<p>&gt; ⚠️ <strong>β-catenin 双重身份</strong>：在 adherens junction 处是结构蛋白；当 Wnt 通路激活时，游离 β-catenin 进入核内充当转录共激活因子——这也是为什么 E-cadherin 缺失常与肿瘤侵袭/EMT 相关。</p>
+<h4 id="adherens-junction-的形成机制（cortical-tension-模型）">Adherens junction 的形成机制（cortical tension 模型）</h4>
+<p>1. <strong>静息状态</strong>：细胞表面有 actomyosin 收缩产生的 <strong>cortical tension</strong>（皮层张力），类似水滴的表面张力，会&quot;拉住&quot;膜 2. <strong>接触点</strong>：cadherin 在接触位点聚集 → 局部 <strong>Rac 激活、Rho 抑制</strong> → cortical tension 下降 3. <strong>扩展</strong>：张力解除后，接触面才能向外扩张 → 形成 <strong>adhesion belt（黏附带）</strong></p>
+<h4 id="rho-gtpase-家族与-actin-重组（slide-31–32）">Rho GTPase 家族与 actin 重组（slide 31–32）</h4>
+<div class="table-wrap"><table><thead><tr><th>GTPase</th><th>效应</th><th>表型</th></tr></thead><tbody><tr><td><strong>Rho</strong></td><td>ROCK → MLC(P)↑ + formins → 应力纤维</td><td>强 stress fibers, focal adhesion</td></tr><tr><td><strong>Rac</strong></td><td>WASp → Arp2/3 → branched actin</td><td>Lamellipodia（片状伪足）</td></tr><tr><td><strong>Cdc42</strong></td><td>WASp → Arp2/3 + formins</td><td>Filopodia（丝状伪足）</td></tr></tbody></table></div>
+<h4 id="上皮形态发生从-sheet-到-tube（slide-35）">上皮形态发生：从 sheet 到 tube（slide 35）</h4>
+<p>肌球蛋白 II 在 adhesion belt 上局部收缩 → 上皮片层在选定区域内陷 → 形成神经管/原肠这类<strong>上皮管</strong>。这是脊椎动物器官形成最常见的机制之一。</p>
+<h3 id="4-desmosome（桥粒）">4. Desmosome（桥粒）</h3>
+<ul><li><strong>跨膜分子</strong>：非经典 cadherin —— <strong>desmoglein + desmocollin</strong></li><li><strong>胞内骨架</strong>：<strong>Intermediate filaments</strong>（角化细胞中为 keratin）</li><li><strong>接头蛋白</strong>：plakoglobin（γ-catenin 同源物）、plakophilin、desmoplakin</li><li><strong>功能</strong>：给细胞提供<strong>机械强度</strong>，承受拉伸（上皮中富集，特别是表皮）</li><li><strong>进化点</strong>：⚠️ <strong>果蝇没有 desmosome</strong>（其上皮主要靠 adherens junction 和 septate junction）</li><li><strong>病理</strong>：天疱疮（pemphigus）抗 desmoglein 自身抗体 → 皮肤水疱</li></ul>
+<h4 id="桥粒-vs-半桥粒（slide-39）">桥粒 vs 半桥粒（slide 39）</h4>
+<ul><li><strong>Desmosome</strong>：cell–cell 连 IF</li><li><strong>Hemidesmosome</strong>：cell–基底膜，integrin α6β4 介导，胞内连 IF</li><li>两者共同把上皮整片&quot;缝&quot;在基底膜上，IF 网络在整个上皮中是力学连续的</li></ul>
+<h3 id="5-selectins（选择素）——-血细胞黏附">5. Selectins（选择素）—— 血细胞黏附</h3>
+<ul><li><strong>Ca²⁺ 依赖性</strong></li><li>介导<strong>短暂性黏附（transient adhesion）</strong></li><li><strong>识别 lectins</strong>：与对侧细胞表面寡糖（碳水化合物）结合（不同于 cadherin 的蛋白–蛋白识别）</li><li><strong>三种类型</strong>：</li></ul>
+<div class="table-wrap"><table><thead><tr><th>Selectin</th><th>分布</th></tr></thead><tbody><tr><td><strong>L-selectin</strong></td><td>白细胞</td></tr><tr><td><strong>P-selectin</strong></td><td>血小板、内皮细胞</td></tr><tr><td><strong>E-selectin</strong></td><td>激活的内皮细胞</td></tr></tbody></table></div>
+<h4 id="白细胞外渗-extravasation-四步走">白细胞外渗 (extravasation) 四步走</h4>
+<pre><code>weak rolling          strong adhesion         emigration
+（selectin-dependent）（integrin-dependent）   （穿越内皮）</code></pre>
+<p>&gt; 🩺 <strong>临床意义</strong>：抗 selectin 药物用于抗炎治疗，原理是阻断白细胞滚动这一限速步。</p>
+<h3 id="6-免疫球蛋白超家族（ig-superfamily-igsf-cams）">6. 免疫球蛋白超家族（Ig superfamily, IgSF CAMs）</h3>
+<ul><li><strong>Ca²⁺ 非依赖</strong>（与 cadherin/selectin 最大区别）</li><li>结构特征：高度糖基化、多个二硫键稳定的 Ig-like domains</li><li>部分成员还有 fibronectin type III domains（如 NCAM）</li><li>可与 <strong>integrin</strong> 结合（异亲性）</li></ul>
+<h4 id="重要成员">重要成员</h4>
+<div class="table-wrap"><table><thead><tr><th>名称</th><th>分布与功能</th></tr></thead><tbody><tr><td><strong>ICAMs</strong> (intercellular CAMs)</td><td>内皮细胞，与白细胞 integrin 结合</td></tr><tr><td><strong>VCAMs</strong> (vascular CAMs)</td><td>血管内皮，参与白细胞外渗</td></tr><tr><td><strong>NCAM</strong> (neural CAM)</td><td>神经元识别、轴突导向</td></tr></tbody></table></div>
+<h4 id="突触（synapse）是黏附分子的&quot;交响乐&quot;">突触（synapse）是黏附分子的&quot;交响乐&quot;</h4>
+<p>在突触结构中，<strong>cadherin + Ig-superfamily + neurexin/neuroligin</strong> 共同协作把前后膜对齐、定位神经递质受体和支架蛋白。这是研究突触可塑性的核心议题。</p>
+<h3 id="🧩-cadherin-selectin-igsf-速记对比表">🧩 Cadherin / Selectin / IgSF 速记对比表</h3>
+<div class="table-wrap"><table><thead><tr><th>维度</th><th>Cadherin</th><th>Selectin</th><th>IgSF</th></tr></thead><tbody><tr><td>Ca²⁺ 依赖</td><td>是</td><td>是</td><td><strong>否</strong></td></tr><tr><td>识别对象</td><td>蛋白（同型为主）</td><td>寡糖</td><td>蛋白（多异亲）</td></tr><tr><td>结合强度</td><td>集群后高</td><td>弱、瞬时</td><td>中等</td></tr><tr><td>典型场景</td><td>adherens, desmosome</td><td>白细胞滚动</td><td>免疫识别、神经突触</td></tr></tbody></table></div>
+<p>---</p>
+<h2 id="iii-封闭连接（occluding-tight-junctions）">III. 封闭连接（Occluding / Tight junctions）</h2>
+<h3 id="31-概览">3.1 概览</h3>
+<ul><li>仅存在于<strong>上皮细胞</strong>（脊椎动物为 tight junction，无脊椎动物对应物为 <strong>septate junction</strong>）</li><li>上皮细胞占脊椎动物所有细胞类型的 ~60%</li><li>所有上皮细胞都是 <strong>polarized</strong>（极性化）：apical（顶端）vs basal（基底）</li></ul>
+<h3 id="32-三大功能">3.2 三大功能</h3>
+<p>1. <strong>Fence（栅栏）</strong>：把质膜分隔为 apical 和 basolateral 两个 domain，阻止膜蛋白侧向扩散，是<strong>维持上皮极性</strong>的关键 2. <strong>Seal（屏障）</strong>：封闭细胞间隙，阻止分子从顶端经细胞间隙到达基底 3. <strong>Selective gate（选择性通道）</strong>：根据所含 claudin 种类不同，允许特定离子通过——形成 <strong>paracellular pathway</strong></p>
+<h3 id="33-经典案例肠上皮的跨细胞葡萄糖转运">3.3 经典案例：肠上皮的跨细胞葡萄糖转运</h3>
+<pre><code>肠腔（高浓度需求）
+   │  Na⁺-driven glucose symport（apical 顶端）
+   ↓
+细胞内（葡萄糖累积）
+   │  passive glucose carrier（basolateral 基底外侧）
+   ↓
+血液</code></pre>
+<p>Tight junction 在这里的作用：<strong>保证 apical 和 basolateral 两种转运蛋白不会&quot;互相扩散&quot;</strong>，否则整个转运极性就会崩溃。</p>
+<h3 id="34-结构与分子">3.4 结构与分子</h3>
+<ul><li>在冷冻断裂电镜下表现为 <strong>sealing strands（封闭索）</strong> —— 跨膜颗粒的脊状阵列</li><li>邻接细胞的 strands 在 <strong>focal connections</strong> 处相互接触</li></ul>
+<h4 id="关键蛋白">关键蛋白</h4>
+<div class="table-wrap"><table><thead><tr><th>蛋白</th><th>特点</th></tr></thead><tbody><tr><td><strong>Claudin</strong>（~24 种人类成员）</td><td>决定 tight junction 的离子选择性。<strong>敲除导致小鼠脱水死亡</strong>；在成纤维细胞中过表达可使其形成 tight junction</td></tr><tr><td><strong>Occludin</strong></td><td>详细功能未明，可能调节屏障稳定性</td></tr><tr><td><strong>Tricellulin</strong></td><td>在三细胞交界处封闭膜</td></tr></tbody></table></div>
+<h3 id="35-直观成像">3.5 直观成像</h3>
+<p>Tight junction 蛋白在细胞接触后逐渐&quot;凝聚&quot;成沿细胞边界的连续带（slide 51），可以用 ZO-1 或 occludin 免疫荧光实时观察。</p>
+<p>---</p>
+<h2 id="iv-通道形成连接（channel-forming-junctions）">IV. 通道形成连接（Channel-forming junctions）</h2>
+<h3 id="41-动物-vs-植物">4.1 动物 vs 植物</h3>
+<div class="table-wrap"><table><thead><tr><th>物种</th><th>通道连接</th></tr></thead><tbody><tr><td>动物</td><td><strong>Gap junction</strong>（缝隙连接）</td></tr><tr><td>植物</td><td><strong>Plasmodesmata</strong>（胞间连丝）</td></tr></tbody></table></div>
+<p>两者都允许<strong>小分子和无机离子在邻细胞间直接交换</strong>，极少情况下也可传递大分子。两者<strong>在上皮和结缔组织中都可存在</strong>（不像 tight junction 那样仅限上皮）。</p>
+<h3 id="42-gap-junction-——-动物的电化学耦合通道">4.2 Gap junction —— 动物的电/化学耦合通道</h3>
+<h4 id="蛋白家族">蛋白家族</h4>
+<ul><li><strong>Connexin</strong>（脊椎动物为主，人类有 <strong>21 个 connexin</strong>）</li><li><strong>Innexin</strong>（果蝇 15 个 / 线虫 25 个）</li><li>序列不同但形状和功能相似 → 趋同进化</li></ul>
+<p>&gt; 不同物种的 connexin/innexin 数量差异决定了 <strong>gap junction 选择性的多样性</strong>。</p>
+<h4 id="分子建筑">分子建筑</h4>
+<pre><code>6 个 connexin → 一个 connexon（半通道）
+2 个 connexon（来自相邻两细胞）→ 一个 gap junction channel</code></pre>
+<ul><li><strong>通道直径</strong> ~1.4 nm</li><li><strong>细胞间间隙</strong> ~2–4 nm（电镜下的特征性&quot;gap&quot;，故名 gap junction）</li><li><strong>分子量截留</strong> ~<strong>1000 Da</strong>（&gt;1000 Da 通常通不过）</li></ul>
+<h4 id="connexon-的组装方式">Connexon 的组装方式</h4>
+<ul><li><strong>Homomeric</strong> vs <strong>Heteromeric</strong>（6 个亚基相同/不同）</li><li><strong>Homotypic</strong> vs <strong>Heterotypic</strong>（两侧的 connexon 相同/不同）</li><li>不同组合方式产生<strong>不同的通透性和选择性</strong></li></ul>
+<h4 id="动态性（slide-63）">动态性（slide 63）</h4>
+<ul><li>Gap junction plaque <strong>快速组装、解聚、重塑</strong></li><li>经典实验：用 4-Cys tag 染色，发现<strong>新 connexon 加在外圈，老 connexon 在中心</strong>——类似细胞骨架的踏车样动力学。</li></ul>
+<h4 id="调控">调控</h4>
+<ul><li><strong>关闭信号</strong>：低 pH、Ca²⁺ ↑</li><li><strong>外源信号</strong>：例如多巴胺处理神经元会显著降低 gap junction 通透性（slide 65）</li></ul>
+<h4 id="主要功能">主要功能</h4>
+<div class="table-wrap"><table><thead><tr><th>细胞类型</th><th>功能</th></tr></thead><tbody><tr><td>心肌细胞</td><td>同步收缩（intercalated disc）</td></tr><tr><td>平滑肌（如肠道）</td><td>协同蠕动</td></tr><tr><td>神经元</td><td>电突触（electrical synapse），传递速度远快于化学突触</td></tr><tr><td>非兴奋细胞（如肝细胞）</td><td>代谢物、小分子信号共享</td></tr></tbody></table></div>
+<h3 id="43-plasmodesmata-——-植物的&quot;超级通道&quot;">4.3 Plasmodesmata —— 植物的&quot;超级通道&quot;</h3>
+<p>&gt; 🌱 <strong>对 Peter 这种植物背景的读者特别相关。</strong></p>
+<ul><li>直径 <strong>20–40 nm</strong>（远大于 connexon）</li><li>由 <strong>desmotubule</strong> 贯通——desmotubule 是<strong>光滑内质网（SER）的延续</strong></li><li>分子截留 ~<strong>800 Da</strong>（与 gap junction 类似，但严格调控）</li></ul>
+<h4 id="与-gap-junction-的本质区别">与 gap junction 的本质区别</h4>
+<div class="table-wrap"><table><thead><tr><th>特征</th><th>Gap junction</th><th>Plasmodesmata</th></tr></thead><tbody><tr><td>蛋白通道</td><td>connexin/innexin 蛋白形成</td><td>由质膜+ER+细胞质组成的&quot;管道&quot;</td></tr><tr><td>直径</td><td>~1.4 nm</td><td>20–40 nm</td></tr><tr><td>内含</td><td>仅细胞质连通</td><td>细胞质 + ER（desmotubule）</td></tr><tr><td>调控分子</td><td>callose、SEL（size exclusion limit）动态调节</td></tr><tr><td>进化起源</td><td>动物独立起源</td><td>植物特有，进化独立</td></tr></tbody></table></div>
+<p>&gt; 💡 <strong>延伸思考</strong>：plasmodesmata 在植物免疫（如 callose 沉积阻断病毒移动）、发育（如转录因子和 sRNA 的胞间运动）、根际信号整合等方面都是核心枢纽——你可以把它看作&quot;植物组织的低带宽 LAN&quot;。</p>
+<p>---</p>
+<h2 id="全章精华图谱">全章精华图谱</h2>
+<pre><code>                    多细胞性 (multicellularity)
+                              │
+        ┌─────────────────────┼─────────────────────┐
+        │                     │                     │
+    Anchoring             Occluding             Channel-forming
+    (机械锚定)            (屏障与极性)           (信号与代谢共享)
+        │                     │                     │
+   ┌────┴────┐                │                     │
+   │         │            Tight junction       Gap junction (动物)
+ Cell-Cell  Cell-ECM     (claudin/occludin)    (connexin/innexin)
+   │         │                                       │
+ cadherin   integrin                            Plasmodesmata (植物)
+   │         │                                  (desmotubule = ER延伸)
+ ┌─┴──┐    ┌─┴────┐
+ AJ  Desmosome Focal Hemi
+(actin)(IF)  Adhesion desmosome
+              (actin) (IF)</code></pre>
+<p>---</p>
+<h2 id="高频考点与-quiz-参考答案">高频考点与 Quiz 参考答案</h2>
+<h3 id="quiz-1（slide-68）判断-c-或-e">Quiz 1（slide 68）：判断 C 或 E</h3>
+<div class="table-wrap"><table><thead><tr><th>描述</th><th>答案</th><th>理由</th></tr></thead><tbody><tr><td>Cells usually distributed sparsely in ECM</td><td><strong>C</strong></td><td>结缔组织典型特征——细胞稀疏散布在基质中</td></tr><tr><td>Gap junctions are rarely found</td><td><strong>C</strong></td><td>细胞稀疏 → 直接接触少 → gap junction 罕见</td></tr><tr><td>Direct cell–cell attachments are common</td><td><strong>E</strong></td><td>上皮细胞紧密相连，富含 AJ/desmosome/TJ</td></tr><tr><td>Cells are tightly associated into sheets</td><td><strong>E</strong></td><td>上皮的定义性特征</td></tr></tbody></table></div>
+<p><strong>答案：C C E E</strong></p>
+<h3 id="quiz-2（slide-69）哪种-junction-用-cadherin-锚定-actin">Quiz 2（slide 69）：哪种 junction 用 cadherin 锚定 actin？</h3>
+<div class="table-wrap"><table><thead><tr><th>选项</th><th>判断</th></tr></thead><tbody><tr><td>A. Tight junction</td><td>❌ 用 claudin/occludin，不锚定 actin（虽然 ZO-1 间接连 actin）</td></tr><tr><td><strong>B. Adherens junction</strong></td><td>✅ <strong>classical cadherin + β-catenin/α-catenin → actin</strong></td></tr><tr><td>C. Desmosome</td><td>❌ 用非经典 cadherin（desmoglein/collin），锚定 IF</td></tr><tr><td>D. Hemidesmosome</td><td>❌ 用 integrin，锚定 IF</td></tr><tr><td>E. Gap junction</td><td>❌ 不是锚定连接</td></tr></tbody></table></div>
+<p><strong>答案：B. Adherens junction</strong></p>
+<h3 id="quiz-3（slide-70）哪个不是-anchoring-junction">Quiz 3（slide 70）：哪个<strong>不是</strong> anchoring junction？</h3>
+<div class="table-wrap"><table><thead><tr><th>选项</th><th>是否 anchoring</th></tr></thead><tbody><tr><td>A. Adherens junction</td><td>✅</td></tr><tr><td>B. Desmosome</td><td>✅</td></tr><tr><td>C. Actin-linked cell–matrix junction</td><td>✅</td></tr><tr><td>D. Hemidesmosome</td><td>✅</td></tr><tr><td><strong>E. Tight junction</strong></td><td>❌ 属于 occluding junction</td></tr></tbody></table></div>
+<p><strong>答案：E. Tight junction</strong></p>
+<p>---</p>
+<h2 id="复习自检-14-题（可选）">复习自检 14 题（可选）</h2>
+<p>1. EDTA 为什么能解离上皮组织？trypsin 在其中的角色又是什么？ 2. 为什么 cadherin 单体亲和力很低，整体黏附力却很强？ 3. β-catenin 在 adherens junction 和 Wnt 通路中分别扮演什么角色？这种&quot;双身份&quot;在肿瘤研究中有什么含义？ 4. 桥粒和半桥粒的本质区别是什么？为什么两者都用 IF 而不是 actin？ 5. 在体外把 E-cadherin 和 N-cadherin 高表达的细胞混合，会发生什么？背后的物理直觉是什么？ 6. Selectin、cadherin、IgSF 三类分子最容易混淆，请用一个表格区分（提示：Ca²⁺ 依赖性、识别底物、亲和力强弱）。 7. 为什么 tight junction 既是&quot;屏障&quot;又是&quot;选择性通道&quot;？claudin 在其中起什么作用？ 8. 在肠道葡萄糖跨细胞转运中，如果 tight junction 被破坏，会发生什么？ 9. Connexon 的 homomeric vs heteromeric、homotypic vs heterotypic 四种组合分别意味着什么？ 10. 心肌细胞、神经元、肝细胞中 gap junction 的功能差异是什么？ 11. 比较 gap junction 和 plasmodesmata 的结构差异，特别注意 desmotubule 的来源。 12. 为什么植物没有 cadherin 仍然能形成多细胞组织？它们用什么代替了动物的细胞–细胞黏附？（提示：细胞壁、pectin、plasmodesmata） 13. 接触抑制丢失与肿瘤侵袭性的关联是什么？E-cadherin 在其中起什么作用？ 14. 在上皮管化（如神经管形成）过程中，Rho-GTPase 家族如何协调 cadherin 与 actomyosin？</p>
+<p>---</p>
+<h2 id="一页式速记卡">一页式速记卡</h2>
+<pre><code>【4 大连接】
+  Anchoring     | AJ (actin, cadherin), Desmosome (IF, cadherin非经典)
+                | Focal adhesion (actin, integrin), Hemidesmosome (IF, integrin)
+  Occluding     | Tight junction (claudin/occludin/tricellulin) ←仅上皮
+  Channel       | Gap junction (connexin/innexin, ~1.4 nm, &lt;1 kDa)
+                | Plasmodesmata (desmotubule=SER, 20-40 nm, ~800 Da) ←植物
+
+【3 类 cell-cell 黏附分子】
+  Cadherin      | Ca²⁺ 依赖, homophilic 蛋白识别, 集群强黏附
+  Selectin      | Ca²⁺ 依赖, lectin (糖)识别, 弱+瞬时
+  IgSF (NCAM等) | Ca²⁺ 独立, 多种识别, 中等
+
+【关键分子-连接配对】
+  Classical cadherin → AJ → β-catenin/α-catenin → actin
+  Desmoglein/collin  → Desmosome → plakoglobin/plakophilin/desmoplakin → IF
+  Integrin           → FA / Hemidesmosome → talin/plectin → actin / IF
+  Claudin/Occludin   → TJ → ZO-1 → (间接)actin
+  Connexin           → Gap junction → 直接连通胞质
+
+【植物特例】
+  植物无 cadherin、无 desmosome、无 tight junction
+  植物特有：plasmodesmata（胞间连丝）+ cell wall + middle lamella</code></pre>
+<p>---</p>
+<p><strong>下次课预告（Lecture 17 Part II）</strong>：V. Integrins in cell-ECM adhesion / VI. Basal Lamina / VII. Extracellular Matrix —— 焦点将转移到细胞如何&quot;抓住&quot;基质、以及 ECM 本身的分子构成（collagen、laminin、proteoglycans 等）。</p><div class="pager">
+      <a href="16_apoptosis.html">上一讲：Lecture 16: Apoptosis（细胞凋亡）</a>
+      <a href="18_cell_junctions_ii_ecm.html">下一讲：Lecture 18: Cell Junctions, Cell Adhesion and Extracellular Matrix (II)</a>
+    </div></div>
+        <aside class="toc"><strong>本讲目录</strong><a class="toc-level-2" href="#课程脉络（一句话框架）">课程脉络（一句话框架）</a><a class="toc-level-2" href="#i-细胞连接与细胞黏附的总体框架">I. 细胞连接与细胞黏附的总体框架</a><a class="toc-level-3" href="#11-为什么多细胞生物离不开它">1.1 为什么多细胞生物离不开它</a><a class="toc-level-3" href="#12-上皮组织-vs-结缔组织的&quot;力学逻辑&quot;">1.2 上皮组织 vs 结缔组织的&quot;力学逻辑&quot;</a><a class="toc-level-3" href="#13-四大类细胞–细胞连接（必背骨架）">1.3 四大类细胞–细胞连接（必背骨架）</a><a class="toc-level-3" href="#14-跨膜黏附蛋白的两大类（核心二元结构）">1.4 跨膜黏附蛋白的两大类（核心二元结构）</a><a class="toc-level-3" href="#15-table-19-1-整合记忆">1.5 Table 19-1 整合记忆</a><a class="toc-level-2" href="#ii-钙黏蛋白（cadherins）与细胞–细胞黏附">II. 钙黏蛋白（Cadherins）与细胞–细胞黏附</a><a class="toc-level-3" href="#1-cadherin-家族">1. Cadherin 家族</a><a class="toc-level-3" href="#2-cadherin-的同亲性结合（homophilic-binding）">2. Cadherin 的同亲性结合（homophilic binding）</a><a class="toc-level-3" href="#3-cadherin-控制细胞分选（selective-assortment）">3. Cadherin 控制细胞分选（selective assortment）</a><a class="toc-level-3" href="#35-adherens-junction（黏着连接）">3.5 Adherens junction（黏着连接）</a><a class="toc-level-3" href="#4-desmosome（桥粒）">4. Desmosome（桥粒）</a><a class="toc-level-3" href="#5-selectins（选择素）——-血细胞黏附">5. Selectins（选择素）—— 血细胞黏附</a><a class="toc-level-3" href="#6-免疫球蛋白超家族（ig-superfamily-igsf-cams）">6. 免疫球蛋白超家族（Ig superfamily, IgSF CAMs）</a><a class="toc-level-3" href="#🧩-cadherin-selectin-igsf-速记对比表">🧩 Cadherin / Selectin / IgSF 速记对比表</a><a class="toc-level-2" href="#iii-封闭连接（occluding-tight-junctions）">III. 封闭连接（Occluding / Tight junctions）</a><a class="toc-level-3" href="#31-概览">3.1 概览</a><a class="toc-level-3" href="#32-三大功能">3.2 三大功能</a><a class="toc-level-3" href="#33-经典案例肠上皮的跨细胞葡萄糖转运">3.3 经典案例：肠上皮的跨细胞葡萄糖转运</a><a class="toc-level-3" href="#34-结构与分子">3.4 结构与分子</a><a class="toc-level-3" href="#35-直观成像">3.5 直观成像</a><a class="toc-level-2" href="#iv-通道形成连接（channel-forming-junctions）">IV. 通道形成连接（Channel-forming junctions）</a><a class="toc-level-3" href="#41-动物-vs-植物">4.1 动物 vs 植物</a><a class="toc-level-3" href="#42-gap-junction-——-动物的电化学耦合通道">4.2 Gap junction —— 动物的电/化学耦合通道</a><a class="toc-level-3" href="#43-plasmodesmata-——-植物的&quot;超级通道&quot;">4.3 Plasmodesmata —— 植物的&quot;超级通道&quot;</a><a class="toc-level-2" href="#全章精华图谱">全章精华图谱</a><a class="toc-level-2" href="#高频考点与-quiz-参考答案">高频考点与 Quiz 参考答案</a><a class="toc-level-3" href="#quiz-1（slide-68）判断-c-或-e">Quiz 1（slide 68）：判断 C 或 E</a><a class="toc-level-3" href="#quiz-2（slide-69）哪种-junction-用-cadherin-锚定-actin">Quiz 2（slide 69）：哪种 junction 用 cadherin 锚定 actin？</a><a class="toc-level-3" href="#quiz-3（slide-70）哪个不是-anchoring-junction">Quiz 3（slide 70）：哪个**不是** anchoring junction？</a><a class="toc-level-2" href="#复习自检-14-题（可选）">复习自检 14 题（可选）</a><a class="toc-level-2" href="#一页式速记卡">一页式速记卡</a></aside>
+      </div>
+    </article>
+  </main>
+  <script src="../assets/app.js"></script>
+</body>
+</html>

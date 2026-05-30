@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lecture 18: Cell Junctions, Cell Adhesion and Extracellular Matrix (II) 细胞连接、细胞粘附与细胞外基质（下篇） 本讲义覆盖 PPT 第 V–VII 章：整合素（Integrins）、基底层（Basal Lamina）、细胞外基质（ECM）。基础不好也没关系，每个概念都会从&quot;是什么 → 为什么 → 怎么工作&quot;三步讲。 📋 全章学习地图 一句话抓住核心 ：上皮细胞主要">
+  <title>Lecture 18: Cell Junctions, Cell Adhesion and Extracellular Matrix (II) | ABS 复习讲义</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <button class="menu-button" id="menuButton" aria-label="打开目录">目录</button>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark">ABS</span>
+      <span>
+        <strong>生物学复习讲义</strong>
+        <em>Advanced Biological Sciences</em>
+      </span>
+    </a>
+    <label class="search">
+      <span>搜索讲义</span>
+      <input id="searchInput" type="search" placeholder="例如 Ras / 膜电位 / DNA 复制">
+    </label>
+    <div class="search-results" id="searchResults"></div>
+    <nav class="nav"><a class="nav-link " href="01_cells_and_genomes.html">
+      <span>01</span>
+      <strong>Cells and Genomes</strong>
+    </a><a class="nav-link " href="02_cell_chemistry.html">
+      <span>02</span>
+      <strong>Cell Chemistry</strong>
+    </a><a class="nav-link " href="03_protein_structure_and_function.html">
+      <span>03</span>
+      <strong>Protein Structure and Function</strong>
+    </a><a class="nav-link " href="04_dna_chromosomes_and_genome.html">
+      <span>04</span>
+      <strong>DNA, Chromosomes and Genome</strong>
+    </a><a class="nav-link " href="05_dna_replication_repair_and_recombination.html">
+      <span>05</span>
+      <strong>DNA Replication, Repair, and Recombination</strong>
+    </a><a class="nav-link " href="06_from_dna_to_protein.html">
+      <span>06</span>
+      <strong>From DNA to Protein</strong>
+    </a><a class="nav-link " href="07_control_of_gene_expression.html">
+      <span>07</span>
+      <strong>Control of Gene Expression</strong>
+    </a><a class="nav-link " href="08_manipulating_proteins_dna_rna.html">
+      <span>08</span>
+      <strong>Manipulating Proteins, DNA and RNA</strong>
+    </a><a class="nav-link " href="09_membrane_structure_and_functions.html">
+      <span>09</span>
+      <strong>细胞膜结构与功能</strong>
+    </a><a class="nav-link " href="10_cross_membrane_transport.html">
+      <span>10</span>
+      <strong>跨膜转运与膜电学性质</strong>
+    </a><a class="nav-link " href="11_intracellular_compartments_and_protein_sorting.html">
+      <span>11</span>
+      <strong>细胞内区室与蛋白质分选（详细版）</strong>
+    </a><a class="nav-link " href="12_intracellular_vesicular_traffic.html">
+      <span>12</span>
+      <strong>细胞内囊泡运输 (Intracellular Vesicular Traffic)</strong>
+    </a><a class="nav-link " href="13_cell_communication.html">
+      <span>13</span>
+      <strong>细胞通讯</strong>
+    </a><a class="nav-link " href="14_cytoskeleton.html">
+      <span>14</span>
+      <strong>Cytoskeleton（细胞骨架）</strong>
+    </a><a class="nav-link " href="16_apoptosis.html">
+      <span>16</span>
+      <strong>Apoptosis（细胞凋亡）</strong>
+    </a><a class="nav-link " href="17_cell_junctions_i.html">
+      <span>17</span>
+      <strong>Cell Junctions, Cell Adhesion and Extracellular Matrix (I)</strong>
+    </a><a class="nav-link active" href="#">
+      <span>18</span>
+      <strong>Cell Junctions, Cell Adhesion and Extracellular Matrix (II)</strong>
+    </a><a class="nav-link " href="19_ecm_and_cancer_biology.html">
+      <span>19</span>
+      <strong>Extracellular Matrix and Cancer Biology</strong>
+    </a></nav>
+  </aside>
+  <main class="page">
+    <article class="article">
+      <div class="article-head">
+        <a class="back-home" href="../index.html">返回首页</a>
+        <p class="lecture-number">Lecture 18</p>
+      </div>
+      <div class="article-layout">
+        <div class="content"><h1 id="lecture-18-cell-junctions-cell-adhesion-and-extracellular-matrix-ii">Lecture 18: Cell Junctions, Cell Adhesion and Extracellular Matrix (II)</h1>
+<figure class="visual-figure">
+    <img src="../assets/figures/18_cell_junctions_ii_ecm.svg" alt="Lecture 18: Cell Junctions, Cell Adhesion and Extracellular Matrix (II)图解">
+    <figcaption>细胞-基质连接由 integrin 把 ECM、基底层和细胞骨架整合成机械和信号平台。</figcaption>
+  </figure>
+<h2 id="细胞连接、细胞粘附与细胞外基质（下篇）">细胞连接、细胞粘附与细胞外基质（下篇）</h2>
+<p>&gt; 本讲义覆盖 PPT 第 V–VII 章：整合素（Integrins）、基底层（Basal Lamina）、细胞外基质（ECM）。基础不好也没关系，每个概念都会从&quot;是什么 → 为什么 → 怎么工作&quot;三步讲。</p>
+<p>---</p>
+<h2 id="📋-全章学习地图">📋 全章学习地图</h2>
+<pre><code>细胞如何&quot;粘&quot;在一起或&quot;粘&quot;在基质上？
+    │
+    ├── 细胞-细胞粘附 → Cadherin（钙黏蛋白）→ 已在上篇讲
+    │
+    └── 细胞-基质粘附 → Integrin（整合素）→ 本讲 V 章
+                            │
+                            ↓
+                    粘附的对象是什么？
+                            │
+                ┌───────────┴────────────┐
+            基底层 (Basal Lamina)    细胞外基质 (ECM)
+            上皮细胞下方薄层          结缔组织中的大网络
+            本讲 VI 章               本讲 VII 章</code></pre>
+<p><strong>一句话抓住核心</strong>：上皮细胞主要靠&quot;细胞-细胞连接&quot;互相抱团；结缔组织细胞（如成纤维细胞）则散布在自己分泌的 ECM 中，主要靠&quot;细胞-基质连接&quot;。Integrin 就是负责后者的&quot;挂钩&quot;。</p>
+<p>---</p>
+<h1 id="第一部分前情回顾（必须先理解的基础）">第一部分：前情回顾（必须先理解的基础）</h1>
+<h2 id="11-细胞连接的四大类型">1.1 细胞连接的四大类型</h2>
+<div class="table-wrap"><table><thead><tr><th>类型</th><th>中文</th><th>功能</th><th>涉及的细胞骨架</th></tr></thead><tbody><tr><td>Tight junction</td><td>紧密连接</td><td>封闭细胞间空隙（occluding）</td><td>——</td></tr><tr><td>Adherens junction</td><td>黏附连接</td><td>锚定相邻细胞的肌动蛋白（anchoring）</td><td>肌动蛋白 actin</td></tr><tr><td>Desmosome</td><td>桥粒</td><td>锚定相邻细胞的中间纤维（anchoring）</td><td>中间纤维 IF</td></tr><tr><td>Gap junction</td><td>间隙连接</td><td>形成通道，小分子通信（channel-forming）</td><td>——</td></tr><tr><td><strong>Hemidesmosome</strong></td><td><strong>半桥粒</strong></td><td><strong>锚定细胞到基底层</strong></td><td><strong>中间纤维 IF</strong></td></tr><tr><td><strong>Focal adhesion</strong></td><td><strong>焦点粘附</strong></td><td><strong>锚定细胞到 ECM</strong></td><td><strong>肌动蛋白 actin</strong></td></tr></tbody></table></div>
+<p>后两者属于&quot;细胞-基质锚定连接&quot;——本讲的主角。</p>
+<h2 id="12-两类跨膜粘附蛋白">1.2 两类跨膜粘附蛋白</h2>
+<ul><li><strong>Cadherin（钙黏蛋白）</strong>：细胞 ↔ 细胞 粘附</li><li><strong>Integrin（整合素）</strong>：细胞 ↔ 基质 粘附</li></ul>
+<p>两者都可以连接 actin 或中间纤维，看具体类型。</p>
+<h2 id="13-上皮组织-vs-结缔组织（一定要分清）">1.3 上皮组织 vs 结缔组织（一定要分清）</h2>
+<ul><li><strong>上皮组织（epithelial）</strong>：细胞紧密排列成片，靠细胞-细胞连接为主；下面垫着<strong>基底层</strong></li><li><strong>结缔组织（connective）</strong>：细胞散在大量 ECM 中（成纤维细胞、巨噬细胞等），ECM 直接承担机械应力</li></ul>
+<p>---</p>
+<h1 id="第二部分v-整合素-integrins（重点章节）">第二部分：V. 整合素 Integrins（重点章节）</h1>
+<h2 id="21-整合素是什么为什么重要">2.1 整合素是什么？为什么重要？</h2>
+<p><strong>定义</strong>：跨膜蛋白，由 <strong>α 亚基</strong>和 <strong>β 亚基</strong>组成的异二聚体（heterodimer），负责把细胞&quot;挂&quot;在细胞外基质上。</p>
+<p><strong>为什么叫&quot;integrin&quot;</strong>：integr- 表示&quot;整合&quot;，因为它<strong>整合</strong>了细胞外环境的信号和细胞内的细胞骨架——它既是结构连接者，也是信号传递者。</p>
+<p><strong>核心特点</strong>： 1. 是异二聚体（α + β 各一条） 2. 胞外端结合 ECM 蛋白（如纤连蛋白、层粘连蛋白、胶原） 3. 胞内端通过 <strong>talin、kindlin、vinculin</strong> 等接头蛋白连接到 actin 或中间纤维 4. 调控细胞功能（增殖、存活、迁移、分化） 5. 突变会导致多种遗传疾病</p>
+<p><strong>直观比喻</strong>：想象细胞是个站在钢丝上的杂技演员（PPT 上那张钢丝图就是这意思），整合素就是他脚下的&quot;防滑钉鞋&quot;，既能抓住钢丝（ECM），又能把脚部的肌肉力量（actin）传递给鞋底。</p>
+<h2 id="22-整合素的精细结构">2.2 整合素的精细结构</h2>
+<pre><code>ECM 蛋白 (如 fibronectin)
+       │
+       ▼ N端 (头部)
+    ┌──┴──┐
+    │ α   │ β  ← 两亚基在膜外形成头部，结合 ECM
+    │  │  │ │
+═══│══│══│═│═══ 细胞膜
+    │  │  │ │
+    │     │ ← C端 (尾巴) 伸入胞质
+          │
+        talin ── vinculin
+          │           │
+          ▼           ▼
+       kindlin    actin filament</code></pre>
+<p><strong>关键胞内接头蛋白</strong>：</p>
+<ul><li><strong>Talin（踝蛋白）</strong>：直接结合 β 亚基胞内尾巴；激活整合素的关键</li><li><strong>Kindlin</strong>：另一个直接结合 β 尾的关键激活因子</li><li><strong>Vinculin（黏着斑蛋白）</strong>：连接 talin 和 actin</li><li>这些一起组成&quot;焦点粘附复合物&quot;</li></ul>
+<h2 id="23-整合素缺陷与遗传疾病（考点）">2.3 整合素缺陷与遗传疾病（考点）</h2>
+<p>PPT Table 19-3 必须记的几个：</p>
+<div class="table-wrap"><table><thead><tr><th>整合素</th><th>配体</th><th>分布</th><th>突变后的表型</th></tr></thead><tbody><tr><td>α₅β₁</td><td>Fibronectin（纤连蛋白）</td><td>广泛</td><td>胚胎致死，血管/体节/神经嵴缺陷</td></tr><tr><td>α₆β₁</td><td>Laminin（层粘连蛋白）</td><td>广泛</td><td>严重皮肤起疱</td></tr><tr><td>α₇β₁</td><td>Laminin</td><td>肌肉</td><td><strong>肌营养不良</strong>（muscular dystrophy）</td></tr><tr><td><strong>α_Lβ₂ (LFA1)</strong></td><td><strong>ICAM1</strong>（Ig 超家族）</td><td><strong>白细胞</strong></td><td><strong>白细胞粘附缺陷 LAD</strong>，反复严重感染</td></tr><tr><td><strong>α_IIbβ₃</strong></td><td><strong>Fibrinogen</strong>（纤维蛋白原）</td><td><strong>血小板</strong></td><td><strong>Glanzmann 病</strong>：血小板不聚集，出血</td></tr><tr><td><strong>α₆β₄</strong></td><td>Laminin</td><td><strong>半桥粒（上皮）</strong></td><td><strong>严重皮肤起疱</strong></td></tr></tbody></table></div>
+<p><strong>记忆窍门</strong>：</p>
+<ul><li><strong>β₁ 家族 = 通用粘附</strong>（除非提示别的）</li><li><strong>β₂ 家族 = 白细胞</strong>（免疫学常考）</li><li><strong>β₃ 家族 = 血小板/凝血</strong></li><li><strong>β₄ = 半桥粒专属</strong>（链接中间纤维，不是 actin！）</li></ul>
+<h2 id="24-整合素在半桥粒中的特殊地位">2.4 整合素在半桥粒中的特殊地位</h2>
+<p><strong>半桥粒的组成</strong>（PPT p.13）：</p>
+<pre><code>    上皮细胞内
+       ▲
+       │ keratin filament (中间纤维)
+       │
+   plectin / dystonin (接头蛋白，相当于 talin 的角色)
+       │
+═══════│═════════════ 细胞膜
+       │
+    integrin α₆β₄  ←—— 横跨细胞膜
+       │
+    collagen XVII (BP180, 跨膜)
+       │
+    laminin (在基底层中)
+       │
+    （连到基底层下面的 collagen 网络）</code></pre>
+<p><strong>重点对比</strong>：</p>
+<div class="table-wrap"><table><thead><tr><th>焦点粘附 (Focal adhesion)</th><th>半桥粒 (Hemidesmosome)</th></tr></thead><tbody><tr><td>整合素连 <strong>actin</strong></td><td>整合素连 <strong>中间纤维</strong></td></tr><tr><td>接头：talin、vinculin、kindlin</td><td>接头：<strong>plectin、dystonin</strong></td></tr><tr><td>动态、可拆装</td><td>稳定的&quot;焊点&quot;</td></tr><tr><td>用于细胞迁移、信号</td><td>用于上皮锚定到基底层</td></tr></tbody></table></div>
+<h2 id="25-整合素与细胞迁移（5-步循环）">2.5 整合素与细胞迁移（5 步循环）</h2>
+<p><strong>细胞像毛毛虫一样移动的 5 步</strong>：</p>
+<p>1. <strong>Focal adhesions, attachment（焦点粘附，附着）</strong>：细胞已经粘在基质上 2. <strong>Extension（延伸）</strong>：前缘伸出片状伪足（lamellipodium）和丝状伪足（filopodia），靠 actin 在 plus end 聚合驱动 3. <strong>New attachment（新附着）</strong>：在前缘形成新的焦点粘附 4. <strong>Cell contraction（收缩）</strong>：myosin II 收缩，把胞体往前拉 5. <strong>De-adhesion（解粘附）</strong>：后部焦点粘附拆解；整合素被胞吞、回收到前缘 → 循环</p>
+<p><strong>关键点</strong>：整合素既要会&quot;粘&quot;，也要会&quot;松&quot;。一直粘住就走不了，松开了又掉下来。这就靠&quot;激活/失活&quot;两态切换。</p>
+<h2 id="26-整合素的&quot;两种构象&quot;">2.6 整合素的&quot;两种构象&quot;</h2>
+<p><strong>整合素是双稳态分子</strong>——可以在两种形状间切换：</p>
+<div class="table-wrap"><table><thead><tr><th>状态</th><th>形状</th><th>结合能力</th></tr></thead><tbody><tr><td><strong>Inactive（失活态）</strong></td><td><strong>弯曲</strong>（bent），头部贴近膜</td><td>配体亲和力低，接头蛋白结合也弱</td></tr><tr><td><strong>Active（激活态）</strong></td><td><strong>伸直</strong>（extended），头部翘起</td><td>强结合 ECM 配体 + 强结合胞内 talin</td></tr></tbody></table></div>
+<p>PPT 上 ±RGD 的电镜图就是直接证据：加 RGD 肽（配体模拟物）后，整合素从蜷缩变成站立。</p>
+<h2 id="27-整合素激活的两种方向（核心考点）">2.7 整合素激活的两种方向（核心考点）</h2>
+<p>这是整合素<strong>信号双向传递</strong>的精髓：</p>
+<h3 id="🟢-outside-in-activation（外向内激活）">🟢 Outside-in activation（外向内激活）</h3>
+<p><strong>触发</strong>：胞外 ECM 配体先结合到整合素头部 <strong>过程</strong>：</p>
+<ul><li>配体结合 → 构象变化 → 胞内尾巴分开</li><li>talin、kindlin 招募过来 → 焦点粘附组装</li><li>激活下游：FAK、Src、PI3K、Rho-GTPase（Crk/HEF1/p130 等）</li><li>影响：actin 重组、细胞极性、迁移、收缩</li></ul>
+<p><strong>作用</strong>：让细胞<strong>感知</strong>自己粘在了什么上，并调整内部状态</p>
+<h3 id="🟠-inside-out-activation（内向外激活）">🟠 Inside-out activation（内向外激活）</h3>
+<p><strong>触发</strong>：胞内信号（如 thrombin 激活的 Rap1-GTP） <strong>过程</strong>（以血小板凝血为例）：</p>
+<ul><li>凝血酶 thrombin 结合受体 → Rap1·GDP → Rap1·GTP</li><li>Rap1·GTP 招募 RIAM（一个接头蛋白）</li><li>RIAM 把胞质中&quot;折叠失活&quot;的 talin 招到膜上 → talin 暴露 actin 结合域和整合素结合域</li><li>talin 结合 β 整合素胞内尾巴 → 整合素从弯曲变伸直 → 胞外端高亲和力结合 fibrinogen</li><li>血小板互相粘连 → 血栓形成</li></ul>
+<p><strong>作用</strong>：让细胞&quot;决定&quot;什么时候要变粘 —— 平时血小板不粘血管壁（避免不停长血栓），但凝血信号一来立即激活粘附功能</p>
+<p><strong>临床联系</strong>：α_IIbβ₃ 突变 → <strong>Glanzmann 血小板无力症</strong>，血小板不聚集，出血不止。</p>
+<h2 id="28-整合素的&quot;聚集&quot;形成焦点粘附">2.8 整合素的&quot;聚集&quot;形成焦点粘附</h2>
+<p>单个整合素的结合力其实<strong>很弱</strong>——比 cadherin 强不到哪去。但许多整合素<strong>聚集</strong>（cluster）在一起，就能形成强大的粘附点：<strong>焦点粘附</strong>（focal adhesion）。</p>
+<p><strong>焦点粘附的分层结构</strong>（PPT p.19，很重要）：</p>
+<pre><code>┌─────────────────────────────────┐
+│ Actin regulatory layer          │ ← 最上层：actin 调控与肌动机器
+│ (myosin, actinin, …)            │
+├─────────────────────────────────┤
+│ Actin linkage &amp; force trans-    │ ← 力传导层：vinculin, talin, paxillin, zyxin
+│ duction (vinculin, talin…)      │
+├─────────────────────────────────┤
+│ Intracellular signaling         │ ← 信号层：FAK, paxillin
+├─────────────────────────────────┤
+│   膜                            │
+├─────────────────────────────────┤
+│ Matrix-receptor binding         │ ← 受体层：integrin
+│ (integrins + fibronectin)       │
+└─────────────────────────────────┘</code></pre>
+<p><strong>功能</strong>：力传导（mechanotransduction）+ 信号转导，二合一。</p>
+<h2 id="29-整合素信号控制细胞生死（必考实验）">2.9 整合素信号控制细胞生死（必考实验）</h2>
+<p><strong>经典实验</strong>（PPT p.20）：</p>
+<ul><li>把同样多的纤连蛋白涂成<strong>一个大斑</strong>或<strong>许多小斑</strong></li><li>大斑：细胞只能粘一个点，<strong>几小时后凋亡</strong></li><li>小斑：细胞能伸开、贴在多个点上，<strong>存活并增殖</strong></li></ul>
+<p><strong>结论</strong>： &gt; 没有正确的 ECM 附着 → 细胞凋亡（anoikis） &gt; 有附着 + 整合素信号被激活 → 存活、增殖</p>
+<p><strong>临床意义</strong>：肿瘤细胞往往能逃避 anoikis（不依赖锚定也能活），这是它们能转移的重要原因。</p>
+<h2 id="210-下游主要信号通路">2.10 下游主要信号通路</h2>
+<h3 id="fak-src-通路（ppt-p21-p23）">FAK / Src 通路（PPT p.21, p.23）</h3>
+<ul><li>整合素聚集 → <strong>FAK</strong>（focal adhesion kinase，焦点粘附激酶）自磷酸化</li><li>招募 <strong>Src</strong> 家族激酶 → 进一步磷酸化下游底物</li><li>双向影响：<strong>adhesion dynamics</strong>（粘附拆装）+ <strong>cell migration</strong>（迁移）+ <strong>survival/growth</strong>（存活与生长）</li></ul>
+<p><strong>敲掉 FAK 的成纤维细胞</strong>：变成球形、不再迁移 —— 直接证明 FAK 对运动是必需的。</p>
+<h3 id="rho-gtpase-通路（ppt-p22）">Rho-GTPase 通路（PPT p.22）</h3>
+<p>Rho-GTP（活化态）→ 两条腿走路：</p>
+<p><strong>腿 A：通过 Rho kinase (ROCK)</strong></p>
+<ul><li>ROCK 磷酸化 MLC（肌球蛋白轻链） → <strong>MLC(P)</strong></li><li>ROCK 还抑制 MLC phosphatase（让 MLC 持续磷酸化）</li><li>ROCK 激活 LIM kinase → 抑制 cofilin → actin 不再切断</li><li>结果：<strong>myosin 活性↑，肌动蛋白稳定</strong></li></ul>
+<p><strong>腿 B：通过 formins</strong></p>
+<ul><li>促进 actin 束的生长</li></ul>
+<p><strong>两条腿汇合</strong> → <strong>stress fibers ↑（应力纤维增多）</strong> → <strong>整合素聚集、焦点粘附形成</strong></p>
+<p>&gt; 一句话：Rho-GTPase 是焦点粘附 + 应力纤维的总开关。</p>
+<p>---</p>
+<h1 id="第三部分vi-基底层-basal-lamina">第三部分：VI. 基底层 Basal Lamina</h1>
+<h2 id="31-基底层是什么">3.1 基底层是什么？</h2>
+<p><strong>定义</strong>：一层薄薄（40–120 nm）的特殊细胞外基质，铺在上皮细胞下方，像&quot;地毯&quot;。</p>
+<p><strong>也叫什么</strong>：</p>
+<ul><li>Basal lamina = basement membrane 的核心层</li><li>基底膜（basement membrane）= basal lamina（基底层）+ reticular lamina（网状层）</li></ul>
+<h2 id="32-基底层出现在哪里">3.2 基底层出现在哪里？</h2>
+<p>不只是上皮下面！还有：</p>
+<ul><li><strong>肌肉细胞周围</strong>：整圈包裹</li><li><strong>上皮组织下方</strong>：经典位置</li><li><strong>肾小球</strong>：作为血液-尿液间的关键过滤层</li><li><strong>脂肪细胞、施万细胞（神经髓鞘形成细胞）周围</strong>：包裹这些细胞</li></ul>
+<h2 id="33-基底层的功能（5-大类）">3.3 基底层的功能（5 大类）</h2>
+<p>1. <strong>机械屏障</strong>：固定细胞位置，分隔上皮和结缔组织 2. <strong>再生指引模板</strong>（重要！）：组织受伤时细胞死了，基底层往往<strong>还在</strong>——它告诉新细胞&quot;在哪里、长成什么样&quot; 3. <strong>机械支撑</strong>：薄但坚韧 4. <strong>过滤器</strong>：肾小球的核心功能（滤血形成原尿） 5. <strong>影响细胞极性、分化、迁移</strong>：通过整合素信号</p>
+<h3 id="经典实验基底层引导组织再生（ppt-p30）">经典实验：基底层引导组织再生（PPT p.30）</h3>
+<p>切断神经-肌肉接头处的肌肉和神经，让细胞退化死亡 → 只剩&quot;残留的基底层壳&quot;</p>
+<ul><li>再生的神经 → 回到<strong>原来的接头位置</strong></li><li>再生的肌纤维 → 在<strong>原来位置形成新的乙酰胆碱受体簇</strong></li></ul>
+<p>→ 说明基底层&quot;记得&quot;接头位置，是个<strong>模板</strong>。</p>
+<h2 id="34-基底层的组成（4-大主要成分-+-辅助）">3.4 基底层的组成（4 大主要成分 + 辅助）</h2>
+<p><strong>4 个明星分子</strong>：</p>
+<div class="table-wrap"><table><thead><tr><th>分子</th><th>类型</th><th>角色</th></tr></thead><tbody><tr><td><strong>Laminin（层粘连蛋白）</strong></td><td>糖蛋白</td><td><strong>主组织者</strong>（primary organizer）</td></tr><tr><td><strong>Type IV collagen（IV 型胶原）</strong></td><td>纤维蛋白</td><td><strong>第二骨架</strong></td></tr><tr><td><strong>Nidogen（巢蛋白）</strong></td><td>糖蛋白</td><td><strong>连接器</strong>，桥接 laminin 和 collagen IV</td></tr><tr><td><strong>Perlecan（基底膜聚糖）</strong></td><td>蛋白聚糖</td><td><strong>连接器</strong> + 结构 + 过滤</td></tr></tbody></table></div>
+<h3 id="341-laminin（层粘连蛋白）">3.4.1 Laminin（层粘连蛋白）</h3>
+<ul><li><strong>结构</strong>：3 条链（α、β、γ）通过<strong>二硫键</strong>结合的<strong>异三聚体</strong></li><li><strong>形状</strong>：像一朵<strong>十字花</strong>（PPT 上画成&quot;花束&quot;）</li><li><strong>能力</strong>：可以通过<strong>头部域自组装</strong>形成网络（体外验证）</li><li><strong>结合伙伴</strong>：integrins、dystroglycan（肌营养不良相关）、nidogen、perlecan</li><li><strong>作用</strong>：把整个基底层&quot;组织&quot;起来 —— 没有 laminin 就没有基底层</li></ul>
+<h3 id="342-type-iv-collagen（iv-型胶原）">3.4.2 Type IV Collagen（IV 型胶原）</h3>
+<ul><li><strong>与典型胶原的不同</strong>：不形成纤维（fibril），而形成<strong>片状网络</strong>（sheetlike network）</li><li><strong>结构</strong>：3 条 α 链拧成绳状超螺旋，但<strong>有多个弯曲</strong>（不像 I 型胶原那么僵直）</li><li><strong>末端域</strong>：NC1 hexamer 和 7S 域，用来<strong>互相头尾相连</strong>形成网络</li><li><strong>突变后果</strong>：肾小球肾炎、耳聋（Alport 综合征）</li></ul>
+<h3 id="343-整体结构模型（ppt-p35）">3.4.3 整体结构模型（PPT p.35）</h3>
+<pre><code>Laminin 网 ←→ Nidogen / Perlecan ←→ Type IV collagen 网
+       ↑                                       ↑
+       └──── 都能结合 Integrin（细胞表面）─────┘</code></pre>
+<p>Laminin 和 Collagen IV <strong>各自</strong>形成网络 → <strong>Nidogen 和 Perlecan 作为连接器</strong>把两个网&quot;钉&quot;在一起 → 同时两个网都有 integrin 结合位点 → 把细胞固定在基底层上。</p>
+<h2 id="35-临床联系表皮分离症（epidermolysis-bullosa）">3.5 临床联系：表皮分离症（Epidermolysis bullosa）</h2>
+<p>PPT p.36 那张照片很触目惊心 —— 病人皮肤一碰就起大水泡。</p>
+<p><strong>机制</strong>：</p>
+<ul><li>表皮（epidermal cells）通过半桥粒（hemidesmosome）连到基底膜</li><li>基底膜下方靠 <strong>VII 型胶原</strong>作为&quot;锚定纤维&quot;（anchoring fibril）拉到真皮的胶原网</li><li>任何一个环节坏了 —— laminin、collagen VII、integrin α₆β₄、collagen XVII —— 都会导致表皮和真皮<strong>分离</strong>，形成大水泡（blister）</li></ul>
+<p><strong>记忆</strong>：</p>
+<ul><li><strong>Junctional EB</strong> = 基底膜内部断裂（laminin、collagen XVII 突变）</li><li><strong>Dystrophic EB</strong> = 基底膜下方断裂（collagen VII 突变）</li></ul>
+<p>---</p>
+<h1 id="第四部分vii-细胞外基质-ecm（重头戏）">第四部分：VII. 细胞外基质 ECM（重头戏）</h1>
+<h2 id="41-ecm-是什么">4.1 ECM 是什么？</h2>
+<p><strong>比&quot;基底层&quot;更广义的概念</strong> —— 任何细胞外的&quot;填充物质&quot;都属于 ECM。</p>
+<p><strong>多样性举例</strong>：</p>
+<ul><li>骨骼、牙齿（钙化的 ECM）</li><li>肌腱（致密的 I 型胶原）</li><li>角膜（透明的 ECM）</li><li>水母的&quot;果冻&quot;（含水极高的 ECM）</li><li>玻璃体液（眼睛里的）</li></ul>
+<p><strong>所以 ECM 不只是&quot;胶水&quot;，它本身可以是组织的主要成分。</strong></p>
+<h2 id="42-ecm-的多重功能（不只是支架）">4.2 ECM 的多重功能（不只是支架）</h2>
+<pre><code>       ┌─ 分化与生长 (Differentiation and growth)
+       ├─ 形态发生 (Morphogenesis)
+       ├─ 组织结构维持
+       ├─ 损伤组织重塑
+       ├─ 损伤与创伤反应
+       ├─ 细胞存活与迁移
+       ├─ 血管发生 (Angiogenesis)
+       └─ 结构修饰 (Structural modifications)</code></pre>
+<p><strong>ECM 不是被动支架</strong>，它是<strong>信号库</strong>：</p>
+<ul><li>释放因子（如 TGF-β）</li><li>储存生长因子</li><li>决定组织硬度（cancer 喜欢硬基质）</li><li>通过整合素影响细胞决定（生死、分化）</li></ul>
+<h2 id="43-组织力学性质（ppt-p6）">4.3 组织力学性质（PPT p.6）</h2>
+<p>不同组织的硬度（<strong>Young's modulus，杨氏模量</strong>）差异巨大：</p>
+<div class="table-wrap"><table><thead><tr><th>组织</th><th>硬度</th></tr></thead><tbody><tr><td>脑（brain）</td><td><strong>最软</strong>（~10² Pa）</td></tr><tr><td>肝（liver）</td><td>软</td></tr><tr><td>正常乳腺</td><td>中等</td></tr><tr><td><strong>恶性乳腺癌</strong></td><td><strong>比正常硬很多</strong></td></tr><tr><td>肌肉、皮肤</td><td>较硬</td></tr><tr><td>关节软骨</td><td>很硬（~10⁵ Pa）</td></tr></tbody></table></div>
+<p><strong>临床意义</strong>：临床上摸到&quot;硬块&quot;怀疑癌 —— 不只是感觉，确实癌组织 ECM 重塑后变硬。</p>
+<h2 id="44-力学概念（一次性搞懂）">4.4 力学概念（一次性搞懂）</h2>
+<ul><li><strong>Stiffness（硬度）</strong>：拉/压时抵抗变形的能力（弹性模量）</li><li><strong>Stiffening / non-linear elasticity（非线性弹性）</strong>：拉得越多越硬（生物材料常见，橡皮筋则不是）</li><li><strong>Plasticity（塑性）</strong>：变形后不恢复（永久形变）</li><li><strong>Viscoelasticity（粘弹性）</strong>：既有弹性（恢复）又有粘性（耗散）→ 慢慢恢复</li></ul>
+<p>ECM 的精妙之处就在于<strong>同时具备这些特性</strong>，所以细胞能拉它、改它、留下痕迹。</p>
+<h2 id="45-ecm-谁来制造">4.5 ECM 谁来制造？</h2>
+<div class="table-wrap"><table><thead><tr><th>组织</th><th>主要制造细胞</th></tr></thead><tbody><tr><td>大部分结缔组织</td><td><strong>成纤维细胞 fibroblast</strong></td></tr><tr><td>骨</td><td><strong>成骨细胞 osteoblast</strong></td></tr><tr><td>软骨</td><td><strong>成软骨细胞 chondroblast</strong></td></tr></tbody></table></div>
+<p>记忆：<strong>-blast 后缀 = &quot;造……者&quot;</strong></p>
+<p>---</p>
+<h2 id="46-ecm-的三大类大分子（核心框架必须记牢）">4.6 ECM 的三大类大分子（核心框架，必须记牢）</h2>
+<div class="table-wrap"><table><thead><tr><th>类别</th><th>中文</th><th>代表</th><th>特点</th></tr></thead><tbody><tr><td><strong>Proteoglycans + GAGs</strong></td><td>蛋白聚糖 + 糖胺聚糖</td><td>aggrecan、decorin、perlecan、syndecan、hyaluronan</td><td>糖含量高（<strong>高达 95%</strong>）、强负电、形成凝胶</td></tr><tr><td><strong>Fibrous proteins</strong></td><td>纤维蛋白</td><td><strong>collagen</strong>、<strong>elastin</strong></td><td>纤维状、提供机械强度</td></tr><tr><td><strong>Non-collagen glycoproteins</strong></td><td>非胶原糖蛋白</td><td><strong>laminin</strong>、<strong>fibronectin</strong>、nidogen</td><td>多功能，常作为黏附和组织&quot;标记&quot;</td></tr></tbody></table></div>
+<p>&gt; 这个三分法非常重要！ECM 后面所有内容都是在填这三个框。</p>
+<p>---</p>
+<h2 id="47-gags（糖胺聚糖）——-ecm-的&quot;海绵&quot;">4.7 GAGs（糖胺聚糖）—— ECM 的&quot;海绵&quot;</h2>
+<h3 id="结构（ppt-p46）">结构（PPT p.46）</h3>
+<ul><li><strong>重复二糖单元</strong>（disaccharide repeat）的<strong>未分支</strong>长链</li><li>每个二糖 = <strong>氨基糖</strong>（如 N-乙酰葡糖胺或 N-乙酰半乳糖胺，常被硫酸化）+ <strong>糖醛酸</strong>（葡糖醛酸/艾杜糖醛酸）</li><li><strong>带大量负电</strong>（来自 -COO⁻ 和 -SO₃⁻）→ 高度<strong>亲水</strong>、形成凝胶</li><li>通常很长，例如肝素硫酸（heparan sulfate）</li></ul>
+<h3 id="4-大类-gag（要会区分）">4 大类 GAG（要会区分）</h3>
+<div class="table-wrap"><table><thead><tr><th>GAG</th><th>关键特征</th><th>在哪里</th></tr></thead><tbody><tr><td><strong>Hyaluronan（HA，透明质酸）</strong></td><td><strong>没硫酸</strong>、<strong>不连蛋白</strong>、<strong>最长</strong></td><td>关节液、皮肤、ECM 大空间填充</td></tr><tr><td>Chondroitin sulfate / Dermatan sulfate</td><td>硫酸化、连蛋白</td><td>软骨、皮肤</td></tr><tr><td><strong>Heparin / Heparan sulfate</strong></td><td>高度硫酸化、常作辅受体</td><td>细胞表面、基底层</td></tr><tr><td>Keratan sulfate</td><td>硫酸化</td><td>角膜、软骨</td></tr></tbody></table></div>
+<h3 id="gags-的物理性质（为什么-ecm-能抗压）">GAGs 的物理性质（为什么 ECM 能抗压）</h3>
+<ul><li>负电 → 吸引 Na⁺ → 渗透压拉水进来 → <strong>GAGs 膨胀</strong></li><li>膨胀的 GAGs 像凝胶垫 → <strong>抗压缩</strong>（如关节软骨能承重）</li><li>同时<strong>胶原</strong>抗拉伸 → 两者搭档，ECM 又抗压又抗拉</li></ul>
+<p>&gt; 想象一床棉被：<strong>GAGs 是棉花</strong>（蓬松，抗压），<strong>胶原是被套缝线</strong>（抗拉伸不破裂）。</p>
+<p>---</p>
+<h2 id="48-透明质酸-hyaluronan（ha）——-最特殊的-gag">4.8 透明质酸 Hyaluronan（HA）—— 最特殊的 GAG</h2>
+<p><strong>为什么要单独讲</strong>：HA 跟其他 GAG 太不一样：</p>
+<div class="table-wrap"><table><thead><tr><th>特征</th><th>Hyaluronan</th><th>其他 GAGs</th></tr></thead><tbody><tr><td>是否硫酸化</td><td><strong>不</strong></td><td>是</td></tr><tr><td>是否连接核心蛋白</td><td><strong>不</strong>（自由游离）</td><td>是（构成蛋白聚糖）</td></tr><tr><td>合成位置</td><td><strong>细胞膜表面酶</strong>直接合成挤出</td><td>高尔基体内合成，胞吐释放</td></tr><tr><td>长度</td><td><strong>可达 25,000 个二糖重复，超长</strong></td><td>较短</td></tr><tr><td>降解</td><td><strong>透明质酸酶 hyaluronidase</strong></td><td>各类酶</td></tr></tbody></table></div>
+<p><strong>功能</strong>：</p>
+<ul><li><strong>空间填充剂</strong>（space filler）—— 占大体积</li><li><strong>引导细胞迁移</strong>（如组织发生、伤口修复中胚胎细胞的&quot;高速公路&quot;）</li><li>化妆品中常见（保湿）—— 1 g HA 能结合数升水</li></ul>
+<p>---</p>
+<h2 id="49-蛋白聚糖-proteoglycans">4.9 蛋白聚糖 Proteoglycans</h2>
+<h3 id="蛋白聚糖-vs-糖蛋白（这是常考的对比）">蛋白聚糖 vs 糖蛋白（这是常考的对比）</h3>
+<div class="table-wrap"><table><thead><tr><th>性质</th><th>Proteoglycans（蛋白聚糖）</th><th>Glycoproteins（糖蛋白）</th></tr></thead><tbody><tr><td>糖比重</td><td><strong>最高可达 95%</strong></td><td><strong>1–60%</strong>（多数只占几个百分点）</td></tr><tr><td>糖链类型</td><td><strong>GAGs</strong>（长、未分支）</td><td><strong>短、分支的寡糖</strong></td></tr><tr><td>分子量</td><td><strong>大</strong>（可达 3000 kD）</td><td>一般小</td></tr><tr><td>例子</td><td>aggrecan, decorin, perlecan, syndecan</td><td>核糖核酸酶（ribonuclease）等</td></tr></tbody></table></div>
+<h3 id="491-gag-如何连到核心蛋白上（ppt-p51）">4.9.1 GAG 如何连到核心蛋白上（PPT p.51）</h3>
+<ul><li><strong>位置</strong>：高尔基体</li><li><strong>方式</strong>：<strong>O-连接的四糖连接子</strong>（O-linked tetrasaccharide）</li><li>顺序：核心蛋白的丝氨酸 - O - <strong>木糖</strong> - 半乳糖 - 半乳糖 - 葡糖醛酸 - 然后开始延伸 GAG</li><li>后续修饰（硫酸化、表异构化等）</li></ul>
+<h3 id="492-蛋白聚糖的功能（不止结构）">4.9.2 蛋白聚糖的功能（不止结构）</h3>
+<p>1. <strong>选择性筛网</strong>（selective sieve）：根据孔径和电荷决定哪些分子能通过 2. <strong>结合并调控生长因子</strong>：FGF、TGF-β、趋化因子 3. <strong>作为共受体</strong>：例如 <strong>syndecan</strong>（细胞表面蛋白聚糖）协助 FGF 信号</p>
+<h3 id="493-常见蛋白聚糖记忆表（ppt-p54）">4.9.3 常见蛋白聚糖记忆表（PPT p.54）</h3>
+<div class="table-wrap"><table><thead><tr><th>名字</th><th>大小</th><th>GAG 类型</th><th>位置</th><th>功能</th></tr></thead><tbody><tr><td><strong>Aggrecan</strong></td><td>210 kD 核心，~130 条 GAG</td><td>硫酸软骨素 + 硫酸角质素</td><td><strong>软骨</strong></td><td>机械支撑，与 HA 形成巨型聚合体</td></tr><tr><td>Betaglycan</td><td>36 kD</td><td>硫酸软骨素/皮肤素</td><td>细胞表面、基质</td><td>结合 TGF-β</td></tr><tr><td>Decorin</td><td>40 kD</td><td>硫酸软骨素/皮肤素</td><td>结缔组织</td><td>结合 I 型胶原、TGF-β</td></tr><tr><td><strong>Perlecan</strong></td><td>600 kD</td><td>硫酸肝素</td><td><strong>基底层</strong></td><td>结构 + 过滤</td></tr><tr><td><strong>Syndecan-1</strong></td><td>32 kD</td><td>硫酸软骨素 + 硫酸肝素</td><td><strong>细胞表面</strong></td><td>黏附，结合 FGF 等生长因子</td></tr></tbody></table></div>
+<p><strong>Aggrecan 在软骨中的妙用</strong>：上百条 aggrecan <strong>通过 link protein 挂在一条 HA 长链上</strong> → 形成&quot;瓶刷&quot;巨型复合物 → 把水牢牢锁住 → 软骨能承重而不被压垮（关节软骨耐受体重数倍的压力靠这个）。</p>
+<p>---</p>
+<h2 id="410-胶原-collagens（哺乳类最多的蛋白）">4.10 胶原 Collagens（哺乳类最多的蛋白）</h2>
+<h3 id="4101-基本性质">4.10.1 基本性质</h3>
+<ul><li>ECM 的<strong>主要纤维蛋白</strong></li><li>哺乳动物<strong>总蛋白量的约 25%</strong>，最多！</li><li><strong>多种类型</strong>（已知 27 种，42 种 α 链），但都有共同特征</li><li>典型分子：<strong>长、僵直、三股螺旋</strong>（triple helix）</li><li>氨基酸特点：<strong>富含脯氨酸 proline 和甘氨酸 glycine</strong>（每 3 个就有 1 个 Gly）</li></ul>
+<h3 id="4102-结构层次">4.10.2 结构层次</h3>
+<pre><code>单条 α 链 (Gly-X-Y 重复)
+        ↓ 3 条绞合
+三股螺旋分子（&quot;胶原蛋白单体&quot;/tropocollagen, ~1.5 nm 粗）
+        ↓ 多个排列错位地堆叠
+原纤维（fibril, 横纹周期 67 nm）
+        ↓ 多个原纤维聚集
+纤维（fiber, EM 下能看到）</code></pre>
+<p><strong>Gly 必不可少</strong>：每三个 aa 一个 Gly，因为 Gly 最小，能塞进三螺旋中心。</p>
+<h3 id="4103-与中间纤维的对比（ppt-p59-一定要看）">4.10.3 与中间纤维的对比（PPT p.59 一定要看）</h3>
+<div class="table-wrap"><table><thead><tr><th>特征</th><th>Collagen（胶原）</th><th>Intermediate Filament（中间纤维）</th></tr></thead><tbody><tr><td>位置</td><td><strong>细胞外</strong></td><td>细胞内</td></tr><tr><td>单体</td><td>Gly-X-Y 三螺旋</td><td>α-helical 单体</td></tr><tr><td>组装</td><td>三链拧绳 → 纤维</td><td>两条 α-螺旋形成卷曲螺旋二聚体 → 错位四聚体 → 8 个四聚体绞成绳状细丝</td></tr><tr><td><strong>极性</strong></td><td>有方向性</td><td><strong>对称，无极性</strong></td></tr><tr><td>横截面</td><td>~1.5 nm（三螺旋）</td><td>~10 nm（最终细丝）</td></tr></tbody></table></div>
+<h3 id="4104-主要胶原类型（重要表）">4.10.4 主要胶原类型（重要表！）</h3>
+<div class="table-wrap"><table><thead><tr><th>类型</th><th>类别</th><th>形式</th><th>分布</th><th>突变</th></tr></thead><tbody><tr><td><strong>I</strong></td><td><strong>纤维形成型</strong></td><td>纤维</td><td>骨、皮、肌腱、内脏（<strong>全身胶原 90%</strong>）</td><td>骨缺陷、脆骨症</td></tr><tr><td>II</td><td>纤维形成型</td><td>纤维</td><td>软骨、椎间盘</td><td>软骨缺陷、侏儒</td></tr><tr><td>III</td><td>纤维形成型</td><td>纤维</td><td>皮肤、血管</td><td>血管易破</td></tr><tr><td>V</td><td>纤维形成型</td><td>纤维（与 I 混合）</td><td>同 I</td><td>血管易破</td></tr><tr><td>XI</td><td>纤维形成型</td><td>纤维（与 II 混合）</td><td>同 II</td><td>近视、致盲</td></tr><tr><td>IX</td><td><strong>纤维相关型</strong></td><td>侧向附着</td><td>软骨（与 II 共存）</td><td>骨关节炎</td></tr><tr><td><strong>IV</strong></td><td><strong>网络形成型</strong></td><td><strong>片状网络</strong></td><td><strong>基底层</strong></td><td><strong>Alport 综合征</strong>（肾炎、耳聋）</td></tr><tr><td>VII</td><td>锚定型</td><td>锚定纤维</td><td>上皮下</td><td>皮肤起疱</td></tr><tr><td>XVII</td><td>跨膜型</td><td>非纤维</td><td>半桥粒</td><td>皮肤起疱</td></tr><tr><td>XVIII</td><td>蛋白聚糖型</td><td>非纤维</td><td>基底层</td><td>近视、视网膜脱离</td></tr></tbody></table></div>
+<p><strong>最关键的对比</strong>：</p>
+<ul><li><strong>I 型胶原 = 全身骨架</strong>（最多）</li><li><strong>IV 型胶原 = 基底层专属</strong>（不形成纤维而形成网）</li></ul>
+<h3 id="4105-纤维相关胶原（facitsppt-p62）">4.10.5 纤维相关胶原（FACITs，PPT p.62）</h3>
+<p><strong>IX 和 XII 型</strong>的特点：</p>
+<ul><li>A. 三螺旋有<strong>短的非螺旋打断</strong>，更<strong>柔软</strong></li><li>B. 分泌后<strong>不被切割</strong>（normal collagens 要切除 propeptide）</li><li>C. <strong>不自聚集</strong>，而是<strong>结合到已有的纤维侧面</strong>：</li><li>类型 IX → 结合 II 型胶原（在软骨）</li><li>类型 XII → 结合 I 型胶原（在皮肤等）</li></ul>
+<p><strong>作用</strong>：帮助组织/连接不同的纤维 —— 像&quot;绑带&quot;把胶原纤维束扎在一起。</p>
+<p>---</p>
+<h2 id="411-弹性蛋白-elastin">4.11 弹性蛋白 Elastin</h2>
+<h3 id="4111-基本性质">4.11.1 基本性质</h3>
+<ul><li><strong>弹性纤维（elastic fiber）的核心成分</strong></li><li>弹性纤维 = <strong>elastin 核心</strong> + 外层 <strong>fibrillin 微纤维</strong>（glycoprotein）</li><li>弹性 ≈ <strong>橡皮筋的 5 倍以上</strong></li><li>富含<strong>脯氨酸 Pro 和甘氨酸 Gly</strong>（和胶原相似），但：</li><li><strong>不糖基化</strong></li><li>含<strong>羟脯氨酸（hydroxyproline）</strong></li><li><strong>不含</strong>羟赖氨酸（hydroxylysine）—— 与胶原相反</li></ul>
+<h3 id="4112-合成与组装">4.11.2 合成与组装</h3>
+<ul><li>前体叫 <strong>tropoelastin</strong></li><li>分泌后通过<strong>赖氨酸残基交联</strong>（lysyl oxidase 介导）→ <strong>高度交联</strong>的弹性网</li><li>形式：纤维（fiber）或片层（sheet）</li></ul>
+<h3 id="4113-结构精妙（ppt-p65）">4.11.3 结构精妙（PPT p.65）</h3>
+<p>Elastin 单体含<strong>两种交替的结构域</strong>：</p>
+<p>1. <strong>疏水域</strong>：富含 Pro 和 Gly → 可舒展/卷曲（提供弹性） 2. <strong>富含 Ala 和 Lys 的域</strong>：用来与其他 elastin 形成<strong>交联键</strong>（赖氨酸残基交联）</p>
+<p><strong>工作原理</strong>：</p>
+<ul><li>拉 → 单体伸开（疏水域释放）</li><li>松 → 单体自发卷回（疏水折叠驱动）</li><li>交联点不动 → 网络整体保持完整</li></ul>
+<p>→ 像<strong>网兜的橡皮筋</strong>，每根可拉可缩，但绑得很牢。</p>
+<h3 id="4114-哪里最多">4.11.4 哪里最多？</h3>
+<ul><li><strong>动脉（aorta）</strong>：心跳冲击下血管要不断膨胀-回弹</li><li>肺、皮肤、韧带也很多</li></ul>
+<h3 id="4115-相关遗传病（重点）">4.11.5 相关遗传病（重点）</h3>
+<div class="table-wrap"><table><thead><tr><th>疾病</th><th>突变基因</th><th>表型</th></tr></thead><tbody><tr><td>Williams 综合征（elastin 突变）</td><td>ELN（elastin）</td><td>动脉变薄、血管平滑肌过度增生</td></tr><tr><td><strong>Marfan 综合征</strong></td><td><strong>FBN1（fibrillin-1）</strong></td><td><strong>主动脉容易破裂</strong>、晶体脱位、骨骼/关节异常（个子高、手指长、关节松弛）</td></tr></tbody></table></div>
+<p>&gt; 林肯总统、帕格尼尼（小提琴家）等历史人物都疑似 Marfan。</p>
+<p>---</p>
+<h2 id="412-纤连蛋白-fibronectin">4.12 纤连蛋白 Fibronectin</h2>
+<h3 id="4121-基本性质">4.12.1 基本性质</h3>
+<ul><li><strong>大型糖蛋白</strong></li><li><strong>二聚体</strong>（dimer），两条链通过<strong>二硫键</strong>连接（呈&quot;V&quot;字形）</li><li>形式：可<strong>可溶</strong>（血浆中循环）或<strong>不可溶纤维</strong>（组织中）</li><li><strong>特殊性质</strong>：不会自发组装 —— <strong>只有感受到张力 + 细胞表面受体</strong>才开始组装</li></ul>
+<h3 id="4122-多功能模块（ppt-p68）">4.12.2 多功能模块（PPT p.68）</h3>
+<p>Fibronectin 像一把&quot;瑞士军刀&quot;，多个结构域，能结合不同伙伴：</p>
+<ul><li>结合 <strong>fibrin</strong>（凝血纤维）</li><li>结合 <strong>collagen</strong></li><li>结合 <strong>integrin</strong>（核心，通过 RGD 序列）</li><li>结合 <strong>heparin</strong>（GAG）</li></ul>
+<p>→ 因此 fibronectin 既是细胞表面的桥梁，又能整合凝血、损伤反应等多种过程。</p>
+<h3 id="4123-张力依赖的纤维形成（ppt-p69）">4.12.3 张力依赖的纤维形成（PPT p.69）</h3>
+<p><strong>经典实验</strong>：迁移中的鼠成纤维细胞</p>
+<ul><li><strong>红 = actin</strong>（应力纤维）</li><li><strong>绿 = fibronectin</strong></li><li>→ 两者<strong>平行共定位</strong></li></ul>
+<p><strong>机制</strong>：</p>
+<ul><li>细胞内 actin 拉应力 → 通过整合素传到胞外 fibronectin</li><li>Fibronectin 被拉伸 → 暴露隐藏的<strong>自组装位点</strong></li><li>多个 fibronectin 二聚体连接 → 形成<strong>纤维</strong></li></ul>
+<p>&gt; 这是个漂亮的&quot;内外联动&quot;例子：细胞主动塑造自己的基质。</p>
+<h3 id="4124-rgd-序列整合素识别的&quot;暗号&quot;（ppt-p71）">4.12.4 RGD 序列：整合素识别的&quot;暗号&quot;（PPT p.71）</h3>
+<p><strong>RGD = Arg–Gly–Asp</strong>（精氨酸-甘氨酸-天冬氨酸）</p>
+<ul><li>是 fibronectin 上<strong>结合 integrin 的关键三联氨基酸</strong></li><li>是<strong>通用粘附密码</strong>——许多 ECM 蛋白都用 RGD 与 integrin 结合</li><li><strong>应用</strong>：合成 RGD 多肽 → 竞争性抑制 integrin-fibronectin 结合（用于抗血栓药、抗肿瘤研究）</li></ul>
+<p><strong>临床奇闻</strong>：</p>
+<ul><li>某些<strong>蛇毒分泌的 &quot;disintegrin&quot;</strong> 含有 RGD 序列</li><li>它抢占血小板 α_IIbβ₃ 整合素的位点 → 阻止血小板聚集 → 受害者<strong>流血不止</strong></li><li>这反过来启发了抗血小板药物的设计（如 tirofiban）</li></ul>
+<p>---</p>
+<h2 id="413-ecm-的降解（动态平衡的另一半）">4.13 ECM 的降解（动态平衡的另一半）</h2>
+<p>ECM 不是一成不变的 —— 它必须<strong>能降解才能重塑</strong>（如伤口愈合、胚胎发育、肿瘤侵袭）。</p>
+<h3 id="4131-两大类降解酶">4.13.1 两大类降解酶</h3>
+<p>1. <strong>基质金属蛋白酶 MMPs（Matrix metalloproteinases）</strong></p>
+<p>2. <strong>丝氨酸蛋白酶 Serine proteases</strong></p>
+<ul><li>依赖 <strong>Ca²⁺ 或 Zn²⁺</strong></li><li>切胶原、纤连蛋白、层粘连蛋白等</li><li>例：MMP-1（胶原酶）、MMP-2/9（明胶酶）</li><li>例：<strong>plasmin</strong>（纤溶酶）、<strong>uPA</strong>（尿激酶型纤溶酶原激活物）</li></ul>
+<h3 id="4132-如何&quot;控制&quot;降解（防止过度自我消化）">4.13.2 如何&quot;控制&quot;降解？（防止过度自我消化）</h3>
+<p>ECM 降解必须<strong>精确、局部、可控</strong>，否则就是自我毁灭。三种策略：</p>
+<h4 id="策略-1局部激活（local-activation）">策略 1：局部激活（Local activation）</h4>
+<p>例子：<strong>plasmin 系统</strong>（PPT p.75）</p>
+<ul><li>血液里循环的是<strong>酶原 plasminogen</strong>（无活性）</li><li><strong>tPA（组织型纤溶酶原激活物）</strong>在血栓局部把 plasminogen → 活性 plasmin</li><li>Plasmin 切断 fibrin → 溶解血栓</li><li><strong>PAI-1</strong> 抑制 tPA、<strong>α2-antiplasmin</strong> 抑制 plasmin → 防止失控</li></ul>
+<p>→ 这是<strong>临床溶栓药 tPA</strong> 的基础（脑梗时使用）</p>
+<h4 id="策略-2膜面限制（membrane-confinement）">策略 2：膜面限制（Membrane confinement）</h4>
+<ul><li>让蛋白酶<strong>只在细胞膜上活化</strong>，效果限定在细胞边缘</li><li>例 1：<strong>膜结合型 MMPs</strong>（MT-MMPs）</li><li>例 2：<strong>uPA 与 uPA 受体</strong>结合 → 仅在膜表面活化 plasminogen</li></ul>
+<p><strong>癌症联系</strong>（PPT p.76）：</p>
+<ul><li>肿瘤细胞高表达 uPA → 在膜表面降解周围 ECM → <strong>侵袭、转移</strong></li><li>阻断 uPA 受体 → 肿瘤还会长，但<strong>不会转移</strong> → 抗转移药物靶点</li></ul>
+<h4 id="策略-3分泌抑制物（secretion-of-inhibitors）">策略 3：分泌抑制物（Secretion of inhibitors）</h4>
+<div class="table-wrap"><table><thead><tr><th>抑制物</th><th>抑制谁</th></tr></thead><tbody><tr><td><strong>TIMPs</strong>（Tissue Inhibitors of Metalloproteases）</td><td>MMPs</td></tr><tr><td><strong>Serpins</strong>（Serine Protease Inhibitors）</td><td>丝氨酸蛋白酶（如 plasmin、elastase）</td></tr></tbody></table></div>
+<p><strong>Serpin 的工作机制（PPT p.77）</strong>：</p>
+<ul><li>像&quot;自杀诱饵&quot;：serpin 暴露一个 reactive center loop（RCL）模拟底物</li><li>蛋白酶切了 serpin → 反过来被 serpin 抓住共价结合 → 两者<strong>一起失活</strong>（suicide complex）</li><li>著名 serpin：<strong>α1-antitrypsin</strong> → 缺陷导致肺气肿（弹性蛋白酶失控破坏肺泡）</li></ul>
+<p>---</p>
+<h1 id="第五部分通盘记忆（考前速查表）">第五部分：通盘记忆（考前速查表）</h1>
+<h2 id="51-锚定连接的&quot;4-种焊点&quot;">5.1 锚定连接的&quot;4 种焊点&quot;</h2>
+<div class="table-wrap"><table><thead><tr><th>连接类型</th><th>跨膜蛋白</th><th>胞内骨架</th><th>胞内接头</th></tr></thead><tbody><tr><td>Adherens junction</td><td>Cadherin</td><td>actin</td><td>catenins</td></tr><tr><td>Desmosome</td><td>Desmosomal cadherin</td><td>中间纤维</td><td>desmoplakin, plakoglobin</td></tr><tr><td><strong>Focal adhesion</strong></td><td><strong>Integrin</strong></td><td><strong>actin</strong></td><td><strong>talin, vinculin, kindlin</strong></td></tr><tr><td><strong>Hemidesmosome</strong></td><td><strong>Integrin (α₆β₄)</strong></td><td><strong>中间纤维（keratin）</strong></td><td><strong>plectin, dystonin</strong></td></tr></tbody></table></div>
+<h2 id="52-基底层-4-大成分（每个都要能说出功能）">5.2 基底层 4 大成分（每个都要能说出功能）</h2>
+<ul><li><strong>Laminin</strong> → 主组织者</li><li><strong>Type IV Collagen</strong> → 第二骨架，片状网络</li><li><strong>Nidogen</strong> → 连接 laminin 和 collagen IV</li><li><strong>Perlecan</strong> → 蛋白聚糖型连接 + 过滤</li></ul>
+<h2 id="53-ecm-三大类大分子">5.3 ECM 三大类大分子</h2>
+<ul><li><strong>蛋白聚糖 + GAGs</strong>（抗压、调信号）</li><li><strong>纤维蛋白：collagen（抗拉）+ elastin（弹性）</strong></li><li><strong>非胶原糖蛋白：laminin、fibronectin、nidogen</strong>（粘附与连接）</li></ul>
+<h2 id="54-经典遗传病一览（必背）">5.4 经典遗传病一览（必背）</h2>
+<div class="table-wrap"><table><thead><tr><th>疾病</th><th>病变分子</th><th>主要表现</th></tr></thead><tbody><tr><td>Glanzmann 病</td><td>integrin α_IIbβ₃</td><td>血小板不聚集，出血</td></tr><tr><td>LAD（白细胞粘附缺陷）</td><td>integrin β₂</td><td>反复严重感染</td></tr><tr><td>Junctional 表皮分离症</td><td>laminin / collagen XVII / α₆β₄</td><td>皮肤起疱</td></tr><tr><td>Dystrophic 表皮分离症</td><td>collagen VII</td><td>皮肤起疱（深层）</td></tr><tr><td>Alport 综合征</td><td>type IV collagen</td><td>肾炎 + 耳聋</td></tr><tr><td>成骨不全</td><td>type I collagen</td><td>脆骨症</td></tr><tr><td>Marfan 综合征</td><td>fibrillin-1（FBN1）</td><td>主动脉破裂、晶体脱位、高个</td></tr><tr><td>Williams 综合征</td><td>elastin（ELN）</td><td>血管壁异常</td></tr><tr><td>α1-antitrypsin 缺陷</td><td>serpin</td><td>肺气肿</td></tr><tr><td>肌营养不良</td><td>integrin α₇β₁ / dystroglycan</td><td>肌肉退化</td></tr></tbody></table></div>
+<h2 id="55-整合素双向激活速记">5.5 整合素双向激活速记</h2>
+<ul><li><strong>外→内</strong>：ECM 配体 → 整合素 → 焦点粘附 → FAK/Src/Rho → 细胞迁移、存活</li><li><strong>内→外</strong>：胞内信号（Rap1·GTP）→ talin 招募 → 整合素伸直 → 强结合 ECM</li><li>典型例子：<strong>血小板凝血</strong>就是 inside-out 的杰作</li></ul>
+<h2 id="56-ecm-与肿瘤（高频考点）">5.6 ECM 与肿瘤（高频考点）</h2>
+<p>1. <strong>失锚凋亡（anoikis）</strong>：正常细胞失粘后凋亡 → 肿瘤逃避它 = 转移 2. <strong>基质硬化</strong>：肿瘤周围 ECM 变硬 → 促进恶性表型 3. <strong>MMP/uPA 过表达</strong>：肿瘤分泌降解酶突破 ECM 屏障 4. <strong>整合素表达谱改变</strong>：肿瘤换&quot;鞋&quot;以适应新环境</p>
+<p>---</p>
+<h1 id="第六部分高效学习建议">第六部分：高效学习建议</h1>
+<p>1. <strong>先记框架，再填细节</strong>：</p>
+<ul><li>框架 = &quot;细胞-基质粘附（integrin）+ 基底层 + ECM 三大类&quot;</li><li>细节 = 各类分子的代表、功能、突变</li></ul>
+<p>2. <strong>画图记忆比背字快</strong>：</p>
+<ul><li>焦点粘附的分层结构</li><li>基底层的 laminin-nidogen-collagen IV 三联网</li><li>弹性蛋白的拉伸-恢复</li></ul>
+<p>3. <strong>抓&quot;反例&quot;理解功能</strong>：</p>
+<ul><li>&quot;如果没有 laminin 会怎样？&quot;——基底层散架</li><li>&quot;如果整合素不能松手会怎样？&quot;——细胞不能迁移</li><li>&quot;如果 MMP 失控会怎样？&quot;——肺气肿、肿瘤侵袭</li></ul>
+<p>4. <strong>临床联系最容易记</strong>：</p>
+<ul><li>出血 → 整合素 α_IIbβ₃（Glanzmann）</li><li>皮肤起疱 → 半桥粒 / 基底膜 / collagen VII</li><li>主动脉破裂 → fibrillin（Marfan）</li><li>软骨问题 → type II collagen / aggrecan</li></ul>
+<p>5. <strong>学完一定要做一次&quot;输出&quot;</strong>：试着不看讲义，画出 ECM 三大类、列出 4 种基底层成分、解释 inside-out 激活——能讲出来才是真懂。</p>
+<p>---</p>
+<p>&gt; <strong>最重要的一句话总结整篇</strong>： &gt; 细胞不是悬浮的孤立物，它通过 <strong>integrin</strong> 抓住 <strong>ECM</strong>（含 collagen 提供拉力、GAGs 提供抗压、glycoproteins 提供精细识别），并通过这种抓握<strong>感知力、获取生存信号、决定迁移方向</strong>。基底层是 ECM 的一种特殊&quot;薄膜版&quot;，专门垫在上皮下面。任何一环出问题——粘附蛋白、ECM 蛋白、降解酶——都会导致从皮肤起疱到肿瘤转移的各种疾病。</p><div class="pager">
+      <a href="17_cell_junctions_i.html">上一讲：Lecture 17: Cell Junctions, Cell Adhesion and Extracellular Matrix (I)</a>
+      <a href="19_ecm_and_cancer_biology.html">下一讲：Lecture 19: Extracellular Matrix and Cancer Biology</a>
+    </div></div>
+        <aside class="toc"><strong>本讲目录</strong><a class="toc-level-2" href="#细胞连接、细胞粘附与细胞外基质（下篇）">细胞连接、细胞粘附与细胞外基质（下篇）</a><a class="toc-level-2" href="#📋-全章学习地图">📋 全章学习地图</a><a class="toc-level-2" href="#11-细胞连接的四大类型">1.1 细胞连接的四大类型</a><a class="toc-level-2" href="#12-两类跨膜粘附蛋白">1.2 两类跨膜粘附蛋白</a><a class="toc-level-2" href="#13-上皮组织-vs-结缔组织（一定要分清）">1.3 上皮组织 vs 结缔组织（一定要分清）</a><a class="toc-level-2" href="#21-整合素是什么为什么重要">2.1 整合素是什么？为什么重要？</a><a class="toc-level-2" href="#22-整合素的精细结构">2.2 整合素的精细结构</a><a class="toc-level-2" href="#23-整合素缺陷与遗传疾病（考点）">2.3 整合素缺陷与遗传疾病（考点）</a><a class="toc-level-2" href="#24-整合素在半桥粒中的特殊地位">2.4 整合素在半桥粒中的特殊地位</a><a class="toc-level-2" href="#25-整合素与细胞迁移（5-步循环）">2.5 整合素与细胞迁移（5 步循环）</a><a class="toc-level-2" href="#26-整合素的&quot;两种构象&quot;">2.6 整合素的&quot;两种构象&quot;</a><a class="toc-level-2" href="#27-整合素激活的两种方向（核心考点）">2.7 整合素激活的两种方向（核心考点）</a><a class="toc-level-3" href="#🟢-outside-in-activation（外向内激活）">🟢 Outside-in activation（外向内激活）</a><a class="toc-level-3" href="#🟠-inside-out-activation（内向外激活）">🟠 Inside-out activation（内向外激活）</a><a class="toc-level-2" href="#28-整合素的&quot;聚集&quot;形成焦点粘附">2.8 整合素的&quot;聚集&quot;形成焦点粘附</a><a class="toc-level-2" href="#29-整合素信号控制细胞生死（必考实验）">2.9 整合素信号控制细胞生死（必考实验）</a><a class="toc-level-2" href="#210-下游主要信号通路">2.10 下游主要信号通路</a><a class="toc-level-3" href="#fak-src-通路（ppt-p21-p23）">FAK / Src 通路（PPT p.21, p.23）</a><a class="toc-level-3" href="#rho-gtpase-通路（ppt-p22）">Rho-GTPase 通路（PPT p.22）</a><a class="toc-level-2" href="#31-基底层是什么">3.1 基底层是什么？</a><a class="toc-level-2" href="#32-基底层出现在哪里">3.2 基底层出现在哪里？</a><a class="toc-level-2" href="#33-基底层的功能（5-大类）">3.3 基底层的功能（5 大类）</a><a class="toc-level-3" href="#经典实验基底层引导组织再生（ppt-p30）">经典实验：基底层引导组织再生（PPT p.30）</a><a class="toc-level-2" href="#34-基底层的组成（4-大主要成分-+-辅助）">3.4 基底层的组成（4 大主要成分 + 辅助）</a><a class="toc-level-3" href="#341-laminin（层粘连蛋白）">3.4.1 Laminin（层粘连蛋白）</a><a class="toc-level-3" href="#342-type-iv-collagen（iv-型胶原）">3.4.2 Type IV Collagen（IV 型胶原）</a><a class="toc-level-3" href="#343-整体结构模型（ppt-p35）">3.4.3 整体结构模型（PPT p.35）</a><a class="toc-level-2" href="#35-临床联系表皮分离症（epidermolysis-bullosa）">3.5 临床联系：表皮分离症（Epidermolysis bullosa）</a><a class="toc-level-2" href="#41-ecm-是什么">4.1 ECM 是什么？</a><a class="toc-level-2" href="#42-ecm-的多重功能（不只是支架）">4.2 ECM 的多重功能（不只是支架）</a><a class="toc-level-2" href="#43-组织力学性质（ppt-p6）">4.3 组织力学性质（PPT p.6）</a><a class="toc-level-2" href="#44-力学概念（一次性搞懂）">4.4 力学概念（一次性搞懂）</a><a class="toc-level-2" href="#45-ecm-谁来制造">4.5 ECM 谁来制造？</a><a class="toc-level-2" href="#46-ecm-的三大类大分子（核心框架必须记牢）">4.6 ECM 的三大类大分子（核心框架，必须记牢）</a><a class="toc-level-2" href="#47-gags（糖胺聚糖）——-ecm-的&quot;海绵&quot;">4.7 GAGs（糖胺聚糖）—— ECM 的&quot;海绵&quot;</a><a class="toc-level-3" href="#结构（ppt-p46）">结构（PPT p.46）</a></aside>
+      </div>
+    </article>
+  </main>
+  <script src="../assets/app.js"></script>
+</body>
+</html>

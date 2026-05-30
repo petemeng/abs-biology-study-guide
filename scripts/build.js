@@ -244,6 +244,26 @@ const figureDefinitions = {
   "13_cell_communication": {
     caption: "细胞信号通路的图不是直线终点，而是由反馈、串扰和细胞背景决定的网络输出。",
     svg: signalingFigure()
+  },
+  "14_cytoskeleton": {
+    caption: "细胞骨架的核心是可调控的动态聚合物：结构、极性、调控蛋白和马达共同产生形态与运动。",
+    svg: flowFigure("细胞骨架从装配到运动", "先分清三类骨架，再追踪动态调控和马达蛋白", ["Actin", "Microtubule", "IF", "动态调控", "马达蛋白", "迁移/运输"], { footer: "actin 负责皮层和收缩，microtubule 负责长距离运输，IF 负责抗机械拉伸" })
+  },
+  "16_apoptosis": {
+    caption: "凋亡是由死亡信号触发、caspase 级联执行、吞噬清除收尾的低炎症细胞死亡程序。",
+    svg: flowFigure("Apoptosis 通路主线", "把刺激来源、线粒体或死亡受体平台、caspase 级联和检测指标串起来", ["死亡刺激", "Bcl-2/受体", "initiator caspase", "effector caspase", "形态变化", "吞噬清除"], { footer: "内源性通路看 mitochondria，外源性通路看 death receptor / DISC" })
+  },
+  "17_cell_junctions_i": {
+    caption: "细胞连接把细胞组织成组织结构：cadherin 负责细胞-细胞黏附，连接类型决定力和信号如何传递。",
+    svg: flowFigure("细胞连接的功能分工", "先按功能分类，再记跨膜蛋白、细胞骨架和接头蛋白", ["Adherens", "Desmosome", "Tight junction", "Gap junction", "Cadherin", "组织力学"], { footer: "anchoring、occluding、channel-forming 是判断 junction 功能的三把钥匙" })
+  },
+  "18_cell_junctions_ii_ecm": {
+    caption: "细胞-基质连接由 integrin 把 ECM、基底层和细胞骨架整合成机械和信号平台。",
+    svg: flowFigure("从 Integrin 到 ECM", "细胞不是贴在背景上，而是持续读取和重塑细胞外基质", ["ECM", "Integrin", "Focal adhesion", "Basal lamina", "Collagen", "细胞命运"], { footer: "integrin 同时传力和传信号，ECM 的硬度与组成会改变细胞行为" })
+  },
+  "19_ecm_and_cancer_biology": {
+    caption: "ECM 重塑、细胞黏附改变、基因组不稳定和信号失控共同推动肿瘤发生与进展。",
+    svg: flowFigure("ECM 与肿瘤生物学", "从基质组成进入癌症特征，再连接癌基因、抑癌基因和治疗逻辑", ["ECM重塑", "黏附改变", "基因组不稳定", "癌基因", "抑癌基因", "治疗"], { footer: "癌症不是单个突变的结果，而是增殖、死亡、黏附、侵袭和免疫逃逸共同失衡" })
   }
 };
 
@@ -462,7 +482,8 @@ function readLectures() {
       const markdown = fs.readFileSync(path.join(notesDir, file), "utf8").replace(/^\uFEFF/, "");
       const titleLine = markdown.split(/\r?\n/).find((line) => line.startsWith("# "));
       const title = titleLine ? titleLine.replace(/^#\s+/, "").trim() : file.replace(/\.md$/, "");
-      const number = String(index + 1).padStart(2, "0");
+      const lectureNumber = file.match(/^(\d+)/)?.[1];
+      const number = lectureNumber ? lectureNumber.padStart(2, "0") : String(index + 1).padStart(2, "0");
       const slug = file.replace(/\.md$/, "");
       const summary = stripMarkdown(markdown).slice(0, 220);
       return { file, slug, number, title, markdown, summary };
@@ -530,16 +551,16 @@ function buildHome(lectures) {
   const body = `<section class="hero">
     <p class="eyebrow">Advanced Biological Sciences</p>
     <h1>一套可以认真复习的生物学课程讲义</h1>
-    <p class="hero-copy">基于 ABS 目录下课件和已有笔记整理，覆盖细胞与基因组、细胞化学、蛋白质、DNA、基因表达、实验方法、膜、跨膜转运、蛋白分选、囊泡运输和细胞通讯。</p>
+    <p class="hero-copy">基于 ABS 目录下课件和已有笔记整理，覆盖细胞与基因组、细胞化学、蛋白质、DNA、基因表达、实验方法、膜系统、细胞通讯、细胞骨架、细胞死亡、细胞连接、ECM 与肿瘤生物学。</p>
     <div class="hero-actions">
       <a class="primary" href="lectures/${lectures[0].slug}.html">从第 1 讲开始</a>
       <a class="secondary" href="lectures/${lectures[lectures.length - 1].slug}.html">查看最后一讲</a>
     </div>
   </section>
   <section class="overview">
-    <div>
-      <h2>复习路径</h2>
-      <p>先抓“信息流”和“膜系统”两条主线：DNA 到蛋白质解释细胞如何制造功能分子，膜与区室解释这些分子如何被组织、运输和调控。最后用细胞通讯把所有调控逻辑串起来。</p>
+     <div>
+       <h2>复习路径</h2>
+      <p>先抓“信息流”和“膜系统”两条主线，再用细胞通讯、细胞骨架、细胞连接和 ECM 把细胞如何组织、运动、死亡与癌变串起来。复习时优先理解机制顺序，再补分子名称。</p>
     </div>
     <div>
       <h2>使用建议</h2>

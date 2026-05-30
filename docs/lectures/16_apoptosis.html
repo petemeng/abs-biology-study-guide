@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lecture 16: Apoptosis（细胞凋亡） 覆盖范围：programmed cell death、apoptosis identification、caspase cascade、intrinsic pathway、extrinsic pathway、DNA damage response、Bcl 2 family、other programmed cell death pathways。 复习目标：能从“死亡刺激 信号通路">
+  <title>Lecture 16: Apoptosis（细胞凋亡） | ABS 复习讲义</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <button class="menu-button" id="menuButton" aria-label="打开目录">目录</button>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark">ABS</span>
+      <span>
+        <strong>生物学复习讲义</strong>
+        <em>Advanced Biological Sciences</em>
+      </span>
+    </a>
+    <label class="search">
+      <span>搜索讲义</span>
+      <input id="searchInput" type="search" placeholder="例如 Ras / 膜电位 / DNA 复制">
+    </label>
+    <div class="search-results" id="searchResults"></div>
+    <nav class="nav"><a class="nav-link " href="01_cells_and_genomes.html">
+      <span>01</span>
+      <strong>Cells and Genomes</strong>
+    </a><a class="nav-link " href="02_cell_chemistry.html">
+      <span>02</span>
+      <strong>Cell Chemistry</strong>
+    </a><a class="nav-link " href="03_protein_structure_and_function.html">
+      <span>03</span>
+      <strong>Protein Structure and Function</strong>
+    </a><a class="nav-link " href="04_dna_chromosomes_and_genome.html">
+      <span>04</span>
+      <strong>DNA, Chromosomes and Genome</strong>
+    </a><a class="nav-link " href="05_dna_replication_repair_and_recombination.html">
+      <span>05</span>
+      <strong>DNA Replication, Repair, and Recombination</strong>
+    </a><a class="nav-link " href="06_from_dna_to_protein.html">
+      <span>06</span>
+      <strong>From DNA to Protein</strong>
+    </a><a class="nav-link " href="07_control_of_gene_expression.html">
+      <span>07</span>
+      <strong>Control of Gene Expression</strong>
+    </a><a class="nav-link " href="08_manipulating_proteins_dna_rna.html">
+      <span>08</span>
+      <strong>Manipulating Proteins, DNA and RNA</strong>
+    </a><a class="nav-link " href="09_membrane_structure_and_functions.html">
+      <span>09</span>
+      <strong>细胞膜结构与功能</strong>
+    </a><a class="nav-link " href="10_cross_membrane_transport.html">
+      <span>10</span>
+      <strong>跨膜转运与膜电学性质</strong>
+    </a><a class="nav-link " href="11_intracellular_compartments_and_protein_sorting.html">
+      <span>11</span>
+      <strong>细胞内区室与蛋白质分选（详细版）</strong>
+    </a><a class="nav-link " href="12_intracellular_vesicular_traffic.html">
+      <span>12</span>
+      <strong>细胞内囊泡运输 (Intracellular Vesicular Traffic)</strong>
+    </a><a class="nav-link " href="13_cell_communication.html">
+      <span>13</span>
+      <strong>细胞通讯</strong>
+    </a><a class="nav-link " href="14_cytoskeleton.html">
+      <span>14</span>
+      <strong>Cytoskeleton（细胞骨架）</strong>
+    </a><a class="nav-link active" href="#">
+      <span>16</span>
+      <strong>Apoptosis（细胞凋亡）</strong>
+    </a><a class="nav-link " href="17_cell_junctions_i.html">
+      <span>17</span>
+      <strong>Cell Junctions, Cell Adhesion and Extracellular Matrix (I)</strong>
+    </a><a class="nav-link " href="18_cell_junctions_ii_ecm.html">
+      <span>18</span>
+      <strong>Cell Junctions, Cell Adhesion and Extracellular Matrix (II)</strong>
+    </a><a class="nav-link " href="19_ecm_and_cancer_biology.html">
+      <span>19</span>
+      <strong>Extracellular Matrix and Cancer Biology</strong>
+    </a></nav>
+  </aside>
+  <main class="page">
+    <article class="article">
+      <div class="article-head">
+        <a class="back-home" href="../index.html">返回首页</a>
+        <p class="lecture-number">Lecture 16</p>
+      </div>
+      <div class="article-layout">
+        <div class="content"><h1 id="lecture-16-apoptosis（细胞凋亡）">Lecture 16: Apoptosis（细胞凋亡）</h1>
+<figure class="visual-figure">
+    <img src="../assets/figures/16_apoptosis.svg" alt="Lecture 16: Apoptosis（细胞凋亡）图解">
+    <figcaption>凋亡是由死亡信号触发、caspase 级联执行、吞噬清除收尾的低炎症细胞死亡程序。</figcaption>
+  </figure>
+<p>&gt; 覆盖范围：programmed cell death、apoptosis identification、caspase cascade、intrinsic pathway、extrinsic pathway、DNA damage response、Bcl-2 family、other programmed cell death pathways。 &gt; 复习目标：能从“死亡刺激 -&gt; 信号通路 -&gt; 执行分子 -&gt; 形态变化 -&gt; 检测方法”完整解释 apoptosis。</p>
+<p>---</p>
+<h2 id="本讲主线">本讲主线</h2>
+<p>多细胞生物不仅需要控制细胞增殖，也必须控制细胞死亡。Apoptosis 是最经典的 programmed cell death，它让细胞以有序、可控、低炎症的方式被清除。</p>
+<p>一句话框架：</p>
+<pre><code>发育或损伤信号
+  -&gt; 细胞判断是否应该死亡
+  -&gt; initiator caspases 被激活
+  -&gt; effector caspases 切割大量底物
+  -&gt; 细胞皱缩、染色质凝缩、DNA 断裂、膜起泡
+  -&gt; apoptotic bodies 被吞噬细胞清除</code></pre>
+<p>Apoptosis 的关键不是“细胞坏掉了”，而是“细胞主动执行了一套死亡程序”。</p>
+<p>---</p>
+<h2 id="考前速记版">考前速记版</h2>
+<div class="table-wrap"><table><thead><tr><th>问题</th><th>核心答案</th></tr></thead><tbody><tr><td>Apoptosis 的形态特征</td><td>cell shrinkage、chromatin condensation、membrane blebbing、DNA fragmentation、apoptotic bodies、phagocytosis</td></tr><tr><td>主要执行分子</td><td>caspases，尤其是 caspase-3/7</td></tr><tr><td>外源性通路</td><td>death receptor -&gt; FADD / DISC -&gt; caspase-8 -&gt; caspase-3</td></tr><tr><td>内源性通路</td><td>mitochondrial stress -&gt; Bax/Bak -&gt; cytochrome c -&gt; Apaf-1 apoptosome -&gt; caspase-9 -&gt; caspase-3</td></tr><tr><td>抗凋亡分子</td><td>Bcl-2、Bcl-xL、IAPs</td></tr><tr><td>促凋亡分子</td><td>BH3-only proteins、Bax、Bak、Smac/DIABLO</td></tr><tr><td>DNA damage 如何连接凋亡</td><td>p53 激活 p21 造成 arrest；损伤严重时激活 Puma/Noxa/Bax 推动 apoptosis</td></tr><tr><td>检测 apoptosis</td><td>Annexin V、TUNEL、DNA ladder、cleaved caspase/PARP、形态观察、flow cytometry</td></tr></tbody></table></div>
+<p>---</p>
+<h2 id="i-programmed-cell-death-概述">I. Programmed cell death 概述</h2>
+<h3 id="11-为什么细胞死亡也要被调控">1.1 为什么细胞死亡也要被调控</h3>
+<p>如果细胞只会增殖不会死亡，多细胞生物无法维持组织大小，也无法完成发育塑形。受控死亡有几类重要作用：</p>
+<ul><li><strong>发育塑形</strong>：例如手指之间的组织被清除，形成分开的手指。</li><li><strong>组织稳态</strong>：肠上皮、血细胞、免疫细胞不断更新，需要旧细胞被清除。</li><li><strong>免疫系统选择</strong>：自身反应性淋巴细胞需要被删除，避免自身免疫。</li><li><strong>清除危险细胞</strong>：DNA 严重损伤、病毒感染或癌变风险高的细胞会被诱导死亡。</li><li><strong>变态发育和组织重塑</strong>：例如蝌蚪尾巴退化、昆虫变态。</li></ul>
+<p>所以 apoptosis 是“生命系统为了整体利益牺牲单个细胞”的机制。</p>
+<h3 id="12-apoptosis-vs-necrosis">1.2 Apoptosis vs Necrosis</h3>
+<div class="table-wrap"><table><thead><tr><th>对比</th><th>Apoptosis</th><th>Necrosis</th></tr></thead><tbody><tr><td>性质</td><td>主动、程序化</td><td>常由外伤、缺血、毒性导致</td></tr><tr><td>能量需求</td><td>需要 ATP 和酶级联</td><td>常伴随能量崩溃</td></tr><tr><td>细胞体积</td><td>皱缩</td><td>肿胀</td></tr><tr><td>细胞膜</td><td>早期完整，后期形成 apoptotic bodies</td><td>破裂</td></tr><tr><td>DNA</td><td>有规律片段化</td><td>随机降解</td></tr><tr><td>炎症</td><td>通常低炎症</td><td>常引发炎症</td></tr><tr><td>清除方式</td><td>被吞噬细胞识别和吞噬</td><td>内容物泄漏</td></tr></tbody></table></div>
+<p>这张表常用于解释为什么 apoptosis 适合发育和组织稳态：它不会把细胞内容物乱撒到组织里。</p>
+<h3 id="13-apoptosis-的形态特征">1.3 Apoptosis 的形态特征</h3>
+<p>典型 apoptosis 会看到：</p>
+<p>1. 细胞变圆、体积缩小。 2. 染色质凝缩并贴近核膜。 3. 细胞膜出现 blebbing，但膜完整性早期仍保留。 4. DNA 被切成片段。 5. 细胞裂解成 apoptotic bodies。 6. 细胞表面暴露 phosphatidylserine，被巨噬细胞或邻近细胞吞噬。</p>
+<p>注意：apoptosis 早期膜没有直接破裂，因此不会像坏死那样强烈诱发炎症。</p>
+<p>---</p>
+<h2 id="ii-如何识别-apoptosis">II. 如何识别 apoptosis</h2>
+<h3 id="21-形态学观察">2.1 形态学观察</h3>
+<p>显微镜下可以观察：</p>
+<ul><li>cell shrinkage。</li><li>chromatin condensation。</li><li>membrane blebbing。</li><li>apoptotic bodies。</li></ul>
+<p>优点是直观；缺点是主观性强，通常需要和分子检测配合。</p>
+<h3 id="22-annexin-v-检测-phosphatidylserine-外翻">2.2 Annexin V 检测 phosphatidylserine 外翻</h3>
+<p>正常细胞中 phosphatidylserine 主要在质膜胞质侧。Apoptosis 早期，phosphatidylserine 会外翻到细胞外侧。</p>
+<p><strong>Annexin V</strong> 能结合外翻的 phosphatidylserine，因此常用于早期 apoptosis 检测。</p>
+<p>常见组合：</p>
+<div class="table-wrap"><table><thead><tr><th>染色结果</th><th>解释</th></tr></thead><tbody><tr><td>Annexin V negative / PI negative</td><td>活细胞</td></tr><tr><td>Annexin V positive / PI negative</td><td>早期 apoptosis</td></tr><tr><td>Annexin V positive / PI positive</td><td>晚期 apoptosis 或继发性坏死</td></tr><tr><td>Annexin V negative / PI positive</td><td>原发性坏死或膜损伤</td></tr></tbody></table></div>
+<p>PI 只能进入膜完整性受损的细胞，因此用来判断膜是否已经破裂。</p>
+<h3 id="23-dna-fragmentation-和-tunel">2.3 DNA fragmentation 和 TUNEL</h3>
+<p>Apoptosis 中 caspase 会激活核酸酶，使 DNA 在核小体之间断裂，形成约 180 bp 倍数的片段。</p>
+<p>检测方法：</p>
+<ul><li><strong>DNA ladder</strong>：电泳看到梯状条带。</li><li><strong>TUNEL assay</strong>：标记 DNA 断裂产生的 3'-OH 末端。</li></ul>
+<p>注意：TUNEL 阳性说明 DNA 有断裂，但不一定只来自 apoptosis，解释时要结合形态和 caspase 活化。</p>
+<h3 id="24-caspase-activation-和底物切割">2.4 Caspase activation 和底物切割</h3>
+<p>Apoptosis 的分子标志包括：</p>
+<ul><li>cleaved caspase-3。</li><li>cleaved caspase-8 或 caspase-9。</li><li>cleaved PARP。</li><li>cytochrome c 从 mitochondria 释放到 cytosol。</li></ul>
+<p>这些指标更接近通路本身，因此常用于 western blot、免疫荧光或流式检测。</p>
+<h3 id="25-检测题答法">2.5 检测题答法</h3>
+<p>如果题目问“如何证明细胞发生 apoptosis”，不要只写一个实验。更稳的答案是：</p>
+<pre><code>形态学观察
++ Annexin V/PI 判断早晚期
++ cleaved caspase-3 或 cleaved PARP 证明执行级联
++ TUNEL 或 DNA ladder 检测 DNA fragmentation</code></pre>
+<p>这样能同时覆盖形态、膜变化、酶活化和 DNA 变化。</p>
+<p>---</p>
+<h2 id="iii-caspasesapoptosis-的执行机器">III. Caspases：apoptosis 的执行机器</h2>
+<h3 id="31-caspase-是什么">3.1 Caspase 是什么</h3>
+<p>Caspase 全称是 cysteine-aspartic protease：</p>
+<ul><li>活性位点含 cysteine。</li><li>在底物 aspartic acid 后切割。</li><li>通常以前体 procaspase 形式存在。</li><li>通过切割激活，形成级联放大。</li></ul>
+<p>Caspase 分两类：</p>
+<div class="table-wrap"><table><thead><tr><th>类型</th><th>例子</th><th>功能</th></tr></thead><tbody><tr><td>Initiator caspases</td><td>caspase-8、caspase-9</td><td>接收死亡信号，启动级联</td></tr><tr><td>Effector caspases</td><td>caspase-3、caspase-6、caspase-7</td><td>切割结构和调控蛋白，执行细胞拆解</td></tr></tbody></table></div>
+<h3 id="32-为什么-caspase-级联适合做死亡开关">3.2 为什么 caspase 级联适合做死亡开关</h3>
+<p>Apoptosis 必须具有两个特性：</p>
+<p>1. <strong>平时不能误触发</strong>：否则正常细胞会被杀死。 2. <strong>一旦触发要快速、不可逆</strong>：否则危险细胞可能逃脱。</p>
+<p>Caspase 级联正好满足这两点。initiator caspase 需要在特定平台上聚集才激活，而 effector caspase 一旦被激活，会切割大量底物，迅速产生形态改变。</p>
+<h3 id="33-effector-caspase-的主要底物">3.3 Effector caspase 的主要底物</h3>
+<p>Caspase-3/7 会切割多类蛋白：</p>
+<ul><li><strong>nuclear lamins</strong>：导致核膜结构解体。</li><li><strong>ICAD</strong>：释放 CAD nuclease，导致 DNA fragmentation。</li><li><strong>cytoskeletal proteins</strong>：导致细胞形态改变和 membrane blebbing。</li><li><strong>PARP</strong>：阻断 DNA 修复和能量消耗。</li></ul>
+<p>这解释了为什么 caspase 活化能同时造成核变化、DNA 断裂、细胞形态变化。</p>
+<p>---</p>
+<h2 id="iv-内源性-apoptosis-pathway线粒体通路">IV. 内源性 apoptosis pathway：线粒体通路</h2>
+<h3 id="41-什么时候走内源性通路">4.1 什么时候走内源性通路</h3>
+<p>内源性通路通常由细胞内部压力触发：</p>
+<ul><li>DNA damage。</li><li>生长因子缺失。</li><li>ER stress。</li><li>oxidative stress。</li><li>oncogene activation。</li><li>细胞周期检查点无法修复的损伤。</li></ul>
+<p>核心判断是：这个细胞是否还值得保留。如果损伤太严重，线粒体通路会把细胞推向死亡。</p>
+<h3 id="42-bcl-2-family-的三类成员">4.2 Bcl-2 family 的三类成员</h3>
+<p>Bcl-2 family 控制 mitochondrial outer membrane permeabilization，简称 MOMP。</p>
+<div class="table-wrap"><table><thead><tr><th>类型</th><th>例子</th><th>作用</th></tr></thead><tbody><tr><td>Anti-apoptotic</td><td>Bcl-2、Bcl-xL、Mcl-1</td><td>抑制 Bax/Bak，保护线粒体</td></tr><tr><td>Pro-apoptotic effector</td><td>Bax、Bak</td><td>在外膜聚集成孔，导致 MOMP</td></tr><tr><td>BH3-only proteins</td><td>Bid、Bim、Puma、Noxa、Bad</td><td>感受压力，解除抑制或直接激活 Bax/Bak</td></tr></tbody></table></div>
+<p>记忆方式：</p>
+<pre><code>Bcl-2 / Bcl-xL = 刹车
+Bax / Bak = 打孔机器
+BH3-only = 压力传感器和刹车解除器</code></pre>
+<h3 id="43-momp-和-cytochrome-c-释放">4.3 MOMP 和 cytochrome c 释放</h3>
+<p>当 Bax/Bak 被激活后，会在线粒体外膜形成孔，造成 MOMP。随后：</p>
+<p>1. cytochrome c 从线粒体膜间隙释放到 cytosol。 2. cytochrome c 结合 Apaf-1。 3. Apaf-1 在 dATP/ATP 参与下组装成 apoptosome。 4. apoptosome 招募并激活 procaspase-9。 5. caspase-9 激活 caspase-3/7。 6. 细胞进入执行阶段。</p>
+<h3 id="44-iap-和-smacdiablo">4.4 IAP 和 Smac/DIABLO</h3>
+<p>细胞还有一层刹车系统：</p>
+<ul><li><strong>IAPs</strong> 可以抑制 caspases。</li><li>线粒体释放的 <strong>Smac/DIABLO</strong> 可以抑制 IAPs，从而解除对 caspase 的抑制。</li></ul>
+<p>因此线粒体不仅释放 cytochrome c 启动 apoptosome，也释放 Smac/DIABLO 来移除 caspase 刹车。</p>
+<p>---</p>
+<h2 id="v-外源性-apoptosis-pathway死亡受体通路">V. 外源性 apoptosis pathway：死亡受体通路</h2>
+<h3 id="51-death-receptors">5.1 Death receptors</h3>
+<p>外源性通路由细胞外死亡信号触发，典型受体属于 TNF receptor family。</p>
+<p>常见组合：</p>
+<div class="table-wrap"><table><thead><tr><th>Ligand</th><th>Receptor</th></tr></thead><tbody><tr><td>Fas ligand</td><td>Fas / CD95</td></tr><tr><td>TNF-alpha</td><td>TNF receptor</td></tr><tr><td>TRAIL</td><td>TRAIL receptor</td></tr></tbody></table></div>
+<p>这些受体胞内有 death domain，能招募 adaptor proteins 形成信号平台。</p>
+<h3 id="52-disc-和-caspase-8">5.2 DISC 和 caspase-8</h3>
+<p>典型 Fas 通路：</p>
+<pre><code>FasL 结合 Fas
+  -&gt; receptor trimerization
+  -&gt; FADD 招募
+  -&gt; procaspase-8 聚集
+  -&gt; DISC 形成
+  -&gt; caspase-8 激活
+  -&gt; caspase-3/7 激活
+  -&gt; apoptosis</code></pre>
+<p>DISC 是 death-inducing signaling complex。initiator procaspase-8 在 DISC 上靠近彼此，通过 proximity-induced activation 被激活。</p>
+<h3 id="53-外源性和内源性的连接bid">5.3 外源性和内源性的连接：Bid</h3>
+<p>Caspase-8 不只可以直接激活 caspase-3，还能切割 Bid 形成 tBid。tBid 会进入线粒体，促进 Bax/Bak 活化，引发 MOMP。</p>
+<p>这说明两条通路不是完全独立的：</p>
+<pre><code>death receptor
+ -&gt; caspase-8
+ -&gt; tBid
+ -&gt; Bax/Bak
+ -&gt; mitochondrial pathway</code></pre>
+<p>---</p>
+<h2 id="vi-dna-damage-response-与-apoptosis">VI. DNA damage response 与 apoptosis</h2>
+<h3 id="61-损伤后细胞有两个选择">6.1 损伤后细胞有两个选择</h3>
+<p>DNA damage 后，细胞不会立刻死亡，而是先判断损伤程度。</p>
+<p>轻中度损伤：</p>
+<pre><code>ATM/ATR activation
+ -&gt; Chk1/Chk2
+ -&gt; p53 stabilization
+ -&gt; p21 expression
+ -&gt; cell cycle arrest
+ -&gt; DNA repair</code></pre>
+<p>严重或不可修复损伤：</p>
+<pre><code>p53
+ -&gt; Puma / Noxa / Bax 等促凋亡基因
+ -&gt; Bax/Bak activation
+ -&gt; MOMP
+ -&gt; apoptosis</code></pre>
+<p>因此 p53 的核心功能不是“直接杀细胞”，而是作为 damage response 的决策节点：能修就停下来修，不能修就让细胞死亡。</p>
+<h3 id="62-为什么-apoptosis-能抑制癌症">6.2 为什么 apoptosis 能抑制癌症</h3>
+<p>癌变细胞常有 DNA damage、oncogene activation 或染色体异常。正常情况下，这些压力会激活 p53 和 apoptosis，把危险细胞清除。</p>
+<p>肿瘤细胞常通过以下方式逃避：</p>
+<ul><li>p53 失活。</li><li>Bcl-2 或 Bcl-xL 过表达。</li><li>Bax/Bak 功能降低。</li><li>death receptor pathway 被抑制。</li><li>IAPs 上调。</li></ul>
+<p>所以“抗凋亡”是癌症获得生存优势的重要方式。</p>
+<p>---</p>
+<h2 id="vii-其他-programmed-cell-death-pathways">VII. 其他 programmed cell death pathways</h2>
+<p>Apoptosis 不是唯一的程序性细胞死亡。不同死亡方式有不同形态、分子标志和生理意义。</p>
+<h3 id="71-necroptosis">7.1 Necroptosis</h3>
+<p>Necroptosis 是程序化坏死，常在 caspase-8 被抑制时发生。</p>
+<p>核心分子：</p>
+<ul><li>RIPK1。</li><li>RIPK3。</li><li>MLKL。</li></ul>
+<p>基本过程：</p>
+<pre><code>TNF 等信号
+ -&gt; RIPK1/RIPK3 复合体
+ -&gt; MLKL 磷酸化和寡聚化
+ -&gt; 破坏质膜完整性
+ -&gt; 细胞肿胀破裂
+ -&gt; 炎症反应</code></pre>
+<p>形态上更像 necrosis，但它是受调控的。</p>
+<h3 id="72-pyroptosis">7.2 Pyroptosis</h3>
+<p>Pyroptosis 是炎症性程序死亡，常见于感染和 innate immunity。</p>
+<p>核心分子：</p>
+<ul><li>inflammasome。</li><li>caspase-1 或 caspase-4/5/11。</li><li>gasdermin D。</li><li>IL-1beta、IL-18。</li></ul>
+<p>机制：</p>
+<pre><code>病原或危险信号
+ -&gt; inflammasome 激活
+ -&gt; caspase-1 激活
+ -&gt; gasdermin D 被切割
+ -&gt; N端片段在膜上成孔
+ -&gt; 细胞裂解并释放炎症因子</code></pre>
+<h3 id="73-ferroptosis">7.3 Ferroptosis</h3>
+<p>Ferroptosis 是铁依赖的脂质过氧化相关死亡。</p>
+<p>核心关键词：</p>
+<ul><li>Fe2+。</li><li>lipid ROS。</li><li>GPX4。</li><li>glutathione。</li><li>system Xc-。</li></ul>
+<p>当 GPX4 功能不足或谷胱甘肽耗竭时，脂质过氧化无法被清除，膜脂损伤积累，细胞死亡。</p>
+<h3 id="74-autophagy-dependent-cell-death">7.4 Autophagy-dependent cell death</h3>
+<p>Autophagy 本来是细胞在营养压力下回收物质、维持生存的机制。但在某些情境下，过度或特定形式的 autophagy 会参与细胞死亡。</p>
+<p>复习时要小心：看到 autophagy 增加，不等于一定是 autophagy 导致死亡；它也可能是细胞自救反应。</p>
+<p>---</p>
+<h2 id="常考比较">常考比较</h2>
+<h3 id="intrinsic-vs-extrinsic-apoptosis">Intrinsic vs Extrinsic apoptosis</h3>
+<div class="table-wrap"><table><thead><tr><th>对比</th><th>Intrinsic pathway</th><th>Extrinsic pathway</th></tr></thead><tbody><tr><td>触发</td><td>DNA damage、生长因子缺失、ER stress、氧化压力</td><td>FasL、TNF、TRAIL 等外部死亡信号</td></tr><tr><td>关键平台</td><td>mitochondria / apoptosome</td><td>death receptor / DISC</td></tr><tr><td>initiator caspase</td><td>caspase-9</td><td>caspase-8</td></tr><tr><td>核心调控</td><td>Bcl-2 family</td><td>receptor-adaptor complex</td></tr><tr><td>交叉点</td><td>Bax/Bak、cytochrome c</td><td>caspase-8 可切 Bid 进入线粒体通路</td></tr></tbody></table></div>
+<h3 id="apoptosis-vs-necroptosis-vs-pyroptosis">Apoptosis vs Necroptosis vs Pyroptosis</h3>
+<div class="table-wrap"><table><thead><tr><th>类型</th><th>膜完整性</th><th>炎症</th><th>关键分子</th></tr></thead><tbody><tr><td>Apoptosis</td><td>早期完整</td><td>低</td><td>caspase-3/7、Bcl-2 family</td></tr><tr><td>Necroptosis</td><td>破裂</td><td>高</td><td>RIPK1/RIPK3/MLKL</td></tr><tr><td>Pyroptosis</td><td>成孔破裂</td><td>高</td><td>inflammasome、caspase-1、gasdermin</td></tr></tbody></table></div>
+<h3 id="bcl-2-family-答题套路">Bcl-2 family 答题套路</h3>
+<pre><code>压力信号激活 BH3-only proteins
+ -&gt; 抑制 Bcl-2/Bcl-xL 或直接激活 Bax/Bak
+ -&gt; Bax/Bak 在 mitochondrial outer membrane 聚集
+ -&gt; cytochrome c 释放
+ -&gt; apoptosome
+ -&gt; caspase-9
+ -&gt; caspase-3/7
+ -&gt; apoptosis</code></pre>
+<p>---</p>
+<h2 id="疾病联系">疾病联系</h2>
+<h3 id="apoptosis-不足">Apoptosis 不足</h3>
+<p>如果 apoptosis 不足，危险或不该存在的细胞会存活。</p>
+<p>典型后果：</p>
+<ul><li>癌症。</li><li>自身免疫。</li><li>病毒感染细胞逃避免疫清除。</li></ul>
+<p>癌症中常见策略包括 p53 失活、Bcl-2 上调、IAP 上调、death receptor signaling 降低。</p>
+<h3 id="apoptosis-过度">Apoptosis 过度</h3>
+<p>如果 apoptosis 过度，正常细胞被过多清除。</p>
+<p>可能相关：</p>
+<ul><li>神经退行性疾病。</li><li>缺血再灌注损伤。</li><li>免疫细胞耗竭。</li><li>某些组织萎缩。</li></ul>
+<p>---</p>
+<h2 id="自测题">自测题</h2>
+<p>1. 为什么 apoptosis 通常不会引起强烈炎症？ 2. Annexin V positive / PI negative 代表什么阶段？为什么？ 3. 解释 cytochrome c、Apaf-1、caspase-9 和 caspase-3 在内源性通路中的顺序。 4. Fas receptor 激活后如何形成 DISC？ 5. p53 如何在 cell cycle arrest 和 apoptosis 之间起决策作用？ 6. Bcl-2 过表达为什么能帮助肿瘤细胞存活？ 7. Necroptosis 和 pyroptosis 都会引发炎症，它们的核心执行分子分别是什么？</p>
+<p>---</p>
+<h2 id="一页总结">一页总结</h2>
+<p>Apoptosis 的本质是一套由 caspases 执行、由线粒体和死亡受体调控的细胞自杀程序。复习时始终按这条链条组织答案：<strong>刺激来源 -&gt; initiator platform -&gt; initiator caspase -&gt; effector caspase -&gt; 形态和生化变化 -&gt; 检测方法 -&gt; 生理或疾病意义</strong>。</p><div class="pager">
+      <a href="14_cytoskeleton.html">上一讲：Lecture 14: Cytoskeleton（细胞骨架）</a>
+      <a href="17_cell_junctions_i.html">下一讲：Lecture 17: Cell Junctions, Cell Adhesion and Extracellular Matrix (I)</a>
+    </div></div>
+        <aside class="toc"><strong>本讲目录</strong><a class="toc-level-2" href="#本讲主线">本讲主线</a><a class="toc-level-2" href="#考前速记版">考前速记版</a><a class="toc-level-2" href="#i-programmed-cell-death-概述">I. Programmed cell death 概述</a><a class="toc-level-3" href="#11-为什么细胞死亡也要被调控">1.1 为什么细胞死亡也要被调控</a><a class="toc-level-3" href="#12-apoptosis-vs-necrosis">1.2 Apoptosis vs Necrosis</a><a class="toc-level-3" href="#13-apoptosis-的形态特征">1.3 Apoptosis 的形态特征</a><a class="toc-level-2" href="#ii-如何识别-apoptosis">II. 如何识别 apoptosis</a><a class="toc-level-3" href="#21-形态学观察">2.1 形态学观察</a><a class="toc-level-3" href="#22-annexin-v-检测-phosphatidylserine-外翻">2.2 Annexin V 检测 phosphatidylserine 外翻</a><a class="toc-level-3" href="#23-dna-fragmentation-和-tunel">2.3 DNA fragmentation 和 TUNEL</a><a class="toc-level-3" href="#24-caspase-activation-和底物切割">2.4 Caspase activation 和底物切割</a><a class="toc-level-3" href="#25-检测题答法">2.5 检测题答法</a><a class="toc-level-2" href="#iii-caspasesapoptosis-的执行机器">III. Caspases：apoptosis 的执行机器</a><a class="toc-level-3" href="#31-caspase-是什么">3.1 Caspase 是什么</a><a class="toc-level-3" href="#32-为什么-caspase-级联适合做死亡开关">3.2 为什么 caspase 级联适合做死亡开关</a><a class="toc-level-3" href="#33-effector-caspase-的主要底物">3.3 Effector caspase 的主要底物</a><a class="toc-level-2" href="#iv-内源性-apoptosis-pathway线粒体通路">IV. 内源性 apoptosis pathway：线粒体通路</a><a class="toc-level-3" href="#41-什么时候走内源性通路">4.1 什么时候走内源性通路</a><a class="toc-level-3" href="#42-bcl-2-family-的三类成员">4.2 Bcl-2 family 的三类成员</a><a class="toc-level-3" href="#43-momp-和-cytochrome-c-释放">4.3 MOMP 和 cytochrome c 释放</a><a class="toc-level-3" href="#44-iap-和-smacdiablo">4.4 IAP 和 Smac/DIABLO</a><a class="toc-level-2" href="#v-外源性-apoptosis-pathway死亡受体通路">V. 外源性 apoptosis pathway：死亡受体通路</a><a class="toc-level-3" href="#51-death-receptors">5.1 Death receptors</a><a class="toc-level-3" href="#52-disc-和-caspase-8">5.2 DISC 和 caspase-8</a><a class="toc-level-3" href="#53-外源性和内源性的连接bid">5.3 外源性和内源性的连接：Bid</a><a class="toc-level-2" href="#vi-dna-damage-response-与-apoptosis">VI. DNA damage response 与 apoptosis</a><a class="toc-level-3" href="#61-损伤后细胞有两个选择">6.1 损伤后细胞有两个选择</a><a class="toc-level-3" href="#62-为什么-apoptosis-能抑制癌症">6.2 为什么 apoptosis 能抑制癌症</a><a class="toc-level-2" href="#vii-其他-programmed-cell-death-pathways">VII. 其他 programmed cell death pathways</a><a class="toc-level-3" href="#71-necroptosis">7.1 Necroptosis</a><a class="toc-level-3" href="#72-pyroptosis">7.2 Pyroptosis</a><a class="toc-level-3" href="#73-ferroptosis">7.3 Ferroptosis</a><a class="toc-level-3" href="#74-autophagy-dependent-cell-death">7.4 Autophagy-dependent cell death</a><a class="toc-level-2" href="#常考比较">常考比较</a><a class="toc-level-3" href="#intrinsic-vs-extrinsic-apoptosis">Intrinsic vs Extrinsic apoptosis</a><a class="toc-level-3" href="#apoptosis-vs-necroptosis-vs-pyroptosis">Apoptosis vs Necroptosis vs Pyroptosis</a></aside>
+      </div>
+    </article>
+  </main>
+  <script src="../assets/app.js"></script>
+</body>
+</html>

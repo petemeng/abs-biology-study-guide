@@ -1,6 +1,6 @@
 # ABS 生物学课程复习讲义
 
-这是基于本地 ABS 课程课件和已有学习笔记整理的中文复习讲义网站，覆盖 Advanced Biological Sciences 课程第 1-13 讲。
+这是基于本地 ABS 课程课件和已有学习笔记整理的中文复习讲义网站，覆盖 Advanced Biological Sciences 课程目前已整理的 18 份主课件：第 1-14 讲、第 16-19 讲。第 15 讲本地目录中暂未找到独立课件。
 
 ## 在线阅读
 
@@ -21,9 +21,9 @@ npm run serve
 
 网站支持按讲次阅读、侧边目录跳转、关键词搜索，并在每讲开头加入了机制图/概念图，方便复习时先抓主线。
 
-每讲页面还加入了 Wikimedia Commons 辅助理解图，图注中标明了来源和许可，适合配合文字讲义建立直观图像记忆。
+部分页面还加入了 Wikimedia Commons 辅助理解图，图注中标明了来源和许可，适合配合文字讲义建立直观图像记忆。
 
-另外，每讲补充了若干课程课件截图，帮助你把讲义文字和原始课堂图示对应起来。
+另外，部分页面补充了若干课程课件截图，帮助你把讲义文字和原始课堂图示对应起来。
 
 ## 内容范围
 
@@ -40,6 +40,13 @@ npm run serve
 - 第 11 讲：Intracellular Compartments and Protein Sorting
 - 第 12 讲：Intracellular Vesicular Traffic
 - 第 13 讲：Cell Communication
+- 第 14 讲：Cytoskeleton
+- 第 16 讲：Apoptosis
+- 第 17 讲：Cell junctions, cell adhesion and the extracellular matrix (I)
+- 第 18 讲：Cell junctions, cell adhesion and the extracellular matrix (II)
+- 第 19 讲：Extracellular Matrix and Cancer Biology
+
+说明：第 15 讲按照课程目录应为 Cell cycle，但本地目录中没有独立 PDF，因此暂未整理成独立页面。
 
 ## 项目结构
 

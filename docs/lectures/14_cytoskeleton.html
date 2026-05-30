@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lecture 14: Cytoskeleton（细胞骨架） 覆盖范围：cytoskeleton overview、actin filaments、microtubules、intermediate filaments、cytoskeletal dynamics、accessory proteins、motor proteins、cell migration。 复习目标：能把三类细胞骨架的结构、极性、动态行为、调控蛋白和运动功能对应起来">
+  <title>Lecture 14: Cytoskeleton（细胞骨架） | ABS 复习讲义</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <button class="menu-button" id="menuButton" aria-label="打开目录">目录</button>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark">ABS</span>
+      <span>
+        <strong>生物学复习讲义</strong>
+        <em>Advanced Biological Sciences</em>
+      </span>
+    </a>
+    <label class="search">
+      <span>搜索讲义</span>
+      <input id="searchInput" type="search" placeholder="例如 Ras / 膜电位 / DNA 复制">
+    </label>
+    <div class="search-results" id="searchResults"></div>
+    <nav class="nav"><a class="nav-link " href="01_cells_and_genomes.html">
+      <span>01</span>
+      <strong>Cells and Genomes</strong>
+    </a><a class="nav-link " href="02_cell_chemistry.html">
+      <span>02</span>
+      <strong>Cell Chemistry</strong>
+    </a><a class="nav-link " href="03_protein_structure_and_function.html">
+      <span>03</span>
+      <strong>Protein Structure and Function</strong>
+    </a><a class="nav-link " href="04_dna_chromosomes_and_genome.html">
+      <span>04</span>
+      <strong>DNA, Chromosomes and Genome</strong>
+    </a><a class="nav-link " href="05_dna_replication_repair_and_recombination.html">
+      <span>05</span>
+      <strong>DNA Replication, Repair, and Recombination</strong>
+    </a><a class="nav-link " href="06_from_dna_to_protein.html">
+      <span>06</span>
+      <strong>From DNA to Protein</strong>
+    </a><a class="nav-link " href="07_control_of_gene_expression.html">
+      <span>07</span>
+      <strong>Control of Gene Expression</strong>
+    </a><a class="nav-link " href="08_manipulating_proteins_dna_rna.html">
+      <span>08</span>
+      <strong>Manipulating Proteins, DNA and RNA</strong>
+    </a><a class="nav-link " href="09_membrane_structure_and_functions.html">
+      <span>09</span>
+      <strong>细胞膜结构与功能</strong>
+    </a><a class="nav-link " href="10_cross_membrane_transport.html">
+      <span>10</span>
+      <strong>跨膜转运与膜电学性质</strong>
+    </a><a class="nav-link " href="11_intracellular_compartments_and_protein_sorting.html">
+      <span>11</span>
+      <strong>细胞内区室与蛋白质分选（详细版）</strong>
+    </a><a class="nav-link " href="12_intracellular_vesicular_traffic.html">
+      <span>12</span>
+      <strong>细胞内囊泡运输 (Intracellular Vesicular Traffic)</strong>
+    </a><a class="nav-link " href="13_cell_communication.html">
+      <span>13</span>
+      <strong>细胞通讯</strong>
+    </a><a class="nav-link active" href="#">
+      <span>14</span>
+      <strong>Cytoskeleton（细胞骨架）</strong>
+    </a><a class="nav-link " href="16_apoptosis.html">
+      <span>16</span>
+      <strong>Apoptosis（细胞凋亡）</strong>
+    </a><a class="nav-link " href="17_cell_junctions_i.html">
+      <span>17</span>
+      <strong>Cell Junctions, Cell Adhesion and Extracellular Matrix (I)</strong>
+    </a><a class="nav-link " href="18_cell_junctions_ii_ecm.html">
+      <span>18</span>
+      <strong>Cell Junctions, Cell Adhesion and Extracellular Matrix (II)</strong>
+    </a><a class="nav-link " href="19_ecm_and_cancer_biology.html">
+      <span>19</span>
+      <strong>Extracellular Matrix and Cancer Biology</strong>
+    </a></nav>
+  </aside>
+  <main class="page">
+    <article class="article">
+      <div class="article-head">
+        <a class="back-home" href="../index.html">返回首页</a>
+        <p class="lecture-number">Lecture 14</p>
+      </div>
+      <div class="article-layout">
+        <div class="content"><h1 id="lecture-14-cytoskeleton（细胞骨架）">Lecture 14: Cytoskeleton（细胞骨架）</h1>
+<figure class="visual-figure">
+    <img src="../assets/figures/14_cytoskeleton.svg" alt="Lecture 14: Cytoskeleton（细胞骨架）图解">
+    <figcaption>细胞骨架的核心是可调控的动态聚合物：结构、极性、调控蛋白和马达共同产生形态与运动。</figcaption>
+  </figure>
+<p>&gt; 覆盖范围：cytoskeleton overview、actin filaments、microtubules、intermediate filaments、cytoskeletal dynamics、accessory proteins、motor proteins、cell migration。 &gt; 复习目标：能把三类细胞骨架的结构、极性、动态行为、调控蛋白和运动功能对应起来。</p>
+<p>---</p>
+<h2 id="本讲主线">本讲主线</h2>
+<p>细胞骨架不是静态支架，而是一套可以快速重排的分子机器。它同时解决四类问题：</p>
+<p>1. <strong>形态</strong>：细胞为什么能保持形状，为什么上皮细胞、神经元、肌肉细胞形态不同。 2. <strong>组织</strong>：细胞器、膜区室和大分子复合物如何在细胞内定位。 3. <strong>运动</strong>：囊泡运输、纤毛摆动、肌肉收缩、细胞迁移如何发生。 4. <strong>力学与信号</strong>：外界机械刺激如何通过骨架和黏附结构影响细胞行为。</p>
+<p>一句话框架：</p>
+<pre><code>单体聚合成丝状结构
+    -&gt; 丝状结构具有极性和动态性
+    -&gt; accessory proteins 调控装配、解聚、交联和定位
+    -&gt; motor proteins 把化学能转成机械运动
+    -&gt; 细胞形态、运输、收缩、迁移由此产生</code></pre>
+<p>---</p>
+<h2 id="考前速记版">考前速记版</h2>
+<div class="table-wrap"><table><thead><tr><th>系统</th><th>单体</th><th>直径</th><th>极性</th><th>能量核苷酸</th><th>主要功能</th></tr></thead><tbody><tr><td>Actin filament / microfilament</td><td>G-actin</td><td>约 7 nm</td><td>有 + / - 端</td><td>ATP</td><td>细胞皮层、肌肉收缩、细胞迁移、胞质分裂</td></tr><tr><td>Microtubule</td><td>alpha/beta-tubulin heterodimer</td><td>约 25 nm</td><td>有 + / - 端</td><td>GTP</td><td>细胞器运输、纺锤体、纤毛鞭毛、细胞极性</td></tr><tr><td>Intermediate filament</td><td>多种 IF 蛋白</td><td>约 10 nm</td><td>无明显极性</td><td>不依赖 ATP/GTP</td><td>抗机械拉伸、核纤层、组织特异性支撑</td></tr></tbody></table></div>
+<p>最容易混的点：</p>
+<ul><li><strong>Actin 和 microtubule 都有极性</strong>，所以能和方向性 motor proteins 配合。</li><li><strong>Intermediate filament 没有明确极性</strong>，主要做机械强度，不承担典型轨道运输。</li><li><strong>Actin 是 ATP-actin 聚合，microtubule 是 GTP-tubulin 聚合</strong>。</li><li><strong>Microtubule 的 dynamic instability 来自 GTP cap 的有无</strong>。</li><li><strong>Actin treadmilling 来自两端 critical concentration 不同</strong>。</li><li><strong>Myosin 多数沿 actin 向 + 端运动</strong>；dynein 通常沿 microtubule 向 - 端运动；kinesin 多数向 + 端运动。</li></ul>
+<p>---</p>
+<h2 id="i-细胞骨架概述">I. 细胞骨架概述</h2>
+<h3 id="11-为什么细胞需要骨架">1.1 为什么细胞需要骨架</h3>
+<p>细胞内部是拥挤、柔软、动态的环境。如果只有膜和细胞质，细胞会难以维持形态，也无法把内部运输和空间分区组织起来。细胞骨架提供了三种能力：</p>
+<ul><li><strong>支撑力</strong>：抵抗外界拉伸和挤压。</li><li><strong>轨道</strong>：让 motor proteins 携带囊泡、细胞器和蛋白复合物移动。</li><li><strong>可重塑结构</strong>：在迁移、分裂、吞噬和形态变化时快速装配和解聚。</li></ul>
+<p>细胞骨架的共同逻辑是：许多小亚基通过非共价相互作用聚合成线性聚合物，因此既能稳定存在，又能在需要时迅速重排。</p>
+<h3 id="12-三类骨架的功能分工">1.2 三类骨架的功能分工</h3>
+<div class="table-wrap"><table><thead><tr><th>需求</th><th>主要骨架</th><th>典型例子</th></tr></thead><tbody><tr><td>细胞表面变形</td><td>Actin</td><td>lamellipodia、filopodia、胞吞、胞质分裂环</td></tr><tr><td>长距离运输</td><td>Microtubule</td><td>ER/Golgi 定位、轴突运输、纺锤体</td></tr><tr><td>抗拉伸强度</td><td>Intermediate filament</td><td>皮肤角蛋白、核纤层、神经丝</td></tr><tr><td>细胞整体迁移</td><td>Actin + microtubule + adhesion</td><td>前缘突出、黏附形成、后缘收缩</td></tr></tbody></table></div>
+<p>---</p>
+<h2 id="ii-三类细胞骨架的结构">II. 三类细胞骨架的结构</h2>
+<h3 id="21-actin-filament细胞皮层和运动的核心">2.1 Actin filament：细胞皮层和运动的核心</h3>
+<p>Actin 单体称为 <strong>G-actin</strong>，聚合后形成 <strong>F-actin</strong>。每个 actin 单体都能结合 ATP 或 ADP，聚合时通常以 ATP-actin 加到纤维末端。</p>
+<p>Actin filament 的特点：</p>
+<ul><li>由两条螺旋状 protofilament 缠绕形成。</li><li>具有结构极性：<strong>barbed end = + end</strong>，<strong>pointed end = - end</strong>。</li><li>+ 端通常增长更快。</li><li>常集中在细胞皮层、微绒毛、应力纤维、迁移前缘和收缩环中。</li></ul>
+<p>Actin 的功能要从“推、拉、撑、割”四个词理解：</p>
+<ul><li><strong>推</strong>：前缘 actin 聚合推动膜向前形成 lamellipodia。</li><li><strong>拉</strong>：myosin II 牵拉 actin 产生收缩。</li><li><strong>撑</strong>：微绒毛内部 actin bundle 支撑突起。</li><li><strong>割</strong>：胞质分裂时 actin-myosin contractile ring 收缩，把两个子细胞分开。</li></ul>
+<h3 id="22-microtubule细胞内长距离运输轨道">2.2 Microtubule：细胞内长距离运输轨道</h3>
+<p>Microtubule 的基本单元是 <strong>alpha/beta-tubulin heterodimer</strong>。这些二聚体首尾相接形成 protofilament，通常 13 条 protofilament 围成中空管状结构。</p>
+<p>Microtubule 的特点：</p>
+<ul><li>直径约 25 nm，是三类骨架中最粗的一类。</li><li>具有结构极性：alpha-tubulin 暴露的一端通常是 - 端，beta-tubulin 暴露的一端是 + 端。</li><li>+ 端动态性强，- 端常锚定在 centrosome 或 microtubule-organizing center。</li><li>beta-tubulin 上的 GTP 水解决定 microtubule 是否稳定。</li></ul>
+<p>Microtubule 的功能：</p>
+<ul><li>为 kinesin 和 dynein 提供运输轨道。</li><li>维持 ER、Golgi 等细胞器的空间分布。</li><li>形成有丝分裂纺锤体，牵引染色体分离。</li><li>构成纤毛和鞭毛的 axoneme，驱动流体运动或细胞运动。</li></ul>
+<h3 id="23-intermediate-filament抗机械应力的绳索">2.3 Intermediate filament：抗机械应力的绳索</h3>
+<p>Intermediate filament 的结构与 actin、microtubule 不同。它的亚基先形成 coiled-coil dimer，再形成 antiparallel tetramer，进一步横向和纵向组装成绳索状纤维。</p>
+<p>关键特点：</p>
+<ul><li>没有明确 + / - 端。</li><li>不依赖 ATP 或 GTP 水解进行装配。</li><li>更稳定，主要提供机械强度。</li><li>具有组织特异性，因此也常用于病理诊断。</li></ul>
+<p>常见 intermediate filament：</p>
+<div class="table-wrap"><table><thead><tr><th>类型</th><th>主要位置</th><th>功能或意义</th></tr></thead><tbody><tr><td>Keratin</td><td>上皮细胞</td><td>抵抗摩擦和拉伸，连接 desmosome / hemidesmosome</td></tr><tr><td>Vimentin</td><td>间充质细胞</td><td>支持细胞形态和迁移</td></tr><tr><td>Neurofilament</td><td>神经元轴突</td><td>维持轴突直径</td></tr><tr><td>Nuclear lamins</td><td>细胞核内侧</td><td>支持核膜，参与染色质组织</td></tr></tbody></table></div>
+<p>一个常考逻辑：上皮组织承受机械力时，力通过 desmosome 传给 keratin intermediate filament 网络，再跨细胞传播到组织层面。</p>
+<p>---</p>
+<h2 id="iii-细胞骨架的动态行为">III. 细胞骨架的动态行为</h2>
+<h3 id="31-聚合的基本过程">3.1 聚合的基本过程</h3>
+<p>细胞骨架聚合通常包括三个阶段：</p>
+<p>1. <strong>Nucleation</strong>：少数单体形成稳定聚合核心，是最慢、最受调控的一步。 2. <strong>Elongation</strong>：单体快速加到末端。 3. <strong>Steady state</strong>：聚合与解聚达到动态平衡。</p>
+<p>细胞常把调控重点放在 nucleation 上，因为一旦成核成功，纤维就能快速延长。</p>
+<h3 id="32-actin-treadmilling">3.2 Actin treadmilling</h3>
+<p>Actin filament 的 + 端和 - 端临界浓度不同。+ 端更容易加单体，- 端更容易丢单体。当游离 actin 浓度处在两端临界浓度之间时，会出现：</p>
+<pre><code>+ 端持续加 ATP-actin
+纤维内部 ATP 水解为 ADP
+- 端持续释放 ADP-actin
+整体长度可近似不变，但亚基在“流动”</code></pre>
+<p>这就是 <strong>treadmilling</strong>。它让细胞能在保持局部结构的同时不断更新 actin 网络。</p>
+<h3 id="33-microtubule-dynamic-instability">3.3 Microtubule dynamic instability</h3>
+<p>Microtubule 的动态不稳定性由 <strong>GTP cap</strong> 控制。</p>
+<ul><li>新加入的 tubulin 带 GTP。</li><li>聚合后 beta-tubulin 上的 GTP 会水解为 GDP。</li><li>如果 + 端仍保留 GTP-tubulin cap，microtubule 稳定并继续增长。</li><li>如果 GTP 水解追上了聚合速度，GTP cap 消失，GDP-tubulin 构象偏弯曲，microtubule 快速解聚，这叫 <strong>catastrophe</strong>。</li><li>如果重新获得 GTP cap，就会发生 <strong>rescue</strong>，重新增长。</li></ul>
+<p>复习时把 dynamic instability 记成一个判断题：</p>
+<pre><code>GTP cap 在 -&gt; 增长/稳定
+GTP cap 丢失 -&gt; catastrophe
+重新获得 GTP cap -&gt; rescue</code></pre>
+<h3 id="34-intermediate-filament-的动态调控">3.4 Intermediate filament 的动态调控</h3>
+<p>Intermediate filament 比前两者稳定，但不是完全不变。典型调控方式是 <strong>phosphorylation</strong>。</p>
+<p>例子：有丝分裂时 nuclear lamins 被磷酸化，核纤层解体，核膜破裂；分裂结束后去磷酸化，核纤层重新组装。</p>
+<p>---</p>
+<h2 id="iv-accessory-proteins-如何调控骨架">IV. Accessory proteins 如何调控骨架</h2>
+<h3 id="41-actin-binding-proteins">4.1 Actin-binding proteins</h3>
+<p>Actin 的功能几乎都需要 actin-binding proteins 参与。</p>
+<div class="table-wrap"><table><thead><tr><th>蛋白</th><th>作用</th><th>记忆方式</th></tr></thead><tbody><tr><td>Arp2/3 complex</td><td>在已有 actin 侧面成核，形成分支网络</td><td>lamellipodia 的分支 actin</td></tr><tr><td>Formin</td><td>促进不分支直线 actin 生长</td><td>filopodia、应力纤维、收缩环</td></tr><tr><td>Profilin</td><td>促进 ADP-actin 换 ATP，并把单体送到 + 端</td><td>帮助增长</td></tr><tr><td>Thymosin beta4</td><td>结合 actin 单体，阻止聚合</td><td>暂存单体</td></tr><tr><td>Cofilin</td><td>结合 ADP-actin 区域，促进切割和解聚</td><td>加速更新</td></tr><tr><td>Capping protein</td><td>盖住末端，阻止继续生长或缩短</td><td>封端</td></tr><tr><td>Gelsolin</td><td>Ca2+ 调控的切割和封端蛋白</td><td>快速重塑</td></tr><tr><td>Fimbrin / fascin</td><td>形成紧密平行 actin bundle</td><td>微绒毛、filopodia</td></tr><tr><td>alpha-actinin</td><td>形成较疏松 bundle</td><td>stress fibers</td></tr><tr><td>Filamin</td><td>交联成网状 actin gel</td><td>细胞皮层</td></tr></tbody></table></div>
+<p>分支网络和直线束的区别非常重要：</p>
+<ul><li><strong>Arp2/3</strong>：从已有纤维侧面长出约 70 度分支，适合推平的膜片。</li><li><strong>Formin</strong>：黏在 + 端，连续加入 actin，适合长直纤维。</li></ul>
+<h3 id="42-microtubule-associated-proteins">4.2 Microtubule-associated proteins</h3>
+<p>Microtubule 的调控蛋白包括：</p>
+<ul><li><strong>gamma-TuRC</strong>：在 centrosome 中帮助 microtubule 成核。</li><li><strong>MAPs</strong>：稳定 microtubules，调节间距和组织。</li><li><strong>Tau</strong>：神经元轴突中稳定 microtubules；异常聚集与神经退行性疾病有关。</li><li><strong>Katanin</strong>：切割 microtubules，帮助重排。</li><li><strong>+TIPs</strong>：结合 microtubule + 端，调控增长端与细胞皮层或黏附结构的连接。</li></ul>
+<h3 id="43-intermediate-filament-associated-proteins">4.3 Intermediate filament-associated proteins</h3>
+<p>Intermediate filaments 常通过连接蛋白与细胞连接、微管和 actin 网络整合。</p>
+<ul><li><strong>Plectin</strong>：把 intermediate filaments 连接到 microtubules、actin 和黏附结构。</li><li><strong>Desmoplakin</strong>：在 desmosome 中把 cadherin 复合体连接到 keratin。</li><li><strong>Lamin-binding proteins</strong>：把 nuclear lamina 与核膜、染色质联系起来。</li></ul>
+<p>---</p>
+<h2 id="v-myosinactin-based-motor-proteins">V. Myosin：actin-based motor proteins</h2>
+<h3 id="51-motor-protein-的共同工作方式">5.1 Motor protein 的共同工作方式</h3>
+<p>Motor proteins 把 ATP 水解能转成定向运动。它们通常有：</p>
+<ul><li>motor domain：结合轨道并水解 ATP。</li><li>coiled-coil 或 linker：传递构象变化。</li><li>cargo-binding tail：结合货物、膜泡或其他结构。</li></ul>
+<p>核心逻辑：</p>
+<pre><code>ATP 结合 -&gt; motor 与轨道亲和力改变
+ATP 水解 -&gt; 构象预备
+Pi/ADP 释放 -&gt; power stroke
+循环重复 -&gt; 方向性运动</code></pre>
+<h3 id="52-myosin-家族">5.2 Myosin 家族</h3>
+<p>Myosin 大多沿 actin filament 向 + 端运动。不同类型的 myosin 做不同工作：</p>
+<div class="table-wrap"><table><thead><tr><th>Myosin 类型</th><th>功能</th></tr></thead><tbody><tr><td>Myosin II</td><td>肌肉收缩、应力纤维、胞质分裂收缩环</td></tr><tr><td>Myosin V</td><td>沿 actin 运输囊泡和细胞器</td></tr><tr><td>Myosin I</td><td>连接膜和 actin，参与膜形态调节</td></tr></tbody></table></div>
+<h3 id="53-肌肉收缩的-actin-myosin-机制">5.3 肌肉收缩的 actin-myosin 机制</h3>
+<p>骨骼肌的基本单位是 <strong>sarcomere</strong>：</p>
+<ul><li>actin thin filament 从 Z disc 向中间伸出。</li><li>myosin thick filament 位于中间。</li><li>myosin head 周期性结合 actin 并产生 power stroke。</li><li>sarcomere 缩短，但 actin 和 myosin filament 本身长度不变。</li></ul>
+<p>收缩调控依赖 Ca2+：</p>
+<p>1. 神经信号引起肌浆网释放 Ca2+。 2. Ca2+ 结合 troponin。 3. tropomyosin 从 actin 的 myosin-binding site 上移开。 4. myosin head 可以结合 actin，产生收缩。</p>
+<p>常考点：ATP 对肌肉不是只提供能量，也负责让 myosin 从 actin 上解离。死亡后 ATP 耗尽，myosin 不能脱离 actin，会出现 rigor mortis。</p>
+<p>---</p>
+<h2 id="vi-kinesin-和-dyneinmicrotubule-based-motors">VI. Kinesin 和 dynein：microtubule-based motors</h2>
+<h3 id="61-kinesin">6.1 Kinesin</h3>
+<p>Kinesin 多数沿 microtubule 向 + 端运动。在典型动物细胞中，microtubule - 端靠近 centrosome，+ 端朝向细胞周边，所以 kinesin 常负责向外周运输。</p>
+<p>典型功能：</p>
+<ul><li>把分泌囊泡、膜蛋白、细胞器运向细胞周边。</li><li>在神经元轴突中进行 anterograde transport。</li><li>有丝分裂中推动纺锤体微管滑动。</li></ul>
+<h3 id="62-dynein">6.2 Dynein</h3>
+<p>Dynein 通常沿 microtubule 向 - 端运动，因此常负责向 centrosome 或细胞中心运输。</p>
+<p>典型功能：</p>
+<ul><li>endosome、lysosome 等向细胞中心运输。</li><li>神经元中的 retrograde transport。</li><li>纤毛和鞭毛中产生 microtubule 滑动。</li><li>参与纺锤体定位和染色体运动。</li></ul>
+<p>Dynein 本身巨大且复杂，常需要 <strong>dynactin</strong> 复合体帮助连接 cargo 并增强运动过程性。</p>
+<h3 id="63-cilia-和-flagella">6.3 Cilia 和 flagella</h3>
+<p>运动性纤毛和鞭毛的核心结构常是 <strong>9+2 axoneme</strong>：</p>
+<ul><li>9 组外周 microtubule doublets。</li><li>中央 2 条 microtubules。</li><li>dynein arms 让相邻 doublets 发生滑动。</li><li>因为有连接结构限制，滑动转化为弯曲摆动。</li></ul>
+<p>非运动性 primary cilium 常是信号感受结构，参与 Hedgehog 等通路。它依赖 intraflagellar transport 把蛋白运入和运出纤毛。</p>
+<p>---</p>
+<h2 id="vii-细胞迁移机制与信号调控">VII. 细胞迁移机制与信号调控</h2>
+<h3 id="71-迁移的四步循环">7.1 迁移的四步循环</h3>
+<p>一个贴壁细胞向前迁移通常包括：</p>
+<p>1. <strong>前缘突出</strong>：actin 聚合推动膜形成 lamellipodia 或 filopodia。 2. <strong>形成新黏附</strong>：integrin 与 ECM 结合，形成 focal adhesion。 3. <strong>细胞体前移</strong>：actin-myosin 收缩把细胞体拉向前方。 4. <strong>后缘脱附</strong>：旧黏附解离，细胞尾部收回。</p>
+<p>这个循环不是单纯 actin 的事情，还需要 microtubules 参与极性建立、运输膜泡和调控黏附更新。</p>
+<h3 id="72-rho-family-gtpases">7.2 Rho family GTPases</h3>
+<p>细胞迁移中最核心的三类小 GTPase：</p>
+<div class="table-wrap"><table><thead><tr><th>GTPase</th><th>主要输出</th><th>结果</th></tr></thead><tbody><tr><td>Cdc42</td><td>filopodia、细胞极性</td><td>探路</td></tr><tr><td>Rac</td><td>lamellipodia、Arp2/3 分支 actin</td><td>向前铺展</td></tr><tr><td>Rho</td><td>stress fibers、myosin II 收缩</td><td>牵拉和张力</td></tr></tbody></table></div>
+<p>它们像开关一样在 GTP-bound active 和 GDP-bound inactive 状态间切换：</p>
+<ul><li>GEF 激活。</li><li>GAP 失活。</li><li>GDI 抑制并帮助在细胞内转运。</li></ul>
+<h3 id="73-focal-adhesion-的功能">7.3 Focal adhesion 的功能</h3>
+<p>Focal adhesion 是细胞迁移中的力学和信号平台。</p>
+<p>组成逻辑：</p>
+<pre><code>ECM
+  -&gt; integrin
+  -&gt; talin / kindlin / vinculin / paxillin / FAK
+  -&gt; actin stress fibers</code></pre>
+<p>功能：</p>
+<ul><li>把 actin 产生的力传给 ECM。</li><li>感受 ECM 硬度。</li><li>激活 FAK、Src、Rho GTPase 等信号。</li><li>在迁移时不断形成和解离。</li></ul>
+<p>---</p>
+<h2 id="常考比较">常考比较</h2>
+<h3 id="actin-vs-microtubule">Actin vs Microtubule</h3>
+<div class="table-wrap"><table><thead><tr><th>对比</th><th>Actin</th><th>Microtubule</th></tr></thead><tbody><tr><td>单体</td><td>G-actin</td><td>alpha/beta-tubulin</td></tr><tr><td>核苷酸</td><td>ATP</td><td>GTP</td></tr><tr><td>结构</td><td>双股螺旋纤维</td><td>13 protofilaments 中空管</td></tr><tr><td>主要位置</td><td>细胞皮层、前缘、收缩结构</td><td>细胞内部放射状网络、纺锤体、纤毛</td></tr><tr><td>动态关键词</td><td>treadmilling</td><td>dynamic instability</td></tr><tr><td>motor</td><td>myosin</td><td>kinesin、dynein</td></tr></tbody></table></div>
+<h3 id="accessory-proteins-的答题套路">Accessory proteins 的答题套路</h3>
+<p>遇到“某蛋白如何影响细胞骨架”的题，可以按四类回答：</p>
+<p>1. 是否影响 <strong>nucleation</strong>。 2. 是否影响 <strong>elongation / capping</strong>。 3. 是否影响 <strong>severing / depolymerization</strong>。 4. 是否影响 <strong>bundling / crosslinking / anchoring</strong>。</p>
+<h3 id="细胞迁移的答题套路">细胞迁移的答题套路</h3>
+<pre><code>外界信号
+ -&gt; PI3K / Rho GTPases 建立前后极性
+ -&gt; 前缘 actin 聚合产生 protrusion
+ -&gt; integrin 形成新 focal adhesion
+ -&gt; myosin II 收缩牵引细胞体
+ -&gt; 后缘黏附解离
+ -&gt; microtubules 运输膜和调控极性</code></pre>
+<p>---</p>
+<h2 id="自测题">自测题</h2>
+<p>1. 为什么 microtubule 会发生 dynamic instability，而 intermediate filament 不会以同样方式发生？ 2. Arp2/3 和 formin 都能促进 actin 聚合，它们产生的网络形态有什么不同？ 3. 如果一个细胞中 cofilin 活性过高，actin 网络会发生什么变化？ 4. 为什么 kinesin 和 dynein 能在同一条 microtubule 上产生相反方向的运输？ 5. 贴壁细胞迁移时，actin、myosin、integrin 和 Rho GTPase 分别承担什么角色？</p>
+<p>---</p>
+<h2 id="一页总结">一页总结</h2>
+<p>细胞骨架复习时不要把三类 filament 当作孤立名词。真正的主线是：<strong>聚合物的结构和极性决定动态行为，动态行为由调控蛋白控制，调控后的骨架再与 motor proteins 和黏附结构配合，产生形态、运输、收缩和迁移。</strong></p><div class="pager">
+      <a href="13_cell_communication.html">上一讲：第13讲学习讲义：细胞通讯</a>
+      <a href="16_apoptosis.html">下一讲：Lecture 16: Apoptosis（细胞凋亡）</a>
+    </div></div>
+        <aside class="toc"><strong>本讲目录</strong><a class="toc-level-2" href="#本讲主线">本讲主线</a><a class="toc-level-2" href="#考前速记版">考前速记版</a><a class="toc-level-2" href="#i-细胞骨架概述">I. 细胞骨架概述</a><a class="toc-level-3" href="#11-为什么细胞需要骨架">1.1 为什么细胞需要骨架</a><a class="toc-level-3" href="#12-三类骨架的功能分工">1.2 三类骨架的功能分工</a><a class="toc-level-2" href="#ii-三类细胞骨架的结构">II. 三类细胞骨架的结构</a><a class="toc-level-3" href="#21-actin-filament细胞皮层和运动的核心">2.1 Actin filament：细胞皮层和运动的核心</a><a class="toc-level-3" href="#22-microtubule细胞内长距离运输轨道">2.2 Microtubule：细胞内长距离运输轨道</a><a class="toc-level-3" href="#23-intermediate-filament抗机械应力的绳索">2.3 Intermediate filament：抗机械应力的绳索</a><a class="toc-level-2" href="#iii-细胞骨架的动态行为">III. 细胞骨架的动态行为</a><a class="toc-level-3" href="#31-聚合的基本过程">3.1 聚合的基本过程</a><a class="toc-level-3" href="#32-actin-treadmilling">3.2 Actin treadmilling</a><a class="toc-level-3" href="#33-microtubule-dynamic-instability">3.3 Microtubule dynamic instability</a><a class="toc-level-3" href="#34-intermediate-filament-的动态调控">3.4 Intermediate filament 的动态调控</a><a class="toc-level-2" href="#iv-accessory-proteins-如何调控骨架">IV. Accessory proteins 如何调控骨架</a><a class="toc-level-3" href="#41-actin-binding-proteins">4.1 Actin-binding proteins</a><a class="toc-level-3" href="#42-microtubule-associated-proteins">4.2 Microtubule-associated proteins</a><a class="toc-level-3" href="#43-intermediate-filament-associated-proteins">4.3 Intermediate filament-associated proteins</a><a class="toc-level-2" href="#v-myosinactin-based-motor-proteins">V. Myosin：actin-based motor proteins</a><a class="toc-level-3" href="#51-motor-protein-的共同工作方式">5.1 Motor protein 的共同工作方式</a><a class="toc-level-3" href="#52-myosin-家族">5.2 Myosin 家族</a><a class="toc-level-3" href="#53-肌肉收缩的-actin-myosin-机制">5.3 肌肉收缩的 actin-myosin 机制</a><a class="toc-level-2" href="#vi-kinesin-和-dyneinmicrotubule-based-motors">VI. Kinesin 和 dynein：microtubule-based motors</a><a class="toc-level-3" href="#61-kinesin">6.1 Kinesin</a><a class="toc-level-3" href="#62-dynein">6.2 Dynein</a><a class="toc-level-3" href="#63-cilia-和-flagella">6.3 Cilia 和 flagella</a><a class="toc-level-2" href="#vii-细胞迁移机制与信号调控">VII. 细胞迁移机制与信号调控</a><a class="toc-level-3" href="#71-迁移的四步循环">7.1 迁移的四步循环</a><a class="toc-level-3" href="#72-rho-family-gtpases">7.2 Rho family GTPases</a><a class="toc-level-3" href="#73-focal-adhesion-的功能">7.3 Focal adhesion 的功能</a><a class="toc-level-2" href="#常考比较">常考比较</a><a class="toc-level-3" href="#actin-vs-microtubule">Actin vs Microtubule</a><a class="toc-level-3" href="#accessory-proteins-的答题套路">Accessory proteins 的答题套路</a><a class="toc-level-3" href="#细胞迁移的答题套路">细胞迁移的答题套路</a><a class="toc-level-2" href="#自测题">自测题</a><a class="toc-level-2" href="#一页总结">一页总结</a></aside>
+      </div>
+    </article>
+  </main>
+  <script src="../assets/app.js"></script>
+</body>
+</html>
