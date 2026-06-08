@@ -3,6 +3,7 @@ const path = require("path");
 
 const root = path.resolve(__dirname, "..");
 const notesDir = path.join(root, "notes");
+const studyGuidesDir = path.join(root, "study_guides");
 const docsDir = path.join(root, "docs");
 const lecturesDir = path.join(docsDir, "lectures");
 const assetsDir = path.join(docsDir, "assets");
@@ -536,6 +537,12 @@ function layout({ title, body, lectures, currentSlug = "", description = "" }) {
     </label>
     <div class="search-results" id="searchResults"></div>
     <nav class="nav">${nav}</nav>
+    <div class="nav-section">
+      <a class="nav-link exam-link" href="${currentSlug ? "exam_third_part.html" : "lectures/exam_third_part.html"}">
+        <span>📝</span>
+        <strong>第三次考试重点</strong>
+      </a>
+    </div>
   </aside>
   <main class="page">
     ${body}
@@ -626,6 +633,40 @@ function buildSearchIndex(lectures) {
   fs.writeFileSync(path.join(assetsDir, "search-index.json"), JSON.stringify(index, null, 2));
 }
 
+function buildExamKeyPoints(lectures) {
+  const examFiles = [
+    { file: "exam_third_part_key_points.md", title: "第三次考试重点（Lecture 14-19）", slug: "exam_third_part" }
+  ];
+  for (const exam of examFiles) {
+    const filePath = path.join(studyGuidesDir, exam.file);
+    if (!fs.existsSync(filePath)) continue;
+    const markdown = fs.readFileSync(filePath, "utf8").replace(/^﻿/, "");
+    const rendered = renderMarkdown(markdown);
+    const toc = rendered.headings
+      .filter((heading) => heading.level >= 2 && heading.level <= 3)
+      .slice(0, 36)
+      .map((heading) => `<a class="toc-level-${heading.level}" href="#${escapeHtml(heading.id)}">${escapeHtml(heading.text)}</a>`)
+      .join("");
+    const body = `<article class="article">
+      <div class="article-head">
+        <a class="back-home" href="../index.html">返回首页</a>
+        <p class="lecture-number">考试重点</p>
+      </div>
+      <div class="article-layout">
+        <div class="content">${rendered.html}</div>
+        <aside class="toc"><strong>目录</strong>${toc}</aside>
+      </div>
+    </article>`;
+    fs.writeFileSync(path.join(lecturesDir, `${exam.slug}.html`), layout({
+      title: `${exam.title} | ABS 复习讲义`,
+      body,
+      lectures,
+      currentSlug: exam.slug,
+      description: exam.title
+    }));
+  }
+}
+
 ensureDir(docsDir);
 ensureDir(lecturesDir);
 ensureDir(assetsDir);
@@ -636,6 +677,7 @@ const lectures = readLectures();
 buildFigures();
 buildHome(lectures);
 buildLecturePages(lectures);
+buildExamKeyPoints(lectures);
 buildSearchIndex(lectures);
 
 console.log(`Built ${lectures.length} lecture pages into ${docsDir}`);
