@@ -459,52 +459,98 @@ NO 是气体信号分子，不需要受体，直接穿膜。
 
 这类似于癌基因 Ras 的激活突变——Ras 也是小 GTPase，突变使其 GTPase 活性丧失，也变成持续激活，驱动细胞不停增殖。
 
-### 酶联受体信号
+### 话题一：RTK = 自带酶活性的受体
 
-**RTK（受体酪氨酸激酶）**：
+**GPCR vs RTK**：GPCR 自己**没有酶活性**，需要喊 G 蛋白来帮忙。RTK（Receptor Tyrosine Kinase）**自己就是一个酶**——能把蛋白质的 Tyrosine 磷酸化。GPCR 穿膜 7 次，RTK **只穿膜 1 次**（single-pass），胞外是配体结合区，胞内是激酶区。
+
+**RTK 激活的故事（4 步）**：
+
+**第 1 步：信号来了，受体二聚化** — 平时 RTK 在膜上是**单个散着的（monomer）**。信号分子（如 EGF、PDGF）来了，把两个 RTK 拉到一起形成**二聚体**。不二聚化就没有后面的一切。
+
+**第 2 步：互相磷酸化（trans-autophosphorylation）** — A 的激酶域磷酸化 B 的尾巴，B 的激酶域磷酸化 A 的尾巴。磷酸化的 Tyrosine 有**两个作用**：
+- **激活激酶活性**
+- **创造停靠位点**（磷酸化的 Tyr 变成"插座"，下游蛋白来插上去）
+
+**第 3 步：招募下游蛋白，激活 Ras** — 磷酸化 Tyr → **Grb2** 停靠 → Grb2 拉来 **SOS** → SOS 是 **Ras 的 GEF**（帮 Ras 把 GDP 换成 GTP）→ **Ras-GTP 被激活**。Ras 是**单个小蛋白（small GTPase）**，没有 βγ 亚基。
+
+**第 4 步：MAP kinase cascade（级联放大）** — Ras-GTP → **Raf** → **MEK** → **ERK / MAP kinase** → ERK 进核磷酸化转录因子 → 改变基因表达。三级级联的意义是**信号放大**。
+
+**RTK 和 GPCR 的交叉**：RTK 也能激活 PLCγ（类似 GPCR 的 PLCβ），产生 IP₃ 和 DAG。细胞的信号网络是交织的。
+
+### 信号锐化：全或无响应（Q14 方向）
+
+**机制一：正反馈（positive feedback）** — 一个下游产物回过头来**加强上游信号**。一旦过了阈值，信号瞬间被放大到最大。
+
+**机制二：多步磷酸化（ultrasensitivity）** — 如果一个蛋白必须在**多个位点**都被磷酸化才能激活，过渡会非常陡峭，接近全或无。MAP kinase cascade 三级级联叠加，响应曲线非常陡。
+
+### 附：Cytokine 信号（JAK-STAT）
+
+细胞因子受体**自己没有激酶活性**，但绑了一个 **JAK** 激酶。
+
+配体结合 → 受体二聚化 → JAK 互相磷酸化（trans）→ 磷酸化受体招募 **STAT** → STAT 被磷酸化后**二聚化** → 进入细胞核当转录因子
+
+比 RTK 更直接——没有 Ras、没有级联，直接从受体到转录因子。
+
+### 话题二：核受体 = 不在膜上的受体
+
+**为什么有些信号不需要膜受体？** 因为**信号分子本身就能穿过细胞膜**。类固醇激素（steroid hormones）是**脂溶性小分子**，包括：雌激素、睾酮、皮质醇、甲状腺激素、维生素 D。
+
+**核受体信号的过程**：
+
+类固醇激素穿过膜 → 在胞质或细胞核中找到**核受体（nuclear receptor）** → 激素结合使受体构象改变、暴露 DNA 结合域 → 受体作为**转录因子**结合到基因调控区 → 启动或关闭基因转录
+
+核心特征：**慢**（小时到天，要走转录→mRNA→翻译）、**持久**（新蛋白被合成出来了）。
+
+**Q16 考的就是这个**：类固醇信号 → 不是细胞表面受体 → 涉及基因转录 → 响应慢。
+
+### 话题三：LDL 内吞的完整故事（Q9-11, Q21）
+
+**为什么需要 LDL？** 胆固醇是细胞膜的重要成分，但它**几乎不溶于水**（Q21 答案）。血液是水溶液，所以胆固醇不能裸着在血里飘。解决方案：用**脂蛋白颗粒（LDL particle）**包裹运输。
+
+**LDL 颗粒结构**：
+- **外壳**：一层**磷脂单层**（亲水头朝外）+ **apolipoprotein**（载脂蛋白）
+- **内核**：**胆固醇酯和甘油三酯**（疏水的，藏在里面）
+
+Q10 问磷脂在哪——在**表面**与水接触（B）。
+
+**LDL 内吞流程**：
 ```
-配体结合 → 受体二聚化
-  → 互相自磷酸化（trans-autophosphorylation）
-  → 磷酸化 Tyr 招募下游蛋白
-  → Grb2 → SOS → Ras 激活
-  → MAP kinase cascade（Raf → MEK → ERK）
-  → 调控基因表达、增殖
+LDL 结合 LDL 受体（跨膜蛋白，Q9 答案 D）
+  → 受体聚集在 clathrin-coated pit
+  → Dynamin 拧断 → clathrin-coated vesicle → 去壳
+  → 和早期内体融合（pH 降低）
+  → 受体和 LDL 分离
+  → 受体通过 recycling endosome 回收到质膜（不被降解！）
+  → LDL 继续走到溶酶体（Q11 答案 B）
+  → 被溶酶体酶降解 → 释放胆固醇
 ```
 
-Ras 是小 GTPase，通过 GEF（SOS）激活、通过 GAP 灭活。
-
-**Cytokine 信号**通过 **JAK-STAT** 通路：
-```
-细胞因子受体（无自身激酶活性）+ JAK
-  → 配体结合 → 受体二聚化
-  → JAK 互相磷酸化
-  → 磷酸化受体招募 STAT
-  → STAT 磷酸化后二聚进核调控基因
-```
-
-### 其他信号方式
-
-**Wnt/Notch/Hedgehog**：通过调控蛋白水解（regulated proteolysis）和转录活性传递信号。
-
-**核受体信号**：类固醇激素（雌激素、睾酮、皮质醇等）是脂溶性小分子，穿过细胞膜，结合胞内核受体，作为转录因子调控基因表达。响应较慢（涉及转录翻译），但作用持久。
+这叫 **receptor-mediated endocytosis**。关键：受体被回收、cargo 被降解。
 
 ### 超浓缩记忆卡片
 
 ```
 GPCR 信号三件套：受体(7-pass) → 三聚体G蛋白(αβγ) → 效应器
-
-两条通路：
   Gs路：Gs → adenylyl cyclase → cAMP↑ → PKA
-  Gq路：Gq → PLCβ → PIP₂裂解 → IP₃(水中→释放Ca²⁺) + DAG(膜内→激活PKC)
+  Gq路：Gq → PLCβ → PIP₂裂解 → IP₃(水中→Ca²⁺) + DAG(膜内→PKC)
+  特殊：NO → guanylyl cyclase → cGMP↑ → 血管舒张
+  三个刹车：① GRK磷酸化受体 ② Arrestin结合【受体】③ RGS加速Gα水解
 
-特殊：NO → guanylyl cyclase → cGMP↑ → 血管舒张
+RTK 信号：
+  配体 → 受体二聚化 → trans-autophosphorylation（激活+创造停靠位点）
+  → Grb2 → SOS(GEF) → Ras-GTP → Raf → MEK → ERK → 基因表达
+  全或无响应 = 正反馈 + 多步磷酸化(ultrasensitivity)
 
-三个刹车：
-  ① GRK 磷酸化受体
-  ② Arrestin 结合【受体】(不是G蛋白！)
-  ③ RGS 加速 Gα 水解 GTP
+JAK-STAT（简化版RTK）：
+  细胞因子 → 受体二聚 → JAK互相磷酸化 → 招募STAT → STAT磷酸化二聚 → 进核
 
-突变题：GDP亲和力↓ = 组成型激活 = 类似Ras癌基因
+核受体信号：
+  类固醇激素（脂溶性）→ 穿膜 → 结合核受体 → 当转录因子 → 慢但持久
+
+LDL 内吞：
+  LDL结合受体(跨膜蛋白) → clathrin pit → dynamin剪断
+  → 早期内体(低pH分离) → 受体回收 / LDL去溶酶体降解
+  为什么用LDL？→ 胆固醇不溶于水
 ```
 
 ---
