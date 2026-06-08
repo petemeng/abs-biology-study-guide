@@ -49,6 +49,7 @@ npm run serve
 
 ## 项目结构
 
+- `study_guides/`：每讲的详细学习讲义（中文，零基础友好，含考前速记版、关键词、常见误区、自测题），覆盖第 1-19 讲。另有 `exam_third_part_key_points.md` 汇总第三次考试（第 14-19 讲）的核心考点。
 - `notes/`：每讲的 Markdown 讲义源文件。
 - `docs/`：GitHub Pages 发布用静态网页。
 - `scripts/build.js`：把 Markdown 讲义构建为网页。
