@@ -148,53 +148,156 @@ Na⁺ channel 三种状态：**closed → open → inactive**。Inactive 态在�
 
 ## Lecture 11：细胞内区室与蛋白质分选
 
-### 一、三种蛋白质转运机制
+### 蛋白质分选 = 快递分拣系统
 
-| 机制 | 途径 | 信号 |
-|---|---|---|
-| **门控转运** | 通过核孔复合体进出细胞核 | NLS / NES |
-| **蛋白质易位** | 未折叠蛋白穿过转位子 | 信号肽（signal peptide） |
-| **囊泡运输** | 蛋白被包在囊泡中转运 | 分选信号 |
+把细胞想成一个**大型物流中心**。每个蛋白质就是一个包裹，**信号序列就是包裹上的地址标签**。没贴标签的包裹就留在仓库（胞质）不动。
 
-### 二、信号肽与 ER 转位
+### 第一层：蛋白在哪里合成的？
 
-分泌蛋白和膜蛋白的 N-端有一段**信号肽（signal peptide）**，约 20-30 个氨基酸，疏水性强。被 **SRP（signal recognition particle）** 识别。SRP 由 6 个蛋白和一个 7SL RNA（300 nt）组成。
+**所有蛋白都从胞质中的核糖体开始翻译。** 然后分两条路：
 
-过程：
-```
-核糖体开始翻译 → 信号肽露出
-  → SRP 结合信号肽，暂停翻译
-  → SRP-核糖体复合物靠到 ER 膜上的 SRP 受体
-  → 蛋白链穿过转位子进入 ER 腔
-  → signal peptidase 切掉信号肽
-```
+**路线 A**：翻译到一半，露出一段疏水的"地址标签"（signal peptide）→ 被 SRP 抓住 → 拖到 ER 膜上继续翻译 → 蛋白进入 ER 腔 → 之后走囊泡运输路线（ER → Golgi → 质膜/溶酶体/分泌）
 
-**不同类型蛋白的插入方式**：
+**路线 B**：翻译完了也没露出 signal peptide → 蛋白留在胞质 → 但胞质里也有不同目的地（细胞核、线粒体、过氧化物酶体）→ 靠不同的地址标签被不同的快递员送过去
 
-| 蛋白类型 | 信号序列 | 特点 |
-|---|---|---|
-| **可溶性蛋白** | N-端信号肽（start-transfer） | 信号肽被切掉，蛋白全部进入 ER 腔 |
-| **I 型跨膜蛋白** | N-端信号肽 + 内部 stop-transfer | 信号肽被切，stop-transfer 留在膜中 |
-| **II/III 型跨膜蛋白** | 内部 signal anchor（不被切） | flanking 氨基酸电荷决定方向 |
-| **多次跨膜蛋白** | 交替的 start-transfer 和 stop-transfer | — |
-| **GPI 锚定蛋白** | 先合成跨膜蛋白，再转移到 GPI 锚 | 跨膜域被切掉 |
+### 第二层：五个目的地，五个地址标签
 
-### 三、N-linked 糖基化
+只需要记住**五对"地址-快递员"**：
 
-发生在 ER 腔中，糖链连接到 **Asparagine（N）** 的侧链上，识别序列是 **Asn-X-Ser/Thr**（X ≠ Pro）。糖基化参与蛋白质折叠质控（calnexin/calreticulin 循环），错误折叠的蛋白通过 **ERAD** 被降解。
+**① 去 ER（然后走囊泡系统）**
+- 地址标签：**N-端 signal peptide**（一段 ~20 aa 的疏水序列）
+- 快递员：**SRP**（signal recognition particle，6 个蛋白 + 1 条 7SL RNA）
+- 到了之后：signal peptidase 把标签剪掉
+- 谁走这条路：所有分泌蛋白、膜蛋白、溶酶体酶
 
-### 四、核转运
+**② 去细胞核**
+- 地址标签：**NLS**（nuclear localization signal，富含 Lys/Arg 的短序列）
+- 快递员：**Importin**（一个家族，不同成员认不同 NLS）
+- 怎么进门：importin 带着 cargo 通过核孔的 **FG-repeat** 穿过去
+- 怎么卸货：核内的 **Ran-GTP** 结合 importin → importin 松手释放 cargo
+- 调控方式：**在 NLS 旁边磷酸化** → importin 认不出来 → 蛋白进不了核
 
-进核：组蛋白、DNA/RNA polymerase、转录因子、核糖体蛋白等。
-出核：成熟 mRNA、tRNA、前核糖体亚基等。
+**③ 去线粒体**
+- 地址标签：N-端信号序列（正电荷，amphipathic α-helix）
+- 快递员：**TOM**（外膜）+ **TIM23/TIM22**（内膜）
+- 蛋白要**展开**才能穿过去
 
-核转运受体（importin 家族）识别 NLS，通过与核孔中 FG-repeat nucleoporins 的多次低亲和力相互作用穿过核孔。在核内，**Ran-GTP** 与 importin 结合使其释放 cargo。
+**④ ER 内部回收（从 Golgi 拉回来）**
+- 地址标签分两种：
+  - 可溶蛋白：**KDEL**（或 HDEL）——四个氨基酸（Lys-Asp-Glu-Leu）
+  - 膜蛋白：**KKXX**（胞质侧尾巴上两个 Lys）
+- 快递员：**KDEL 受体**识别后，通过 **COPI 囊泡**逆向运回 ER
 
-磷酸化可以调控核定位——在 NLS 附近的磷酸化阻止 importin 结合，把蛋白留在胞质。
+**⑤ 去溶酶体（从 Golgi 分拣出去）**
+- 地址标签：**M6P**（mannose 6-phosphate）——是糖修饰，不是氨基酸序列
+- 加标签的地方：**Golgi**（由 GlcNAc phosphotransferase 添加）
+- 快递员：**M6P 受体**在 TGN 识别 → 包进 clathrin 囊泡 → 送到晚期内体
+- 受体 pH 依赖性：pH 6.6（TGN）绑定，pH 6.0（晚期内体）释放
 
-### 五、线粒体蛋白导入
+### 第三层：N-linked 糖基化
 
-线粒体蛋白大多在胞质合成后通过 **TOM（外膜）** 和 **TIM23/TIM22（内膜）** 复合物导入。多次跨膜蛋白通过 TOM + TIM22 插入内膜。
+发生在 ER 腔中，糖链连到 **Asparagine（天冬酰胺，单字母 N）** 上。所以叫 N-linked。识别的氨基酸序列是 **Asn-X-Ser/Thr**，其中 X 可以是任何氨基酸但**不能是 Pro**。
+
+糖基化有什么用？三个功能记住三个词：**折叠质控**（calnexin/calreticulin 检查折叠对不对）、**细胞识别**（selectin 认糖）、**保护蛋白**（糖壳挡蛋白酶）。
+
+### 超浓缩记忆卡片
+
+| 去哪 | 地址标签 | 谁来送 | 怎么到 |
+|------|---------|-------|-------|
+| **ER** | N-端 signal peptide（疏水） | SRP | 穿 translocator 进 ER 腔 |
+| **细胞核** | NLS（富含 Lys/Arg） | Importin | 穿核孔 FG-repeat，Ran-GTP 卸货 |
+| **线粒体** | N-端正电荷序列 | TOM + TIM | 展开穿过双层膜 |
+| **回 ER** 可溶 | **KDEL** | KDEL 受体 | **COPI** 囊泡逆向运回 |
+| **回 ER** 膜蛋白 | **KKXX** | COPI coat 直接识别 | **COPI** 囊泡逆向运回 |
+| **溶酶体** | **M6P**（糖标记） | M6P 受体 | TGN 出发 → clathrin 囊泡 → 晚期内体 |
+
+万能规则：**没有任何信号序列的蛋白 = 留在胞质中**（default）；**没有任何分选信号的分泌通路蛋白 = 走 default secretory pathway 直接分泌到细胞外**。
+
+---
+
+## Lecture 12：细胞内囊泡运输
+
+### 囊泡运输 = 三条快递专线
+
+细胞里的"物流路线"：**ER（工厂）→ Golgi（分拣中心）→ 质膜（门口）/ 溶酶体（垃圾处理站）**
+
+### 专线一：COPII——"发货车"
+
+**方向：ER → Golgi（正向，往外送）**
+
+关键角色：
+- **Sar1**（小 GTPase）：调度员，决定什么时候派车。Sar1-GTP 时启动装车，GTP 水解后外壳脱落
+- **Sec12**：是 Sar1 的 GEF（激活 Sar1，把 GDP 换成 GTP，相当于"派单员"）
+- **Sec24/23**：负责**挑选货物**（识别 cargo 蛋白胞质侧的 sorting signal）
+- **Sec13/31**：外壳的结构支架
+
+出发地点：ER 上没有核糖体的区域，叫 **transitional ER / ER exit sites**。
+
+### 专线二：COPI——"退货车"
+
+**方向：Golgi → ER（逆向，往回送）**
+
+关键角色：
+- **ARF**（小 GTPase）：调度员，和 Sar1 角色一样但管的是 COPI
+
+退什么货？两类：
+- 带 **KDEL** 标签的可溶蛋白（被 KDEL 受体在 Golgi 抓住）
+- 带 **KKXX** 标签的膜蛋白（被 COPI coat 直接识别）
+
+**记忆口诀：COPII 是"2→发出去"（ER→Golgi），COPI 是"1→退回来"（Golgi→ER）。** 数字越大越往外。
+
+### 专线三：Clathrin——"外卖员 + 快递分拣"
+
+**Clathrin 干两件事：**
+
+**任务 A：在质膜搞内吞（endocytosis）**——把细胞外的东西吞进来。比如 LDL 受体结合 LDL 颗粒后，clathrin 在下面组装一个笼子，把这块膜连同受体一起吞进来形成囊泡。
+
+**任务 B：在 TGN 搞分选**——把溶酶体酶（带 M6P 标签的）从 Golgi 分拣出来，装进 clathrin 囊泡送往晚期内体/溶酶体。
+
+Clathrin 的结构和工作方式：
+- Clathrin 本身是**三脚架（triskelion）**：3 大 + 3 小亚基，自组装成六角形和五角形的笼子
+- Clathrin **不直接碰货物**——中间需要 **AP（adaptor protein）** 做桥梁，一头连 cargo，一头连 clathrin
+- **Dynamin**（有 GTPase 活性）：负责在囊泡脖子处**拧断**（fission），让囊泡脱离母膜
+- 囊泡脱离后要**去壳（uncoating）**才能和靶膜融合
+
+LDL 内吞的完整故事：LDL 结合受体 → AP 招募 clathrin → 膜内陷形成 coated pit → dynamin 拧断 → coated vesicle → 去壳 → 进入早期内体（pH 降低）→ 受体和 LDL 分离 → 受体回收到质膜 → LDL 去溶酶体被降解
+
+### 所有囊泡共用的"到站-卸货"系统
+
+不管是 COPI、COPII 还是 Clathrin 囊泡，到了目的地都要经历同样的**三步停靠和融合**：
+
+**① Tethering（远距离拴住）**——靠 **Rab-GTP**。Rab 是小 GTPase，每种 Rab 认一种靶膜。Rab-GTP 在囊泡上 → 招来 Rab effector（tethering protein）→ 把囊泡远远地拴到靶膜附近。
+
+**② Docking（近距离对接）**——靠 **SNARE 蛋白**。囊泡上的 **v-SNARE** 和靶膜上的 **t-SNARE** 像拉链一样互相缠绕，形成 **trans-SNARE complex**，把两层膜拉到一起。
+
+**③ Fusion（融合）**——SNARE 拉链拧到最紧，驱动两层膜融合，cargo 释放。
+
+融合后 SNARE 要被 **NSF + α-SNAP** 拆开回收。Rab-GDP 被 **GDI** 从膜上提取回胞质回收。
+
+### 超浓缩记忆卡片
+
+| | COPII "发货车" | COPI "退货车" | Clathrin "外卖员" |
+|---|---|---|---|
+| **方向** | ER → Golgi | Golgi → ER | 质膜内吞 + TGN→溶酶体 |
+| **调度 GTPase** | **Sar1** | **ARF** | ARF（TGN）/ 无（质膜） |
+| **运什么** | 新合成的分泌/膜蛋白 | 逃跑的 ER 蛋白（KDEL/KKXX） | LDL、转铁蛋白、M6P 酶 |
+| **独有特征** | Sec24 挑选 cargo | KDEL 受体 | AP 桥接 + Dynamin 剪断 |
+
+| 到站三步 | 关键蛋白 | 功能 |
+|---------|---------|------|
+| Tethering | **Rab-GTP** | 远距离拴住 |
+| Docking + Fusion | **v-SNARE + t-SNARE** | 拉链拉紧融合 |
+| 回收 | NSF 拆 SNARE，GDI 回收 Rab | 循环利用 |
+
+### 高频考点：非水解 GTP 类似物实验
+
+如果实验中加入**不能水解的 GTP**（nonhydrolyzable GTP analog），会怎样？
+
+答：Sar1/ARF 一直保持 GTP 状态 → 外壳一直不脱落 → **大量有壳囊泡积累**，无法去壳、无法融合。这个实验证明了 GTP 水解是去壳的必要步骤。
+
+### Caveolae
+
+**Caveolae** 是另一种内吞方式，富含 caveolin 蛋白和胆固醇，参与 **pinocytosis**（胞饮），独立于 clathrin。
 
 ---
 

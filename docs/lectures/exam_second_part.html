@@ -168,28 +168,69 @@
 <p>动作电位的<strong>自我放大和传播</strong>：一处去极化激活邻近区域的 Na⁺ channel，信号沿轴突单向传导。发生在轴突起始段（axon hillock）。</p>
 <p>---</p>
 <h2 id="lecture-11细胞内区室与蛋白质分选">Lecture 11：细胞内区室与蛋白质分选</h2>
-<h3 id="一、三种蛋白质转运机制">一、三种蛋白质转运机制</h3>
-<div class="table-wrap"><table><thead><tr><th>机制</th><th>途径</th><th>信号</th></tr></thead><tbody><tr><td><strong>门控转运</strong></td><td>通过核孔复合体进出细胞核</td><td>NLS / NES</td></tr><tr><td><strong>蛋白质易位</strong></td><td>未折叠蛋白穿过转位子</td><td>信号肽（signal peptide）</td></tr><tr><td><strong>囊泡运输</strong></td><td>蛋白被包在囊泡中转运</td><td>分选信号</td></tr></tbody></table></div>
-<h3 id="二、信号肽与-er-转位">二、信号肽与 ER 转位</h3>
-<p>分泌蛋白和膜蛋白的 N-端有一段<strong>信号肽（signal peptide）</strong>，约 20-30 个氨基酸，疏水性强。被 <strong>SRP（signal recognition particle）</strong> 识别。SRP 由 6 个蛋白和一个 7SL RNA（300 nt）组成。</p>
-<p>过程：</p>
-<pre><code>核糖体开始翻译 → 信号肽露出
-  → SRP 结合信号肽，暂停翻译
-  → SRP-核糖体复合物靠到 ER 膜上的 SRP 受体
-  → 蛋白链穿过转位子进入 ER 腔
-  → signal peptidase 切掉信号肽</code></pre>
-<p><strong>不同类型蛋白的插入方式</strong>：</p>
-<div class="table-wrap"><table><thead><tr><th>蛋白类型</th><th>信号序列</th><th>特点</th></tr></thead><tbody><tr><td><strong>可溶性蛋白</strong></td><td>N-端信号肽（start-transfer）</td><td>信号肽被切掉，蛋白全部进入 ER 腔</td></tr><tr><td><strong>I 型跨膜蛋白</strong></td><td>N-端信号肽 + 内部 stop-transfer</td><td>信号肽被切，stop-transfer 留在膜中</td></tr><tr><td><strong>II/III 型跨膜蛋白</strong></td><td>内部 signal anchor（不被切）</td><td>flanking 氨基酸电荷决定方向</td></tr><tr><td><strong>多次跨膜蛋白</strong></td><td>交替的 start-transfer 和 stop-transfer</td><td>—</td></tr><tr><td><strong>GPI 锚定蛋白</strong></td><td>先合成跨膜蛋白，再转移到 GPI 锚</td><td>跨膜域被切掉</td></tr></tbody></table></div>
-<h3 id="三、n-linked-糖基化">三、N-linked 糖基化</h3>
-<p>发生在 ER 腔中，糖链连接到 <strong>Asparagine（N）</strong> 的侧链上，识别序列是 <strong>Asn-X-Ser/Thr</strong>（X ≠ Pro）。糖基化参与蛋白质折叠质控（calnexin/calreticulin 循环），错误折叠的蛋白通过 <strong>ERAD</strong> 被降解。</p>
-<h3 id="四、核转运">四、核转运</h3>
-<p>进核：组蛋白、DNA/RNA polymerase、转录因子、核糖体蛋白等。 出核：成熟 mRNA、tRNA、前核糖体亚基等。</p>
-<p>核转运受体（importin 家族）识别 NLS，通过与核孔中 FG-repeat nucleoporins 的多次低亲和力相互作用穿过核孔。在核内，<strong>Ran-GTP</strong> 与 importin 结合使其释放 cargo。</p>
-<p>磷酸化可以调控核定位——在 NLS 附近的磷酸化阻止 importin 结合，把蛋白留在胞质。</p>
-<h3 id="五、线粒体蛋白导入">五、线粒体蛋白导入</h3>
-<p>线粒体蛋白大多在胞质合成后通过 <strong>TOM（外膜）</strong> 和 <strong>TIM23/TIM22（内膜）</strong> 复合物导入。多次跨膜蛋白通过 TOM + TIM22 插入内膜。</p>
+<h3 id="蛋白质分选-=-快递分拣系统">蛋白质分选 = 快递分拣系统</h3>
+<p>把细胞想成一个<strong>大型物流中心</strong>。每个蛋白质就是一个包裹，<strong>信号序列就是包裹上的地址标签</strong>。没贴标签的包裹就留在仓库（胞质）不动。</p>
+<h3 id="第一层蛋白在哪里合成的">第一层：蛋白在哪里合成的？</h3>
+<p><strong>所有蛋白都从胞质中的核糖体开始翻译。</strong> 然后分两条路：</p>
+<p><strong>路线 A</strong>：翻译到一半，露出一段疏水的&quot;地址标签&quot;（signal peptide）→ 被 SRP 抓住 → 拖到 ER 膜上继续翻译 → 蛋白进入 ER 腔 → 之后走囊泡运输路线（ER → Golgi → 质膜/溶酶体/分泌）</p>
+<p><strong>路线 B</strong>：翻译完了也没露出 signal peptide → 蛋白留在胞质 → 但胞质里也有不同目的地（细胞核、线粒体、过氧化物酶体）→ 靠不同的地址标签被不同的快递员送过去</p>
+<h3 id="第二层五个目的地五个地址标签">第二层：五个目的地，五个地址标签</h3>
+<p>只需要记住<strong>五对&quot;地址-快递员&quot;</strong>：</p>
+<p><strong>① 去 ER（然后走囊泡系统）</strong></p>
+<ul><li>地址标签：<strong>N-端 signal peptide</strong>（一段 ~20 aa 的疏水序列）</li><li>快递员：<strong>SRP</strong>（signal recognition particle，6 个蛋白 + 1 条 7SL RNA）</li><li>到了之后：signal peptidase 把标签剪掉</li><li>谁走这条路：所有分泌蛋白、膜蛋白、溶酶体酶</li></ul>
+<p><strong>② 去细胞核</strong></p>
+<ul><li>地址标签：<strong>NLS</strong>（nuclear localization signal，富含 Lys/Arg 的短序列）</li><li>快递员：<strong>Importin</strong>（一个家族，不同成员认不同 NLS）</li><li>怎么进门：importin 带着 cargo 通过核孔的 <strong>FG-repeat</strong> 穿过去</li><li>怎么卸货：核内的 <strong>Ran-GTP</strong> 结合 importin → importin 松手释放 cargo</li><li>调控方式：<strong>在 NLS 旁边磷酸化</strong> → importin 认不出来 → 蛋白进不了核</li></ul>
+<p><strong>③ 去线粒体</strong></p>
+<ul><li>地址标签：N-端信号序列（正电荷，amphipathic α-helix）</li><li>快递员：<strong>TOM</strong>（外膜）+ <strong>TIM23/TIM22</strong>（内膜）</li><li>蛋白要<strong>展开</strong>才能穿过去</li></ul>
+<p><strong>④ ER 内部回收（从 Golgi 拉回来）</strong></p>
+<ul><li>地址标签分两种：</li><li>可溶蛋白：<strong>KDEL</strong>（或 HDEL）——四个氨基酸（Lys-Asp-Glu-Leu）</li><li>膜蛋白：<strong>KKXX</strong>（胞质侧尾巴上两个 Lys）</li><li>快递员：<strong>KDEL 受体</strong>识别后，通过 <strong>COPI 囊泡</strong>逆向运回 ER</li></ul>
+<p><strong>⑤ 去溶酶体（从 Golgi 分拣出去）</strong></p>
+<ul><li>地址标签：<strong>M6P</strong>（mannose 6-phosphate）——是糖修饰，不是氨基酸序列</li><li>加标签的地方：<strong>Golgi</strong>（由 GlcNAc phosphotransferase 添加）</li><li>快递员：<strong>M6P 受体</strong>在 TGN 识别 → 包进 clathrin 囊泡 → 送到晚期内体</li><li>受体 pH 依赖性：pH 6.6（TGN）绑定，pH 6.0（晚期内体）释放</li></ul>
+<h3 id="第三层n-linked-糖基化">第三层：N-linked 糖基化</h3>
+<p>发生在 ER 腔中，糖链连到 <strong>Asparagine（天冬酰胺，单字母 N）</strong> 上。所以叫 N-linked。识别的氨基酸序列是 <strong>Asn-X-Ser/Thr</strong>，其中 X 可以是任何氨基酸但<strong>不能是 Pro</strong>。</p>
+<p>糖基化有什么用？三个功能记住三个词：<strong>折叠质控</strong>（calnexin/calreticulin 检查折叠对不对）、<strong>细胞识别</strong>（selectin 认糖）、<strong>保护蛋白</strong>（糖壳挡蛋白酶）。</p>
+<h3 id="超浓缩记忆卡片">超浓缩记忆卡片</h3>
+<div class="table-wrap"><table><thead><tr><th>去哪</th><th>地址标签</th><th>谁来送</th><th>怎么到</th></tr></thead><tbody><tr><td><strong>ER</strong></td><td>N-端 signal peptide（疏水）</td><td>SRP</td><td>穿 translocator 进 ER 腔</td></tr><tr><td><strong>细胞核</strong></td><td>NLS（富含 Lys/Arg）</td><td>Importin</td><td>穿核孔 FG-repeat，Ran-GTP 卸货</td></tr><tr><td><strong>线粒体</strong></td><td>N-端正电荷序列</td><td>TOM + TIM</td><td>展开穿过双层膜</td></tr><tr><td><strong>回 ER</strong> 可溶</td><td><strong>KDEL</strong></td><td>KDEL 受体</td><td><strong>COPI</strong> 囊泡逆向运回</td></tr><tr><td><strong>回 ER</strong> 膜蛋白</td><td><strong>KKXX</strong></td><td>COPI coat 直接识别</td><td><strong>COPI</strong> 囊泡逆向运回</td></tr><tr><td><strong>溶酶体</strong></td><td><strong>M6P</strong>（糖标记）</td><td>M6P 受体</td><td>TGN 出发 → clathrin 囊泡 → 晚期内体</td></tr></tbody></table></div>
+<p>万能规则：<strong>没有任何信号序列的蛋白 = 留在胞质中</strong>（default）；<strong>没有任何分选信号的分泌通路蛋白 = 走 default secretory pathway 直接分泌到细胞外</strong>。</p>
 <p>---</p>
 <h2 id="lecture-12细胞内囊泡运输">Lecture 12：细胞内囊泡运输</h2>
+<h3 id="囊泡运输-=-三条快递专线">囊泡运输 = 三条快递专线</h3>
+<p>细胞里的&quot;物流路线&quot;：<strong>ER（工厂）→ Golgi（分拣中心）→ 质膜（门口）/ 溶酶体（垃圾处理站）</strong></p>
+<h3 id="专线一copii——&quot;发货车&quot;">专线一：COPII——&quot;发货车&quot;</h3>
+<p><strong>方向：ER → Golgi（正向，往外送）</strong></p>
+<p>关键角色：</p>
+<ul><li><strong>Sar1</strong>（小 GTPase）：调度员，决定什么时候派车。Sar1-GTP 时启动装车，GTP 水解后外壳脱落</li><li><strong>Sec12</strong>：是 Sar1 的 GEF（激活 Sar1，把 GDP 换成 GTP，相当于&quot;派单员&quot;）</li><li><strong>Sec24/23</strong>：负责<strong>挑选货物</strong>（识别 cargo 蛋白胞质侧的 sorting signal）</li><li><strong>Sec13/31</strong>：外壳的结构支架</li></ul>
+<p>出发地点：ER 上没有核糖体的区域，叫 <strong>transitional ER / ER exit sites</strong>。</p>
+<h3 id="专线二copi——&quot;退货车&quot;">专线二：COPI——&quot;退货车&quot;</h3>
+<p><strong>方向：Golgi → ER（逆向，往回送）</strong></p>
+<p>关键角色：</p>
+<ul><li><strong>ARF</strong>（小 GTPase）：调度员，和 Sar1 角色一样但管的是 COPI</li></ul>
+<p>退什么货？两类：</p>
+<ul><li>带 <strong>KDEL</strong> 标签的可溶蛋白（被 KDEL 受体在 Golgi 抓住）</li><li>带 <strong>KKXX</strong> 标签的膜蛋白（被 COPI coat 直接识别）</li></ul>
+<p><strong>记忆口诀：COPII 是&quot;2→发出去&quot;（ER→Golgi），COPI 是&quot;1→退回来&quot;（Golgi→ER）。</strong> 数字越大越往外。</p>
+<h3 id="专线三clathrin——&quot;外卖员-+-快递分拣&quot;">专线三：Clathrin——&quot;外卖员 + 快递分拣&quot;</h3>
+<p><strong>Clathrin 干两件事：</strong></p>
+<p><strong>任务 A：在质膜搞内吞（endocytosis）</strong>——把细胞外的东西吞进来。比如 LDL 受体结合 LDL 颗粒后，clathrin 在下面组装一个笼子，把这块膜连同受体一起吞进来形成囊泡。</p>
+<p><strong>任务 B：在 TGN 搞分选</strong>——把溶酶体酶（带 M6P 标签的）从 Golgi 分拣出来，装进 clathrin 囊泡送往晚期内体/溶酶体。</p>
+<p>Clathrin 的结构和工作方式：</p>
+<ul><li>Clathrin 本身是<strong>三脚架（triskelion）</strong>：3 大 + 3 小亚基，自组装成六角形和五角形的笼子</li><li>Clathrin <strong>不直接碰货物</strong>——中间需要 <strong>AP（adaptor protein）</strong> 做桥梁，一头连 cargo，一头连 clathrin</li><li><strong>Dynamin</strong>（有 GTPase 活性）：负责在囊泡脖子处<strong>拧断</strong>（fission），让囊泡脱离母膜</li><li>囊泡脱离后要<strong>去壳（uncoating）</strong>才能和靶膜融合</li></ul>
+<p>LDL 内吞的完整故事：LDL 结合受体 → AP 招募 clathrin → 膜内陷形成 coated pit → dynamin 拧断 → coated vesicle → 去壳 → 进入早期内体（pH 降低）→ 受体和 LDL 分离 → 受体回收到质膜 → LDL 去溶酶体被降解</p>
+<h3 id="所有囊泡共用的&quot;到站-卸货&quot;系统">所有囊泡共用的&quot;到站-卸货&quot;系统</h3>
+<p>不管是 COPI、COPII 还是 Clathrin 囊泡，到了目的地都要经历同样的<strong>三步停靠和融合</strong>：</p>
+<p><strong>① Tethering（远距离拴住）</strong>——靠 <strong>Rab-GTP</strong>。Rab 是小 GTPase，每种 Rab 认一种靶膜。Rab-GTP 在囊泡上 → 招来 Rab effector（tethering protein）→ 把囊泡远远地拴到靶膜附近。</p>
+<p><strong>② Docking（近距离对接）</strong>——靠 <strong>SNARE 蛋白</strong>。囊泡上的 <strong>v-SNARE</strong> 和靶膜上的 <strong>t-SNARE</strong> 像拉链一样互相缠绕，形成 <strong>trans-SNARE complex</strong>，把两层膜拉到一起。</p>
+<p><strong>③ Fusion（融合）</strong>——SNARE 拉链拧到最紧，驱动两层膜融合，cargo 释放。</p>
+<p>融合后 SNARE 要被 <strong>NSF + α-SNAP</strong> 拆开回收。Rab-GDP 被 <strong>GDI</strong> 从膜上提取回胞质回收。</p>
+<h3 id="超浓缩记忆卡片-2">超浓缩记忆卡片</h3>
+<div class="table-wrap"><table><thead><tr><th></th><th>COPII &quot;发货车&quot;</th><th>COPI &quot;退货车&quot;</th><th>Clathrin &quot;外卖员&quot;</th></tr></thead><tbody><tr><td><strong>方向</strong></td><td>ER → Golgi</td><td>Golgi → ER</td><td>质膜内吞 + TGN→溶酶体</td></tr><tr><td><strong>调度 GTPase</strong></td><td><strong>Sar1</strong></td><td><strong>ARF</strong></td><td>ARF（TGN）/ 无（质膜）</td></tr><tr><td><strong>运什么</strong></td><td>新合成的分泌/膜蛋白</td><td>逃跑的 ER 蛋白（KDEL/KKXX）</td><td>LDL、转铁蛋白、M6P 酶</td></tr><tr><td><strong>独有特征</strong></td><td>Sec24 挑选 cargo</td><td>KDEL 受体</td><td>AP 桥接 + Dynamin 剪断</td></tr></tbody></table></div>
+<div class="table-wrap"><table><thead><tr><th>到站三步</th><th>关键蛋白</th><th>功能</th></tr></thead><tbody><tr><td>Tethering</td><td><strong>Rab-GTP</strong></td><td>远距离拴住</td></tr><tr><td>Docking + Fusion</td><td><strong>v-SNARE + t-SNARE</strong></td><td>拉链拉紧融合</td></tr><tr><td>回收</td><td>NSF 拆 SNARE，GDI 回收 Rab</td><td>循环利用</td></tr></tbody></table></div>
+<h3 id="高频考点非水解-gtp-类似物实验">高频考点：非水解 GTP 类似物实验</h3>
+<p>如果实验中加入<strong>不能水解的 GTP</strong>（nonhydrolyzable GTP analog），会怎样？</p>
+<p>答：Sar1/ARF 一直保持 GTP 状态 → 外壳一直不脱落 → <strong>大量有壳囊泡积累</strong>，无法去壳、无法融合。这个实验证明了 GTP 水解是去壳的必要步骤。</p>
+<h3 id="caveolae">Caveolae</h3>
+<p><strong>Caveolae</strong> 是另一种内吞方式，富含 caveolin 蛋白和胆固醇，参与 <strong>pinocytosis</strong>（胞饮），独立于 clathrin。</p>
+<p>---</p>
+<h2 id="lecture-12细胞内囊泡运输-2">Lecture 12：细胞内囊泡运输</h2>
 <h3 id="一、三种外壳囊泡">一、三种外壳囊泡</h3>
 <div class="table-wrap"><table><thead><tr><th>外壳类型</th><th>转运方向</th><th>调控 GTPase</th></tr></thead><tbody><tr><td><strong>COPII</strong></td><td>ER → Golgi（正向）</td><td><strong>Sar1</strong></td></tr><tr><td><strong>COPI</strong></td><td>Golgi → ER（逆向）</td><td><strong>ARF</strong></td></tr><tr><td><strong>Clathrin</strong></td><td>质膜内吞 + TGN 分选</td><td><strong>ARF</strong>（TGN处）</td></tr></tbody></table></div>
 <p>Sar1 GTPase 控制 COPII 外壳的组装和解聚。Sec12 是 Sar1 的 GEF。Sec24/23 负责 cargo sorting。</p>
@@ -338,7 +379,7 @@
 <p>---</p>
 <h2 id="板块二高频考点总结">板块二高频考点总结</h2>
 <div class="table-wrap"><table><thead><tr><th>考点</th><th>题号</th><th>讲次</th></tr></thead><tbody><tr><td>磷脂不对称分布</td><td>Q1</td><td>L9</td></tr><tr><td>简单扩散速率排序</td><td>Q3</td><td>L9</td></tr><tr><td>电化学平衡 vs 浓度平衡</td><td>Q2</td><td>L10</td></tr><tr><td>Channel vs Transporter 速率</td><td>Q13</td><td>L10</td></tr><tr><td>N-linked glycosylation 的 N = Asparagine</td><td>Q18</td><td>L11</td></tr><tr><td>核转运 importin/Ran-GTP</td><td>Q7, Q19</td><td>L11</td></tr><tr><td>ER retrieval signal（KDEL/KKXX）</td><td>Q20</td><td>L12</td></tr><tr><td>COPI/COPII/Clathrin 方向</td><td>—</td><td>L12</td></tr><tr><td>M6P 受体与 pH 依赖性</td><td>Q17</td><td>L12</td></tr><tr><td>LDL receptor-mediated endocytosis</td><td>Q9-11, Q21</td><td>L12</td></tr><tr><td>Caveolae = pinocytosis</td><td>Q15</td><td>L12</td></tr><tr><td>GPCR → G protein → 第二信使</td><td>Q4, Q6</td><td>L13</td></tr><tr><td>DAG 只在膜扩散，IP₃ 在水中扩散</td><td>Q4</td><td>L13</td></tr><tr><td>NO/cGMP 通路（硝酸甘油）</td><td>Q8</td><td>L13</td></tr><tr><td>Arrestin 结合的是受体不是 G 蛋白</td><td>Q6</td><td>L13</td></tr><tr><td>类固醇激素走核受体通路</td><td>Q16</td><td>L13</td></tr><tr><td>G 蛋白组成型激活突变</td><td>Q12</td><td>L13</td></tr><tr><td>正反馈 → 全或无响应</td><td>Q14</td><td>L13</td></tr></tbody></table></div></div>
-        <aside class="toc"><strong>目录</strong><a class="toc-level-2" href="#lecture-9膜结构与功能">Lecture 9：膜结构与功能</a><a class="toc-level-3" href="#知识块①脂双层的组成">知识块①：脂双层的组成</a><a class="toc-level-3" href="#知识块②磷脂不对称分布（高频考点）">知识块②：磷脂不对称分布（高频考点）</a><a class="toc-level-3" href="#知识块③膜蛋白的类型">知识块③：膜蛋白的类型</a><a class="toc-level-3" href="#知识块④膜流动性与脂筏">知识块④：膜流动性与脂筏</a><a class="toc-level-2" href="#lecture-10跨膜转运">Lecture 10：跨膜转运</a><a class="toc-level-3" href="#一、跨膜转运的基本方式">一、跨膜转运的基本方式</a><a class="toc-level-3" href="#二、转运体的分类">二、转运体的分类</a><a class="toc-level-3" href="#三、离子通道">三、离子通道</a><a class="toc-level-3" href="#四、电信号传导">四、电信号传导</a><a class="toc-level-2" href="#lecture-11细胞内区室与蛋白质分选">Lecture 11：细胞内区室与蛋白质分选</a><a class="toc-level-3" href="#一、三种蛋白质转运机制">一、三种蛋白质转运机制</a><a class="toc-level-3" href="#二、信号肽与-er-转位">二、信号肽与 ER 转位</a><a class="toc-level-3" href="#三、n-linked-糖基化">三、N-linked 糖基化</a><a class="toc-level-3" href="#四、核转运">四、核转运</a><a class="toc-level-3" href="#五、线粒体蛋白导入">五、线粒体蛋白导入</a><a class="toc-level-2" href="#lecture-12细胞内囊泡运输">Lecture 12：细胞内囊泡运输</a><a class="toc-level-3" href="#一、三种外壳囊泡">一、三种外壳囊泡</a><a class="toc-level-3" href="#二、er-→-golgi-运输">二、ER → Golgi 运输</a><a class="toc-level-3" href="#三、囊泡靶向与融合">三、囊泡靶向与融合</a><a class="toc-level-3" href="#四、clathrin-介导的内吞">四、Clathrin 介导的内吞</a><a class="toc-level-3" href="#五、tgn-到溶酶体的运输">五、TGN 到溶酶体的运输</a><a class="toc-level-2" href="#lecture-13细胞通讯">Lecture 13：细胞通讯</a><a class="toc-level-3" href="#一、信号传导总原则">一、信号传导总原则</a><a class="toc-level-3" href="#二、gpcr-信号通路">二、GPCR 信号通路</a><a class="toc-level-3" href="#三、酶联受体信号">三、酶联受体信号</a><a class="toc-level-3" href="#四、其他信号方式">四、其他信号方式</a><a class="toc-level-2" href="#跨讲综合考点">跨讲综合考点</a><a class="toc-level-3" href="#1-膜与转运的交叉">1. 膜与转运的交叉</a><a class="toc-level-3" href="#2-膜与囊泡运输的交叉">2. 膜与囊泡运输的交叉</a><a class="toc-level-3" href="#3-囊泡运输与信号的交叉">3. 囊泡运输与信号的交叉</a><a class="toc-level-3" href="#4-蛋白分选与疾病的交叉">4. 蛋白分选与疾病的交叉</a><a class="toc-level-2" href="#关键词速查">关键词速查</a><a class="toc-level-2" href="#板块二-·-quiz-21-题逐题精讲">板块二 · Quiz 21 题逐题精讲</a><a class="toc-level-3" href="#═══-lecture-9-膜结构与功能-═══">═══ Lecture 9: 膜结构与功能 ═══</a><a class="toc-level-3" href="#═══-lecture-10-跨膜转运-═══">═══ Lecture 10: 跨膜转运 ═══</a></aside>
+        <aside class="toc"><strong>目录</strong><a class="toc-level-2" href="#lecture-9膜结构与功能">Lecture 9：膜结构与功能</a><a class="toc-level-3" href="#知识块①脂双层的组成">知识块①：脂双层的组成</a><a class="toc-level-3" href="#知识块②磷脂不对称分布（高频考点）">知识块②：磷脂不对称分布（高频考点）</a><a class="toc-level-3" href="#知识块③膜蛋白的类型">知识块③：膜蛋白的类型</a><a class="toc-level-3" href="#知识块④膜流动性与脂筏">知识块④：膜流动性与脂筏</a><a class="toc-level-2" href="#lecture-10跨膜转运">Lecture 10：跨膜转运</a><a class="toc-level-3" href="#一、跨膜转运的基本方式">一、跨膜转运的基本方式</a><a class="toc-level-3" href="#二、转运体的分类">二、转运体的分类</a><a class="toc-level-3" href="#三、离子通道">三、离子通道</a><a class="toc-level-3" href="#四、电信号传导">四、电信号传导</a><a class="toc-level-2" href="#lecture-11细胞内区室与蛋白质分选">Lecture 11：细胞内区室与蛋白质分选</a><a class="toc-level-3" href="#蛋白质分选-=-快递分拣系统">蛋白质分选 = 快递分拣系统</a><a class="toc-level-3" href="#第一层蛋白在哪里合成的">第一层：蛋白在哪里合成的？</a><a class="toc-level-3" href="#第二层五个目的地五个地址标签">第二层：五个目的地，五个地址标签</a><a class="toc-level-3" href="#第三层n-linked-糖基化">第三层：N-linked 糖基化</a><a class="toc-level-3" href="#超浓缩记忆卡片">超浓缩记忆卡片</a><a class="toc-level-2" href="#lecture-12细胞内囊泡运输">Lecture 12：细胞内囊泡运输</a><a class="toc-level-3" href="#囊泡运输-=-三条快递专线">囊泡运输 = 三条快递专线</a><a class="toc-level-3" href="#专线一copii——&quot;发货车&quot;">专线一：COPII——&quot;发货车&quot;</a><a class="toc-level-3" href="#专线二copi——&quot;退货车&quot;">专线二：COPI——&quot;退货车&quot;</a><a class="toc-level-3" href="#专线三clathrin——&quot;外卖员-+-快递分拣&quot;">专线三：Clathrin——&quot;外卖员 + 快递分拣&quot;</a><a class="toc-level-3" href="#所有囊泡共用的&quot;到站-卸货&quot;系统">所有囊泡共用的&quot;到站-卸货&quot;系统</a><a class="toc-level-3" href="#超浓缩记忆卡片-2">超浓缩记忆卡片</a><a class="toc-level-3" href="#高频考点非水解-gtp-类似物实验">高频考点：非水解 GTP 类似物实验</a><a class="toc-level-3" href="#caveolae">Caveolae</a><a class="toc-level-2" href="#lecture-12细胞内囊泡运输-2">Lecture 12：细胞内囊泡运输</a><a class="toc-level-3" href="#一、三种外壳囊泡">一、三种外壳囊泡</a><a class="toc-level-3" href="#二、er-→-golgi-运输">二、ER → Golgi 运输</a><a class="toc-level-3" href="#三、囊泡靶向与融合">三、囊泡靶向与融合</a><a class="toc-level-3" href="#四、clathrin-介导的内吞">四、Clathrin 介导的内吞</a><a class="toc-level-3" href="#五、tgn-到溶酶体的运输">五、TGN 到溶酶体的运输</a><a class="toc-level-2" href="#lecture-13细胞通讯">Lecture 13：细胞通讯</a><a class="toc-level-3" href="#一、信号传导总原则">一、信号传导总原则</a><a class="toc-level-3" href="#二、gpcr-信号通路">二、GPCR 信号通路</a><a class="toc-level-3" href="#三、酶联受体信号">三、酶联受体信号</a><a class="toc-level-3" href="#四、其他信号方式">四、其他信号方式</a></aside>
       </div>
     </article>
   </main>
