@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="板块二重点（Lecture 9-13）">
+  <title>板块二重点（Lecture 9-13） | ABS 复习讲义</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <button class="menu-button" id="menuButton" aria-label="打开目录">目录</button>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark">ABS</span>
+      <span>
+        <strong>生物学复习讲义</strong>
+        <em>Advanced Biological Sciences</em>
+      </span>
+    </a>
+    <label class="search">
+      <span>搜索讲义</span>
+      <input id="searchInput" type="search" placeholder="例如 Ras / 膜电位 / DNA 复制">
+    </label>
+    <div class="search-results" id="searchResults"></div>
+    <nav class="nav"><a class="nav-link " href="01_cells_and_genomes.html">
+      <span>01</span>
+      <strong>Cells and Genomes</strong>
+    </a><a class="nav-link " href="02_cell_chemistry.html">
+      <span>02</span>
+      <strong>Cell Chemistry</strong>
+    </a><a class="nav-link " href="03_protein_structure_and_function.html">
+      <span>03</span>
+      <strong>Protein Structure and Function</strong>
+    </a><a class="nav-link " href="04_dna_chromosomes_and_genome.html">
+      <span>04</span>
+      <strong>DNA, Chromosomes and Genome</strong>
+    </a><a class="nav-link " href="05_dna_replication_repair_and_recombination.html">
+      <span>05</span>
+      <strong>DNA Replication, Repair, and Recombination</strong>
+    </a><a class="nav-link " href="06_from_dna_to_protein.html">
+      <span>06</span>
+      <strong>From DNA to Protein</strong>
+    </a><a class="nav-link " href="07_control_of_gene_expression.html">
+      <span>07</span>
+      <strong>Control of Gene Expression</strong>
+    </a><a class="nav-link " href="08_manipulating_proteins_dna_rna.html">
+      <span>08</span>
+      <strong>Manipulating Proteins, DNA and RNA</strong>
+    </a><a class="nav-link " href="09_membrane_structure_and_functions.html">
+      <span>09</span>
+      <strong>细胞膜结构与功能</strong>
+    </a><a class="nav-link " href="10_cross_membrane_transport.html">
+      <span>10</span>
+      <strong>跨膜转运与膜电学性质</strong>
+    </a><a class="nav-link " href="11_intracellular_compartments_and_protein_sorting.html">
+      <span>11</span>
+      <strong>细胞内区室与蛋白质分选（详细版）</strong>
+    </a><a class="nav-link " href="12_intracellular_vesicular_traffic.html">
+      <span>12</span>
+      <strong>细胞内囊泡运输 (Intracellular Vesicular Traffic)</strong>
+    </a><a class="nav-link " href="13_cell_communication.html">
+      <span>13</span>
+      <strong>细胞通讯</strong>
+    </a><a class="nav-link " href="14_cytoskeleton.html">
+      <span>14</span>
+      <strong>Cytoskeleton（细胞骨架）</strong>
+    </a><a class="nav-link " href="15_cell_cycle.html">
+      <span>15</span>
+      <strong>Cell Cycle（细胞周期）</strong>
+    </a><a class="nav-link " href="16_apoptosis.html">
+      <span>16</span>
+      <strong>Apoptosis（细胞凋亡）</strong>
+    </a><a class="nav-link " href="17_cell_junctions_i.html">
+      <span>17</span>
+      <strong>Cell Junctions, Cell Adhesion and Extracellular Matrix (I)</strong>
+    </a><a class="nav-link " href="18_cell_junctions_ii_ecm.html">
+      <span>18</span>
+      <strong>Cell Junctions, Cell Adhesion and Extracellular Matrix (II)</strong>
+    </a><a class="nav-link " href="19_ecm_and_cancer_biology.html">
+      <span>19</span>
+      <strong>Extracellular Matrix and Cancer Biology</strong>
+    </a><a class="nav-link " href="Lecture12_细胞内囊泡运输_详细学习笔记.html">
+      <span>20</span>
+      <strong>细胞内囊泡运输 (Intracellular Vesicular Traffic)</strong>
+    </a><a class="nav-link " href="lecture11_notes_v2.html">
+      <span>21</span>
+      <strong>细胞内区室与蛋白质分选（详细版）</strong>
+    </a></nav>
+    <div class="nav-section">
+      <a class="nav-link exam-link" href="exam_first_part.html">
+        <span>📝</span>
+        <strong>板块一重点（L1-8）</strong>
+      </a>
+      <a class="nav-link exam-link" href="exam_second_part.html">
+        <span>📝</span>
+        <strong>板块二重点（L9-13）</strong>
+      </a>
+      <a class="nav-link exam-link" href="exam_third_part.html">
+        <span>📝</span>
+        <strong>第三次考试重点（L14-19）</strong>
+      </a>
+    </div>
+  </aside>
+  <main class="page">
+    <article class="article">
+      <div class="article-head">
+        <a class="back-home" href="../index.html">返回首页</a>
+        <p class="lecture-number">考试重点</p>
+      </div>
+      <div class="article-layout">
+        <div class="content"><h1 id="板块二-·-基础知识（lectures-9–13）">板块二 · 基础知识（Lectures 9–13）</h1>
+<p>&gt; 覆盖膜结构与功能、跨膜转运、细胞内区室与蛋白质分选、囊泡运输、细胞通讯。</p>
+<p>---</p>
+<h2 id="lecture-9膜结构与功能">Lecture 9：膜结构与功能</h2>
+<h3 id="一、膜的总览">一、膜的总览</h3>
+<p>细胞膜（生物膜）有两大基本功能：作为<strong>屏障（barrier）</strong>隔离细胞内外环境；形成<strong>细胞内区室（compartments）</strong>实现功能分化。细胞内的主要膜性区室包括：nucleus, ER, Golgi, mitochondria, lysosome, peroxisome, transport vesicle 等。</p>
+<h3 id="二、脂双层">二、脂双层</h3>
+<p>磷脂是两亲性分子（amphipathic），有亲水头基和疏水尾部。分子形状决定了它们自组装的形态——<strong>锥形分子</strong>形成胶束（micelle），<strong>圆柱形分子</strong>形成脂双层（bilayer）。</p>
+<p>脂双层的组成包括三大类脂质：磷脂（phospholipids）、固醇（cholesterol）和糖脂（glycolipids）。几乎所有主要脂质（包括磷脂、胆固醇、神经酰胺——鞘磷脂和糖脂的前体）都在 <strong>ER</strong> 合成。脂质从 ER 到其他膜性区室的转运有三种方式：通过<strong>囊泡运输</strong>、通过<strong>胞质脂质转运蛋白</strong>、通过<strong>膜接触位点（membrane contact sites）</strong>。</p>
+<p><strong>磷脂不对称分布</strong>是核心考点：</p>
+<div class="table-wrap"><table><thead><tr><th>侧</th><th>脂质</th><th>电荷</th></tr></thead><tbody><tr><td>胞外侧（exoplasmic leaflet）</td><td>PC（磷脂酰胆碱）、Sphingomyelin（鞘磷脂）、Glycolipids（糖脂）</td><td>中性</td></tr><tr><td>胞质侧（cytoplasmic leaflet）</td><td>PE（磷脂酰乙醇胺）、PS（磷脂酰丝氨酸）、PI（磷脂酰肌醇）</td><td>PS/PI 带负电</td></tr><tr><td>两侧均等</td><td>Cholesterol</td><td>—</td></tr></tbody></table></div>
+<p>这种不对称性由三类磷脂转位酶维持：</p>
+<div class="table-wrap"><table><thead><tr><th>酶</th><th>方向</th><th>能量</th><th>底物</th></tr></thead><tbody><tr><td><strong>Flippase</strong>（P-type ATPase）</td><td>外侧 → 内侧</td><td>ATP</td><td>PS, PE</td></tr><tr><td><strong>Floppase</strong>（ABC transporter）</td><td>内侧 → 外侧</td><td>ATP</td><td>磷脂</td></tr><tr><td><strong>Scramblase</strong></td><td>双向打乱</td><td>不耗 ATP（被 Ca²⁺ 激活）</td><td>非特异性</td></tr></tbody></table></div>
+<p>磷脂自发翻转（flip-flop）在热力学上不利，非常缓慢。<strong>PS 翻转到外侧是凋亡的标志信号</strong>。</p>
+<p>脂质还能储存——<strong>脂滴（lipid droplets）</strong>从 ER 外膜形成，储存甘油三酯和胆固醇酯。</p>
+<h3 id="三、膜蛋白">三、膜蛋白</h3>
+<p>膜蛋白按照与脂双层的关系分两大类：</p>
+<p><strong>整合膜蛋白（integral membrane protein, IMP）</strong>：</p>
+<ul><li>跨膜蛋白（以 α-helix 或 β-barrel 跨膜）</li><li>单层嵌入蛋白（monolayer-associated）</li><li>脂质锚定蛋白（lipid-linked）</li></ul>
+<p><strong>外周膜蛋白（peripheral membrane protein, PMP）</strong>：不直接嵌入脂双层，通过非共价相互作用结合在膜表面。</p>
+<p>β-barrel 结构常见于线粒体和质体的外膜。</p>
+<p><strong>脂质锚定蛋白</strong>有三种方式：</p>
+<div class="table-wrap"><table><thead><tr><th>锚定方式</th><th>脂肪酸/基团</th><th>例子</th></tr></thead><tbody><tr><td>脂肪酸连接</td><td>14C 肉豆蔻酸或 16C 棕榈酸</td><td>Src 激酶</td></tr><tr><td>异戊二烯基连接</td><td>prenyl group</td><td>Ras, Rab（小 GTPase）</td></tr><tr><td>GPI 锚定</td><td>糖基磷脂酰肌醇</td><td>—</td></tr></tbody></table></div>
+<p>GPI 锚定蛋白先在 ER 中作为跨膜蛋白合成，然后跨膜结构域被切掉、转移到 GPI 锚上。</p>
+<p>膜蛋白的重要特征：不对称分布（每个蛋白有固定方向）；糖基化总在胞外面；二硫键也总在胞外面；膜蛋白不会 flip-flop；一些蛋白可以在膜平面自由移动，一些被细胞骨架限制（&quot;corralling&quot;）。</p>
+<p><strong>碳水化合物层（glycocalyx）</strong>由糖蛋白和糖脂的糖链组成，覆盖在细胞表面外侧。</p>
+<h3 id="四、膜流动性">四、膜流动性</h3>
+<p>脂双层的流动性受脂肪酸链长度、不饱和度和胆固醇含量影响。不饱和脂肪酸的扭结（kink）阻止紧密堆积，增加流动性。胆固醇有双重作用：在高温下限制流动性，在低温下防止凝固。</p>
+<p><strong>脂筏（lipid rafts）</strong>是质膜上富含鞘磷脂和胆固醇的微区域，能富集某些特定膜蛋白（如 GPI 锚定蛋白）。</p>
+<p>---</p>
+<h2 id="lecture-10跨膜转运">Lecture 10：跨膜转运</h2>
+<h3 id="一、跨膜转运的基本方式">一、跨膜转运的基本方式</h3>
+<p>分子穿过膜有两大辅助方式：</p>
+<div class="table-wrap"><table><thead><tr><th>类型</th><th>机制</th><th>速率</th></tr></thead><tbody><tr><td><strong>Channel（通道）</strong></td><td>形成连续亲水孔道，自身不变构象</td><td>10⁶–10⁸/sec</td></tr><tr><td><strong>Transporter（转运体）</strong></td><td>每转运一次经历构象变化</td><td>10²–10⁴/sec</td></tr></tbody></table></div>
+<p>被动转运沿电化学梯度，不需能量。主动转运逆电化学梯度，需要能量。</p>
+<p>简单扩散速率排序：<strong>小非极性气体（N₂, O₂, CO₂）</strong>最快 → <strong>小不带电极性分子（ethanol, 水）</strong>次之 → <strong>大不带电极性分子（glucose）</strong>很慢 → <strong>离子（Ca²⁺, Na⁺）</strong>几乎不能通过。</p>
+<h3 id="二、转运体的分类">二、转运体的分类</h3>
+<div class="table-wrap"><table><thead><tr><th>类型</th><th>方向</th><th>例子</th></tr></thead><tbody><tr><td><strong>Uniporter</strong></td><td>单向，沿梯度</td><td>—</td></tr><tr><td><strong>Symporter（同向转运）</strong></td><td>两种溶质同方向</td><td>Na⁺/glucose symporter</td></tr><tr><td><strong>Antiporter（逆向转运）</strong></td><td>两种溶质反方向</td><td>Na⁺/H⁺ exchanger</td></tr></tbody></table></div>
+<p><strong>ATP 驱动泵（primary active transport）</strong>：</p>
+<div class="table-wrap"><table><thead><tr><th>泵类型</th><th>特点</th><th>例子</th></tr></thead><tbody><tr><td><strong>P-type ATPase</strong></td><td>有自磷酸化活性</td><td>Na⁺-K⁺ pump（3 Na⁺出/2 K⁺入）、Ca²⁺ pump、Flippase</td></tr><tr><td><strong>V-type ATPase</strong></td><td>酸化细胞器</td><td>溶酶体和内体的 H⁺ 泵</td></tr><tr><td><strong>F-type ATPase</strong></td><td>利用 H⁺ 梯度合成 ATP</td><td>线粒体 ATP synthase</td></tr><tr><td><strong>ABC transporter</strong></td><td>转运多种底物</td><td>Floppase、CFTR（实际是 Cl⁻ 通道）</td></tr></tbody></table></div>
+<h3 id="三、离子通道">三、离子通道</h3>
+<p><strong>K⁺ 通道的选择性机制</strong>（经典考点）：</p>
+<p>1. 入口处带负电氨基酸吸引阳离子、排斥阴离子（选择阳离子） 2. 选择性滤器（selectivity filter）的壁由羰基氧排列形成 K⁺ 结合位点 3. K⁺ 必须先脱水才能通过，羰基氧替代水分子 4. Na⁺ 太小，无法与所有四个氧原子同时作用 → K⁺ 通道对 K⁺ 的选择性是 Na⁺ 的 <strong>10,000 倍</strong></p>
+<p><strong>Aquaporin（水通道蛋白）</strong>：6 个跨膜 α-helix，形成同源四聚体。</p>
+<h3 id="四、电信号传导">四、电信号传导</h3>
+<p><strong>动作电位</strong>的产生依赖三种通道协作：</p>
+<div class="table-wrap"><table><thead><tr><th>阶段</th><th>通道状态</th><th>离子流动</th><th>膜电位变化</th></tr></thead><tbody><tr><td>静息</td><td>K⁺ leak channel 开放</td><td>K⁺ 外流</td><td>~-70mV</td></tr><tr><td>上升相</td><td>电压门控 Na⁺ channel 开放</td><td>Na⁺ 内流</td><td>去极化</td></tr><tr><td>下降相</td><td>Na⁺ channel 自动失活 + 电压门控 K⁺ channel 开放</td><td>K⁺ 外流</td><td>复极化</td></tr></tbody></table></div>
+<p>Na⁺ channel 三种状态：<strong>closed → open → inactive</strong>。Inactive 态在去极化膜上自由能最低；closed 态在超极化膜上自由能最低。这解释了通道先开后自动失活。</p>
+<p>动作电位的<strong>自我放大和传播</strong>：一处去极化激活邻近区域的 Na⁺ channel，信号沿轴突单向传导。发生在轴突起始段（axon hillock）。</p>
+<p>---</p>
+<h2 id="lecture-11细胞内区室与蛋白质分选">Lecture 11：细胞内区室与蛋白质分选</h2>
+<h3 id="一、三种蛋白质转运机制">一、三种蛋白质转运机制</h3>
+<div class="table-wrap"><table><thead><tr><th>机制</th><th>途径</th><th>信号</th></tr></thead><tbody><tr><td><strong>门控转运</strong></td><td>通过核孔复合体进出细胞核</td><td>NLS / NES</td></tr><tr><td><strong>蛋白质易位</strong></td><td>未折叠蛋白穿过转位子</td><td>信号肽（signal peptide）</td></tr><tr><td><strong>囊泡运输</strong></td><td>蛋白被包在囊泡中转运</td><td>分选信号</td></tr></tbody></table></div>
+<h3 id="二、信号肽与-er-转位">二、信号肽与 ER 转位</h3>
+<p>分泌蛋白和膜蛋白的 N-端有一段<strong>信号肽（signal peptide）</strong>，约 20-30 个氨基酸，疏水性强。被 <strong>SRP（signal recognition particle）</strong> 识别。SRP 由 6 个蛋白和一个 7SL RNA（300 nt）组成。</p>
+<p>过程：</p>
+<pre><code>核糖体开始翻译 → 信号肽露出
+  → SRP 结合信号肽，暂停翻译
+  → SRP-核糖体复合物靠到 ER 膜上的 SRP 受体
+  → 蛋白链穿过转位子进入 ER 腔
+  → signal peptidase 切掉信号肽</code></pre>
+<p><strong>不同类型蛋白的插入方式</strong>：</p>
+<div class="table-wrap"><table><thead><tr><th>蛋白类型</th><th>信号序列</th><th>特点</th></tr></thead><tbody><tr><td><strong>可溶性蛋白</strong></td><td>N-端信号肽（start-transfer）</td><td>信号肽被切掉，蛋白全部进入 ER 腔</td></tr><tr><td><strong>I 型跨膜蛋白</strong></td><td>N-端信号肽 + 内部 stop-transfer</td><td>信号肽被切，stop-transfer 留在膜中</td></tr><tr><td><strong>II/III 型跨膜蛋白</strong></td><td>内部 signal anchor（不被切）</td><td>flanking 氨基酸电荷决定方向</td></tr><tr><td><strong>多次跨膜蛋白</strong></td><td>交替的 start-transfer 和 stop-transfer</td><td>—</td></tr><tr><td><strong>GPI 锚定蛋白</strong></td><td>先合成跨膜蛋白，再转移到 GPI 锚</td><td>跨膜域被切掉</td></tr></tbody></table></div>
+<h3 id="三、n-linked-糖基化">三、N-linked 糖基化</h3>
+<p>发生在 ER 腔中，糖链连接到 <strong>Asparagine（N）</strong> 的侧链上，识别序列是 <strong>Asn-X-Ser/Thr</strong>（X ≠ Pro）。糖基化参与蛋白质折叠质控（calnexin/calreticulin 循环），错误折叠的蛋白通过 <strong>ERAD</strong> 被降解。</p>
+<h3 id="四、核转运">四、核转运</h3>
+<p>进核：组蛋白、DNA/RNA polymerase、转录因子、核糖体蛋白等。 出核：成熟 mRNA、tRNA、前核糖体亚基等。</p>
+<p>核转运受体（importin 家族）识别 NLS，通过与核孔中 FG-repeat nucleoporins 的多次低亲和力相互作用穿过核孔。在核内，<strong>Ran-GTP</strong> 与 importin 结合使其释放 cargo。</p>
+<p>磷酸化可以调控核定位——在 NLS 附近的磷酸化阻止 importin 结合，把蛋白留在胞质。</p>
+<h3 id="五、线粒体蛋白导入">五、线粒体蛋白导入</h3>
+<p>线粒体蛋白大多在胞质合成后通过 <strong>TOM（外膜）</strong> 和 <strong>TIM23/TIM22（内膜）</strong> 复合物导入。多次跨膜蛋白通过 TOM + TIM22 插入内膜。</p>
+<p>---</p>
+<h2 id="lecture-12细胞内囊泡运输">Lecture 12：细胞内囊泡运输</h2>
+<h3 id="一、三种外壳囊泡">一、三种外壳囊泡</h3>
+<div class="table-wrap"><table><thead><tr><th>外壳类型</th><th>转运方向</th><th>调控 GTPase</th></tr></thead><tbody><tr><td><strong>COPII</strong></td><td>ER → Golgi（正向）</td><td><strong>Sar1</strong></td></tr><tr><td><strong>COPI</strong></td><td>Golgi → ER（逆向）</td><td><strong>ARF</strong></td></tr><tr><td><strong>Clathrin</strong></td><td>质膜内吞 + TGN 分选</td><td><strong>ARF</strong>（TGN处）</td></tr></tbody></table></div>
+<p>Sar1 GTPase 控制 COPII 外壳的组装和解聚。Sec12 是 Sar1 的 GEF。Sec24/23 负责 cargo sorting。</p>
+<p><strong>关键实验</strong>：非水解 GTP 类似物（nonhydrolyzable GTP analog）存在时，囊泡会大量积累——因为外壳无法解聚（需要 GTP 水解才能 uncoat）。</p>
+<h3 id="二、er-→-golgi-运输">二、ER → Golgi 运输</h3>
+<p>COPII 囊泡从 ER 的无核糖体区域（transitional ER / ER exit sites）出芽。膜蛋白在胞质侧展示 exit signal 被 Sec24 识别。</p>
+<p><strong>ER 驻留蛋白的回收</strong>：</p>
+<div class="table-wrap"><table><thead><tr><th>蛋白类型</th><th>回收信号</th><th>回收方式</th></tr></thead><tbody><tr><td>可溶性 ER 蛋白</td><td><strong>H/KDEL</strong> 序列</td><td>KDEL 受体识别 → COPI 囊泡逆向运回</td></tr><tr><td>ER 膜蛋白</td><td><strong>KKXX</strong> 基序</td><td>COPI 囊泡逆向运回</td></tr></tbody></table></div>
+<h3 id="三、囊泡靶向与融合">三、囊泡靶向与融合</h3>
+<p><strong>Rab GTPase</strong>：Rab-GTP 在囊泡上招募效应蛋白（tethering protein），介导 <strong>tethering → docking → fusion</strong> 三步。Rab-GDP 被 <strong>GDI（GDP dissociation inhibitor）</strong> 从膜上提取到胞质中回收。</p>
+<p><strong>SNARE 蛋白</strong>：囊泡上的 <strong>v-SNARE</strong> 和靶膜上的 <strong>t-SNARE</strong> 形成 <strong>trans-SNARE complex</strong>，拉近两层膜驱动融合。</p>
+<h3 id="四、clathrin-介导的内吞">四、Clathrin 介导的内吞</h3>
+<p>Clathrin 是由 3 大 + 3 小亚基组成的<strong>三脚架（triskelion）</strong>，自组装成六角形和五角形的笼状结构。Clathrin 不直接结合 cargo——由 <strong>adaptor protein（AP）</strong> 桥接。</p>
+<p>五种 AP 复合物：AP2 在质膜，AP1/3 在 TGN/内体等。</p>
+<p><strong>PI(4,5)P₂</strong> 招募 AP 复合物到质膜。出芽后 PI(5)P phosphatase 水解 PI(4,5)P₂ 促进去壳。<strong>Dynamin</strong>（含 PI(4,5)P₂ 结合域 + GTPase 域）负责囊泡的断裂（fission）。</p>
+<p><strong>Caveolae</strong>：富含 caveolin 蛋白和胆固醇，参与 <strong>pinocytosis</strong>（胞饮），独立于 clathrin。</p>
+<h3 id="五、tgn-到溶酶体的运输">五、TGN 到溶酶体的运输</h3>
+<p>溶酶体酶带有 <strong>mannose 6-phosphate（M6P）</strong> 标记，在 TGN 中被 <strong>M6P 受体</strong>识别。M6P 受体的结合是 <strong>pH 依赖的</strong>：在 TGN（pH 6.6）结合，在晚期内体（pH 6.0）释放。受体通过 <strong>retromer</strong> 回收到 TGN。</p>
+<p><strong>LDL 受体介导的内吞</strong>（经典案例）：</p>
+<pre><code>LDL 颗粒被 LDL receptor 结合
+  → clathrin-coated pit → 内化
+  → 早期内体中受体与 LDL 分离（低 pH）
+  → 受体回收到质膜
+  → LDL 送往溶酶体降解释放胆固醇</code></pre>
+<p>胆固醇用 LDL 运输是因为胆固醇在水中几乎不溶。</p>
+<p>---</p>
+<h2 id="lecture-13细胞通讯">Lecture 13：细胞通讯</h2>
+<h3 id="一、信号传导总原则">一、信号传导总原则</h3>
+<p>信号分子可以是可溶性的或膜结合的。细胞表面受体接收亲水信号，胞内受体（核受体）接收脂溶性信号。</p>
+<p><strong>分子开关</strong>两大类：</p>
+<div class="table-wrap"><table><thead><tr><th>开关类型</th><th>活化状态</th><th>灭活状态</th></tr></thead><tbody><tr><td>GTP 结合蛋白（Ras 等）</td><td>GTP 结合</td><td>GDP 结合</td></tr><tr><td>蛋白质磷酸化</td><td>Kinase 磷酸化</td><td>Phosphatase 去磷酸化</td></tr></tbody></table></div>
+<p><strong>第二信使</strong>：</p>
+<div class="table-wrap"><table><thead><tr><th>第二信使</th><th>扩散范围</th><th>功能</th></tr></thead><tbody><tr><td><strong>cAMP</strong></td><td>水中扩散</td><td>激活 PKA</td></tr><tr><td><strong>cGMP</strong></td><td>水中扩散</td><td>激活 PKG</td></tr><tr><td><strong>Ca²⁺</strong></td><td>水中扩散</td><td>多种效应</td></tr><tr><td><strong>IP₃</strong></td><td>水中扩散</td><td>触发 ER 释放 Ca²⁺</td></tr><tr><td><strong>DAG</strong></td><td>只在膜脂中扩散</td><td>激活 PKC</td></tr></tbody></table></div>
+<p><strong>正反馈</strong> → 全或无开关 + 记忆装置。<strong>负反馈</strong> → 适应/脱敏。</p>
+<h3 id="二、gpcr-信号通路">二、GPCR 信号通路</h3>
+<p>GPCR 是<strong>七次跨膜蛋白</strong>，人类超过 700 种，约 50% 药物靶向 GPCR。所有 GPCR 都通过<strong>三聚体 G 蛋白</strong>传递信号（α + βγ 亚基）。</p>
+<p>主要通路：</p>
+<div class="table-wrap"><table><thead><tr><th>G 蛋白</th><th>下游</th><th>效应</th></tr></thead><tbody><tr><td><strong>Gs</strong></td><td>adenylyl cyclase → cAMP ↑</td><td>PKA 激活</td></tr><tr><td><strong>Gq</strong></td><td>PLCβ → IP₃ + DAG</td><td>Ca²⁺ 释放 + PKC 激活</td></tr><tr><td>—</td><td>直接调控离子通道</td><td>—</td></tr></tbody></table></div>
+<p>GPCR 信号关闭：<strong>GRK</strong> 磷酸化受体 → <strong>arrestin 结合被磷酸化的受体</strong>（注意：arrestin 结合的是受体，不是 G 蛋白！）→ 阻断 G 蛋白偶联、触发受体内吞。<strong>RGS</strong> 蛋白加速 Gα 的 GTPase 活性。</p>
+<p><strong>特殊案例</strong>：硝酸甘油 → 释放 <strong>NO</strong> → 激活可溶性鸟苷酸环化酶 → cGMP ↑ → 血管舒张。</p>
+<h3 id="三、酶联受体信号">三、酶联受体信号</h3>
+<p><strong>RTK（受体酪氨酸激酶）</strong>：</p>
+<pre><code>配体结合 → 受体二聚化
+  → 互相自磷酸化（trans-autophosphorylation）
+  → 磷酸化 Tyr 招募下游蛋白
+  → Grb2 → SOS → Ras 激活
+  → MAP kinase cascade（Raf → MEK → ERK）
+  → 调控基因表达、增殖</code></pre>
+<p>Ras 是小 GTPase，通过 GEF（SOS）激活、通过 GAP 灭活。</p>
+<p><strong>Cytokine 信号</strong>通过 <strong>JAK-STAT</strong> 通路：</p>
+<pre><code>细胞因子受体（无自身激酶活性）+ JAK
+  → 配体结合 → 受体二聚化
+  → JAK 互相磷酸化
+  → 磷酸化受体招募 STAT
+  → STAT 磷酸化后二聚进核调控基因</code></pre>
+<h3 id="四、其他信号方式">四、其他信号方式</h3>
+<p><strong>Wnt/Notch/Hedgehog</strong>：通过调控蛋白水解（regulated proteolysis）和转录活性传递信号。</p>
+<p><strong>核受体信号</strong>：类固醇激素（雌激素、睾酮、皮质醇等）是脂溶性小分子，穿过细胞膜，结合胞内核受体，作为转录因子调控基因表达。响应较慢（涉及转录翻译），但作用持久。</p>
+<p>---</p>
+<h2 id="跨讲综合考点">跨讲综合考点</h2>
+<h3 id="1-膜与转运的交叉">1. 膜与转运的交叉</h3>
+<ul><li><strong>Na⁺-K⁺ pump</strong> 建立的 Na⁺ 梯度驱动 <strong>Na⁺/glucose symporter</strong></li><li><strong>V-type ATPase</strong> 酸化溶酶体，为水解酶提供最适 pH</li><li><strong>F-type ATPase</strong> 利用线粒体内膜 H⁺ 梯度合成 ATP</li></ul>
+<h3 id="2-膜与囊泡运输的交叉">2. 膜与囊泡运输的交叉</h3>
+<ul><li><strong>脂筏</strong>可能参与某些囊泡的出芽和分选</li><li><strong>PI(4,5)P₂</strong> 在质膜上招募内吞 machinery</li><li><strong>磷脂不对称性</strong>的破坏（如 PS 外翻）是凋亡信号</li></ul>
+<h3 id="3-囊泡运输与信号的交叉">3. 囊泡运输与信号的交叉</h3>
+<ul><li><strong>RTK 内吞</strong>是信号脱敏的重要机制</li><li><strong>LDL 受体循环</strong>缺陷导致家族性高胆固醇血症</li><li><strong>Wnt/Notch</strong> 信号依赖囊泡运输进行蛋白水解调控</li></ul>
+<h3 id="4-蛋白分选与疾病的交叉">4. 蛋白分选与疾病的交叉</h3>
+<ul><li><strong>I-cell disease</strong>：M6P 标记缺陷 → 溶酶体酶被分泌到胞外</li><li><strong>家族性高胆固醇血症</strong>：LDL 受体突变</li><li><strong>囊性纤维化</strong>：CFTR（ABC transporter 家族的 Cl⁻ 通道）突变</li></ul>
+<p>---</p>
+<h2 id="关键词速查">关键词速查</h2>
+<div class="table-wrap"><table><thead><tr><th>英文</th><th>中文</th><th>讲次</th></tr></thead><tbody><tr><td>Amphipathic</td><td>两亲性</td><td>9</td></tr><tr><td>Flippase / Floppase / Scramblase</td><td>磷脂转位酶</td><td>9</td></tr><tr><td>Lipid raft</td><td>脂筏</td><td>9</td></tr><tr><td>Glycocalyx</td><td>碳水化合物层/糖萼</td><td>9</td></tr><tr><td>GPI anchor</td><td>糖基磷脂酰肌醇锚</td><td>9</td></tr><tr><td>Uniporter / Symporter / Antiporter</td><td>转运体类型</td><td>10</td></tr><tr><td>P-type / V-type / F-type ATPase</td><td>ATP 驱动泵类型</td><td>10</td></tr><tr><td>Selectivity filter</td><td>选择性滤器</td><td>10</td></tr><tr><td>Action potential</td><td>动作电位</td><td>10</td></tr><tr><td>Signal peptide</td><td>信号肽</td><td>11</td></tr><tr><td>SRP</td><td>信号识别颗粒</td><td>11</td></tr><tr><td>N-linked glycosylation</td><td>N-连接糖基化</td><td>11</td></tr><tr><td>ERAD</td><td>内质网相关降解</td><td>11</td></tr><tr><td>Ran-GTP</td><td>核转运调控因子</td><td>11</td></tr><tr><td>COPII / COPI / Clathrin</td><td>外壳囊泡类型</td><td>12</td></tr><tr><td>Rab GTPase</td><td>囊泡靶向调控</td><td>12</td></tr><tr><td>SNARE</td><td>膜融合蛋白</td><td>12</td></tr><tr><td>Dynamin</td><td>囊泡断裂 GTPase</td><td>12</td></tr><tr><td>M6P</td><td>甘露糖-6-磷酸</td><td>12</td></tr><tr><td>GPCR</td><td>G 蛋白偶联受体</td><td>13</td></tr><tr><td>RTK</td><td>受体酪氨酸激酶</td><td>13</td></tr><tr><td>MAP kinase cascade</td><td>MAP 激酶级联</td><td>13</td></tr><tr><td>JAK-STAT</td><td>细胞因子信号通路</td><td>13</td></tr><tr><td>Second messenger</td><td>第二信使</td><td>13</td></tr></tbody></table></div></div>
+        <aside class="toc"><strong>目录</strong><a class="toc-level-2" href="#lecture-9膜结构与功能">Lecture 9：膜结构与功能</a><a class="toc-level-3" href="#一、膜的总览">一、膜的总览</a><a class="toc-level-3" href="#二、脂双层">二、脂双层</a><a class="toc-level-3" href="#三、膜蛋白">三、膜蛋白</a><a class="toc-level-3" href="#四、膜流动性">四、膜流动性</a><a class="toc-level-2" href="#lecture-10跨膜转运">Lecture 10：跨膜转运</a><a class="toc-level-3" href="#一、跨膜转运的基本方式">一、跨膜转运的基本方式</a><a class="toc-level-3" href="#二、转运体的分类">二、转运体的分类</a><a class="toc-level-3" href="#三、离子通道">三、离子通道</a><a class="toc-level-3" href="#四、电信号传导">四、电信号传导</a><a class="toc-level-2" href="#lecture-11细胞内区室与蛋白质分选">Lecture 11：细胞内区室与蛋白质分选</a><a class="toc-level-3" href="#一、三种蛋白质转运机制">一、三种蛋白质转运机制</a><a class="toc-level-3" href="#二、信号肽与-er-转位">二、信号肽与 ER 转位</a><a class="toc-level-3" href="#三、n-linked-糖基化">三、N-linked 糖基化</a><a class="toc-level-3" href="#四、核转运">四、核转运</a><a class="toc-level-3" href="#五、线粒体蛋白导入">五、线粒体蛋白导入</a><a class="toc-level-2" href="#lecture-12细胞内囊泡运输">Lecture 12：细胞内囊泡运输</a><a class="toc-level-3" href="#一、三种外壳囊泡">一、三种外壳囊泡</a><a class="toc-level-3" href="#二、er-→-golgi-运输">二、ER → Golgi 运输</a><a class="toc-level-3" href="#三、囊泡靶向与融合">三、囊泡靶向与融合</a><a class="toc-level-3" href="#四、clathrin-介导的内吞">四、Clathrin 介导的内吞</a><a class="toc-level-3" href="#五、tgn-到溶酶体的运输">五、TGN 到溶酶体的运输</a><a class="toc-level-2" href="#lecture-13细胞通讯">Lecture 13：细胞通讯</a><a class="toc-level-3" href="#一、信号传导总原则">一、信号传导总原则</a><a class="toc-level-3" href="#二、gpcr-信号通路">二、GPCR 信号通路</a><a class="toc-level-3" href="#三、酶联受体信号">三、酶联受体信号</a><a class="toc-level-3" href="#四、其他信号方式">四、其他信号方式</a><a class="toc-level-2" href="#跨讲综合考点">跨讲综合考点</a><a class="toc-level-3" href="#1-膜与转运的交叉">1. 膜与转运的交叉</a><a class="toc-level-3" href="#2-膜与囊泡运输的交叉">2. 膜与囊泡运输的交叉</a><a class="toc-level-3" href="#3-囊泡运输与信号的交叉">3. 囊泡运输与信号的交叉</a><a class="toc-level-3" href="#4-蛋白分选与疾病的交叉">4. 蛋白分选与疾病的交叉</a><a class="toc-level-2" href="#关键词速查">关键词速查</a></aside>
+      </div>
+    </article>
+  </main>
+  <script src="../assets/app.js"></script>
+</body>
+</html>

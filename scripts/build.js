@@ -542,6 +542,10 @@ function layout({ title, body, lectures, currentSlug = "", description = "" }) {
         <span>📝</span>
         <strong>板块一重点（L1-8）</strong>
       </a>
+      <a class="nav-link exam-link" href="${currentSlug ? "exam_second_part.html" : "lectures/exam_second_part.html"}">
+        <span>📝</span>
+        <strong>板块二重点（L9-13）</strong>
+      </a>
       <a class="nav-link exam-link" href="${currentSlug ? "exam_third_part.html" : "lectures/exam_third_part.html"}">
         <span>📝</span>
         <strong>第三次考试重点（L14-19）</strong>
@@ -640,6 +644,7 @@ function buildSearchIndex(lectures) {
 function buildExamKeyPoints(lectures) {
   const examFiles = [
     { file: "exam_first_part_key_points.md", title: "板块一重点（Lecture 1-8）", slug: "exam_first_part" },
+    { file: "exam_second_part_key_points.md", title: "板块二重点（Lecture 9-13）", slug: "exam_second_part" },
     { file: "exam_third_part_key_points.md", title: "第三次考试重点（Lecture 14-19）", slug: "exam_third_part" }
   ];
   for (const exam of examFiles) {
