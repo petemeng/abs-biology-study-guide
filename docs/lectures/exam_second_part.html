@@ -258,20 +258,52 @@
 <p>胆固醇用 LDL 运输是因为胆固醇在水中几乎不溶。</p>
 <p>---</p>
 <h2 id="lecture-13细胞通讯">Lecture 13：细胞通讯</h2>
-<h3 id="一、信号传导总原则">一、信号传导总原则</h3>
-<p>信号分子可以是可溶性的或膜结合的。细胞表面受体接收亲水信号，胞内受体（核受体）接收脂溶性信号。</p>
-<p><strong>分子开关</strong>两大类：</p>
-<div class="table-wrap"><table><thead><tr><th>开关类型</th><th>活化状态</th><th>灭活状态</th></tr></thead><tbody><tr><td>GTP 结合蛋白（Ras 等）</td><td>GTP 结合</td><td>GDP 结合</td></tr><tr><td>蛋白质磷酸化</td><td>Kinase 磷酸化</td><td>Phosphatase 去磷酸化</td></tr></tbody></table></div>
-<p><strong>第二信使</strong>：</p>
-<div class="table-wrap"><table><thead><tr><th>第二信使</th><th>扩散范围</th><th>功能</th></tr></thead><tbody><tr><td><strong>cAMP</strong></td><td>水中扩散</td><td>激活 PKA</td></tr><tr><td><strong>cGMP</strong></td><td>水中扩散</td><td>激活 PKG</td></tr><tr><td><strong>Ca²⁺</strong></td><td>水中扩散</td><td>多种效应</td></tr><tr><td><strong>IP₃</strong></td><td>水中扩散</td><td>触发 ER 释放 Ca²⁺</td></tr><tr><td><strong>DAG</strong></td><td>只在膜脂中扩散</td><td>激活 PKC</td></tr></tbody></table></div>
-<p><strong>正反馈</strong> → 全或无开关 + 记忆装置。<strong>负反馈</strong> → 适应/脱敏。</p>
-<h3 id="二、gpcr-信号通路">二、GPCR 信号通路</h3>
-<p>GPCR 是<strong>七次跨膜蛋白</strong>，人类超过 700 种，约 50% 药物靶向 GPCR。所有 GPCR 都通过<strong>三聚体 G 蛋白</strong>传递信号（α + βγ 亚基）。</p>
-<p>主要通路：</p>
-<div class="table-wrap"><table><thead><tr><th>G 蛋白</th><th>下游</th><th>效应</th></tr></thead><tbody><tr><td><strong>Gs</strong></td><td>adenylyl cyclase → cAMP ↑</td><td>PKA 激活</td></tr><tr><td><strong>Gq</strong></td><td>PLCβ → IP₃ + DAG</td><td>Ca²⁺ 释放 + PKC 激活</td></tr><tr><td>—</td><td>直接调控离子通道</td><td>—</td></tr></tbody></table></div>
-<p>GPCR 信号关闭：<strong>GRK</strong> 磷酸化受体 → <strong>arrestin 结合被磷酸化的受体</strong>（注意：arrestin 结合的是受体，不是 G 蛋白！）→ 阻断 G 蛋白偶联、触发受体内吞。<strong>RGS</strong> 蛋白加速 Gα 的 GTPase 活性。</p>
-<p><strong>特殊案例</strong>：硝酸甘油 → 释放 <strong>NO</strong> → 激活可溶性鸟苷酸环化酶 → cGMP ↑ → 血管舒张。</p>
-<h3 id="三、酶联受体信号">三、酶联受体信号</h3>
+<h3 id="gpcr-信号通路-=-一套接力赛系统">GPCR 信号通路 = 一套接力赛系统</h3>
+<p><strong>GPCR（G protein-coupled receptor）</strong>就是一个&quot;门卫&quot;。一条蛋白链在膜里<strong>穿进穿出 7 次</strong>（7-pass transmembrane protein）。人体<strong>最大的受体家族</strong>，超过 700 种。嗅觉、视觉、味觉全靠它。约 <strong>50% 的药物</strong>靶向 GPCR。</p>
+<p>GPCR 自己不会干活，它收到信号后要喊<strong>三聚体 G 蛋白（trimeric G protein）</strong>来接力。</p>
+<h3 id="三聚体-g-蛋白是什么">三聚体 G 蛋白是什么？</h3>
+<p>由三个亚基组成：<strong>α、β、γ</strong>。</p>
+<ul><li><strong>Gα</strong> 是核心：能结合 GTP 或 GDP，自带 GTPase 活性</li><li><strong>β 和 γ</strong> 永远绑在一起，作为功能单元 <strong>Gβγ</strong></li></ul>
+<p><strong>G 蛋白就是一个分子开关：</strong></p>
+<ul><li>结合 <strong>GDP</strong> = <strong>关闭状态</strong>（α和βγ抱在一起）</li><li>结合 <strong>GTP</strong> = <strong>激活状态</strong>（α和βγ分开，各自去激活下游）</li></ul>
+<h3 id="信号传递的完整故事（6-步）">信号传递的完整故事（6 步）</h3>
+<p><strong>第 1 步：信号来了</strong> — 信号分子（如肾上腺素）结合 GPCR 胞外部分。</p>
+<p><strong>第 2 步：GPCR 变形，踢走 GDP</strong> — GPCR 构象改变，把 Gα 上的 GDP 扣下来。细胞内 GTP 浓度比 GDP 高（约 10:1），GTP 立刻占上去。</p>
+<p><strong>第 3 步：G 蛋白分家</strong> — Gα-GTP 和 Gβγ 分开，各自去找下游目标。</p>
+<p><strong>第 4 步：激活下游效应器</strong>（分两条路）</p>
+<p><strong>第 5 步：产生第二信使，信号放大</strong></p>
+<p><strong>第 6 步：关闭信号</strong></p>
+<h3 id="通路-ags-→-camp-通路（&quot;兴奋通路&quot;）">通路 A：Gs → cAMP 通路（&quot;兴奋通路&quot;）</h3>
+<p><strong>Gs 的 s = stimulatory（刺激性的）</strong></p>
+<p>接力顺序：</p>
+<p><strong>信号分子（如肾上腺素）→ GPCR → Gαs-GTP → adenylyl cyclase → ATP → cAMP（第二信使）→ cAMP 激活 PKA → PKA 磷酸化各种靶蛋白</strong></p>
+<p>cAMP 是水溶性小分子，在<strong>胞质中扩散</strong>，能迅速放大信号。</p>
+<p>反过来还有 <strong>Gi</strong>（i = inhibitory），它<strong>抑制</strong> adenylyl cyclase，让 cAMP <strong>降低</strong>。</p>
+<h3 id="通路-bgq-→-ip₃dag-通路（&quot;钙信号通路&quot;）">通路 B：Gq → IP₃/DAG 通路（&quot;钙信号通路&quot;）</h3>
+<p>接力顺序：</p>
+<p><strong>信号分子 → GPCR → Gαq-GTP → PLCβ → 切割膜上的 PIP₂</strong></p>
+<p>PIP₂ 被一刀切成<strong>两个第二信使</strong>：</p>
+<p><strong>IP₃</strong>（inositol trisphosphate）</p>
+<ul><li>水溶性，在<strong>胞质中扩散</strong></li><li>跑到 ER 膜上 → 打开 Ca²⁺ 通道 → <strong>Ca²⁺ 从 ER 释放到胞质</strong></li></ul>
+<p><strong>DAG</strong>（diacylglycerol）</p>
+<ul><li>脂溶性，<strong>只能在膜的脂双层平面内滑动</strong></li><li>在膜上激活 <strong>PKC（protein kinase C）</strong></li><li>PKC 需要 DAG + Ca²⁺ 才能完全激活（两条支线汇合）</li></ul>
+<h3 id="第二信使总结（必考）">第二信使总结（必考）</h3>
+<div class="table-wrap"><table><thead><tr><th>第二信使</th><th>在哪扩散</th><th>来源</th><th>激活谁</th></tr></thead><tbody><tr><td><strong>cAMP</strong></td><td>水中</td><td>ATP，由 adenylyl cyclase 生成</td><td><strong>PKA</strong></td></tr><tr><td><strong>cGMP</strong></td><td>水中</td><td>GTP，由 guanylyl cyclase 生成</td><td>PKG</td></tr><tr><td><strong>IP₃</strong></td><td>水中</td><td>PIP₂ 被 PLCβ 切割</td><td>ER 上的 Ca²⁺ 通道</td></tr><tr><td><strong>DAG</strong></td><td><strong>只在膜内</strong></td><td>PIP₂ 被 PLCβ 切割</td><td><strong>PKC</strong></td></tr><tr><td><strong>Ca²⁺</strong></td><td>水中</td><td>从 ER 释放（IP₃ 触发）</td><td>PKC、CaM kinase 等</td></tr></tbody></table></div>
+<h3 id="no-通路">NO 通路</h3>
+<p><strong>硝酸甘油（nitroglycerin）→ 释放 NO（一氧化氮气体）→ NO 穿过细胞膜进入平滑肌细胞 → 激活 soluble guanylyl cyclase → cGMP 升高 → 血管平滑肌舒张 → 心脏负担减轻</strong></p>
+<p>NO 是气体信号分子，不需要受体，直接穿膜。</p>
+<h3 id="信号关闭（高频考点）">信号关闭（高频考点）</h3>
+<p>信号不能一直开着，有三个刹车：</p>
+<p><strong>刹车 1：GRK 磷酸化受体</strong> — GRK（G protein-coupled receptor kinase）磷酸化已激活的 GPCR 胞质尾巴。</p>
+<p><strong>刹车 2：Arrestin 结合受体</strong> — Arrestin 专门结合<strong>被磷酸化的 GPCR</strong>——<strong>注意不是 G 蛋白！</strong> Arrestin 像一个盖子，盖住受体，阻止它继续和 G 蛋白偶联。还能触发受体内吞。</p>
+<p><strong>⚠️ Q6 的陷阱</strong>：选项说&quot;arrestin binds to G protein&quot;——错！它结合的是<strong>受体</strong>！</p>
+<p><strong>刹车 3：RGS 蛋白加速 Gα 水解 GTP</strong> — Gα 自己有 GTPase 活性，但水解很慢。RGS 相当于催化剂，加速 GTP → GDP，让 Gα 迅速回到关闭状态。</p>
+<h3 id="g-蛋白突变（q12-方向）">G 蛋白突变（Q12 方向）</h3>
+<p><strong>如果 Gα 突变导致对 GDP 亲和力降低</strong>会怎样？</p>
+<p>正常：Gα 安静地抱着 GDP 不动，等受体来踢走 GDP。</p>
+<p>突变后：GDP 自己就容易掉下来 → 细胞里 GTP 浓度高 → GTP 马上占上去 → Gα 不需要受体激活就自己变成 GTP 状态 → <strong>持续处于激活状态（constitutively active）</strong></p>
+<p>这类似于癌基因 Ras 的激活突变——Ras 也是小 GTPase，突变使其 GTPase 活性丧失，也变成持续激活，驱动细胞不停增殖。</p>
+<h3 id="酶联受体信号">酶联受体信号</h3>
 <p><strong>RTK（受体酪氨酸激酶）</strong>：</p>
 <pre><code>配体结合 → 受体二聚化
   → 互相自磷酸化（trans-autophosphorylation）
@@ -286,9 +318,24 @@
   → JAK 互相磷酸化
   → 磷酸化受体招募 STAT
   → STAT 磷酸化后二聚进核调控基因</code></pre>
-<h3 id="四、其他信号方式">四、其他信号方式</h3>
+<h3 id="其他信号方式">其他信号方式</h3>
 <p><strong>Wnt/Notch/Hedgehog</strong>：通过调控蛋白水解（regulated proteolysis）和转录活性传递信号。</p>
 <p><strong>核受体信号</strong>：类固醇激素（雌激素、睾酮、皮质醇等）是脂溶性小分子，穿过细胞膜，结合胞内核受体，作为转录因子调控基因表达。响应较慢（涉及转录翻译），但作用持久。</p>
+<h3 id="超浓缩记忆卡片-3">超浓缩记忆卡片</h3>
+<pre><code>GPCR 信号三件套：受体(7-pass) → 三聚体G蛋白(αβγ) → 效应器
+
+两条通路：
+  Gs路：Gs → adenylyl cyclase → cAMP↑ → PKA
+  Gq路：Gq → PLCβ → PIP₂裂解 → IP₃(水中→释放Ca²⁺) + DAG(膜内→激活PKC)
+
+特殊：NO → guanylyl cyclase → cGMP↑ → 血管舒张
+
+三个刹车：
+  ① GRK 磷酸化受体
+  ② Arrestin 结合【受体】(不是G蛋白！)
+  ③ RGS 加速 Gα 水解 GTP
+
+突变题：GDP亲和力↓ = 组成型激活 = 类似Ras癌基因</code></pre>
 <p>---</p>
 <h2 id="跨讲综合考点">跨讲综合考点</h2>
 <h3 id="1-膜与转运的交叉">1. 膜与转运的交叉</h3>
@@ -379,7 +426,7 @@
 <p>---</p>
 <h2 id="板块二高频考点总结">板块二高频考点总结</h2>
 <div class="table-wrap"><table><thead><tr><th>考点</th><th>题号</th><th>讲次</th></tr></thead><tbody><tr><td>磷脂不对称分布</td><td>Q1</td><td>L9</td></tr><tr><td>简单扩散速率排序</td><td>Q3</td><td>L9</td></tr><tr><td>电化学平衡 vs 浓度平衡</td><td>Q2</td><td>L10</td></tr><tr><td>Channel vs Transporter 速率</td><td>Q13</td><td>L10</td></tr><tr><td>N-linked glycosylation 的 N = Asparagine</td><td>Q18</td><td>L11</td></tr><tr><td>核转运 importin/Ran-GTP</td><td>Q7, Q19</td><td>L11</td></tr><tr><td>ER retrieval signal（KDEL/KKXX）</td><td>Q20</td><td>L12</td></tr><tr><td>COPI/COPII/Clathrin 方向</td><td>—</td><td>L12</td></tr><tr><td>M6P 受体与 pH 依赖性</td><td>Q17</td><td>L12</td></tr><tr><td>LDL receptor-mediated endocytosis</td><td>Q9-11, Q21</td><td>L12</td></tr><tr><td>Caveolae = pinocytosis</td><td>Q15</td><td>L12</td></tr><tr><td>GPCR → G protein → 第二信使</td><td>Q4, Q6</td><td>L13</td></tr><tr><td>DAG 只在膜扩散，IP₃ 在水中扩散</td><td>Q4</td><td>L13</td></tr><tr><td>NO/cGMP 通路（硝酸甘油）</td><td>Q8</td><td>L13</td></tr><tr><td>Arrestin 结合的是受体不是 G 蛋白</td><td>Q6</td><td>L13</td></tr><tr><td>类固醇激素走核受体通路</td><td>Q16</td><td>L13</td></tr><tr><td>G 蛋白组成型激活突变</td><td>Q12</td><td>L13</td></tr><tr><td>正反馈 → 全或无响应</td><td>Q14</td><td>L13</td></tr></tbody></table></div></div>
-        <aside class="toc"><strong>目录</strong><a class="toc-level-2" href="#lecture-9膜结构与功能">Lecture 9：膜结构与功能</a><a class="toc-level-3" href="#知识块①脂双层的组成">知识块①：脂双层的组成</a><a class="toc-level-3" href="#知识块②磷脂不对称分布（高频考点）">知识块②：磷脂不对称分布（高频考点）</a><a class="toc-level-3" href="#知识块③膜蛋白的类型">知识块③：膜蛋白的类型</a><a class="toc-level-3" href="#知识块④膜流动性与脂筏">知识块④：膜流动性与脂筏</a><a class="toc-level-2" href="#lecture-10跨膜转运">Lecture 10：跨膜转运</a><a class="toc-level-3" href="#一、跨膜转运的基本方式">一、跨膜转运的基本方式</a><a class="toc-level-3" href="#二、转运体的分类">二、转运体的分类</a><a class="toc-level-3" href="#三、离子通道">三、离子通道</a><a class="toc-level-3" href="#四、电信号传导">四、电信号传导</a><a class="toc-level-2" href="#lecture-11细胞内区室与蛋白质分选">Lecture 11：细胞内区室与蛋白质分选</a><a class="toc-level-3" href="#蛋白质分选-=-快递分拣系统">蛋白质分选 = 快递分拣系统</a><a class="toc-level-3" href="#第一层蛋白在哪里合成的">第一层：蛋白在哪里合成的？</a><a class="toc-level-3" href="#第二层五个目的地五个地址标签">第二层：五个目的地，五个地址标签</a><a class="toc-level-3" href="#第三层n-linked-糖基化">第三层：N-linked 糖基化</a><a class="toc-level-3" href="#超浓缩记忆卡片">超浓缩记忆卡片</a><a class="toc-level-2" href="#lecture-12细胞内囊泡运输">Lecture 12：细胞内囊泡运输</a><a class="toc-level-3" href="#囊泡运输-=-三条快递专线">囊泡运输 = 三条快递专线</a><a class="toc-level-3" href="#专线一copii——&quot;发货车&quot;">专线一：COPII——&quot;发货车&quot;</a><a class="toc-level-3" href="#专线二copi——&quot;退货车&quot;">专线二：COPI——&quot;退货车&quot;</a><a class="toc-level-3" href="#专线三clathrin——&quot;外卖员-+-快递分拣&quot;">专线三：Clathrin——&quot;外卖员 + 快递分拣&quot;</a><a class="toc-level-3" href="#所有囊泡共用的&quot;到站-卸货&quot;系统">所有囊泡共用的&quot;到站-卸货&quot;系统</a><a class="toc-level-3" href="#超浓缩记忆卡片-2">超浓缩记忆卡片</a><a class="toc-level-3" href="#高频考点非水解-gtp-类似物实验">高频考点：非水解 GTP 类似物实验</a><a class="toc-level-3" href="#caveolae">Caveolae</a><a class="toc-level-2" href="#lecture-12细胞内囊泡运输-2">Lecture 12：细胞内囊泡运输</a><a class="toc-level-3" href="#一、三种外壳囊泡">一、三种外壳囊泡</a><a class="toc-level-3" href="#二、er-→-golgi-运输">二、ER → Golgi 运输</a><a class="toc-level-3" href="#三、囊泡靶向与融合">三、囊泡靶向与融合</a><a class="toc-level-3" href="#四、clathrin-介导的内吞">四、Clathrin 介导的内吞</a><a class="toc-level-3" href="#五、tgn-到溶酶体的运输">五、TGN 到溶酶体的运输</a><a class="toc-level-2" href="#lecture-13细胞通讯">Lecture 13：细胞通讯</a><a class="toc-level-3" href="#一、信号传导总原则">一、信号传导总原则</a><a class="toc-level-3" href="#二、gpcr-信号通路">二、GPCR 信号通路</a><a class="toc-level-3" href="#三、酶联受体信号">三、酶联受体信号</a><a class="toc-level-3" href="#四、其他信号方式">四、其他信号方式</a></aside>
+        <aside class="toc"><strong>目录</strong><a class="toc-level-2" href="#lecture-9膜结构与功能">Lecture 9：膜结构与功能</a><a class="toc-level-3" href="#知识块①脂双层的组成">知识块①：脂双层的组成</a><a class="toc-level-3" href="#知识块②磷脂不对称分布（高频考点）">知识块②：磷脂不对称分布（高频考点）</a><a class="toc-level-3" href="#知识块③膜蛋白的类型">知识块③：膜蛋白的类型</a><a class="toc-level-3" href="#知识块④膜流动性与脂筏">知识块④：膜流动性与脂筏</a><a class="toc-level-2" href="#lecture-10跨膜转运">Lecture 10：跨膜转运</a><a class="toc-level-3" href="#一、跨膜转运的基本方式">一、跨膜转运的基本方式</a><a class="toc-level-3" href="#二、转运体的分类">二、转运体的分类</a><a class="toc-level-3" href="#三、离子通道">三、离子通道</a><a class="toc-level-3" href="#四、电信号传导">四、电信号传导</a><a class="toc-level-2" href="#lecture-11细胞内区室与蛋白质分选">Lecture 11：细胞内区室与蛋白质分选</a><a class="toc-level-3" href="#蛋白质分选-=-快递分拣系统">蛋白质分选 = 快递分拣系统</a><a class="toc-level-3" href="#第一层蛋白在哪里合成的">第一层：蛋白在哪里合成的？</a><a class="toc-level-3" href="#第二层五个目的地五个地址标签">第二层：五个目的地，五个地址标签</a><a class="toc-level-3" href="#第三层n-linked-糖基化">第三层：N-linked 糖基化</a><a class="toc-level-3" href="#超浓缩记忆卡片">超浓缩记忆卡片</a><a class="toc-level-2" href="#lecture-12细胞内囊泡运输">Lecture 12：细胞内囊泡运输</a><a class="toc-level-3" href="#囊泡运输-=-三条快递专线">囊泡运输 = 三条快递专线</a><a class="toc-level-3" href="#专线一copii——&quot;发货车&quot;">专线一：COPII——&quot;发货车&quot;</a><a class="toc-level-3" href="#专线二copi——&quot;退货车&quot;">专线二：COPI——&quot;退货车&quot;</a><a class="toc-level-3" href="#专线三clathrin——&quot;外卖员-+-快递分拣&quot;">专线三：Clathrin——&quot;外卖员 + 快递分拣&quot;</a><a class="toc-level-3" href="#所有囊泡共用的&quot;到站-卸货&quot;系统">所有囊泡共用的&quot;到站-卸货&quot;系统</a><a class="toc-level-3" href="#超浓缩记忆卡片-2">超浓缩记忆卡片</a><a class="toc-level-3" href="#高频考点非水解-gtp-类似物实验">高频考点：非水解 GTP 类似物实验</a><a class="toc-level-3" href="#caveolae">Caveolae</a><a class="toc-level-2" href="#lecture-12细胞内囊泡运输-2">Lecture 12：细胞内囊泡运输</a><a class="toc-level-3" href="#一、三种外壳囊泡">一、三种外壳囊泡</a><a class="toc-level-3" href="#二、er-→-golgi-运输">二、ER → Golgi 运输</a><a class="toc-level-3" href="#三、囊泡靶向与融合">三、囊泡靶向与融合</a><a class="toc-level-3" href="#四、clathrin-介导的内吞">四、Clathrin 介导的内吞</a><a class="toc-level-3" href="#五、tgn-到溶酶体的运输">五、TGN 到溶酶体的运输</a><a class="toc-level-2" href="#lecture-13细胞通讯">Lecture 13：细胞通讯</a><a class="toc-level-3" href="#gpcr-信号通路-=-一套接力赛系统">GPCR 信号通路 = 一套接力赛系统</a><a class="toc-level-3" href="#三聚体-g-蛋白是什么">三聚体 G 蛋白是什么？</a><a class="toc-level-3" href="#信号传递的完整故事（6-步）">信号传递的完整故事（6 步）</a><a class="toc-level-3" href="#通路-ags-→-camp-通路（&quot;兴奋通路&quot;）">通路 A：Gs → cAMP 通路（&quot;兴奋通路&quot;）</a></aside>
       </div>
     </article>
   </main>
