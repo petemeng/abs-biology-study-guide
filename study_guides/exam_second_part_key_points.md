@@ -4,6 +4,111 @@
 
 ---
 
+## 板块二完整逻辑链：从一张膜到细胞通讯
+
+### 第一章：细胞先造了一张膜（Lecture 9）
+
+一切从膜开始。细胞用**磷脂**搭建了一张脂双层。磷脂是两亲性分子，圆柱形的自动排成双层，把细胞内外隔开。
+
+这张膜不是均匀的——**两侧成分不对称**。外侧放 PC、Sphingomyelin、Glycolipids（负责保护和识别），内侧放 PE、PS、PI（负责信号传导）。三种酶（Flippase 内翻、Floppase 外翻、Scramblase 打乱）维持这个不对称。Cholesterol 两侧都有，调节膜流动性。
+
+膜上还嵌着各种**膜蛋白**：跨膜蛋白（如受体、通道、转运体）、脂质锚定蛋白（如 Ras、GPI 蛋白）、外周蛋白。所有糖基化和二硫键都在胞外面。膜蛋白不会翻转，但可以在平面内移动（除非被骨架 corralling 住）。
+
+膜上还有**脂筏**——富含 sphingomyelin + cholesterol 的微区域，是信号平台。
+
+**这张膜的意义：它是后面所有故事发生的舞台。**
+
+### 第二章：东西怎么穿过这张膜（Lecture 10）
+
+膜把内外隔开了，但细胞需要进出物质。穿膜的难度取决于分子的性质：
+
+**小非极性分子**（N₂, O₂, CO₂）→ 直接穿过，无需帮助
+**小极性分子**（水, ethanol）→ 勉强穿过，但慢
+**大极性分子**（glucose）→ 穿不过，需要 **transporter** 帮忙
+**离子**（Na⁺, K⁺, Ca²⁺）→ 完全穿不过，需要 **channel** 或 **transporter**
+
+Channel 和 Transporter 的区别：channel 是一直开着的管道（或门控的），溶质直接流过，极快；transporter 每次要变构象，慢但能逆梯度搬运。
+
+主动转运需要能量，四种 ATP 泵各管一方：P-type（Na⁺/K⁺ pump、Ca²⁺ pump、Flippase）、V-type（酸化溶酶体和内体）、F-type（ATP synthase 合成 ATP）、ABC（药物外排、Floppase、CFTR）。
+
+离子通道和电信号：Na⁺/K⁺ pump 维持膜电位 → 电压门控 Na⁺ channel 触发动作电位 → 延迟 K⁺ channel 复极化。
+
+**这一章解决了"小分子怎么穿膜"的问题。但蛋白质这么大的分子怎么办？→ 引出下一章。**
+
+### 第三章：蛋白质怎么去到正确的地方（Lecture 11）
+
+细胞造的蛋白质有上万种，要去细胞核、ER、线粒体、质膜、溶酶体等不同地方。靠什么分拣？**信号序列——蛋白质身上的地址标签。**
+
+所有蛋白质都从胞质的核糖体开始翻译，然后分两条路：
+
+**路线 A：走 ER 路线**
+蛋白 N-端露出疏水的 signal peptide → SRP 抓住它 → 拖到 ER 膜上 → 蛋白穿过 translocator 进入 ER 腔 → signal peptide 被切掉 → 蛋白在 ER 腔中折叠、糖基化（N-linked，连在 Asparagine 上，序列 Asn-X-Ser/Thr）→ 质控通过后进入下一站
+
+**路线 B：留在胞质，靠其他标签去其他地方**
+带 NLS → importin 送进细胞核（通过 FG-repeat 穿核孔，Ran-GTP 卸货）
+带线粒体信号 → TOM+TIM 送进线粒体
+什么标签都没有 → 留在胞质
+
+**这一章解决了"蛋白质怎么进入正确的区室"。但进了 ER 的蛋白还要继续往下走 → 引出下一章。**
+
+### 第四章：ER 里的蛋白怎么运到目的地（Lecture 12）
+
+蛋白进了 ER 后，还需要走很远的路：ER → Golgi → 质膜 / 溶酶体 / 细胞外。这段路全靠**囊泡运输**。
+
+**第一程：ER → Golgi（COPII 发货车）**
+Sar1-GTP 启动 → Sec24 挑选 cargo → COPII 外壳组装 → 囊泡出芽离开 ER → GTP 水解去壳 → 和 Golgi 融合
+
+**"退货"机制：Golgi → ER（COPI 退货车）**
+ER 驻留蛋白逃到 Golgi 后，被 KDEL 受体（可溶蛋白）或 KKXX 信号（膜蛋白）识别 → 装进 COPI 囊泡 → ARF-GTP 控制 → 运回 ER
+
+**第二程：在 Golgi 中加工和分拣**
+蛋白在 Golgi 中被进一步糖基化修饰。到了 TGN（trans-Golgi network），开始分拣：
+
+- 溶酶体酶被加上 **M6P 标签** → M6P 受体在 pH 6.6 的 TGN 结合它们 → 装进 clathrin 囊泡 → 送到晚期内体（pH 6.0，受体释放 cargo）→ 最终到溶酶体
+- 没有特殊标签的蛋白 → 走 default secretory pathway → 分泌到细胞外
+
+**第三程：质膜的内吞（Clathrin 外卖员）**
+以 LDL 内吞为典型：LDL 结合跨膜的 LDL 受体 → clathrin + AP 组装 → dynamin 剪断 → 去壳 → 进入早期内体（低 pH，受体和 LDL 分离）→ 受体回收到质膜 / LDL 去溶酶体降解释放胆固醇
+
+**所有囊泡共用的停靠系统：**
+Rab-GTP 识别靶膜并 tethering → v-SNARE + t-SNARE 形成 trans-SNARE complex → 驱动膜融合 → NSF 拆 SNARE 回收，GDI 回收 Rab
+
+**这一章解决了"蛋白质在膜性区室之间怎么运输"。现在蛋白到了质膜上，可以开始接收外界信号了 → 引出最后一章。**
+
+### 第五章：细胞怎么接收和传递信号（Lecture 13）
+
+膜上的受体蛋白接收胞外信号，把信息传递到细胞内部。三大受体系统：
+
+**系统 1：GPCR（七次跨膜受体）**
+信号分子结合 → GPCR 激活 → 三聚体 G 蛋白（αβγ）的 Gα 换上 GTP → 与 βγ 分离 → 激活下游效应器：
+
+| G 蛋白类型 | 效应器 | 第二信使 | 下游激酶 |
+|-----------|-------|---------|---------|
+| Gs | adenylyl cyclase | cAMP（水中） | PKA |
+| Gq | PLCβ | IP₃（水中）+ DAG（膜内） | PKC（需要 DAG + Ca²⁺） |
+
+IP₃ 打开 ER 上的 Ca²⁺ 通道释放 Ca²⁺。DAG 是唯一只在膜内扩散的第二信使。
+
+关闭信号三步：GRK 磷酸化受体 → Arrestin 结合**受体**（不是 G 蛋白！）→ RGS 加速 Gα 水解 GTP。
+
+特殊通路：NO → guanylyl cyclase → cGMP → 血管舒张（硝酸甘油原理）。
+
+**系统 2：RTK（受体酪氨酸激酶）**
+信号分子（生长因子）→ 受体二聚化 → trans-autophosphorylation → Grb2 → SOS → Ras-GTP → Raf → MEK → ERK → 进核调控基因
+
+正反馈和多步磷酸化产生全或无响应（ultrasensitivity）。
+
+JAK-STAT 是简化版：细胞因子 → JAK 互相磷酸化 → 招募 STAT → STAT 二聚进核。
+
+**系统 3：核受体**
+类固醇激素（脂溶性）→ 直接穿膜 → 结合胞内核受体 → 受体变成转录因子 → 调控基因表达。慢（小时到天）但持久。
+
+### 五讲一句话总结
+
+> **细胞先造了一张膜（L9），让小分子通过通道和转运体穿过它（L10），让蛋白通过信号序列找到正确的区室（L11），用囊泡在区室之间运输（L12），最后膜上的受体接收外界信号驱动细胞响应（L13）。**
+
+---
+
 ## Lecture 9：膜结构与功能
 
 ### 知识块①：脂双层的组成
